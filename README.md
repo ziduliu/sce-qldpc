@@ -61,21 +61,6 @@ Data:
   `records/pl_sweep_20261009_bbibm/` the circuit-level sweeps behind Fig. 2 (one JSON per code, basis and
   physical error rate, with the schedule and the decoder log)
 
-Runs (the label used in the paper, the folder under `programs/`, and the number of stored programs):
-
-| paper | FOM objective | stored | CLER objective | stored |
-|---|---|---|---|---|
-| gpt-6.1-sol, high effort | `cc_v7_gpt61sol500_w12_10c_out` | 375 | `pl10_gpt61sol_out` | 363 |
-| gpt-6-sol, high effort | `cc_v7_gpt6sol50_w12_10c_cmp_out` | 386 | `pl10_gpt6sol50_out` | 382 |
-| gpt-6-luna, extra-high effort | `cc_v7_gpt6luna500_w12_10c_rep2_out` | 365 | `pl10_gpt6lunaxhigh_out` | 380 |
-| gpt-6-luna, high effort | `cc_v7_gpt6lunahigh500_w12_10c_prod_out` | 390 | `pl10_gpt6lunahigh_out` | 374 |
-| gpt-6-luna, low effort | `cc_v7_gpt6lunalow500_w12_10c_prod_out` | 355 | `pl10_gpt6lunalow_out` | 353 |
-| random mutation, repeats 1-5 | `cc_v7_rnd500v5_w12_10c_rep1..5_out` | 357, 366, 349, 348, 331 | `pl10_rnd500v5_rep1,2,3,6,5_out` | 123, 126, 353, 363, 130 |
-| hill-climbing, repeats 1-5 | `cc_v7_rnd520locv5_w12_10c_rep1..5_out` | 528 each (all) | `pl10_rnd520locv5_rep1..5_out` | 369, 355, 350, 356, 348 |
-| gpt-6.1-sol, check weight at most 9 | `cc_v7_gpt61sol500_w9_10c_out` | 247 | | |
-| gpt-6.1-sol, fewer than 1500 qubits (not reported in the paper) | `cc_v7_gpt61sol_n1k_w12_10c_out` | 522 (all) | | |
-| refinement of the 258th child of the weight-9 run, runs 1-3 | `plain_w9c2_r1,2,3_20261021` | 12, 20, 12 (all) | | |
-
 The CLER random-mutation repeat 4 of the paper is the folder `pl10_rnd500v5_rep6_out`. The refinement
 folders hold the start program (child 0) and the children of each run; their configuration is
 `evolve/run_configs/oe_circmean_cc_v7_gpt61sol_w9c2fixed_seq20.yaml` (see `evolve/README.md`).
