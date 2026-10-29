@@ -1,0 +1,964 @@
+{
+ "Z_W23": {
+  "0/60": {
+   "W": 23,
+   "secs": 160627.0,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 0/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5946969735515,
+   "slice": [
+    0,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 160627.0
+  },
+  "10/60": {
+   "W": 23,
+   "secs": 146052.5,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 10/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5396214748576,
+   "slice": [
+    10,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 146052.4
+  },
+  "11/60": {
+   "W": 23,
+   "secs": 152510.4,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 11/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5676719293138,
+   "slice": [
+    11,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 152510.4
+  },
+  "12/60": {
+   "W": 23,
+   "secs": 148000.3,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 12/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5758197125129,
+   "slice": [
+    12,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 148000.2
+  },
+  "13/60": {
+   "W": 23,
+   "secs": 158380.5,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 13/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5628477617491,
+   "slice": [
+    13,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 158380.5
+  },
+  "14/60": {
+   "W": 23,
+   "secs": 160388.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 14/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5824299848343,
+   "slice": [
+    14,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 160388.7
+  },
+  "15/60": {
+   "W": 23,
+   "secs": 168110.0,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 15/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5710586256055,
+   "slice": [
+    15,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 168110.0
+  },
+  "16/60": {
+   "W": 23,
+   "secs": 150148.2,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 16/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5334539053104,
+   "slice": [
+    16,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 150148.2
+  },
+  "17/60": {
+   "W": 23,
+   "secs": 144711.9,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 17/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5149141225158,
+   "slice": [
+    17,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 144711.9
+  },
+  "18/60": {
+   "W": 23,
+   "secs": 138526.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 18/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 4857029285948,
+   "slice": [
+    18,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 138526.6
+  },
+  "19/60": {
+   "W": 23,
+   "secs": 144978.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 19/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5126713143064,
+   "slice": [
+    19,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 144978.6
+  },
+  "1/60": {
+   "W": 23,
+   "secs": 160801.0,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 1/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 6029289028897,
+   "slice": [
+    1,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 160801.0
+  },
+  "20/60": {
+   "W": 23,
+   "secs": 148707.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 20/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5097019869894,
+   "slice": [
+    20,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 148707.6
+  },
+  "21/60": {
+   "W": 23,
+   "secs": 144203.5,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 21/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5069167115621,
+   "slice": [
+    21,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 144203.5
+  },
+  "22/60": {
+   "W": 23,
+   "secs": 150933.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 22/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5419212966917,
+   "slice": [
+    22,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 150933.6
+  },
+  "23/60": {
+   "W": 23,
+   "secs": 154590.0,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 23/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5439422933207,
+   "slice": [
+    23,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 154590.0
+  },
+  "24/60": {
+   "W": 23,
+   "secs": 151622.0,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 24/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5338856453300,
+   "slice": [
+    24,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 151622.0
+  },
+  "25/60": {
+   "W": 23,
+   "secs": 155725.8,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 25/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5473255775042,
+   "slice": [
+    25,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 155725.8
+  },
+  "26/60": {
+   "W": 23,
+   "secs": 158184.5,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 26/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5557471649799,
+   "slice": [
+    26,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 158184.5
+  },
+  "27/60": {
+   "W": 23,
+   "secs": 153363.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 27/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5307087759605,
+   "slice": [
+    27,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 153363.6
+  },
+  "28/60": {
+   "W": 23,
+   "secs": 144878.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 28/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5085612395442,
+   "slice": [
+    28,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 144878.7
+  },
+  "29/60": {
+   "W": 23,
+   "secs": 146465.2,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 29/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5187634808799,
+   "slice": [
+    29,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 146465.2
+  },
+  "2/60": {
+   "W": 23,
+   "secs": 158006.5,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 2/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 6065305948459,
+   "slice": [
+    2,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 158006.5
+  },
+  "30/60": {
+   "W": 23,
+   "secs": 144448.8,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 30/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5383903170814,
+   "slice": [
+    30,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 144448.8
+  },
+  "31/60": {
+   "W": 23,
+   "secs": 154444.3,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 31/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5319573047245,
+   "slice": [
+    31,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 154444.3
+  },
+  "32/60": {
+   "W": 23,
+   "secs": 152887.3,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 32/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5440041646508,
+   "slice": [
+    32,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 152887.3
+  },
+  "33/60": {
+   "W": 23,
+   "secs": 146266.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 33/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5330552248518,
+   "slice": [
+    33,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 146266.7
+  },
+  "34/60": {
+   "W": 23,
+   "secs": 154350.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 34/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5358519969072,
+   "slice": [
+    34,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 154350.6
+  },
+  "35/60": {
+   "W": 23,
+   "secs": 156276.4,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 35/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5521623444768,
+   "slice": [
+    35,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 156276.4
+  },
+  "36/60": {
+   "W": 23,
+   "secs": 152256.1,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 36/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5461142133464,
+   "slice": [
+    36,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 152256.1
+  },
+  "37/60": {
+   "W": 23,
+   "secs": 148594.2,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 37/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5484414993769,
+   "slice": [
+    37,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 148594.2
+  },
+  "38/60": {
+   "W": 23,
+   "secs": 141351.5,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 38/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 4906232149293,
+   "slice": [
+    38,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 141351.5
+  },
+  "39/60": {
+   "W": 23,
+   "secs": 142423.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 39/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5164790270857,
+   "slice": [
+    39,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 142423.6
+  },
+  "3/60": {
+   "W": 23,
+   "secs": 151212.9,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 3/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5863126874968,
+   "slice": [
+    3,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 151212.9
+  },
+  "40/60": {
+   "W": 23,
+   "secs": 154187.8,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 40/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5273359532347,
+   "slice": [
+    40,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 154187.8
+  },
+  "41/60": {
+   "W": 23,
+   "secs": 159066.9,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 41/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5334692381425,
+   "slice": [
+    41,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 159066.8
+  },
+  "42/60": {
+   "W": 23,
+   "secs": 147820.0,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 42/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5236324910630,
+   "slice": [
+    42,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 147820.0
+  },
+  "43/60": {
+   "W": 23,
+   "secs": 141883.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 43/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5153510690023,
+   "slice": [
+    43,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 141883.7
+  },
+  "44/60": {
+   "W": 23,
+   "secs": 142300.4,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 44/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5012671116260,
+   "slice": [
+    44,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 142300.4
+  },
+  "45/60": {
+   "W": 23,
+   "secs": 135403.2,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 45/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5047265842738,
+   "slice": [
+    45,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 135403.2
+  },
+  "46/60": {
+   "W": 23,
+   "secs": 157738.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 46/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5586922637421,
+   "slice": [
+    46,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 157738.7
+  },
+  "47/60": {
+   "W": 23,
+   "secs": 158896.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 47/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5679553072379,
+   "slice": [
+    47,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 158896.7
+  },
+  "48/60": {
+   "W": 23,
+   "secs": 152673.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 48/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5621847766483,
+   "slice": [
+    48,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 152673.6
+  },
+  "49/60": {
+   "W": 23,
+   "secs": 145927.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 49/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5419614775368,
+   "slice": [
+    49,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 145927.7
+  },
+  "4/60": {
+   "W": 23,
+   "secs": 151233.3,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 4/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5602373253265,
+   "slice": [
+    4,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 151233.2
+  },
+  "50/60": {
+   "W": 23,
+   "secs": 153501.6,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 50/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5929211138417,
+   "slice": [
+    50,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 153501.6
+  },
+  "51/60": {
+   "W": 23,
+   "secs": 156131.1,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 51/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5635581257067,
+   "slice": [
+    51,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 156131.0
+  },
+  "52/60": {
+   "W": 23,
+   "secs": 162894.1,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 52/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 6039773493845,
+   "slice": [
+    52,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 162894.1
+  },
+  "53/60": {
+   "W": 23,
+   "secs": 141132.0,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 53/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5520465895493,
+   "slice": [
+    53,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 141131.9
+  },
+  "54/60": {
+   "W": 23,
+   "secs": 142339.8,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 54/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5385287110826,
+   "slice": [
+    54,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 142339.8
+  },
+  "55/60": {
+   "W": 23,
+   "secs": 138000.7,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 55/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5111095600169,
+   "slice": [
+    55,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 138000.6
+  },
+  "56/60": {
+   "W": 23,
+   "secs": 132695.8,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 56/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 4890402796852,
+   "slice": [
+    56,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 132695.7
+  },
+  "57/60": {
+   "W": 23,
+   "secs": 156954.4,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 57/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5447281623730,
+   "slice": [
+    57,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 156954.3
+  },
+  "58/60": {
+   "W": 23,
+   "secs": 162842.9,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 58/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5521748057340,
+   "slice": [
+    58,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 162842.9
+  },
+  "59/60": {
+   "W": 23,
+   "secs": 164980.8,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=904 (slice 59/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5670996227965,
+   "slice": [
+    59,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 164980.8
+  },
+  "5/60": {
+   "W": 23,
+   "secs": 143374.9,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 5/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5285000051434,
+   "slice": [
+    5,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 143374.8
+  },
+  "6/60": {
+   "W": 23,
+   "secs": 153680.2,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 6/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5117696818718,
+   "slice": [
+    6,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 153680.1
+  },
+  "7/60": {
+   "W": 23,
+   "secs": 148008.3,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 7/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5101433565325,
+   "slice": [
+    7,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 148008.3
+  },
+  "8/60": {
+   "W": 23,
+   "secs": 145703.3,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 8/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5099475748607,
+   "slice": [
+    8,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 145703.2
+  },
+  "9/60": {
+   "W": 23,
+   "secs": 157068.4,
+   "tlimit": 400000.0,
+   "stderr": "n=585 mH=234 rank(G)=232 delta=8 W=23 roots=195 depth=3 frontier=905 (slice 9/60 of 54271) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5434878891984,
+   "slice": [
+    9,
+    60
+   ],
+   "n_roots": 195,
+   "bb_secs": 157068.4
+  }
+ }
+}

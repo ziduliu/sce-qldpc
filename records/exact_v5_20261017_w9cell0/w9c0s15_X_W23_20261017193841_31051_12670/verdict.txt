@@ -1,0 +1,1 @@
+X W=23: all 2 slices NONE, manifest checks passed - certified d_X > 23 (nodes 39500429894)

@@ -1,0 +1,28 @@
+{
+ "p": "0.0045",
+ "rounds": 6,
+ "max_shots": 300000,
+ "max_errors": 1000,
+ "seconds": 40000.0,
+ "error": "sampler exceeded PL_SCORE_TIMEOUT=40000s",
+ "codes": [
+  {
+   "name": "c3",
+   "family": "r025_C29_24x24_sumfree_regular4_voltage_v1",
+   "idx": 4,
+   "n": 580,
+   "k": 132,
+   "w": 12,
+   "d2s": 14,
+   "score": 0.0,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 33408,
+    "bases": {},
+    "sched_source": "Z:own,X:own"
+   }
+  }
+ ]
+}

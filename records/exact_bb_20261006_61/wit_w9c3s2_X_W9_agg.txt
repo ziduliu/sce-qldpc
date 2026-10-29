@@ -1,0 +1,1 @@
+X W=9: FOUND weight 9 (verified) - exact d_X = 9

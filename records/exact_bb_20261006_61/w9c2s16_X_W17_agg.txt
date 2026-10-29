@@ -1,0 +1,1 @@
+X W=17: all 8 slices NONE - certified d_X > 17  (nodes 2252978232, max 4 s)

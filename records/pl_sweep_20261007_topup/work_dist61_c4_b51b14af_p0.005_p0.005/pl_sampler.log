@@ -1,0 +1,3 @@
+rank 1 local 0 on zpg028 gpu 0 group auto
+rank 0 local 0 on zpg026 gpu 0 group auto
+rank 1/2 -> unit 1 (c4 X) shard 0/1: 20250 shots, 13916 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c4_b51b14af_p0.005_p0.005/pl.json.part0001.json

@@ -1,0 +1,35 @@
+{
+ "npz": "/u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c0s15.npz",
+ "n": 572,
+ "types": {
+  "X": {
+   "d": null,
+   "certified_greater_than": 23,
+   "runs": [
+    {
+     "W": 23,
+     "secs": 31.4,
+     "tlimit": 400000.0,
+     "stderr": "n=572 mH=264 rank(G)=262 delta=5 W=23 roots=286 depth=3 frontier=229 (slice 36/60 of 13723) threads=32",
+     "status": "NONE",
+     "weight": null,
+     "support": null,
+     "nodes": 652529911,
+     "slice": [
+      36,
+      60
+     ],
+     "n_roots": 286,
+     "bb_secs": 31.4
+    }
+   ]
+  }
+ },
+ "orbits": "/u/zdliu/lp/oe_run/w9cert_20261013/orbits/w9c0s15.json",
+ "slice": [
+  36,
+  60
+ ],
+ "d": null,
+ "d_lower_certified": 24
+}

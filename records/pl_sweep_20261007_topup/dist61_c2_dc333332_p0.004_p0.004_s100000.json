@@ -1,0 +1,28 @@
+{
+ "p": "0.004",
+ "rounds": 6,
+ "max_shots": 100000,
+ "max_errors": 1000,
+ "seconds": 40000.1,
+ "error": "sampler exceeded PL_SCORE_TIMEOUT=40000s",
+ "codes": [
+  {
+   "name": "c2",
+   "family": "r020_C13semiC9_12x12_centralgrade_even_witnessrepair_v3",
+   "idx": 27,
+   "n": 585,
+   "k": 121,
+   "w": 12,
+   "d2s": 24,
+   "score": 0.0,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 33696,
+    "bases": {},
+    "sched_source": "Z:own,X:own"
+   }
+  }
+ ]
+}

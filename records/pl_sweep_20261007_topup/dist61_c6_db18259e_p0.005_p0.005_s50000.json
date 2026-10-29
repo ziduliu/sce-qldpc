@@ -1,0 +1,28 @@
+{
+ "p": "0.005",
+ "rounds": 6,
+ "max_shots": 50000,
+ "max_errors": 1000,
+ "seconds": 40000.0,
+ "error": "sampler exceeded PL_SCORE_TIMEOUT=40000s",
+ "codes": [
+  {
+   "name": "c6",
+   "family": "r040_AGL1F8_13x13_cubic_exact8_witnessrepair_archive_v2",
+   "idx": 0,
+   "n": 560,
+   "k": 224,
+   "w": 12,
+   "d2s": 10,
+   "score": 0.0,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 24192,
+    "bases": {},
+    "sched_source": "Z:own,X:own"
+   }
+  }
+ ]
+}

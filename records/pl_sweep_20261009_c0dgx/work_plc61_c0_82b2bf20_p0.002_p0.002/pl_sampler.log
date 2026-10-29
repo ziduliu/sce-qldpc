@@ -1,0 +1,19 @@
+rank 6 local 6 on zpx gpu 6 group auto
+rank 5 local 5 on zpx gpu 5 group auto
+rank 7 local 7 on zpx gpu 7 group auto
+rank 0 local 0 on zpx gpu 0 group auto
+rank 1 local 1 on zpx gpu 1 group auto
+rank 3 local 3 on zpx gpu 3 group auto
+rank 2 local 2 on zpx gpu 2 group auto
+rank 4 local 4 on zpx gpu 4 group auto
+rank 5/8 -> unit 1 (c0 X) shard 2/4: 75000000 shots, 51949 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0005.json
+rank 1/8 -> unit 1 (c0 X) shard 0/4: 75000000 shots, 51988 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0001.json
+rank 7/8 -> unit 1 (c0 X) shard 3/4: 75000000 shots, 51990 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0007.json
+rank 3/8 -> unit 1 (c0 X) shard 1/4: 75000000 shots, 52012 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0003.json
+rank 4/8 -> unit 0 (c0 Z) shard 2/4: 75000000 shots, 53047 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0004.json
+rank 6/8 -> unit 0 (c0 Z) shard 3/4: 75000000 shots, 53051 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0006.json
+rank 0/8 -> unit 0 (c0 Z) shard 0/4: 75000000 shots, 53147 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0000.json
+rank 2/8 -> unit 0 (c0 Z) shard 1/4: 75000000 shots, 53312 s -> /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json.part0002.json
+c0                         Z [[572,67]] shots 300000000: fail 2, logical 46, stages [299999976, 0, 24], unsat 0, worst 13, 53312 s wall over 4 shards
+c0                         X [[572,67]] shots 300000000: fail 38, logical 968, stages [299999779, 3, 218], unsat 0, worst 8, 52012 s wall over 4 shards
+wrote /u/zdliu/lp/oe_run/pl_sweep_20261009_c0dgx/work_plc61_c0_82b2bf20_p0.002_p0.002/pl.json

@@ -1,0 +1,4 @@
+2026-10-14_00:38:13 level W=4: 8 slices (npz /u/zdliu/lp/oe_run/pl10_gpt61sol_out/archive/codes/217b1dab11f6cb77.npz)
+2026-10-14_00:38:13   slices 8904787:8904788:8904789:8904790:8904791:8904792:8904793:8904794 aggregator 8904795
+2026-10-14_00:38:19 X W=4: FOUND weight 4 (verified) - exact d_X = 4
+2026-10-14_00:38:19 exact d_X found at W=4, climb ends

@@ -1,0 +1,4 @@
+2026-10-06_20:43:32 level W=9: 8 slices (npz /u/zdliu/lp/jobs/sel61/archive/codes/db18259eb1856d92.npz)
+2026-10-06_20:43:32   slices 8901039:8901040:8901041:8901042:8901043:8901044:8901045:8901046 aggregator 8901047
+2026-10-07_15:34:10 X W=9: all 8 slices NONE - certified d_X > 9  (nodes 18104646, max 0 s)
+2026-10-07_15:34:11 reached WMAX=9: d_X > 9 certified, climb ends

@@ -1,0 +1,46 @@
+{
+ "kind": "slice",
+ "run_id": "d20_r1s5_slot41_6336e224_X_W17_20261022074751_2231_8271",
+ "matrix_sha256": "bfb11303c07692f269d181fee1061d28d966803722b2799809e9b0cc4fd9ab01",
+ "problem_sha256": "583680bea49ff97b1b3ab06ade756e374a7d5dab9d84708132bf96547d701692",
+ "binary_sha256": "650863746ef14aa18c5e55268664f172ca6f8a29cab4de0b3fe21383defd9cae",
+ "type": "X",
+ "W": 17,
+ "slice": [
+  2,
+  4
+ ],
+ "run": {
+  "W": 17,
+  "secs": 2.517,
+  "tlimit": 400000.0,
+  "returncode": 0,
+  "stderr": "n=585 mH=234 rank(G)=234 delta=6 W=17 roots=195 depth=3 frontier=4171 (slice 2/4 of 16686) threads=32",
+  "status": "NONE",
+  "weight": null,
+  "support": null,
+  "nodes": 171297017,
+  "info": {
+   "n": "585",
+   "mH": "234",
+   "rankG": "234",
+   "delta": "6",
+   "W": "17",
+   "roots": "195",
+   "depth": "3",
+   "frontier_total": "16686",
+   "slice": "2",
+   "slices": "4",
+   "frontier_slice": "4171"
+  },
+  "slice": [
+   2,
+   4
+  ],
+  "n_roots": 195,
+  "problem_sha256": "583680bea49ff97b1b3ab06ade756e374a7d5dab9d84708132bf96547d701692",
+  "bb_secs": 2.5
+ },
+ "host": "zp107",
+ "job": "8908982"
+}

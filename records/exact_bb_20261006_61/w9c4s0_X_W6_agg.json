@@ -1,0 +1,20 @@
+{
+ "X_W6": {
+  "0/1": {
+   "W": 6,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=580 mH=200 rank(G)=200 delta=6 W=6 roots=580 depth=2 frontier=8435 (slice 0/1 of 8435) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 43294,
+   "slice": [
+    0,
+    1
+   ],
+   "n_roots": 580,
+   "bb_secs": 0.0
+  }
+ }
+}

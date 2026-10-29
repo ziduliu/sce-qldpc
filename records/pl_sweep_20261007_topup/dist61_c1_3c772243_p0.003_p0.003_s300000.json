@@ -1,0 +1,144 @@
+{
+ "p": "0.003",
+ "rounds": 6,
+ "max_shots": 300000,
+ "max_errors": 1000,
+ "seconds": 4480.9,
+ "error": null,
+ "codes": [
+  {
+   "name": "c1",
+   "family": "r015_m37r1s1_23x24_Bpressure_jointpacking_localvoltage_v2",
+   "idx": 1,
+   "n": 592,
+   "k": 83,
+   "w": 12,
+   "d2s": 18,
+   "score": 4.7583,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 33744,
+    "bases": {
+     "Z": {
+      "basis": "Z",
+      "score": 4.7583,
+      "score_ceiling": 7.2849,
+      "score_perobs": 3.1617525558867974,
+      "shots": 142750,
+      "stopped_on": "errors",
+      "max_errors": 1000,
+      "max_shots": 300000,
+      "shot_failures": 1167,
+      "logical_failures": 48467,
+      "logicals_failed": 83,
+      "worst_logical": 22,
+      "worst_logical_failures": 623,
+      "top_logicals": [
+       [
+        22,
+        623
+       ],
+       [
+        40,
+        620
+       ],
+       [
+        70,
+        618
+       ],
+       [
+        15,
+        617
+       ],
+       [
+        25,
+        617
+       ],
+       [
+        80,
+        615
+       ]
+      ],
+      "pl_round_per_logical": 1.6472125037999002e-05,
+      "pl_round_per_logical_ci_hi": 1.744430663345858e-05,
+      "pl_round_per_obs_mean": 0.0006829393371282633,
+      "pl_round_per_obs_ci_hi": 0.0006890447754513973,
+      "resolved_by_stage": [
+       139173,
+       2367,
+       1210
+      ],
+      "unsatisfied": 0,
+      "depth": 14,
+      "k": 83,
+      "n": 592,
+      "attrib": null,
+      "secs": 4476.4
+     },
+     "X": {
+      "basis": "X",
+      "score": 7.1073,
+      "score_ceiling": 7.6075,
+      "score_perobs": 6.0447723681347085,
+      "shots": 300000,
+      "stopped_on": "shots",
+      "max_errors": 1000,
+      "max_shots": 300000,
+      "shot_failures": 5,
+      "logical_failures": 112,
+      "logicals_failed": 72,
+      "worst_logical": 58,
+      "worst_logical_failures": 4,
+      "top_logicals": [
+       [
+        58,
+        4
+       ],
+       [
+        53,
+        3
+       ],
+       [
+        56,
+        3
+       ],
+       [
+        62,
+        3
+       ],
+       [
+        76,
+        3
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "pl_round_per_logical": 3.3467434555940636e-08,
+      "pl_round_per_logical_ci_hi": 7.810168337899505e-08,
+      "pl_round_per_obs_mean": 7.496667330242346e-07,
+      "pl_round_per_obs_ci_hi": 9.020438125340036e-07,
+      "resolved_by_stage": [
+       299977,
+       3,
+       20
+      ],
+      "unsatisfied": 0,
+      "depth": 14,
+      "k": 83,
+      "n": 592,
+      "attrib": null,
+      "secs": 664.1
+     }
+    },
+    "sched_source": "Z:own,X:own",
+    "score": 4.7583,
+    "worse_basis": "Z",
+    "score_ceiling": 7.2849
+   }
+  }
+ ]
+}

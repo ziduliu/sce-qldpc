@@ -1,0 +1,7 @@
+2026-10-13_16:50:25 level W=16: 8 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c2s31.npz)
+2026-10-13_16:50:26   slices 8903643:8903644:8903645:8903646:8903647:8903648:8903649:8903650 aggregator 8903651
+2026-10-13_16:50:30 Z W=16: all 8 slices NONE - certified d_Z > 16  (nodes 758891965, max 1 s)
+2026-10-13_16:50:30 level W=17: 8 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c2s31.npz)
+2026-10-13_16:50:30   slices 8903670:8903671:8903672:8903673:8903674:8903675:8903676:8903677 aggregator 8903678
+2026-10-13_16:50:39 Z W=17: all 8 slices NONE - certified d_Z > 17  (nodes 2624437280, max 5 s)
+2026-10-13_16:50:39 reached WMAX=17: d_Z > 17 certified, climb ends

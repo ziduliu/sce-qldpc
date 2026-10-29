@@ -1,0 +1,7 @@
+2026-10-09_23:57:11 level W=9: 8 slices (npz /u/zdliu/lp/oe_run/pl10_gpt61sol_out/archive/codes/7084834cc57bd76f.npz)
+2026-10-09_23:57:11   slices 8902047:8902048:8902049:8902050:8902051:8902052:8902053:8902054 aggregator 8902055
+2026-10-09_23:57:16 Z W=9: all 8 slices NONE - certified d_Z > 9  (nodes 511298, max 0 s)
+2026-10-09_23:57:16 level W=10: 8 slices (npz /u/zdliu/lp/oe_run/pl10_gpt61sol_out/archive/codes/7084834cc57bd76f.npz)
+2026-10-09_23:57:16   slices 8902178:8902179:8902180:8902181:8902182:8902183:8902184:8902185 aggregator 8902186
+2026-10-10_00:00:34 Z W=10: FOUND weight 10 (verified) - exact d_Z = 10
+2026-10-10_00:00:34 exact d_Z found at W=10, climb ends

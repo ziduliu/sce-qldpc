@@ -1,0 +1,1 @@
+Z W=5: all 1 slices NONE - certified d_Z > 5  (nodes 9581, max 0 s)

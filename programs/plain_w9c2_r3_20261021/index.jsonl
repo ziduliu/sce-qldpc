@@ -1,0 +1,12 @@
+{"file": "f17d8c4377556b17.py", "child": 0, "score": 60.9016, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_noncommuting_triangle_buckets_v1"}
+{"file": "fbf3399af2beb56f.py", "child": 1, "score": 65.908, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_central_voltage_rankrich_v2"}
+{"file": "22305b0096e99513.py", "child": 2, "score": 64.0648, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_noncommuting_triangle_orbit_beam_v2"}
+{"file": "72e64a225554d7dd.py", "child": 3, "score": 64.8, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_cyclic39_noncommuting_bridge_v2"}
+{"file": "056fe119fbd32a6a.py", "child": 4, "score": 18.48, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_normal_systematic_voltage_v3"}
+{"file": "bf3c17a437018469.py", "child": 5, "score": 67.84, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_double939_witness_neighborhood_v3"}
+{"file": "f9af149035fa6092.py", "child": 6, "score": 64.0648, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_asymmetric_c39_triangle_systematic_v3"}
+{"file": "0d5ba0e9160ad454.py", "child": 7, "score": 65.0216, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_central_orbit6_voltage_v3"}
+{"file": "4169265c2ee30641.py", "child": 8, "score": 80.0, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_double939_fourword_neighborhood_v4"}
+{"file": "6da1a365261af8a7.py", "child": 9, "score": 67.84, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_dual20_multiterm_systematic_beam_v4"}
+{"file": "4ebedd5c06dac148.py", "child": 10, "score": 61.16, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_double939_central_split_v4"}
+{"file": "689c1baffad2c43a.py", "child": 11, "score": 70.8, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_fresh939_native_gf4_v3"}

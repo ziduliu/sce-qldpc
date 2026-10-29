@@ -1,0 +1,4 @@
+2026-10-06_20:05:53 level W=3: 4 slices (npz /u/zdliu/lp/oe_run/pl10_gpt61sol_out/archive/codes/217b1dab11f6cb77.npz)
+2026-10-06_20:05:53   slices 8901005:8901006:8901007:8901008 aggregator 8901009
+2026-10-07_15:34:10 X W=3: all 4 slices NONE - certified d_X > 3  (nodes 3844, max 0 s)
+2026-10-07_15:34:10 reached WMAX=3: d_X > 3 certified, climb ends

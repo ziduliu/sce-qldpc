@@ -1,0 +1,28 @@
+{
+ "p": "0.0045",
+ "rounds": 6,
+ "max_shots": 300000,
+ "max_errors": 1000,
+ "seconds": 40000.1,
+ "error": "sampler exceeded PL_SCORE_TIMEOUT=40000s",
+ "codes": [
+  {
+   "name": "c1",
+   "family": "r015_m37r1s1_23x24_Bpressure_jointpacking_localvoltage_v2",
+   "idx": 1,
+   "n": 592,
+   "k": 83,
+   "w": 12,
+   "d2s": 18,
+   "score": 0.0,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 33744,
+    "bases": {},
+    "sched_source": "Z:own,X:own"
+   }
+  }
+ ]
+}

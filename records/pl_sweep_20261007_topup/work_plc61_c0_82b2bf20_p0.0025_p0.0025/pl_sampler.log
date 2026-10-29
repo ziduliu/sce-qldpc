@@ -1,0 +1,19 @@
+rank 2 local 0 on zpg008 gpu 0 group auto
+rank 3 local 0 on zpg009 gpu 0 group auto
+rank 0 local 0 on zpg006 gpu 0 group auto
+rank 6 local 0 on zpg022 gpu 0 group auto
+rank 4 local 0 on zpg017 gpu 0 group auto
+rank 7 local 0 on zpg031 gpu 0 group auto
+rank 1 local 0 on zpg007 gpu 0 group auto
+rank 5 local 0 on zpg020 gpu 0 group auto
+rank 2/8 -> unit 0 (c0 Z) shard 1/4: 12500000 shots, 10655 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0002.json
+rank 0/8 -> unit 0 (c0 Z) shard 0/4: 12500000 shots, 10678 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0000.json
+rank 6/8 -> unit 0 (c0 Z) shard 3/4: 12500000 shots, 10689 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0006.json
+rank 4/8 -> unit 0 (c0 Z) shard 2/4: 12500000 shots, 10712 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0004.json
+rank 1/8 -> unit 1 (c0 X) shard 0/4: 12500000 shots, 10918 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0001.json
+rank 7/8 -> unit 1 (c0 X) shard 3/4: 12500000 shots, 10929 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0007.json
+rank 3/8 -> unit 1 (c0 X) shard 1/4: 12500000 shots, 10956 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0003.json
+rank 5/8 -> unit 1 (c0 X) shard 2/4: 12500000 shots, 10978 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json.part0005.json
+c0                         Z [[572,67]] shots 50000000: fail 4, logical 103, stages [49999969, 5, 26], unsat 0, worst 9, 10712 s wall over 4 shards
+c0                         X [[572,67]] shots 50000000: fail 30, logical 755, stages [49999813, 6, 181], unsat 0, worst 38, 10978 s wall over 4 shards
+wrote /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.0025_p0.0025/pl.json

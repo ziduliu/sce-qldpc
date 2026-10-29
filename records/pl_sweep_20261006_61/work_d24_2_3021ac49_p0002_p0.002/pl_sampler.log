@@ -1,0 +1,7 @@
+rank 0 local 0 on zpx gpu 0 group auto
+rank 1 local 1 on zpx gpu 1 group auto
+rank 1/2 -> unit 1 (c2 X) shard 0/1: 1000000 shots, 6525 s -> /u/zdliu/lp/oe_run/pl_sweep_20261006_61/work_d24_2_3021ac49_p0002_p0.002/pl.json.part0001.json
+rank 0/2 -> unit 0 (c2 Z) shard 0/1: 1000000 shots, 11899 s -> /u/zdliu/lp/oe_run/pl_sweep_20261006_61/work_d24_2_3021ac49_p0002_p0.002/pl.json.part0000.json
+c2                         Z [[585,121]] shots 1000000: fail 653, logical 38938, stages [996512, 2820, 668], unsat 0, worst 4, 11899 s wall over 1 shards
+c2                         X [[585,121]] shots 1000000: fail 537, logical 31727, stages [998851, 579, 570], unsat 0, worst 67, 6525 s wall over 1 shards
+wrote /u/zdliu/lp/oe_run/pl_sweep_20261006_61/work_d24_2_3021ac49_p0002_p0.002/pl.json

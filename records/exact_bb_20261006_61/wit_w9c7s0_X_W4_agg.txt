@@ -1,0 +1,1 @@
+X W=4: FOUND weight 4 (verified) - exact d_X = 4

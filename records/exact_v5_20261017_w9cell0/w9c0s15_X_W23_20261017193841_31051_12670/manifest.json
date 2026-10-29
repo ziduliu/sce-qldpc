@@ -1,0 +1,20 @@
+{
+ "run_id": "w9c0s15_X_W23_20261017193841_31051_12670",
+ "npz": "/u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c0s15.npz",
+ "n": 572,
+ "matrix_sha256": "52677530c54ea1a748c7dae29afa7a16ba8eef52f7006c72bec424d6d91aa13f",
+ "archive_name": "d3f04a3a0601b1a1",
+ "type": "X",
+ "W": 23,
+ "slices": 2,
+ "depth": null,
+ "orbits": {
+  "path": "/u/zdliu/lp/w9_exact_20261017/orbits/w9c0s15.json",
+  "sha256": "a483340c4f875d13baeef59fd1f687d7c9177d44369ca0ac41ae44cbc5164a69",
+  "n_orbits": 286
+ },
+ "problem_sha256": "b4a804ae4cd6cd4fd412db8619e7b5514f958c63996bee1cd1b8a8c6c3f08b17",
+ "binary": "/u/zdliu/lp/cert_v5/src/dkp_bb",
+ "binary_sha256": "650863746ef14aa18c5e55268664f172ca6f8a29cab4de0b3fe21383defd9cae",
+ "created": "2026-10-17 19:38:41"
+}

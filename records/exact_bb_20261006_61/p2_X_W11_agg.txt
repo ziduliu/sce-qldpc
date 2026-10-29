@@ -1,0 +1,1 @@
+X W=11: all 8 slices NONE - certified d_X > 11  (nodes 489311, max 0 s)

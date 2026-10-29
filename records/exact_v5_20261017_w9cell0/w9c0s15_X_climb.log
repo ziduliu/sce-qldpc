@@ -1,0 +1,7 @@
+2026-10-17_19:38:41 level W=23: 2 slices, run w9c0s15_X_W23_20261017193841_31051_12670
+2026-10-17_19:38:41   slices 8906370:8906371 aggregator 8906372
+2026-10-17_19:45:06 W=23 run w9c0s15_X_W23_20261017193841_31051_12670: CERTIFIED - X W=23: all 2 slices NONE, manifest checks passed - certified d_X > 23 (nodes 39500429894)
+2026-10-17_19:45:07 level W=24: 2 slices, run w9c0s15_X_W24_20261017194506_31834_13286
+2026-10-17_19:45:07   slices 8906397:8906398 aggregator 8906399
+2026-10-17_19:45:10 W=24 run w9c0s15_X_W24_20261017194506_31834_13286: FOUND - X W=24: FOUND verified operator of weight 24 - upper bound d_X <= 24 (exact only together with a certified level W=23)
+2026-10-17_19:45:10 operator found at W=24 (upper bound); climb ends

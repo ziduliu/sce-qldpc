@@ -1,0 +1,20 @@
+{
+ "run_id": "d20_r3s5_slot53_e4e6e5a0_X_W18_20261022074837_743_691",
+ "npz": "/u/zdliu/lp/plain_w9c2_exact_20261022/d20_r3s5_slot53_e4e6e5a0.npz",
+ "n": 585,
+ "matrix_sha256": "24d67700e2f9f4ac21ebb2e4811a82e1bbc94ea1767a2042c507bd62f2268e02",
+ "archive_name": "e4e6e5a0e0835e10",
+ "type": "X",
+ "W": 18,
+ "slices": 16,
+ "depth": null,
+ "orbits": {
+  "path": "/u/zdliu/lp/plain_w9c2_exact_20261022/orbits/d20_r3s5_slot53_e4e6e5a0.json",
+  "sha256": "1b3c1f810428a4aca7ce82ef6ca710ce895c6be43cd58b40fbfbac127e53726c",
+  "n_orbits": 195
+ },
+ "problem_sha256": "aa58c15bf92aeaadbae16dccb54a86b8216d38442b5ab4a92bdaee9af0293f36",
+ "binary": "/u/zdliu/lp/cert_v5/src/dkp_bb",
+ "binary_sha256": "650863746ef14aa18c5e55268664f172ca6f8a29cab4de0b3fe21383defd9cae",
+ "created": "2026-10-22 07:48:37"
+}

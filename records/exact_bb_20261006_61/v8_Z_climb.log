@@ -1,0 +1,4 @@
+2026-10-06_20:43:34 level W=4: 4 slices (npz /u/zdliu/lp/jobs/sel61/archive/codes/612dfb68fc96d396.npz)
+2026-10-06_20:43:34   slices 8901105:8901106:8901107:8901108 aggregator 8901109
+2026-10-07_15:34:11 Z W=4: all 4 slices NONE - certified d_Z > 4  (nodes 40804, max 0 s)
+2026-10-07_15:34:11 reached WMAX=4: d_Z > 4 certified, climb ends

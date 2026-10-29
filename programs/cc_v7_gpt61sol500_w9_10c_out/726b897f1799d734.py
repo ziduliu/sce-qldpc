@@ -1,0 +1,1170 @@
+"""Initial program: lifted-product CSS code, ONE (group, shape) bed per
+program, N_SLOTS (env CM_NSLOTS) freely-filled candidates per generation.
+
+SEARCH SPACE (the only constraints; everything else is free):
+- The group and the protograph shapes are fixed for the whole program
+  (genotype, editable between generations). Each of the 20 slots fills
+  the cells however it wants: PER SLOT, every cell holds 0..5 DISTINCT
+  group elements (an empty cell is a zero block) - term counts AND
+  elements are both the slot's choice. Identical fillings are
+  deduplicated downstream and waste the slot.
+- Size law: n = (ca*cb + ra*rb) * q for A of shape (ra, ca), B of shape
+  (rb, cb), |G| = q. n must land in [CM_NMIN, CM_NMAX) (default
+  [100, 600)); the scaffold picks the largest valid q.
+- PER-SLOT validity (scaffold-checked; a violating slot is voided, not
+  repaired): max row weight <= CM_WMAX (an HX row sums A-row i with
+  B-column j; an HZ row sums a B-row with an A-column - check BOTH),
+  no all-zero protograph row or column on either side (a zero A-row
+  leaves its sector-2 block untouched by every Z check, which is a
+  weight-1 logical - d=1 - unless the matching B column is a single
+  1-term cell; symmetric for the other three cases), cells distinct,
+  sizes 0..5.
+- k > 0 required; k is measured on the built matrices per slot.
+
+GROUPS: GTYPE "cyclic" (Z_q), "abelian" (Z_A0 x Z_{q/A0}) or "custom".
+A custom group is a code string defining valid_q(q) -> bool and
+custom_ops(q) -> dict(elements, ident, mul, inv). Any finite group you
+can write down qualifies; the scaffold validates identity, inverses and
+associativity on samples before building.
+"""
+import json
+import os
+import random
+
+N_MIN = int(os.environ.get("CM_NMIN", "100"))
+N_MAX = int(os.environ.get("CM_NMAX", "600"))
+W_MAX = int(os.environ.get("CM_WMAX", "9"))
+CELL_MAX = 5
+N_SLOTS = int(os.environ.get("CM_NSLOTS", "20"))
+BASE_SEED = 20260903
+
+
+# EVOLVE-BLOCK-START
+CONCEPT = ("On C3 semidirect_-1 C16, order 48, A=(1,2), B=(2,5), jointly optimizing noncommuting cubic A constituents and balanced B incidence should supply five novel measured distance readings >=10 in cell 0.250; this is a falsifiable measurement hypothesis.")
+GROUP = ("Jump from the order-55 Frobenius group to C3:C16 with inversion. Its centre has order eight and it has 24 conjugacy classes, matching the measured order-48 bed leading cell 0.250 at 20.9. Long central-extension directions replace the parent's order-five binomial cycles. Neither the measured bed nor element orders certify distance.")
+SHAPES = ("A has 96 variables and 48 checks; B has 240 variables and 96 checks. At q=48, n=576, kb=144 and guaranteed rate 0.250; the size factor twelve permits q<=49. Parent weight-five minima broadly occupied sector-1 Acol/Bcol blocks across three binomial columns. Replace that constituent with two cubic A columns and a balanced two-row B. Verified complete ranks enforce [0.225,0.275).")
+FILLING = ("Twenty cards optimize quotient directions and balanced B count profiles. A counts are (3,3); B rows each total six and columns have degrees (3,3,2,2,2), so BOTH CSS maxima are nine, also below twelve. Verified lifts supply all constituent and full-code syndromes. Equal-budget constituent witness refinement precedes stabilizer-aware complete logical exclusion through four, full-rank selection, embedded and randomized mixed-sector witness reduction, and distinct intrinsic uncoloured Tanner invariants. Larger witness and GPU readings remain upper bounds; archive novelty and distance-ten survival remain evaluator-tested.")
+FAMILY_NAME = "r025_c3sd_c16_q48_12x25_balanced_cubic_portfolio_v1"
+
+GTYPE = "custom"
+CUSTOM_GROUP = """
+def valid_q(q):
+    return q == 48
+
+def custom_ops(q):
+    if not valid_q(q):
+        raise ValueError("C3:C16 with inversion has order 48")
+    # x^3=y^16=1, y*x*y^-1=x^-1; element x^a y^b.
+    powers = [1 if b % 2 == 0 else 2 for b in range(16)]
+    els = [(a, b) for b in range(16) for a in range(3)]
+
+    def red(g):
+        return (int(g[0]) % 3, int(g[1]) % 16)
+
+    def mul(g, h):
+        a, b = red(g)
+        c, d = red(h)
+        return ((a + powers[b] * c) % 3, (b + d) % 16)
+
+    def inv(g):
+        a, b = red(g)
+        bi = (-b) % 16
+        return ((-powers[bi] * a) % 3, bi)
+
+    def idx(g):
+        a, b = red(g)
+        return 3 * b + a
+
+    return dict(elements=els, ident=(0, 0), mul=mul, inv=inv,
+                idx=idx, red=red)
+"""
+A0 = None                      # only used by GTYPE = "abelian"
+
+A_SHAPE = (1, 2)               # (ra, ca)
+B_SHAPE = (2, 5)               # (rb, cb)
+
+
+def _kernel_profile(rows, n):
+    """Exact low-weight kernel screen, not a distance-search estimate.
+
+    A reading of five means only that weights one through four were
+    excluded. Equal syndromes of words of weight <=2 detect all such
+    kernel words. Collision counts are only a secondary selection feature.
+    """
+    columns = [0] * n
+    for r, row in enumerate(rows):
+        check = 1 << r
+        while row:
+            low = row & -row
+            columns[low.bit_length() - 1] |= check
+            row ^= low
+    seen = {0: 0}
+    lightest, collisions = 5, 0
+
+    def inspect(syndrome, word):
+        nonlocal lightest, collisions
+        if syndrome in seen:
+            difference = word ^ seen[syndrome]
+            if difference:
+                lightest = min(lightest, difference.bit_count())
+                collisions += 1
+        else:
+            seen[syndrome] = word
+
+    for j, syndrome in enumerate(columns):
+        inspect(syndrome, 1 << j)
+    for j, syndrome in enumerate(columns):
+        for i in range(j):
+            inspect(syndrome ^ columns[i], (1 << j) | (1 << i))
+    return lightest, collisions
+
+
+def _component_rows(G, side, grid):
+    """Extract any rectangular constituent using the verified lift."""
+    dummy = [[[G.e]]]
+    width = len(grid[0]) * G.q
+    mask = (1 << width) - 1
+    if side == "A":
+        rows, _, _ = lifted_matrices(G, grid, dummy)
+    else:
+        _, rows, _ = lifted_matrices(G, dummy, grid)
+    return [row & mask for row in rows[:len(grid) * G.q]]
+
+
+def _generator_key(G, generators):
+    """Quotient known component orbit copies, not arbitrary graph isos.
+
+    Affine-group automorphisms have x->x^u, y->x^v*y. Binomial
+    generators can also be inverted and their columns permuted.
+    """
+    sums = [sum(pow(3, t, 11) for t in range(b)) % 11
+            for b in range(5)]
+    keys = []
+    for u in range(1, 11):
+        for v in range(11):
+            images = []
+            for a, b in generators:
+                g = ((u * a + v * sums[b]) % 11, b)
+                images.append(min(G.idx(g), G.idx(G.inv(g))))
+            keys.append(tuple(sorted(images)))
+    return min(keys)
+
+
+def _component_bank(G):
+    """Deterministically optimize different quotient prescriptions."""
+    local = random.Random(BASE_SEED ^ 0x550403)
+    # Quotient-coordinate profiles distinguish construction prescriptions.
+    # Avoid two rotations, which commute and immediately create a 4-word.
+    profiles = ((0, 1, 2), (0, 1, 1), (1, 1, 2),
+                (1, 2, 2), (0, 2, 2), (1, 2, 3))
+    pools = [[g for g in G.elements
+              if g != G.e and g[1] == b] for b in range(5)]
+    entries, used = [], set()
+    for attempt in range(256):
+        profile = profiles[attempt % len(profiles)]
+        generators = [local.choice(pools[b]) for b in profile]
+        undirected = [min(G.idx(g), G.idx(G.inv(g)))
+                      for g in generators]
+        if len(set(undirected)) != 3:
+            continue
+        key = _generator_key(G, generators)
+        if key in used:
+            continue
+        used.add(key)
+        A = [[[G.e, g] for g in generators]]
+        reading, collisions = _kernel_profile(
+            _component_rows(G, "A", A), 3 * G.q)
+        entries.append(((reading, -collisions), key, A))
+    if not entries:
+        raise ValueError("component bank unexpectedly empty")
+    entries.sort(key=lambda item: (item[0], item[1]), reverse=True)
+    # Prefer every available clean component. If the hypothesis fails,
+    # retain the best legal components instead of invalidating all slots.
+    clean = [item for item in entries if item[0][0] == 5]
+    return (clean if clean else entries[:12])[:16]
+
+
+def _draw_B(rng, G, attempt, bank):
+    """Indexed support/order prescriptions, subsequently screened."""
+    if attempt % 4 == 0:
+        source = bank[(attempt // 4) % len(bank)][2]
+        # Independent samples of quotients, not copies of source labels.
+        profile = [cell[1][1] for cell in source[0]]
+        cells = []
+        for b in profile:
+            pool = [g for g in G.elements if g != G.e and g[1] == b]
+            cells.append([G.e, rng.choice(pool)])
+        return [cells]
+
+    # One degree-three column and two degree-two columns: total seven.
+    # Vary the trinomial's quotient-coordinate pattern deliberately.
+    patterns = ((0, 1), (0, 2), (1, 1), (1, 2),
+                (1, 3), (2, 2), (2, 3), (2, 4))
+    b0, b1 = patterns[(attempt // 4) % len(patterns)]
+    pools = [[g for g in G.elements
+              if g != G.e and g[1] == b] for b in range(5)]
+    g = rng.choice(pools[b0])
+    h = rng.choice(pools[b1])
+    while h == g:
+        h = rng.choice(pools[b1])
+    cells = [[G.e, g, h]]
+    for j in range(2):
+        b = (attempt // (8 + 3 * j) + j) % 5
+        cells.append([G.e, rng.choice(pools[b])])
+    return [cells]
+
+
+def _tanner_signature(hx, hz):
+    """An uncoloured Tanner-isomorphism invariant, not an isomorphism test.
+
+    Check intersections define two adjacency relations. Each check's
+    profile counts common neighbours in both relations for every other
+    check. Different signatures certify non-isomorphic Tanner graphs.
+    """
+    rows = hx + hz
+    m = len(rows)
+    one, two = [0] * m, [0] * m
+    for i in range(m):
+        for j in range(i):
+            c = (rows[i] & rows[j]).bit_count()
+            if c:
+                adj = one if c == 1 else two
+                adj[i] |= 1 << j
+                adj[j] |= 1 << i
+    profiles = [{} for _ in rows]
+    for i in range(m):
+        for j in range(i):
+            kind = ((one[i] >> j) & 1) + 2 * ((two[i] >> j) & 1)
+            key = (kind,
+                   (one[i] & one[j]).bit_count(),
+                   (one[i] & two[j]).bit_count()
+                   + (two[i] & one[j]).bit_count(),
+                   (two[i] & two[j]).bit_count())
+            for p in (profiles[i], profiles[j]):
+                p[key] = p.get(key, 0) + 1
+    return tuple(sorted(tuple(sorted(p.items())) for p in profiles))
+
+
+def NEW_CTX(rng, G, idx):
+    """Pure lookup of immutable, independently screened portfolio entries."""
+    entries = _c3c16_portfolio(G, N_SLOTS)
+    if idx >= len(entries):
+        raise ValueError("balanced order-48 portfolio exhausted")
+    A, B, k, reading, cards, component_readings = entries[idx]
+    return {"A": A, "B": B, "screen_k": k,
+            "quantum_witness_reading": reading,
+            "construction_cards": cards,
+            "component_witness_readings": component_readings,
+            "verified_logical_floor": 5}
+
+
+from functools import lru_cache
+
+
+@lru_cache(maxsize=1)
+def _c3c16_portfolio(G, count):
+    """Deterministic optimization; only immutable final cells are cached.
+
+    All matrix actions come from lifted_matrices. No low-weight witness
+    reading above the exact cutoff is treated as a lower bound.
+    """
+    from itertools import product
+    from collections import Counter
+
+    q, cap = G.q, min(9, W_MAX)
+    assert q == 48
+    local = random.Random(BASE_SEED ^ 0xC3162501)
+
+    def columns(rows, width):
+        out = [0] * width
+        for r, row in enumerate(rows):
+            tag = 1 << r
+            while row:
+                bit = row & -row
+                out[bit.bit_length() - 1] |= tag
+                row ^= bit
+        return out
+
+    def span(rows):
+        pivots = {}
+        for word in rows:
+            while word:
+                p = word.bit_length() - 1
+                old = pivots.get(p)
+                if old is None:
+                    pivots[p] = word
+                    break
+                word ^= old
+        return pivots
+
+    def outside(word, pivots):
+        while word:
+            p = word.bit_length() - 1
+            old = pivots.get(p)
+            if old is None:
+                return True
+            word ^= old
+        return False
+
+    def probe(cols, passes, seed=0):
+        """Equal-budget constituent kernel search with actual witnesses."""
+        width = len(cols)
+        best = seed
+        weight = seed.bit_count() if seed else width + 1
+
+        def inspect(word):
+            nonlocal best, weight
+            w = word.bit_count()
+            if word and w < weight:
+                best, weight = word, w
+
+        for _ in range(passes):
+            order = list(range(width))
+            local.shuffle(order)
+            pivots, basis = {}, []
+            for j in order:
+                syndrome, word = cols[j], 1 << j
+                while syndrome:
+                    p = syndrome.bit_length() - 1
+                    old = pivots.get(p)
+                    if old is None:
+                        pivots[p] = (syndrome, word)
+                        break
+                    syndrome ^= old[0]
+                    word ^= old[1]
+                if not syndrome:
+                    basis.append(word)
+
+            # These elementary basis exchanges preserve the kernel.
+            local.shuffle(basis)
+            for i, word in enumerate(basis):
+                w = word.bit_count()
+                for j, other in enumerate(basis):
+                    if i == j:
+                        continue
+                    trial = word ^ other
+                    tw = trial.bit_count()
+                    if 0 < tw < w:
+                        word, w = trial, tw
+                basis[i] = word
+                inspect(word)
+
+            short = sorted(basis, key=int.bit_count)[:32]
+            for i, first in enumerate(short):
+                for second in short[:i]:
+                    inspect(first ^ second)
+            tiny = short[:12]
+            for i, first in enumerate(tiny):
+                for j in range(i):
+                    pair = first ^ tiny[j]
+                    for h in range(j):
+                        inspect(pair ^ tiny[h])
+            if best:
+                starting = best
+                for i, first in enumerate(short):
+                    inspect(starting ^ first)
+                    for second in short[:i]:
+                        inspect(starting ^ first ^ second)
+
+        if not best:
+            raise ValueError("constituent kernel witness absent")
+        syndrome, bits = 0, best
+        while bits:
+            bit = bits & -bits
+            syndrome ^= cols[bit.bit_length() - 1]
+            bits ^= bit
+        assert syndrome == 0
+        return weight, best
+
+    def cycle_cost(cols):
+        cost = 0
+        for i, first in enumerate(cols):
+            for second in cols[:i]:
+                overlap = (first & second).bit_count()
+                cost += overlap * (overlap - 1) // 2
+        return cost
+
+    # Enumerate balanced incidence structures, modulo row/column gauges.
+    degrees = (3, 3, 2, 2, 2)
+    standard = ((2, 1, 1, 1, 1), (1, 2, 1, 1, 1))
+    profiles, profile_keys = [standard], set()
+
+    def profile_key(top):
+        bottom = tuple(d - t for d, t in zip(degrees, top))
+        return min(tuple(sorted(zip(top, bottom))),
+                   tuple(sorted(zip(bottom, top))))
+
+    profile_keys.add(profile_key(standard[0]))
+    for top in product(range(4), range(4),
+                       range(3), range(3), range(3)):
+        if sum(top) != 6:
+            continue
+        key = profile_key(top)
+        if key in profile_keys:
+            continue
+        profile_keys.add(key)
+        profiles.append((tuple(c[0] for c in key),
+                         tuple(c[1] for c in key)))
+
+    models = ((1, 2), (1, 3), (1, 4), (1, 5), (1, 6),
+              (2, 3), (3, 4), (3, 5), (3, 6), (5, 6))
+
+    def draw_A(card):
+        row = []
+        for j in range(2):
+            b0, b1 = models[(card + 3 * j) % len(models)]
+            if card >= 10 and j == 1:
+                b0, b1 = (b0 + 8) % 16, (b1 + 8) % 16
+            for _ in range(32):
+                a = local.choice((1, 2)) if b0 % 2 == 0 else local.randrange(3)
+                c = local.choice((1, 2)) if b1 % 2 == 0 else local.randrange(3)
+                g, h = (a, b0), (c, b1)
+                if g != h and G.mul(g, h) != G.mul(h, g):
+                    row.append([G.e, g, h])
+                    break
+            else:
+                return None
+        return [row]
+
+    def draw_B(card):
+        profile = profiles[card % len(profiles)]
+        mode = (card // 5) % 4
+        allowed = (
+            tuple(range(1, 16, 2)),
+            tuple(range(1, 16, 2)) + (2, 6, 10, 14),
+            tuple(b for b in range(16) if b not in (0, 8)),
+            tuple(range(16)),
+        )[mode]
+        pool = [g for g in G.elements if g != G.e and g[1] in allowed]
+        grid = [[[] for _ in range(5)] for _ in range(2)]
+        for j in range(5):
+            first = True
+            for i in range(2):
+                terms = profile[i][j]
+                if not terms:
+                    continue
+                if first:
+                    grid[i][j] = [G.e] + local.sample(pool, terms - 1)
+                    first = False
+                else:
+                    grid[i][j] = local.sample([G.e] + pool, terms)
+        return grid
+
+    filling_keys = set()
+
+    def make_bank(side):
+        width = (2 if side == "A" else 5) * q
+        expected = (1 if side == "A" else 2) * q
+        bank = []
+        for card in range(20):
+            raw = []
+            for trial in range(64):
+                grid = draw_A(card) if side == "A" else draw_B(card)
+                if grid is None:
+                    continue
+                filling = (side, tuple(
+                    tuple(sorted(G.idx(g) for g in cell))
+                    for row in grid for cell in row))
+                if filling in filling_keys:
+                    continue
+                filling_keys.add(filling)
+                rows = _component_rows(G, side, grid)
+                rank = gf2_rank(rows)
+                if rank < expected - 8:
+                    continue
+                if _kernel_profile(rows, width)[0] != 5:
+                    continue
+                cols = columns(rows, width)
+                raw.append((cycle_cost(cols), trial, grid, rows, cols, rank))
+            raw.sort(key=lambda r: r[:2])
+
+            shortlist = []
+            for cost, trial, grid, rows, cols, rank in raw[:8]:
+                reading, word = probe(cols, 4)
+                shortlist.append(dict(
+                    grid=grid, rows=rows, cols=cols, rank=rank,
+                    cost=cost, trial=trial, card=card,
+                    reading=reading, witness=word))
+            shortlist.sort(key=lambda r: (
+                -r["reading"], r["cost"], r["trial"]))
+
+            # Every retained constituent receives the same 4+20 passes.
+            for record in shortlist[:2]:
+                reading, word = probe(record["cols"], 20, record["witness"])
+                record.update(reading=reading, witness=word)
+                bank.append(record)
+        bank.sort(key=lambda r: (
+            -r["reading"], r["cost"], r["card"], r["trial"]))
+        if len(bank) < 5:
+            raise ValueError("too few balanced constituent finalists")
+        return bank
+
+    aa, bb = make_bank("A"), make_bank("B")
+
+    def logical4(checks, stabilizers, n):
+        """Exactly exclude nontrivial logicals of weights one through four.
+
+        Equal syndromes of words of weight <=2 must have equal residues
+        modulo the stabilizer span. Short stabilizers are permitted.
+        """
+        own = span(stabilizers)
+        ordered = sorted(own, reverse=True)
+        residues = []
+        for j in range(n):
+            word = 1 << j
+            for p in ordered:
+                if (word >> p) & 1:
+                    word ^= own[p]
+            residues.append(word)
+
+        cols = columns(checks, n)
+        seen = {0: 0}
+        for j, syndrome in enumerate(cols):
+            residue = residues[j]
+            if syndrome in seen:
+                if seen[syndrome] != residue:
+                    return None
+            else:
+                seen[syndrome] = residue
+        for j, first in enumerate(cols):
+            for i in range(j):
+                syndrome = first ^ cols[i]
+                residue = residues[j] ^ residues[i]
+                if syndrome in seen:
+                    if seen[syndrome] != residue:
+                        return None
+                else:
+                    seen[syndrome] = residue
+        return cols, own
+
+    def graph_key(hx, hz, n):
+        """Intrinsic full-Tanner invariants; equality is merged conservatively."""
+        rows = hx + hz
+        cols = columns(rows, n)
+        weights = [r.bit_count() for r in rows]
+        profiles = []
+        for i, row in enumerate(rows):
+            histogram = Counter(
+                (weights[j], (row & other).bit_count())
+                for j, other in enumerate(rows))
+            profiles.append((weights[i], tuple(sorted(histogram.items()))))
+        qubits = Counter()
+        for col in cols:
+            neighbours = []
+            while col:
+                bit = col & -col
+                neighbours.append(weights[bit.bit_length() - 1])
+                col ^= bit
+            qubits[tuple(sorted(neighbours))] += 1
+        return (_tanner_signature(hx, hz),
+                tuple(sorted(profiles)), tuple(sorted(qubits.items())))
+
+    def logical_reading(a, b, hx, hz, sx, sz, n):
+        """Explicit logical witnesses, including randomized mixed sectors."""
+        overall = n + 1
+        for kind, checks, stabilizers, screen in (
+                ("X", hz, hx, sx), ("Z", hx, hz, sz)):
+            cols, own = screen
+            seeds = {}
+
+            def inspect(word):
+                if not word:
+                    return
+                weight = word.bit_count()
+                if len(seeds) >= 4 and weight >= max(seeds.values()):
+                    return
+                if not outside(word, own):
+                    return
+                seeds[word] = weight
+                if len(seeds) > 4:
+                    del seeds[max(seeds, key=seeds.get)]
+
+            source = b["witness"] if kind == "X" else a["witness"]
+            for block in range(2 if kind == "X" else 5):
+                if kind == "X":
+                    word = source << (block * 5 * q)
+                else:
+                    word, bits = 0, source
+                    while bits:
+                        bit = bits & -bits
+                        j, h = divmod(bit.bit_length() - 1, q)
+                        word |= 1 << ((j * 5 + block) * q + h)
+                        bits ^= bit
+                assert all((row & word).bit_count() % 2 == 0 for row in checks)
+                inspect(word)
+
+            for pass_number in range(2):
+                order = list(range(n))
+                local.shuffle(order)
+                if pass_number:
+                    order.sort(key=lambda j: j < 10 * q)
+                pivots, nulls = {}, []
+                for j in order:
+                    syndrome, word = cols[j], 1 << j
+                    while syndrome:
+                        p = syndrome.bit_length() - 1
+                        old = pivots.get(p)
+                        if old is None:
+                            pivots[p] = (syndrome, word)
+                            break
+                        syndrome ^= old[0]
+                        word ^= old[1]
+                    if not syndrome:
+                        nulls.append(word)
+                        inspect(word)
+
+                short = sorted(nulls, key=int.bit_count)[:32]
+                reduced = []
+                for word in short:
+                    weight = word.bit_count()
+                    for row in stabilizers:
+                        trial = word ^ row
+                        tw = trial.bit_count()
+                        if 0 < tw < weight:
+                            word, weight = trial, tw
+                    inspect(word)
+                    reduced.append(word)
+                for i, first in enumerate(reduced):
+                    for second in reduced[:i]:
+                        inspect(first ^ second)
+
+            for original in list(seeds):
+                word, weight = original, original.bit_count()
+                for _ in range(3):
+                    previous = word
+                    for row in stabilizers:
+                        trial = word ^ row
+                        tw = trial.bit_count()
+                        if tw < weight:
+                            word, weight = trial, tw
+                    starting = word
+                    moves = [row for row in stabilizers
+                             if (row & starting).bit_count() >= 2]
+                    for i, first in enumerate(moves):
+                        for second in moves[:i]:
+                            trial = starting ^ first ^ second
+                            tw = trial.bit_count()
+                            if tw < weight:
+                                word, weight = trial, tw
+                    if word == previous:
+                        break
+                assert word and outside(word, own)
+                assert all((row & word).bit_count() % 2 == 0 for row in checks)
+                overall = min(overall, weight)
+        return overall if overall <= n else None
+
+    plans = sorted(
+        (-min(a["reading"], b["reading"]),
+         -a["reading"] - b["reading"],
+         a["cost"] + b["cost"], ai, bi)
+        for ai, a in enumerate(aa) for bi, b in enumerate(bb))
+    results, graph_keys = [], set()
+
+    def freeze(grid):
+        return tuple(tuple(tuple(cell) for cell in row) for row in grid)
+
+    for _, _, _, ai, bi in plans:
+        a, b = aa[ai], bb[bi]
+        A, B = a["grid"], b["grid"]
+        sa = [[len(cell) for cell in row] for row in A]
+        sb = [[len(cell) for cell in row] for row in B]
+        wx = max(sum(sa[0]) + sum(row[j] for row in sb) for j in range(5))
+        wz = max(sum(row) + sa[0][j] for row in sb for j in range(2))
+        assert wx == wz == 9
+        if max(wx, wz) > cap or not _no_dead_lines(sa, sb):
+            continue
+
+        hx, hz, n = lifted_matrices(G, A, B)
+        k = n - gf2_rank(hx) - gf2_rank(hz)
+        if n != 576 or not (225 * n <= 1000 * k < 275 * n):
+            continue
+        sx = logical4(hz, hx, n)
+        if sx is None:
+            continue
+        sz = logical4(hx, hz, n)
+        if sz is None:
+            continue
+        signature = graph_key(hx, hz, n)
+        if signature in graph_keys:
+            continue
+        graph_keys.add(signature)
+
+        reading = logical_reading(a, b, hx, hz, sx, sz, n)
+        if reading is None:
+            continue
+        assert reading >= 5
+        assert css_ok(hx, hz)
+        assert max(row.bit_count() for row in hx + hz) <= cap
+        quality = (k * reading * reading / float(n), reading,
+                   -a["cost"] - b["cost"], k)
+        entry = (freeze(A), freeze(B), k, reading,
+                 (a["card"], b["card"]), (a["reading"], b["reading"]))
+        results.append((quality, entry))
+        if len(results) >= max(count, 5) + 16:
+            break
+
+    results.sort(key=lambda item: item[0], reverse=True)
+    return tuple(entry for _, entry in results[:count])
+
+
+def _legacy_order55_cross_cayley_reference(rng, G, idx):
+    """Inactive historical catalogue; not called for the order-48 bed."""
+    from itertools import combinations, product
+
+    def clean4(rows, width):
+        """Exactly exclude all nonzero kernel supports of weights 1..4."""
+        cols = [0] * width
+        for r, row in enumerate(rows):
+            tag = 1 << r
+            while row:
+                bit = row & -row
+                cols[bit.bit_length() - 1] |= tag
+                row ^= bit
+        singles = set(cols)
+        if 0 in singles or len(singles) != width:
+            return False
+        pairs = set()
+        for i, first in enumerate(cols):
+            for j in range(i):
+                syndrome = first ^ cols[j]
+                if syndrome in singles or syndrome in pairs:
+                    return False
+                pairs.add(syndrome)
+        # Distinct nonzero columns make a pair-pair collision a
+        # four-distinct-qubit support. Pair-single collisions detect three.
+        return True
+
+    # A binomial is an undirected Cayley edge. Enumerate ALL triples,
+    # rather than sampling a small bank and correlating its two sides.
+    reps = sorted({
+        min(G.idx(g), G.idx(G.inv(g)))
+        for g in G.elements if G._key(g) != G._key(G.e)
+    })
+    sums = [sum(pow(3, t, 11) for t in range(b)) % 11
+            for b in range(5)]
+    automorphisms = []
+    for u in range(1, 11):
+        for v in range(11):
+            image = {}
+            for label in reps:
+                a, b = G.elements[label]
+                g = ((u * a + v * sums[b]) % 11, b)
+                image[label] = min(G.idx(g), G.idx(G.inv(g)))
+            automorphisms.append(image)
+
+    keys = set()
+    for triple in combinations(reps, 3):
+        generators = [G.elements[t] for t in triple]
+        # Commuting distinct edge generators immediately make a square.
+        if any(G.mul(generators[i], generators[j])
+               == G.mul(generators[j], generators[i])
+               for i in range(3) for j in range(i)):
+            continue
+        key = min(tuple(sorted(image[t] for t in triple))
+                  for image in automorphisms)
+        keys.add(key)
+
+    bank = []
+    for key in sorted(keys):
+        grid = [[[G.e, G.elements[t]] for t in key]]
+        rows = _component_rows(G, "A", grid)
+        if gf2_rank(rows) != G.q - 1:
+            continue
+        if not clean4(rows, 3 * G.q):
+            continue
+        quotient = tuple(sorted(
+            min(G.elements[t][1], (-G.elements[t][1]) % 5)
+            for t in key))
+        bank.append((quotient, key, grid))
+    if not bank:
+        raise ValueError("no connected kernel-four-clean constituent")
+
+    graph_keys, filling_keys = set(), set()
+    accepted = 0
+
+    def consider(A, B, prescription):
+        nonlocal accepted
+        filling = tuple(
+            tuple(sorted(G.idx(g) for g in cell))
+            for grid in (A, B) for row in grid for cell in row)
+        if filling in filling_keys:
+            return None
+        filling_keys.add(filling)
+        sa = [[len(cell) for cell in row] for row in A]
+        sb = [[len(cell) for cell in row] for row in B]
+        if (_grid_weights(sa, sb) > min(9, W_MAX)
+                or not _no_dead_lines(sa, sb)):
+            return None
+
+        hx, hz, n = lifted_matrices(G, A, B)
+        k = n - gf2_rank(hx) - gf2_rank(hz)
+        if not (k > 0 and 375 * n <= 1000 * k < 425 * n):
+            return None
+        # Constituent cleanliness does not exclude mixed-sector words.
+        # Both complete centralizers must pass, including sector 2.
+        if not clean4(hx, n) or not clean4(hz, n):
+            return None
+        signature = _tanner_signature(hx, hz)
+        if signature in graph_keys:
+            return None
+        graph_keys.add(signature)
+
+        if accepted == idx:
+            assert n == 550 and css_ok(hx, hz)
+            assert lifted_k(G, A, B) == k
+            assert max(row.bit_count() for row in hx + hz) <= min(9, W_MAX)
+            return {"A": A, "B": B, "screen_k": k,
+                    "centralizer_screens": (5, 5),
+                    "prescription": prescription}
+        accepted += 1
+        return None
+
+    # Inner scalings are powers of 3. The multiplier 2 represents the
+    # other outer-automorphism coset. Its relative orientation is tested,
+    # not assumed to produce a different code.
+    plans = []
+    for a in range(len(bank)):
+        for b in range(a, len(bank)):
+            for twist in (1, 2):
+                plans.append((bank[a][0] == bank[b][0], a, b, twist))
+    plans.sort()
+    for _, a, b, twist in plans:
+        A = bank[a][2]
+        B = [[[
+            G.elements[G.idx(((twist * g[0]) % 11, g[1]))]
+            for g in cell
+        ] for cell in bank[b][2][0]]]
+        result = consider(A, B, ("cross-binomial", a, b, twist))
+        if result is not None:
+            return result
+
+    # Additional structural cards use one noncommuting trinomial and
+    # two binomials. Total counts are (6,7), so both weight maxima are 9.
+    # Cards prescribe quotient coordinates; intrinsic invariants and
+    # exact screens, not random label fingerprints, select the catalogue.
+    cards = sorted(
+        (b0, b1, c0, c1)
+        for b0, b1, c0, c1 in product(range(5), repeat=4)
+        if b0 <= b1 and c0 <= c1
+        and (b0 or b1) and (c0 or c1))
+    pools = [[g for g in G.elements
+              if g != G.e and g[1] == b] for b in range(5)]
+    local = random.Random(BASE_SEED ^ 0x55C405)
+    for attempt in range(4096):
+        card = attempt % len(cards)
+        b0, b1, c0, c1 = cards[card]
+        g, h = local.choice(pools[b0]), local.choice(pools[b1])
+        if g == h or G.mul(g, h) == G.mul(h, g):
+            continue
+        s, t = local.choice(pools[c0]), local.choice(pools[c1])
+        if G.mul(s, t) == G.mul(t, s):
+            continue
+        B = [[[G.e, g, h], [G.e, s], [G.e, t]]]
+        if not clean4(_component_rows(G, "B", B), 3 * G.q):
+            continue
+        a = (attempt // len(cards) + card) % len(bank)
+        result = consider(bank[a][2], B, ("trinomial-card", a, card))
+        if result is not None:
+            return result
+    raise ValueError("strict full-kernel-four-clean catalogue exhausted")
+
+
+def CELL(rng, G, side, i, j, ctx):
+    """Return the full selected cell, with no additional sampling."""
+    return list(ctx[side][i][j])
+
+# REFUTED LEDGER (append-only; one line per hypothesis killed by
+# measured evidence - never delete or rewrite existing lines):
+# (empty)
+# REFUTED: Rolled legal supports with uniform labels alone do not reliably suppress weight-two logicals: parent slot 5 measured d30s=2, with 252 reported weight-two operators.
+# REFUTED: The cyclic order-11 triangle-free catalogue supplies twenty inequivalent distance-four designs; the measured program produced only four distinct codes across sixty slots, two with d30s=3.
+# REFUTED: Constituent screens and the two-second proxy suffice to protect the Frobenius-bed finalists from weight-four logicals; slot 30 had k=226 and d2s=5 but d30s=4, with both logical types touching both LP sectors.
+# REFUTED: Cross-Cayley pairing supplies five inequivalent k=226 finalists: the current evaluation measured only three; slot 3 collapsed to slot 0, and the other two measured finalists had k=222.
+# EVOLVE-BLOCK-END
+
+
+class _G(object):
+    def __init__(self, ops, q):
+        self.q = q
+        self.elements = list(ops["elements"])
+        self.e = ops["ident"]
+        self.mul = ops["mul"]
+        self.inv = ops["inv"]
+        self._pos = {self._key(g): i for i, g in enumerate(self.elements)}
+
+    @staticmethod
+    def _key(g):
+        return tuple(g) if isinstance(g, (list, tuple)) else g
+
+    def idx(self, g):
+        return self._pos[self._key(g)]
+
+    def pick(self, rng):
+        return self.elements[rng.randrange(self.q)]
+
+
+# ---- verified construction helpers (2026-09-09) --------------------------
+# lifted_matrices(G, cells_A, cells_B) builds EXACTLY the HX / HZ the
+# evaluator builds (same lift conventions, same column order), as Python-int
+# bit rows; gf2_rank(rows) is the rank behind k; lifted_k(G, A, B) is the k the table will report;
+# css_ok(hx, hz) checks HX HZ^T = 0. Use these for any in-program screening -
+# a hand-written lift that gets the left/right actions wrong screens a
+# different (usually non-CSS) matrix pair than the one that is measured.
+def lifted_matrices(G, cells_A, cells_B):
+    """cells_A[i][j], cells_B[a][b]: lists of group elements (as CELL returns
+    them) or element indices. Returns (hx_rows, hz_rows, n): lists of Python
+    ints, bit c set = a 1 in column c; n = number of columns (qubits)."""
+    q = G.q
+    ra, ca = len(cells_A), len(cells_A[0])
+    rb, cb = len(cells_B), len(cells_B[0])
+    els = G.elements
+
+    def gi(g):
+        try:
+            return G.idx(g)
+        except (KeyError, TypeError):
+            if isinstance(g, int) and 0 <= g < q:
+                return g
+            raise
+    mul_idx = [[G.idx(G.mul(els[x], els[y])) for y in range(q)] for x in range(q)]
+    inv_idx = [G.idx(G.inv(els[x])) for x in range(q)]
+    A = [[sorted(set(gi(g) for g in cell)) for cell in row] for row in cells_A]
+    B = [[sorted(set(gi(g) for g in cell)) for cell in row] for row in cells_B]
+    n1 = ca * cb * q
+    n = n1 + ra * rb * q
+    hx = []
+    for i in range(ra):
+        for beta in range(cb):
+            for r in range(q):
+                row = 0
+                for j in range(ca):                       # sector 1: A_{ij} left-lifted
+                    base = (j * cb + beta) * q
+                    for g in A[i][j]:
+                        row ^= 1 << (base + mul_idx[inv_idx[g]][r])   # h with g*h = r
+                for alpha in range(rb):                   # sector 2: B_{alpha beta}^T right-lifted
+                    base = n1 + (i * rb + alpha) * q
+                    for g in B[alpha][beta]:
+                        row ^= 1 << (base + mul_idx[r][inv_idx[g]])   # c = r*g^-1
+                hx.append(row)
+    hz = []
+    for j in range(ca):
+        for alpha in range(rb):
+            for r in range(q):
+                row = 0
+                for beta in range(cb):                    # sector 1: B_{alpha beta} right-lifted
+                    base = (j * cb + beta) * q
+                    for g in B[alpha][beta]:
+                        row ^= 1 << (base + mul_idx[r][g])           # h with h*g^-1 = r
+                for i in range(ra):                       # sector 2: A_{ij}^T left-lifted
+                    base = n1 + (i * rb + alpha) * q
+                    for g in A[i][j]:
+                        row ^= 1 << (base + mul_idx[g][r])           # c = g*r
+                hz.append(row)
+    return hx, hz, n
+
+
+def _popcount(x):
+    return bin(x).count("1")
+
+
+
+def gf2_rank(rows):
+    """Rank over GF(2) of a list of bit rows."""
+    pivots = {}
+    for row in rows:
+        while row:
+            p = row.bit_length() - 1
+            if p in pivots:
+                row ^= pivots[p]
+            else:
+                pivots[p] = row
+                break
+    return len(pivots)
+
+
+def lifted_k(G, cells_A, cells_B):
+    """k = n - rank(HX) - rank(HZ) of the code the evaluator will build."""
+    hx, hz, n = lifted_matrices(G, cells_A, cells_B)
+    return n - gf2_rank(hx) - gf2_rank(hz)
+
+
+def css_ok(hx, hz):
+    """True iff every X check commutes with every Z check (HX HZ^T = 0)."""
+    return all(_popcount(x & z) % 2 == 0 for x in hx for z in hz)
+
+
+def _grid_weights(sa, sb):
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    wx = max(sum(sa[i]) + sum(sb[r_][j] for r_ in range(rb))
+             for i in range(ra) for j in range(cb))
+    wz = max(sum(sb[r_]) + sum(sa[i][c] for i in range(ra))
+             for r_ in range(rb) for c in range(ca))
+    return max(wx, wz)
+
+
+def _no_dead_lines(sa, sb):
+    return all(
+        all(sum(row) > 0 for row in g)
+        and all(sum(r_[c] for r_ in g) > 0 for c in range(len(g[0])))
+        for g in (sa, sb))
+
+
+def roll_supports(rng):
+    """Random per-cell term counts (1..CELL_MAX), repaired down to the
+    weight cap with 1 as the floor - the roller never emits zero blocks
+    (a slot's CELL may still return [] deliberately). A scaffold
+    utility available to NEW_CTX; always returns legal grids."""
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    sa = [[rng.randint(1, CELL_MAX) for _ in range(ca)] for _ in range(ra)]
+    sb = [[rng.randint(1, CELL_MAX) for _ in range(cb)] for _ in range(rb)]
+    for _ in range(4000):
+        if _grid_weights(sa, sb) <= W_MAX:
+            return sa, sb
+        g = sa if rng.random() < 0.5 else sb
+        i = rng.randrange(len(g))
+        c = rng.randrange(len(g[0]))
+        if g[i][c] >= 2:            # 1 is the floor: the roller never
+            g[i][c] -= 1            # emits zero blocks (evolution may)
+    raise ValueError("roll_supports could not fit the weight cap "
+                     "(all-ones row exceeds it: shape too wide)")
+
+
+def _registry_ops(gtype, q, a0):
+    if gtype == "cyclic":
+        return dict(elements=list(range(q)), ident=0,
+                    mul=lambda g, h: (g + h) % q,
+                    inv=lambda g: (-g) % q)
+    if gtype == "abelian":
+        a = int(a0)
+        if a < 1 or q % a:
+            raise ValueError("A0 must divide q")
+        b = q // a
+        return dict(elements=[(x, y) for x in range(a) for y in range(b)],
+                    ident=(0, 0),
+                    mul=lambda g, h: ((g[0] + h[0]) % a, (g[1] + h[1]) % b),
+                    inv=lambda g: ((-g[0]) % a, (-g[1]) % b))
+    raise ValueError("GTYPE %r needs CUSTOM_GROUP" % gtype)
+
+
+def _make_ops(q):
+    if GTYPE == "custom":
+        ns = {}
+        exec(CUSTOM_GROUP, ns)
+        if not ns["valid_q"](q):
+            raise ValueError("valid_q rejects q=%d" % q)
+        return ns["custom_ops"](q)
+    return _registry_ops(GTYPE, q, A0)
+
+
+def _valid_q(q):
+    if GTYPE == "custom":
+        ns = {}
+        exec(CUSTOM_GROUP, ns)
+        return bool(ns["valid_q"](q))
+    if GTYPE == "abelian":
+        return A0 is not None and int(A0) >= 1 and q % int(A0) == 0
+    return q >= 2
+
+
+def _validate_group(G):
+    rng = random.Random(7)
+    sample = [G.e] + [G.pick(rng) for _ in range(min(12, G.q))]
+    for g in sample:
+        assert G._key(G.mul(G.e, g)) == G._key(g), "identity fails"
+        assert G._key(G.mul(g, G.inv(g))) == G._key(G.e), "inverse fails"
+    for g in sample[:6]:
+        for h in sample[:6]:
+            for k in sample[:6]:
+                assert G._key(G.mul(G.mul(g, h), k)) \
+                    == G._key(G.mul(g, G.mul(h, k))), "associativity fails"
+    assert len(G._pos) == len(G.elements) == G.q, "element list broken"
+
+
+def _choose_q():
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    if min(ra, ca, rb, cb) < 1:
+        raise ValueError("protograph sides need >= 1 row and >= 1 column")
+    f = ca * cb + ra * rb
+    best = None
+    for q in range(max(2, N_MIN // f), N_MAX // f + 1):
+        if f * q < N_MIN or f * q >= N_MAX:
+            continue
+        if _valid_q(q):
+            best = q
+    if best is None:
+        raise ValueError("no valid q puts n in [%d, %d)" % (N_MIN, N_MAX))
+    return best
+
+
+def _fill_slot(rng, G, idx):
+    ctx = NEW_CTX(rng, G, idx)
+    grids = {}
+    rgrids = {}
+    for side, (rows, cols) in (("A", A_SHAPE), ("B", B_SHAPE)):
+        grid = []
+        rgrid = []
+        for i in range(rows):
+            row = []
+            rrow = []
+            for j in range(cols):
+                cell = CELL(rng, G, side, i, j, ctx)
+                if not isinstance(cell, (list, tuple)):
+                    raise ValueError("%s[%d][%d]: not a list" % (side, i, j))
+                if len(cell) > CELL_MAX:
+                    raise ValueError("%s[%d][%d]: >%d terms"
+                                     % (side, i, j, CELL_MAX))
+                keys = {G._key(g) for g in cell}
+                if len(keys) != len(cell):
+                    raise ValueError("%s[%d][%d]: duplicate element"
+                                     % (side, i, j))
+                pairs = sorted((G.idx(g), G._key(g)) for g in cell)
+                row.append([i for i, _ in pairs])
+                rrow.append([list(e) if isinstance(e, tuple) else e
+                             for _, e in pairs])
+            grid.append(row)
+            rgrid.append(rrow)
+        grids[side] = grid
+        rgrids[side] = rgrid
+    sa = [[len(c) for c in row] for row in grids["A"]]
+    sb = [[len(c) for c in row] for row in grids["B"]]
+    w = _grid_weights(sa, sb)
+    if w > W_MAX:
+        raise ValueError("row weight %d exceeds cap %d" % (w, W_MAX))
+    if not _no_dead_lines(sa, sb):
+        raise ValueError("all-zero protograph row or column")
+    return grids["A"], grids["B"], rgrids["A"], rgrids["B"]
+
+
+def get_candidates():
+    """-> request dict for the worker: shared group data + 20 slots."""
+    q = _choose_q()
+    ops = _make_ops(q)
+    G = _G(ops, q)
+    _validate_group(G)
+    mul_table = [[G.idx(G.mul(G.elements[a], G.elements[b]))
+                  for b in range(q)] for a in range(q)]
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    slots = []
+    for s in range(N_SLOTS):
+        rng = random.Random(BASE_SEED * 10007 + s)
+        try:
+            A, B, Ar, Br = _fill_slot(rng, G, s)
+            slots.append({"idx": s, "A": A, "B": B, "Ar": Ar, "Br": Br})
+        except Exception as e:
+            slots.append({"idx": s, "error": str(e)[:120]})
+    return {"family": FAMILY_NAME, "concept": CONCEPT,
+            "gtype": GTYPE, "q": q, "mul": mul_table,
+            "a_shape": [ra, ca], "b_shape": [rb, cb],
+            "n": (ca * cb + ra * rb) * q,
+            "slots": slots}
+
+
+if __name__ == "__main__":
+    r = get_candidates()
+    ok = sum(1 for s in r["slots"] if "error" not in s)
+    print(json.dumps({"family": r["family"], "q": r["q"], "n": r["n"],
+                      "slots_ok": ok}))

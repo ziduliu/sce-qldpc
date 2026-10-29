@@ -1,0 +1,4 @@
+2026-10-14_00:38:18 level W=7: 8 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c4s0.npz)
+2026-10-14_00:38:18   slices 8905201:8905202:8905203:8905204:8905205:8905206:8905207:8905208 aggregator 8905209
+2026-10-14_00:38:38 X W=7: FOUND weight 7 (verified) - exact d_X = 7
+2026-10-14_00:38:38 exact d_X found at W=7, climb ends

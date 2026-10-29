@@ -1,0 +1,1 @@
+X W=5: FOUND weight 5 (verified) - exact d_X = 5

@@ -1,0 +1,613 @@
+"""Initial program: lifted-product CSS code, ONE (group, shape) bed per
+program, N_SLOTS (env CM_NSLOTS) freely-filled candidates per generation.
+
+SEARCH SPACE (the only constraints; everything else is free):
+- The group and the protograph shapes are fixed for the whole program
+  (genotype, editable between generations). Each of the 20 slots fills
+  the cells however it wants: PER SLOT, every cell holds 0..5 DISTINCT
+  group elements (an empty cell is a zero block) - term counts AND
+  elements are both the slot's choice. Identical fillings are
+  deduplicated downstream and waste the slot.
+- Size law: n = (ca*cb + ra*rb) * q for A of shape (ra, ca), B of shape
+  (rb, cb), |G| = q. n must land in [CM_NMIN, CM_NMAX) (default
+  [100, 600)); the scaffold picks the largest valid q.
+- PER-SLOT validity (scaffold-checked; a violating slot is voided, not
+  repaired): max row weight <= CM_WMAX (an HX row sums A-row i with
+  B-column j; an HZ row sums a B-row with an A-column - check BOTH),
+  no all-zero protograph row or column on either side (a zero A-row
+  leaves its sector-2 block untouched by every Z check, which is a
+  weight-1 logical - d=1 - unless the matching B column is a single
+  1-term cell; symmetric for the other three cases), cells distinct,
+  sizes 0..5.
+- k > 0 required; k is measured on the built matrices per slot.
+
+GROUPS: GTYPE "cyclic" (Z_q), "abelian" (Z_A0 x Z_{q/A0}) or "custom".
+A custom group is a code string defining valid_q(q) -> bool and
+custom_ops(q) -> dict(elements, ident, mul, inv). Any finite group you
+can write down qualifies; the scaffold validates identity, inverses and
+associativity on samples before building.
+"""
+import json
+import os
+import random
+
+N_MIN = int(os.environ.get("CM_NMIN", "100"))
+N_MAX = int(os.environ.get("CM_NMAX", "600"))
+W_MAX = int(os.environ.get("CM_WMAX", "12"))
+CELL_MAX = 5
+N_SLOTS = int(os.environ.get("CM_NSLOTS", "20"))
+BASE_SEED = 20260903
+
+
+# EVOLVE-BLOCK-START
+CONCEPT = ("Metacyclic Z4:Z2(s=3), order 8, shapes (3,8)x(2,6): degree-three component columns and order-four binomial ratios should raise the five measured distance readings to at least 8; this is falsifiable, not a distance guarantee.")
+GROUP = ("Keep the exact parent group m=4,r=2,s=3 and q=8. Its short-syndrome-screened codes still had abundant weight-four sector-1 logicals. Holding this measured group fixed tests stronger component supports without assuming a group advantage.")
+SHAPES = ("Target cell 0.350: A=(3,8), B=(2,6), n=432, kb=160, guaranteed rate=10/27=0.37037. Component checks have dimensions 24x64 and 16x48. Parent weight-four witnesses occupied sector-1 Acol/Bcol blocks broadly. Both components now have column support three; exact lifted ranks enforce 0.325<=k/n<0.375.")
+FILLING = ("Enumerate canonical augmentation-full-rank A support designs with column totals three and row totals 7..9. B columns have counts (1,2) or (2,1), with both row totals nine. HX weights are <=12 and HZ weights are 12. Binomial terms share a coset and have relative rotation order four. Optimize fresh labelings using exact component-kernel screening through six, sampled kernel witnesses, then verified-matrix short-syndrome screening. None of these criteria certifies quantum distance.")
+FAMILY_NAME = "r035_m4r2s3_38x26_col3_kernel6"
+
+GTYPE = "custom"
+CUSTOM_GROUP = """
+def valid_q(q):
+    return q == 8
+
+def custom_ops(q):
+    # Same metacyclic rule; q=8 is the resized inversion-action lift.
+    # y x y^-1 = x^3, and 3^2 = 1 mod 4.
+    m, r, s = 4, 2, 3
+    els = [(a, b) for b in range(r) for a in range(m)]
+
+    def mul(g, h):
+        return ((g[0] + pow(s, g[1], m) * h[0]) % m, (g[1] + h[1]) % r)
+
+    def inv(g):
+        bi = (-g[1]) % r
+        return ((-pow(s, bi, m) * g[0]) % m, bi)
+
+    return dict(elements=els, ident=(0, 0), mul=mul, inv=inv)
+"""
+A0 = None                      # only used by GTYPE = "abelian"
+
+A_SHAPE = (3, 8)               # (ra, ca)
+B_SHAPE = (2, 6)               # (rb, cb)
+
+
+def _support_catalogue():
+    """Canonical count grids, not row/column-permutation copies."""
+    from itertools import combinations_with_replacement, permutations
+    patterns = sorted(set([(1, 1, 1)] + list(permutations((2, 1, 0)))))
+    row_perms = list(permutations(range(3)))
+    designs = []
+    for columns in combinations_with_replacement(patterns, 8):
+        totals = tuple(sum(c[i] for c in columns) for i in range(3))
+        if min(totals) < 7 or max(totals) > 9:
+            continue
+        mono = columns.count((1, 1, 1))
+        if not 1 <= mono <= 4:
+            continue
+        images = [tuple(sorted(tuple(c[i] for i in p) for c in columns))
+                  for p in row_perms]
+        if columns != min(images):
+            continue
+        augmentation = [
+            sum((columns[j][i] & 1) << j for j in range(8))
+            for i in range(3)]
+        if gf2_rank(augmentation) != 3:
+            continue
+        priority = (abs(mono - 3), max(totals) - min(totals), columns)
+        designs.append((priority, columns))
+    designs.sort(key=lambda item: item[0])
+    if len(designs) < 20:
+        raise ValueError("fewer than twenty canonical support designs")
+    return [columns for _, columns in designs]
+
+
+def _support_for_slot(idx):
+    catalogue = _support_catalogue()
+    columns = catalogue[idx % len(catalogue)]
+    sa = [[columns[j][i] for j in range(8)] for i in range(3)]
+    # All B columns have total three; both rows have total nine.
+    sb = [[2, 2, 2, 1, 1, 1],
+          [1, 1, 1, 2, 2, 2]]
+    return sa, sb
+
+
+def _label_component(rng, G, side, supports, mode):
+    """Order-four binomial ratios avoid the parent's involutory pairs."""
+    pools = [[g for g in G.elements if g[1] == b] for b in range(2)]
+    cells = []
+    for i, counts in enumerate(supports):
+        row = []
+        for j, size in enumerate(counts):
+            if size == 0:
+                cell = []
+            elif size == 1:
+                if mode == 0:
+                    cell = [G.pick(rng)]
+                else:
+                    phase = (i + j + mode + (side == "B")) & 1
+                    cell = [rng.choice(pools[phase])]
+            elif size == 2:
+                b = rng.randrange(2)
+                x = rng.choice(pools[b])
+                choices = [y for y in pools[b]
+                           if (y[0] - x[0]) % 4 in (1, 3)]
+                cell = [x, rng.choice(choices)]
+            else:
+                raise ValueError("unexpected support count")
+            row.append(cell)
+        cells.append(row)
+    return cells
+
+
+def _component_columns(hx, hz, q):
+    """Extract both components solely from the verified LP construction."""
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    mask = (1 << q) - 1
+    ar = []
+    for i in range(ra):
+        for t in range(q):
+            source = hx[(i * cb) * q + t]
+            packed = 0
+            for j in range(ca):
+                packed |= ((source >> (j * cb * q)) & mask) << (j * q)
+            ar.append(packed)
+    br = [row & ((1 << (cb * q)) - 1) for row in hz[:rb * q]]
+
+    def transpose(rows, width):
+        columns = [0] * width
+        for r, row in enumerate(rows):
+            while row:
+                bit = row & -row
+                columns[bit.bit_length() - 1] |= 1 << r
+                row ^= bit
+        return columns
+
+    return transpose(ar, ca * q), transpose(br, cb * q)
+
+
+def _kernel_profile(columns):
+    """Exact component-kernel minimum through six; seven means >6.
+
+    The collision count is a tiebreak, not a distance estimate.
+    Once weights <=4 are excluded, matching pair/triple supports
+    and matching distinct triples must be disjoint.
+    """
+    singles = set(columns)
+    if 0 in singles:
+        return (1, 0)
+    if len(singles) != len(columns):
+        return (2, 0)
+    pairs = {}
+    four = False
+    for i, x in enumerate(columns):
+        for j in range(i):
+            syndrome = x ^ columns[j]
+            if syndrome in singles:
+                return (3, 0)
+            if syndrome in pairs:
+                four = True
+            pairs[syndrome] = True
+    if four:
+        return (4, 0)
+
+    triples = {}
+    six = 0
+    for i, x in enumerate(columns):
+        for j in range(i):
+            pair = x ^ columns[j]
+            for h in range(j):
+                syndrome = pair ^ columns[h]
+                if syndrome in pairs:
+                    return (5, 0)
+                previous = triples.get(syndrome, 0)
+                six += previous
+                triples[syndrome] = previous + 1
+    return (6, six) if six else (7, 0)
+
+
+def _kernel_witness(columns, rng, trials):
+    """Sample actual component-kernel words; readings are upper bounds."""
+    best = len(columns) + 1
+    order = list(range(len(columns)))
+    for _ in range(trials):
+        rng.shuffle(order)
+        pivots = {}
+        words = []
+        for c in order:
+            syndrome, word = columns[c], 1 << c
+            while syndrome:
+                p = syndrome.bit_length() - 1
+                if p not in pivots:
+                    pivots[p] = (syndrome, word)
+                    break
+                ps, pw = pivots[p]
+                syndrome ^= ps
+                word ^= pw
+            if not syndrome:
+                best = min(best, word.bit_count())
+                words.append(word)
+        for i, word in enumerate(words):
+            for other in words[:i]:
+                best = min(best, (word ^ other).bit_count())
+    return best
+
+
+def _short_profile(rows, n):
+    """Use columns of the verified matrix as opposite-check syndromes.
+    Severity 0 excludes every nonzero commuting operator of weight <=3.
+    Pair-syndrome collisions then count weight-4 kernel supports three
+    times each; they need not all be logical operators."""
+    columns = [0] * n
+    for r, row in enumerate(rows):
+        check = 1 << r
+        while row:
+            bit = row & -row
+            columns[bit.bit_length() - 1] |= check
+            row ^= bit
+    singles = set(columns)
+    if 0 in singles or len(singles) != n:
+        return (2, 0)
+    for i, x in enumerate(columns):
+        for j in range(i):
+            if x ^ columns[j] in singles:
+                return (1, 0)
+    pairs = {}
+    collisions = 0
+    for i, x in enumerate(columns):
+        for j in range(i):
+            syndrome = x ^ columns[j]
+            previous = pairs.get(syndrome, 0)
+            collisions += previous
+            pairs[syndrome] = previous + 1
+    return (0, collisions)
+
+
+def NEW_CTX(rng, G, idx):
+    """Optimize labels for one canonical degree-three support design."""
+    sa, sb = _support_for_slot(idx)
+    assert _grid_weights(sa, sb) <= W_MAX
+    assert _no_dead_lines(sa, sb)
+    mode = idx % 3
+    finalists = []
+
+    for attempt in range(48):
+        A = _label_component(rng, G, "A", sa, mode)
+        B = _label_component(rng, G, "B", sb, (mode + 1) % 3)
+        hx, hz, n = lifted_matrices(G, A, B)
+        k = n - gf2_rank(hx) - gf2_rank(hz)
+        if not (325 * n <= 1000 * k < 375 * n):
+            continue
+
+        ac, bc = _component_columns(hx, hz, G.q)
+        pa, pb = _kernel_profile(ac), _kernel_profile(bc)
+        floor = min(pa[0], pb[0])
+        if len(finalists) == 3 and floor < finalists[-1][0][0]:
+            continue
+        da = pa[0] if pa[0] < 7 else _kernel_witness(ac, rng, 12)
+        db = pb[0] if pb[0] < 7 else _kernel_witness(bc, rng, 12)
+        score = (floor, min(da, db), da + db,
+                 -(pa[1] + pb[1]), -(k - 160))
+        finalists.append((score, A, B, hx, hz, ac, bc, pa, pb, n, k))
+        finalists.sort(key=lambda item: item[0], reverse=True)
+        del finalists[3:]
+
+    if not finalists:
+        raise ValueError("no filling passed exact target-rate screening")
+
+    winner = None
+    for _, A, B, hx, hz, ac, bc, pa, pb, n, k in finalists:
+        da = pa[0] if pa[0] < 7 else _kernel_witness(ac, rng, 48)
+        db = pb[0] if pb[0] < 7 else _kernel_witness(bc, rng, 48)
+        px = _short_profile(hx, n)
+        pz = _short_profile(hz, n)
+        # Penalize short commuting supports, even when they might be
+        # stabilizers. This remains a conservative selection heuristic.
+        score = (-max(px[0], pz[0]), min(pa[0], pb[0]),
+                 -(px[1] + pz[1]), min(da, db), da + db,
+                 -(pa[1] + pb[1]), -(k - 160))
+        if winner is None or score > winner[0]:
+            winner = (score, A, B, hx, hz)
+
+    assert css_ok(winner[3], winner[4])
+    return {"idx": idx, "cells": {"A": winner[1], "B": winner[2]}}
+
+
+def CELL(rng, G, side, i, j, ctx):
+    """All labels and counts were selected jointly in NEW_CTX."""
+    return list(ctx["cells"][side][i][j])
+
+# REFUTED LEDGER (append-only; one line per hypothesis killed by
+# measured evidence - never delete or rewrite existing lines):
+# (empty)
+# REFUTED: Rolled uniform D58 labels at (1,3)x(1,3) did not produce a top-five measured reading above 4; all five d30s readings were 4.
+# REFUTED: Distinct relative monomial labels and short-syndrome screening on D8 at (2,7)x(2,8) did not escape weight-four sector-1 logicals; all five measured d30s readings were 4.
+# EVOLVE-BLOCK-END
+
+
+class _G(object):
+    def __init__(self, ops, q):
+        self.q = q
+        self.elements = list(ops["elements"])
+        self.e = ops["ident"]
+        self.mul = ops["mul"]
+        self.inv = ops["inv"]
+        self._pos = {self._key(g): i for i, g in enumerate(self.elements)}
+
+    @staticmethod
+    def _key(g):
+        return tuple(g) if isinstance(g, (list, tuple)) else g
+
+    def idx(self, g):
+        return self._pos[self._key(g)]
+
+    def pick(self, rng):
+        return self.elements[rng.randrange(self.q)]
+
+
+# ---- verified construction helpers (2026-09-09) --------------------------
+# lifted_matrices(G, cells_A, cells_B) builds EXACTLY the HX / HZ the
+# evaluator builds (same lift conventions, same column order), as Python-int
+# bit rows; gf2_rank(rows) is the rank behind k; lifted_k(G, A, B) is the k the table will report;
+# css_ok(hx, hz) checks HX HZ^T = 0. Use these for any in-program screening -
+# a hand-written lift that gets the left/right actions wrong screens a
+# different (usually non-CSS) matrix pair than the one that is measured.
+def lifted_matrices(G, cells_A, cells_B):
+    """cells_A[i][j], cells_B[a][b]: lists of group elements (as CELL returns
+    them) or element indices. Returns (hx_rows, hz_rows, n): lists of Python
+    ints, bit c set = a 1 in column c; n = number of columns (qubits)."""
+    q = G.q
+    ra, ca = len(cells_A), len(cells_A[0])
+    rb, cb = len(cells_B), len(cells_B[0])
+    els = G.elements
+
+    def gi(g):
+        try:
+            return G.idx(g)
+        except (KeyError, TypeError):
+            if isinstance(g, int) and 0 <= g < q:
+                return g
+            raise
+    mul_idx = [[G.idx(G.mul(els[x], els[y])) for y in range(q)] for x in range(q)]
+    inv_idx = [G.idx(G.inv(els[x])) for x in range(q)]
+    A = [[sorted(set(gi(g) for g in cell)) for cell in row] for row in cells_A]
+    B = [[sorted(set(gi(g) for g in cell)) for cell in row] for row in cells_B]
+    n1 = ca * cb * q
+    n = n1 + ra * rb * q
+    hx = []
+    for i in range(ra):
+        for beta in range(cb):
+            for r in range(q):
+                row = 0
+                for j in range(ca):                       # sector 1: A_{ij} left-lifted
+                    base = (j * cb + beta) * q
+                    for g in A[i][j]:
+                        row ^= 1 << (base + mul_idx[inv_idx[g]][r])   # h with g*h = r
+                for alpha in range(rb):                   # sector 2: B_{alpha beta}^T right-lifted
+                    base = n1 + (i * rb + alpha) * q
+                    for g in B[alpha][beta]:
+                        row ^= 1 << (base + mul_idx[r][inv_idx[g]])   # c = r*g^-1
+                hx.append(row)
+    hz = []
+    for j in range(ca):
+        for alpha in range(rb):
+            for r in range(q):
+                row = 0
+                for beta in range(cb):                    # sector 1: B_{alpha beta} right-lifted
+                    base = (j * cb + beta) * q
+                    for g in B[alpha][beta]:
+                        row ^= 1 << (base + mul_idx[r][g])           # h with h*g^-1 = r
+                for i in range(ra):                       # sector 2: A_{ij}^T left-lifted
+                    base = n1 + (i * rb + alpha) * q
+                    for g in A[i][j]:
+                        row ^= 1 << (base + mul_idx[g][r])           # c = g*r
+                hz.append(row)
+    return hx, hz, n
+
+
+def _popcount(x):
+    return bin(x).count("1")
+
+
+
+def gf2_rank(rows):
+    """Rank over GF(2) of a list of bit rows."""
+    pivots = {}
+    for row in rows:
+        while row:
+            p = row.bit_length() - 1
+            if p in pivots:
+                row ^= pivots[p]
+            else:
+                pivots[p] = row
+                break
+    return len(pivots)
+
+
+def lifted_k(G, cells_A, cells_B):
+    """k = n - rank(HX) - rank(HZ) of the code the evaluator will build."""
+    hx, hz, n = lifted_matrices(G, cells_A, cells_B)
+    return n - gf2_rank(hx) - gf2_rank(hz)
+
+
+def css_ok(hx, hz):
+    """True iff every X check commutes with every Z check (HX HZ^T = 0)."""
+    return all(_popcount(x & z) % 2 == 0 for x in hx for z in hz)
+
+
+def _grid_weights(sa, sb):
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    wx = max(sum(sa[i]) + sum(sb[r_][j] for r_ in range(rb))
+             for i in range(ra) for j in range(cb))
+    wz = max(sum(sb[r_]) + sum(sa[i][c] for i in range(ra))
+             for r_ in range(rb) for c in range(ca))
+    return max(wx, wz)
+
+
+def _no_dead_lines(sa, sb):
+    return all(
+        all(sum(row) > 0 for row in g)
+        and all(sum(r_[c] for r_ in g) > 0 for c in range(len(g[0])))
+        for g in (sa, sb))
+
+
+def roll_supports(rng):
+    """Random per-cell term counts (1..CELL_MAX), repaired down to the
+    weight cap with 1 as the floor - the roller never emits zero blocks
+    (a slot's CELL may still return [] deliberately). A scaffold
+    utility available to NEW_CTX; always returns legal grids."""
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    sa = [[rng.randint(1, CELL_MAX) for _ in range(ca)] for _ in range(ra)]
+    sb = [[rng.randint(1, CELL_MAX) for _ in range(cb)] for _ in range(rb)]
+    for _ in range(4000):
+        if _grid_weights(sa, sb) <= W_MAX:
+            return sa, sb
+        g = sa if rng.random() < 0.5 else sb
+        i = rng.randrange(len(g))
+        c = rng.randrange(len(g[0]))
+        if g[i][c] >= 2:            # 1 is the floor: the roller never
+            g[i][c] -= 1            # emits zero blocks (evolution may)
+    raise ValueError("roll_supports could not fit the weight cap "
+                     "(all-ones row exceeds it: shape too wide)")
+
+
+def _registry_ops(gtype, q, a0):
+    if gtype == "cyclic":
+        return dict(elements=list(range(q)), ident=0,
+                    mul=lambda g, h: (g + h) % q,
+                    inv=lambda g: (-g) % q)
+    if gtype == "abelian":
+        a = int(a0)
+        if a < 1 or q % a:
+            raise ValueError("A0 must divide q")
+        b = q // a
+        return dict(elements=[(x, y) for x in range(a) for y in range(b)],
+                    ident=(0, 0),
+                    mul=lambda g, h: ((g[0] + h[0]) % a, (g[1] + h[1]) % b),
+                    inv=lambda g: ((-g[0]) % a, (-g[1]) % b))
+    raise ValueError("GTYPE %r needs CUSTOM_GROUP" % gtype)
+
+
+def _make_ops(q):
+    if GTYPE == "custom":
+        ns = {}
+        exec(CUSTOM_GROUP, ns)
+        if not ns["valid_q"](q):
+            raise ValueError("valid_q rejects q=%d" % q)
+        return ns["custom_ops"](q)
+    return _registry_ops(GTYPE, q, A0)
+
+
+def _valid_q(q):
+    if GTYPE == "custom":
+        ns = {}
+        exec(CUSTOM_GROUP, ns)
+        return bool(ns["valid_q"](q))
+    if GTYPE == "abelian":
+        return A0 is not None and int(A0) >= 1 and q % int(A0) == 0
+    return q >= 2
+
+
+def _validate_group(G):
+    rng = random.Random(7)
+    sample = [G.e] + [G.pick(rng) for _ in range(min(12, G.q))]
+    for g in sample:
+        assert G._key(G.mul(G.e, g)) == G._key(g), "identity fails"
+        assert G._key(G.mul(g, G.inv(g))) == G._key(G.e), "inverse fails"
+    for g in sample[:6]:
+        for h in sample[:6]:
+            for k in sample[:6]:
+                assert G._key(G.mul(G.mul(g, h), k)) \
+                    == G._key(G.mul(g, G.mul(h, k))), "associativity fails"
+    assert len(G._pos) == len(G.elements) == G.q, "element list broken"
+
+
+def _choose_q():
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    if min(ra, ca, rb, cb) < 1:
+        raise ValueError("protograph sides need >= 1 row and >= 1 column")
+    f = ca * cb + ra * rb
+    best = None
+    for q in range(max(2, N_MIN // f), N_MAX // f + 1):
+        if f * q < N_MIN or f * q >= N_MAX:
+            continue
+        if _valid_q(q):
+            best = q
+    if best is None:
+        raise ValueError("no valid q puts n in [%d, %d)" % (N_MIN, N_MAX))
+    return best
+
+
+def _fill_slot(rng, G, idx):
+    ctx = NEW_CTX(rng, G, idx)
+    grids = {}
+    rgrids = {}
+    for side, (rows, cols) in (("A", A_SHAPE), ("B", B_SHAPE)):
+        grid = []
+        rgrid = []
+        for i in range(rows):
+            row = []
+            rrow = []
+            for j in range(cols):
+                cell = CELL(rng, G, side, i, j, ctx)
+                if not isinstance(cell, (list, tuple)):
+                    raise ValueError("%s[%d][%d]: not a list" % (side, i, j))
+                if len(cell) > CELL_MAX:
+                    raise ValueError("%s[%d][%d]: >%d terms"
+                                     % (side, i, j, CELL_MAX))
+                keys = {G._key(g) for g in cell}
+                if len(keys) != len(cell):
+                    raise ValueError("%s[%d][%d]: duplicate element"
+                                     % (side, i, j))
+                pairs = sorted((G.idx(g), G._key(g)) for g in cell)
+                row.append([i for i, _ in pairs])
+                rrow.append([list(e) if isinstance(e, tuple) else e
+                             for _, e in pairs])
+            grid.append(row)
+            rgrid.append(rrow)
+        grids[side] = grid
+        rgrids[side] = rgrid
+    sa = [[len(c) for c in row] for row in grids["A"]]
+    sb = [[len(c) for c in row] for row in grids["B"]]
+    w = _grid_weights(sa, sb)
+    if w > W_MAX:
+        raise ValueError("row weight %d exceeds cap %d" % (w, W_MAX))
+    if not _no_dead_lines(sa, sb):
+        raise ValueError("all-zero protograph row or column")
+    return grids["A"], grids["B"], rgrids["A"], rgrids["B"]
+
+
+def get_candidates():
+    """-> request dict for the worker: shared group data + 20 slots."""
+    q = _choose_q()
+    ops = _make_ops(q)
+    G = _G(ops, q)
+    _validate_group(G)
+    mul_table = [[G.idx(G.mul(G.elements[a], G.elements[b]))
+                  for b in range(q)] for a in range(q)]
+    ra, ca = A_SHAPE
+    rb, cb = B_SHAPE
+    slots = []
+    for s in range(N_SLOTS):
+        rng = random.Random(BASE_SEED * 10007 + s)
+        try:
+            A, B, Ar, Br = _fill_slot(rng, G, s)
+            slots.append({"idx": s, "A": A, "B": B, "Ar": Ar, "Br": Br})
+        except Exception as e:
+            slots.append({"idx": s, "error": str(e)[:120]})
+    return {"family": FAMILY_NAME, "concept": CONCEPT,
+            "gtype": GTYPE, "q": q, "mul": mul_table,
+            "a_shape": [ra, ca], "b_shape": [rb, cb],
+            "n": (ca * cb + ra * rb) * q,
+            "slots": slots}
+
+
+if __name__ == "__main__":
+    r = get_candidates()
+    ok = sum(1 for s in r["slots"] if "error" not in s)
+    print(json.dumps({"family": r["family"], "q": r["q"], "n": r["n"],
+                      "slots_ok": ok}))

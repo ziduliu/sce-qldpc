@@ -1,0 +1,21 @@
+# TOOLBOX FOR THIS ASSIGNMENT LEVEL
+
+SIZE LAW. A_SHAPE = (ra, ca) and B_SHAPE = (rb, cb) fix the factor
+f = ca*cb + ra*rb, and the built code has n = f * q, where q is the order of
+the group. The scaffold picks the LARGEST q whose n lands in the window stated
+in the SCORING section and rejects the program outright if no q does, so a
+shape is usable only when the group family has an order in that interval
+divided by f.
+
+ROW-WEIGHT ARITHMETIC. One HX row sums one A-row (ca cells) with one B-column
+(rb cells); one HZ row sums one B-row (cb cells) with one A-column (ra cells).
+A row's weight is the TOTAL number of group elements in those cells, so cells
+carrying s elements each put roughly s*(ca + rb) and s*(ra + cb) into the two
+sums. Both are checked on the built matrices against the cap in the SCORING
+section - the maximum, not the average, is what is gated.
+
+SHAPE COMPATIBILITY. Every cell of the new shape must be defined by SLOT 3:
+CELL is called for side "A" at every (i, j) with i < ra and j < ca, and for
+side "B" at every (i, j) with i < rb and j < cb. A rule that indexes a table
+sized for the parent's shape raises on the new one and the program scores 0;
+policy_sampler_errors then names the exception and its line number.

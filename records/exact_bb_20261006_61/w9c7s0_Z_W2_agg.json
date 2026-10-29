@@ -1,0 +1,20 @@
+{
+ "Z_W2": {
+  "0/1": {
+   "W": 2,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=552 mH=168 rank(G)=138 delta=7 W=2 roots=13 depth=4 frontier=0 (slice 0/1 of 0) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 13,
+   "slice": [
+    0,
+    1
+   ],
+   "n_roots": 13,
+   "bb_secs": 0.0
+  }
+ }
+}

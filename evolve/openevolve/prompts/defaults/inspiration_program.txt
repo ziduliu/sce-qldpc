@@ -1,0 +1,5 @@
+### Inspiration {program_number} (Score: {score}, {program_type})
+{genotype}
+```{language}
+{program_snippet}
+```

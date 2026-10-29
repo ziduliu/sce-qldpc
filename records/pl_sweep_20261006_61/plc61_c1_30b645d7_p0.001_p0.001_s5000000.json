@@ -1,0 +1,94 @@
+{
+ "p": "0.001",
+ "rounds": 6,
+ "max_shots": 5000000,
+ "max_errors": 1000,
+ "seconds": 4293.4,
+ "error": null,
+ "codes": [
+  {
+   "name": "c1",
+   "family": "r015_dic9_23x24_gatelean_orderboundary_v2",
+   "idx": 12,
+   "n": 576,
+   "k": 82,
+   "w": 11,
+   "d2s": 15,
+   "score": 8.824,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 30672,
+    "bases": {
+     "Z": {
+      "basis": "Z",
+      "score": 8.824,
+      "score_ceiling": 8.824,
+      "score_perobs": 8.82404064503701,
+      "shots": 5000000,
+      "stopped_on": "shots",
+      "max_errors": 1000,
+      "max_shots": 5000000,
+      "shot_failures": 0,
+      "logical_failures": 0,
+      "logicals_failed": 0,
+      "worst_logical": 0,
+      "worst_logical_failures": 0,
+      "top_logicals": [],
+      "pl_round_per_logical": 0.0,
+      "pl_round_per_logical_ci_hi": 1.4995444019296971e-09,
+      "pl_round_per_obs_mean": 0.0,
+      "pl_round_per_obs_ci_hi": 1.4995444885812503e-09,
+      "resolved_by_stage": [
+       5000000,
+       0,
+       0
+      ],
+      "unsatisfied": 0,
+      "depth": 13,
+      "k": 82,
+      "n": 576,
+      "attrib": null,
+      "secs": 3104.5
+     },
+     "X": {
+      "basis": "X",
+      "score": 8.824,
+      "score_ceiling": 8.824,
+      "score_perobs": 8.82404064503701,
+      "shots": 5000000,
+      "stopped_on": "shots",
+      "max_errors": 1000,
+      "max_shots": 5000000,
+      "shot_failures": 0,
+      "logical_failures": 0,
+      "logicals_failed": 0,
+      "worst_logical": 0,
+      "worst_logical_failures": 0,
+      "top_logicals": [],
+      "pl_round_per_logical": 0.0,
+      "pl_round_per_logical_ci_hi": 1.4995444019296971e-09,
+      "pl_round_per_obs_mean": 0.0,
+      "pl_round_per_obs_ci_hi": 1.4995444885812503e-09,
+      "resolved_by_stage": [
+       5000000,
+       0,
+       0
+      ],
+      "unsatisfied": 0,
+      "depth": 13,
+      "k": 82,
+      "n": 576,
+      "attrib": null,
+      "secs": 4286.5
+     }
+    },
+    "sched_source": "Z:own,X:own",
+    "score": 8.824,
+    "worse_basis": "Z",
+    "score_ceiling": 8.824
+   }
+  }
+ ]
+}

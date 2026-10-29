@@ -1,0 +1,92 @@
+{
+ "X_W4": {
+  "0/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=504 mH=96 rank(G)=115 delta=8 W=4 roots=8 depth=4 frontier=0 (slice 0/4 of 0) threads=32",
+   "status": "FOUND",
+   "weight": 4,
+   "support": [
+    0,
+    20,
+    48,
+    117
+   ],
+   "nodes": 13,
+   "slice": [
+    0,
+    4
+   ],
+   "n_roots": 8,
+   "bb_secs": 0.0,
+   "verified": true
+  },
+  "1/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=504 mH=96 rank(G)=115 delta=8 W=4 roots=8 depth=4 frontier=0 (slice 1/4 of 0) threads=32",
+   "status": "FOUND",
+   "weight": 4,
+   "support": [
+    0,
+    20,
+    48,
+    117
+   ],
+   "nodes": 13,
+   "slice": [
+    1,
+    4
+   ],
+   "n_roots": 8,
+   "bb_secs": 0.0,
+   "verified": true
+  },
+  "2/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=504 mH=96 rank(G)=115 delta=8 W=4 roots=8 depth=4 frontier=0 (slice 2/4 of 0) threads=32",
+   "status": "FOUND",
+   "weight": 4,
+   "support": [
+    0,
+    20,
+    48,
+    117
+   ],
+   "nodes": 13,
+   "slice": [
+    2,
+    4
+   ],
+   "n_roots": 8,
+   "bb_secs": 0.0,
+   "verified": true
+  },
+  "3/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=504 mH=96 rank(G)=115 delta=8 W=4 roots=8 depth=4 frontier=0 (slice 3/4 of 0) threads=32",
+   "status": "FOUND",
+   "weight": 4,
+   "support": [
+    0,
+    20,
+    48,
+    117
+   ],
+   "nodes": 13,
+   "slice": [
+    3,
+    4
+   ],
+   "n_roots": 8,
+   "bb_secs": 0.0,
+   "verified": true
+  }
+ }
+}

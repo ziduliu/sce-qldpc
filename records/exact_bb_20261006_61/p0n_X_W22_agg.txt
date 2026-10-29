@@ -1,0 +1,1 @@
+X W=22: FOUND weight 22 (verified) - exact d_X = 22

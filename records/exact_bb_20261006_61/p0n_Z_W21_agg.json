@@ -1,0 +1,964 @@
+{
+ "Z_W21": {
+  "0/60": {
+   "W": 21,
+   "secs": 28.5,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 0/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 679298127,
+   "slice": [
+    0,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 28.5
+  },
+  "10/60": {
+   "W": 21,
+   "secs": 17.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 10/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 596725961,
+   "slice": [
+    10,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.6
+  },
+  "11/60": {
+   "W": 21,
+   "secs": 17.0,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 11/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 586295355,
+   "slice": [
+    11,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.0
+  },
+  "12/60": {
+   "W": 21,
+   "secs": 17.0,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 12/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 616032946,
+   "slice": [
+    12,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.0
+  },
+  "13/60": {
+   "W": 21,
+   "secs": 32.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 13/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 652772645,
+   "slice": [
+    13,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 32.2
+  },
+  "14/60": {
+   "W": 21,
+   "secs": 18.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 14/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 651272282,
+   "slice": [
+    14,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 18.2
+  },
+  "15/60": {
+   "W": 21,
+   "secs": 32.3,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 15/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 670491538,
+   "slice": [
+    15,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 32.3
+  },
+  "16/60": {
+   "W": 21,
+   "secs": 21.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 16/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 637251923,
+   "slice": [
+    16,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 21.6
+  },
+  "17/60": {
+   "W": 21,
+   "secs": 20.3,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 17/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 589011052,
+   "slice": [
+    17,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.3
+  },
+  "18/60": {
+   "W": 21,
+   "secs": 23.5,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 18/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 632099034,
+   "slice": [
+    18,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 23.5
+  },
+  "19/60": {
+   "W": 21,
+   "secs": 21.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 19/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 569894682,
+   "slice": [
+    19,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 21.1
+  },
+  "1/60": {
+   "W": 21,
+   "secs": 18.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 1/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 626108652,
+   "slice": [
+    1,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 18.2
+  },
+  "20/60": {
+   "W": 21,
+   "secs": 17.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 20/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 539574062,
+   "slice": [
+    20,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.2
+  },
+  "21/60": {
+   "W": 21,
+   "secs": 27.5,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 21/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 585540149,
+   "slice": [
+    21,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 27.5
+  },
+  "22/60": {
+   "W": 21,
+   "secs": 20.5,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 22/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 527878594,
+   "slice": [
+    22,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.4
+  },
+  "23/60": {
+   "W": 21,
+   "secs": 18.4,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 23/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 561479591,
+   "slice": [
+    23,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 18.4
+  },
+  "24/60": {
+   "W": 21,
+   "secs": 19.4,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 24/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 613150359,
+   "slice": [
+    24,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 19.4
+  },
+  "25/60": {
+   "W": 21,
+   "secs": 19.4,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 25/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 567786408,
+   "slice": [
+    25,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 19.4
+  },
+  "26/60": {
+   "W": 21,
+   "secs": 18.7,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 26/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 544091769,
+   "slice": [
+    26,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 18.6
+  },
+  "27/60": {
+   "W": 21,
+   "secs": 23.7,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 27/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 564435323,
+   "slice": [
+    27,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 23.7
+  },
+  "28/60": {
+   "W": 21,
+   "secs": 17.0,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 28/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 532326104,
+   "slice": [
+    28,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 16.9
+  },
+  "29/60": {
+   "W": 21,
+   "secs": 28.7,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 29/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 548735207,
+   "slice": [
+    29,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 28.7
+  },
+  "2/60": {
+   "W": 21,
+   "secs": 17.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 2/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 610083675,
+   "slice": [
+    2,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.2
+  },
+  "30/60": {
+   "W": 21,
+   "secs": 20.8,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 30/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 513194684,
+   "slice": [
+    30,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.8
+  },
+  "31/60": {
+   "W": 21,
+   "secs": 29.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 31/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 539875515,
+   "slice": [
+    31,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 29.2
+  },
+  "32/60": {
+   "W": 21,
+   "secs": 22.0,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 32/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 495255473,
+   "slice": [
+    32,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.0
+  },
+  "33/60": {
+   "W": 21,
+   "secs": 23.0,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 33/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 495978756,
+   "slice": [
+    33,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 23.0
+  },
+  "34/60": {
+   "W": 21,
+   "secs": 15.9,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 34/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 474578468,
+   "slice": [
+    34,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 15.9
+  },
+  "35/60": {
+   "W": 21,
+   "secs": 22.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 35/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 504845172,
+   "slice": [
+    35,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.6
+  },
+  "36/60": {
+   "W": 21,
+   "secs": 22.4,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 36/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 553549146,
+   "slice": [
+    36,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.4
+  },
+  "37/60": {
+   "W": 21,
+   "secs": 28.3,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 37/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 560475644,
+   "slice": [
+    37,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 28.3
+  },
+  "38/60": {
+   "W": 21,
+   "secs": 21.7,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 38/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 571838119,
+   "slice": [
+    38,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 21.7
+  },
+  "39/60": {
+   "W": 21,
+   "secs": 26.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 39/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 548286524,
+   "slice": [
+    39,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 26.6
+  },
+  "3/60": {
+   "W": 21,
+   "secs": 19.8,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 3/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 635231465,
+   "slice": [
+    3,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 19.8
+  },
+  "40/60": {
+   "W": 21,
+   "secs": 28.0,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 40/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 513835299,
+   "slice": [
+    40,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 28.0
+  },
+  "41/60": {
+   "W": 21,
+   "secs": 20.1,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 41/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 534479397,
+   "slice": [
+    41,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.1
+  },
+  "42/60": {
+   "W": 21,
+   "secs": 18.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 42/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 479553695,
+   "slice": [
+    42,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 18.6
+  },
+  "43/60": {
+   "W": 21,
+   "secs": 21.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 43/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 470520020,
+   "slice": [
+    43,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 21.1
+  },
+  "44/60": {
+   "W": 21,
+   "secs": 22.7,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 44/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 482704416,
+   "slice": [
+    44,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.7
+  },
+  "45/60": {
+   "W": 21,
+   "secs": 20.4,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 45/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 552525139,
+   "slice": [
+    45,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.3
+  },
+  "46/60": {
+   "W": 21,
+   "secs": 20.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 46/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 533142040,
+   "slice": [
+    46,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.6
+  },
+  "47/60": {
+   "W": 21,
+   "secs": 26.5,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 47/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 575565575,
+   "slice": [
+    47,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 26.5
+  },
+  "48/60": {
+   "W": 21,
+   "secs": 22.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 48/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 623162482,
+   "slice": [
+    48,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.6
+  },
+  "49/60": {
+   "W": 21,
+   "secs": 17.5,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 49/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 542086443,
+   "slice": [
+    49,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.5
+  },
+  "4/60": {
+   "W": 21,
+   "secs": 22.9,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 4/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 708461769,
+   "slice": [
+    4,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.9
+  },
+  "50/60": {
+   "W": 21,
+   "secs": 17.8,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 50/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 567570832,
+   "slice": [
+    50,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.8
+  },
+  "51/60": {
+   "W": 21,
+   "secs": 15.9,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 51/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 557009907,
+   "slice": [
+    51,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 15.9
+  },
+  "52/60": {
+   "W": 21,
+   "secs": 17.1,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 52/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 519081709,
+   "slice": [
+    52,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.1
+  },
+  "53/60": {
+   "W": 21,
+   "secs": 21.7,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 53/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 563412278,
+   "slice": [
+    53,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 21.7
+  },
+  "54/60": {
+   "W": 21,
+   "secs": 17.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 54/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 568437736,
+   "slice": [
+    54,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 17.6
+  },
+  "55/60": {
+   "W": 21,
+   "secs": 22.8,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 55/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 610295868,
+   "slice": [
+    55,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.8
+  },
+  "56/60": {
+   "W": 21,
+   "secs": 23.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 56/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 668074052,
+   "slice": [
+    56,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 23.2
+  },
+  "57/60": {
+   "W": 21,
+   "secs": 23.5,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 57/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 685176275,
+   "slice": [
+    57,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 23.5
+  },
+  "58/60": {
+   "W": 21,
+   "secs": 20.2,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 58/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 603209841,
+   "slice": [
+    58,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.2
+  },
+  "59/60": {
+   "W": 21,
+   "secs": 21.9,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=711 (slice 59/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 616684501,
+   "slice": [
+    59,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 21.9
+  },
+  "5/60": {
+   "W": 21,
+   "secs": 22.7,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 5/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 678118678,
+   "slice": [
+    5,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 22.7
+  },
+  "6/60": {
+   "W": 21,
+   "secs": 20.4,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 6/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 646932800,
+   "slice": [
+    6,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 20.4
+  },
+  "7/60": {
+   "W": 21,
+   "secs": 21.9,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 7/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 618275771,
+   "slice": [
+    7,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 21.9
+  },
+  "8/60": {
+   "W": 21,
+   "secs": 28.4,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 8/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 657306477,
+   "slice": [
+    8,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 28.4
+  },
+  "9/60": {
+   "W": 21,
+   "secs": 30.6,
+   "tlimit": 400000.0,
+   "stderr": "n=572 mH=264 rank(G)=253 delta=6 W=21 roots=286 depth=3 frontier=712 (slice 9/60 of 42708) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 658932258,
+   "slice": [
+    9,
+    60
+   ],
+   "n_roots": 286,
+   "bb_secs": 30.5
+  }
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "p": "0.002",
+ "rounds": 6,
+ "max_shots": 1000000,
+ "max_errors": 1000,
+ "seconds": 1517.5,
+ "error": null,
+ "codes": [
+  {
+   "name": "c1",
+   "family": "r015_m37r1s1_23x24_Bpressure_jointpacking_localvoltage_v2",
+   "idx": 1,
+   "n": 592,
+   "k": 83,
+   "w": 12,
+   "d2s": 18,
+   "score": 7.8384,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "Z:solved depth 14 in 10s,X:solved depth 14 in 6s",
+    "sched_secs": 15.9,
+    "cnots": 33744,
+    "bases": {
+     "Z": {
+      "basis": "Z",
+      "score": 7.8384,
+      "score_ceiling": 8.1303,
+      "score_perobs": 6.773114454062458,
+      "shots": 1000000,
+      "stopped_on": "shots",
+      "max_errors": 1000,
+      "max_shots": 1000000,
+      "shot_failures": 2,
+      "logical_failures": 66,
+      "logicals_failed": 52,
+      "worst_logical": 7,
+      "worst_logical_failures": 2,
+      "top_logicals": [
+       [
+        7,
+        2
+       ],
+       [
+        9,
+        2
+       ],
+       [
+        15,
+        2
+       ],
+       [
+        16,
+        2
+       ],
+       [
+        18,
+        2
+       ],
+       [
+        22,
+        2
+       ]
+      ],
+      "pl_round_per_logical": 4.016067604309961e-09,
+      "pl_round_per_logical_ci_hi": 1.450741072788037e-08,
+      "pl_round_per_obs_mean": 1.3253016439840337e-07,
+      "pl_round_per_obs_ci_hi": 1.6861086093999944e-07,
+      "resolved_by_stage": [
+       999991,
+       5,
+       4
+      ],
+      "unsatisfied": 0,
+      "depth": 14,
+      "k": 83,
+      "n": 592,
+      "attrib": null,
+      "secs": 1384.3
+     },
+     "X": {
+      "basis": "X",
+      "score": 8.1303,
+      "score_ceiling": 8.1303,
+      "score_perobs": 8.130334878183767,
+      "shots": 1000000,
+      "stopped_on": "shots",
+      "max_errors": 1000,
+      "max_shots": 1000000,
+      "shot_failures": 0,
+      "logical_failures": 0,
+      "logicals_failed": 0,
+      "worst_logical": 0,
+      "worst_logical_failures": 0,
+      "top_logicals": [],
+      "pl_round_per_logical": 0.0,
+      "pl_round_per_logical_ci_hi": 7.407386185021148e-09,
+      "pl_round_per_obs_mean": 0.0,
+      "pl_round_per_obs_ci_hi": 7.407388480373811e-09,
+      "resolved_by_stage": [
+       999999,
+       0,
+       1
+      ],
+      "unsatisfied": 0,
+      "depth": 14,
+      "k": 83,
+      "n": 592,
+      "attrib": null,
+      "secs": 1495.0
+     }
+    },
+    "sched_source": "Z:own,X:own",
+    "score": 7.8384,
+    "worse_basis": "Z",
+    "score_ceiling": 8.1303
+   }
+  }
+ ]
+}

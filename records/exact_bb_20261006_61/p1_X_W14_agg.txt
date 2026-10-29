@@ -1,0 +1,1 @@
+X W=14: all 16 slices NONE - certified d_X > 14  (nodes 200765365, max 0 s)

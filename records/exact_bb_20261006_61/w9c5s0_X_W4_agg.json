@@ -1,0 +1,20 @@
+{
+ "X_W4": {
+  "0/1": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=584 mH=192 rank(G)=192 delta=6 W=4 roots=73 depth=3 frontier=0 (slice 0/1 of 0) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 1589,
+   "slice": [
+    0,
+    1
+   ],
+   "n_roots": 73,
+   "bb_secs": 0.0
+  }
+ }
+}

@@ -1,0 +1,1 @@
+Z W=8: all 1 slices NONE - certified d_Z > 8  (nodes 24262, max 0 s)

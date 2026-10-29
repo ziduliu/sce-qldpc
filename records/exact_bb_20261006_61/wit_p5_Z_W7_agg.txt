@@ -1,0 +1,1 @@
+Z W=7: FOUND weight 7 (verified) - exact d_Z = 7

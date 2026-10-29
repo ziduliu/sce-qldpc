@@ -1,0 +1,45 @@
+{
+ "npz": "/u/zdliu/lp/jobs/sel61/archive/codes/15d39679803f52d4.npz",
+ "n": 544,
+ "types": {
+  "X": {
+   "d": 8,
+   "certified_greater_than": 7,
+   "runs": [
+    {
+     "W": 8,
+     "secs": 0.1,
+     "tlimit": 400000.0,
+     "stderr": "n=544 mH=160 rank(G)=184 delta=8 W=8 roots=272 depth=3 frontier=12794 (slice 2/4 of 51177) threads=32",
+     "status": "FOUND",
+     "weight": 8,
+     "support": [
+      0,
+      11,
+      21,
+      22,
+      30,
+      46,
+      59,
+      89
+     ],
+     "nodes": 10838,
+     "slice": [
+      2,
+      4
+     ],
+     "n_roots": 272,
+     "bb_secs": 0.0,
+     "verified": true
+    }
+   ]
+  }
+ },
+ "orbits": "/u/zdliu/lp/oe_run/orbits_20261006_61/v5.json",
+ "slice": [
+  2,
+  4
+ ],
+ "d": 8,
+ "d_lower_certified": 8
+}

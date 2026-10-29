@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.tgz
+*.npz
+.DS_Store
+# paper sources are not part of this repository; the table rows under figures/data are
+*.tex
+!figures/data/*.tex

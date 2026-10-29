@@ -1,0 +1,35 @@
+{
+ "npz": "/u/zdliu/lp/jobs/sel61/archive/codes/db18259eb1856d92.npz",
+ "n": 560,
+ "types": {
+  "X": {
+   "d": null,
+   "certified_greater_than": 9,
+   "runs": [
+    {
+     "W": 9,
+     "secs": 0.1,
+     "tlimit": 400000.0,
+     "stderr": "n=560 mH=168 rank(G)=168 delta=9 W=9 roots=560 depth=2 frontier=2484 (slice 3/8 of 19873) threads=32",
+     "status": "NONE",
+     "weight": null,
+     "support": null,
+     "nodes": 2258631,
+     "slice": [
+      3,
+      8
+     ],
+     "n_roots": 560,
+     "bb_secs": 0.0
+    }
+   ]
+  }
+ },
+ "orbits": "/u/zdliu/lp/oe_run/orbits_20261006_61/v6.json",
+ "slice": [
+  3,
+  8
+ ],
+ "d": null,
+ "d_lower_certified": 10
+}

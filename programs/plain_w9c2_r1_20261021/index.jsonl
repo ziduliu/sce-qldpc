@@ -1,0 +1,12 @@
+{"file": "f17d8c4377556b17.py", "child": 0, "score": 61.0616, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_noncommuting_triangle_buckets_v1"}
+{"file": "dcbedb8784cd16e4.py", "child": 1, "score": 65.0216, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_joint_logical_kernel_v2"}
+{"file": "dafd05c7f791991b.py", "child": 2, "score": 59.1838, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_rankbiased_c3_girth8_multiwitness_v2"}
+{"file": "93357220353224c2.py", "child": 3, "score": 64.484, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_rank119_deep_witness_v2"}
+{"file": "e938cfbab9dff056.py", "child": 4, "score": 59.36, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_c39_unit_orbit_v3"}
+{"file": "490fbf7f894b98a1.py", "child": 5, "score": 75.56, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_all39_mutant_orbit_v3"}
+{"file": "bbe704adda25d6ab.py", "child": 6, "score": 68.0616, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_girth8_multiseed_v3"}
+{"file": "6574ebd27373a781.py", "child": 7, "score": 62.0, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_nc39_secant_orbitclosure_v4"}
+{"file": "716dc08c035b670f.py", "child": 8, "score": 62.08, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_central_quotient_voltage_v4"}
+{"file": "afa1d3eaa4b0409c.py", "child": 9, "score": 60.24, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_panel7_seeded_quotient_v4"}
+{"file": "4172da8eb5040a22.py", "child": 10, "score": 67.24, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_seven_anchor_crossover_jointnovel_v4"}
+{"file": "c8001310eae584a6.py", "child": 11, "score": 64.8, "rate_bin": 2, "n": 585, "family": "r020_c13sd_c9_s3_q117_12x12_reference_crossover_exclusion_v5"}

@@ -1,0 +1,10 @@
+{
+ "run_id": "w9c0s15_X_W23_20261017193841_31051_12670",
+ "type": "X",
+ "W": 23,
+ "slices": 2,
+ "matrix_sha256": "52677530c54ea1a748c7dae29afa7a16ba8eef52f7006c72bec424d6d91aa13f",
+ "problem_sha256": "b4a804ae4cd6cd4fd412db8619e7b5514f958c63996bee1cd1b8a8c6c3f08b17",
+ "result": "CERTIFIED",
+ "lower": 23
+}

@@ -1,0 +1,1 @@
+X W=10: FOUND weight 10 (verified) - exact d_X = 10

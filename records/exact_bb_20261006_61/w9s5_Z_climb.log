@@ -1,0 +1,7 @@
+2026-10-11_19:15:12 level W=17: 8 slices (npz /ptmp/zdliu/archives_live/cc_v7_gpt61sol500_w9_10c_out/archive/codes/8bd2c5b8b300903d.npz)
+2026-10-11_19:15:12   slices 8902398:8902399:8902400:8902401:8902402:8902403:8902404:8902405 aggregator 8902406
+2026-10-11_19:15:19 Z W=17: all 8 slices NONE - certified d_Z > 17  (nodes 760917522, max 2 s)
+2026-10-11_19:15:19 level W=18: 8 slices (npz /ptmp/zdliu/archives_live/cc_v7_gpt61sol500_w9_10c_out/archive/codes/8bd2c5b8b300903d.npz)
+2026-10-11_19:15:20   slices 8902520:8902522:8902525:8902529:8902532:8902533:8902535:8902537 aggregator 8902540
+2026-10-11_19:15:23 Z W=18: FOUND weight 18 (verified) - exact d_Z = 18
+2026-10-11_19:15:23 exact d_Z found at W=18, climb ends

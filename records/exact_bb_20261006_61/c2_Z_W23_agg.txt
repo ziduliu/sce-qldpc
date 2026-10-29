@@ -1,0 +1,1 @@
+Z W=23: all 60 slices NONE - certified d_Z > 23  (nodes 324870608241890, max 168110 s)

@@ -1,0 +1,4 @@
+2026-10-14_00:38:17 level W=9: 8 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c3s2.npz)
+2026-10-14_00:38:17   slices 8905138:8905139:8905140:8905141:8905142:8905143:8905144:8905145 aggregator 8905146
+2026-10-14_00:38:35 Z W=9: all 8 slices NONE - certified d_Z > 9  (nodes 81801, max 0 s)
+2026-10-14_00:38:35 reached WMAX=9: d_Z > 9 certified, climb ends

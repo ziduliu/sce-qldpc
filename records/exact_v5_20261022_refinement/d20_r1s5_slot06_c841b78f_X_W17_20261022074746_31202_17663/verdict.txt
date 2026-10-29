@@ -1,0 +1,1 @@
+X W=17: all 4 slices NONE, manifest checks passed - certified d_X > 17 (nodes 682972465)

@@ -1,0 +1,161 @@
+{
+ "kind": "climb",
+ "npz": "/u/zdliu/lp/jobs/sel61/archive/codes/3c7722431bc2662e.npz",
+ "n": 592,
+ "matrix_sha256": "588ba28e6dfa308f970ca7f82ea27b50372eec53858d5497360942540f9f9d71",
+ "archive_name": "3c7722431bc2662e",
+ "orbits": null,
+ "types": {
+  "X": {
+   "lower": 17,
+   "upper": 18,
+   "exact": 18,
+   "complete": true,
+   "runs": [
+    {
+     "W": 17,
+     "secs": 1674.767,
+     "tlimit": 20000.0,
+     "returncode": 0,
+     "stderr": "n=592 mH=222 rank(G)=290 delta=6 W=17 roots=592 depth=2 frontier=15999 (slice 0/1 of 15999) threads=32",
+     "status": "NONE",
+     "weight": null,
+     "support": null,
+     "nodes": 99748462095,
+     "info": {
+      "n": "592",
+      "mH": "222",
+      "rankG": "290",
+      "delta": "6",
+      "W": "17",
+      "roots": "592",
+      "depth": "2",
+      "frontier_total": "15999",
+      "slice": "0",
+      "slices": "1",
+      "frontier_slice": "15999"
+     },
+     "slice": null,
+     "n_roots": 592,
+     "problem_sha256": "c33239471416e40545d3f8447b42f9e1c39b59ad67d35158c01c9d5a281f943b",
+     "bb_secs": 1674.8
+    },
+    {
+     "W": 18,
+     "secs": 1.154,
+     "tlimit": 20000.0,
+     "returncode": 0,
+     "stderr": "n=592 mH=222 rank(G)=290 delta=6 W=18 roots=592 depth=2 frontier=15999 (slice 0/1 of 15999) threads=32",
+     "status": "FOUND",
+     "weight": 18,
+     "support": [
+      0,
+      6,
+      9,
+      16,
+      18,
+      22,
+      25,
+      40,
+      59,
+      71,
+      80,
+      87,
+      90,
+      105,
+      111,
+      122,
+      134,
+      141
+     ],
+     "nodes": 62944111,
+     "info": {
+      "n": "592",
+      "mH": "222",
+      "rankG": "290",
+      "delta": "6",
+      "W": "18",
+      "roots": "592",
+      "depth": "2",
+      "frontier_total": "15999",
+      "slice": "0",
+      "slices": "1",
+      "frontier_slice": "15999"
+     },
+     "slice": null,
+     "n_roots": 592,
+     "problem_sha256": "8e247ce10f8a32a6bf14404d6a16beee6b30f522c9d38fa2375cf66e63e079fd",
+     "bb_secs": 1.1,
+     "verified": true
+    }
+   ]
+  },
+  "Z": {
+   "lower": 18,
+   "upper": null,
+   "exact": null,
+   "complete": true,
+   "runs": [
+    {
+     "W": 17,
+     "secs": 19.372,
+     "tlimit": 20000.0,
+     "returncode": 0,
+     "stderr": "n=592 mH=296 rank(G)=219 delta=8 W=17 roots=592 depth=2 frontier=16019 (slice 0/1 of 16019) threads=32",
+     "status": "NONE",
+     "weight": null,
+     "support": null,
+     "nodes": 1039485431,
+     "info": {
+      "n": "592",
+      "mH": "296",
+      "rankG": "219",
+      "delta": "8",
+      "W": "17",
+      "roots": "592",
+      "depth": "2",
+      "frontier_total": "16019",
+      "slice": "0",
+      "slices": "1",
+      "frontier_slice": "16019"
+     },
+     "slice": null,
+     "n_roots": 592,
+     "problem_sha256": "53d4be8c045eec96fd6643a3d53e09cb456ee76d607177ab5544569b220fca90",
+     "bb_secs": 19.4
+    },
+    {
+     "W": 18,
+     "secs": 61.845,
+     "tlimit": 20000.0,
+     "returncode": 0,
+     "stderr": "n=592 mH=296 rank(G)=219 delta=8 W=18 roots=592 depth=2 frontier=16019 (slice 0/1 of 16019) threads=32",
+     "status": "NONE",
+     "weight": null,
+     "support": null,
+     "nodes": 3228527857,
+     "info": {
+      "n": "592",
+      "mH": "296",
+      "rankG": "219",
+      "delta": "8",
+      "W": "18",
+      "roots": "592",
+      "depth": "2",
+      "frontier_total": "16019",
+      "slice": "0",
+      "slices": "1",
+      "frontier_slice": "16019"
+     },
+     "slice": null,
+     "n_roots": 592,
+     "problem_sha256": "fb560631f0b4667bbbc3d9ea9828719ab2d2aa1aacb156f8638ba0b6312e2c2e",
+     "bb_secs": 61.8
+    }
+   ]
+  }
+ },
+ "d_lower_exclusive": 17,
+ "d_upper": 18,
+ "d_exact": 18
+}

@@ -1,0 +1,4 @@
+rank 1 local 0 on zpg004 gpu 0 group auto
+rank 0 local 0 on zpg003 gpu 0 group auto
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-10-06T15:32:54.810] error: *** STEP 8900340.0 ON zpg003 CANCELLED AT 2026-10-06T15:32:54 DUE to SIGNAL Terminated ***

@@ -1,0 +1,33 @@
+rank 1 local 0 on zpg030 gpu 0 group auto
+rank 0 local 0 on zpg029 gpu 0 group auto
+Traceback (most recent call last):
+  File "/u/zdliu/lp/plevolve_20260912/pl_sample.py", line 727, in <module>
+    main(sys.argv[1], sys.argv[2])
+  File "/u/zdliu/lp/plevolve_20260912/pl_sample.py", line 682, in main
+    raw = run_unit(code, basis, sched, cache, shard_index, shard_count, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/zdliu/lp/plevolve_20260912/pl_sample.py", line 364, in run_unit
+    circ, n, k, depth = ASC.build(code["npz"], int(code["q"]), basis,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/zdliu/lp/circmean/pl_at_p_asc.py", line 81, in build
+    assert n % q == 0 and hx.shape[0] % q == 0 and hz.shape[0] % q == 0, \
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: n or check count not divisible by q=29
+Traceback (most recent call last):
+  File "/u/zdliu/lp/plevolve_20260912/pl_sample.py", line 727, in <module>
+    main(sys.argv[1], sys.argv[2])
+  File "/u/zdliu/lp/plevolve_20260912/pl_sample.py", line 682, in main
+    raw = run_unit(code, basis, sched, cache, shard_index, shard_count, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/zdliu/lp/plevolve_20260912/pl_sample.py", line 364, in run_unit
+    circ, n, k, depth = ASC.build(code["npz"], int(code["q"]), basis,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/zdliu/lp/circmean/pl_at_p_asc.py", line 81, in build
+    assert n % q == 0 and hx.shape[0] % q == 0 and hz.shape[0] % q == 0, \
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: n or check count not divisible by q=29
+srun: error: zpg030: task 1: Exited with exit code 1
+srun: Terminating StepId=8901298.0
+[2026-10-08T05:02:35.013] error: *** STEP 8901298.0 ON zpg029 CANCELLED AT 2026-10-08T05:02:35 DUE TO TASK FAILURE ***
+srun: error: zpg029: task 0: Terminated
+srun: Force Terminated StepId=8901298.0

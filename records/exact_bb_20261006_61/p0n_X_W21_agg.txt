@@ -1,0 +1,1 @@
+X W=21: all 60 slices NONE - certified d_X > 21  (nodes 48591540628, max 43 s)

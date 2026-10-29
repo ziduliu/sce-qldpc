@@ -1,0 +1,7 @@
+rank 0 local 0 on zpg004 gpu 0 group auto
+rank 1 local 0 on zpg008 gpu 0 group auto
+rank 0/2 -> unit 0 (c5 Z) shard 0/1: 668000 shots, 6310 s -> /u/zdliu/lp/oe_run/pl_sweep_20261006_61/work_dist61_c5_15d39679_p0.001_p0.001/pl.json.part0000.json
+rank 1/2 -> unit 1 (c5 X) shard 0/1: 1346500 shots, 7760 s -> /u/zdliu/lp/oe_run/pl_sweep_20261006_61/work_dist61_c5_15d39679_p0.001_p0.001/pl.json.part0001.json
+c5                         Z [[544,200]] shots 668000: fail 1000, logical 46679, stages [666364, 27, 1609], unsat 0, worst 169, 6310 s wall over 1 shards
+c5                         X [[544,200]] shots 1346500: fail 1000, logical 50579, stages [1344802, 2, 1696], unsat 0, worst 73, 7760 s wall over 1 shards
+wrote /u/zdliu/lp/oe_run/pl_sweep_20261006_61/work_dist61_c5_15d39679_p0.001_p0.001/pl.json

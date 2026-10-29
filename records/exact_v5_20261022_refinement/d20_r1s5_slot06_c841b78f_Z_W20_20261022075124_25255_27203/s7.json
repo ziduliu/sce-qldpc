@@ -1,0 +1,68 @@
+{
+ "kind": "slice",
+ "run_id": "d20_r1s5_slot06_c841b78f_Z_W20_20261022075124_25255_27203",
+ "matrix_sha256": "540b8a4cf16e325d1f9c6bae9cbc59149989a78c44d6c21b331e2946f7f4ad04",
+ "problem_sha256": "35df09ba727642dc206fe6dedbcaca8d13e544a78ed177d9b833e7727e1489b3",
+ "binary_sha256": "650863746ef14aa18c5e55268664f172ca6f8a29cab4de0b3fe21383defd9cae",
+ "type": "Z",
+ "W": 20,
+ "slice": [
+  7,
+  32
+ ],
+ "run": {
+  "W": 20,
+  "secs": 0.4,
+  "tlimit": 400000.0,
+  "returncode": 0,
+  "stderr": "n=585 mH=234 rank(G)=234 delta=6 W=20 roots=195 depth=3 frontier=627 (slice 7/32 of 20052) threads=32",
+  "status": "FOUND",
+  "weight": 20,
+  "support": [
+   1,
+   8,
+   15,
+   27,
+   41,
+   44,
+   58,
+   62,
+   84,
+   87,
+   98,
+   113,
+   235,
+   237,
+   245,
+   262,
+   263,
+   310,
+   322,
+   343
+  ],
+  "nodes": 21206790,
+  "info": {
+   "n": "585",
+   "mH": "234",
+   "rankG": "234",
+   "delta": "6",
+   "W": "20",
+   "roots": "195",
+   "depth": "3",
+   "frontier_total": "20052",
+   "slice": "7",
+   "slices": "32",
+   "frontier_slice": "627"
+  },
+  "slice": [
+   7,
+   32
+  ],
+  "n_roots": 195,
+  "problem_sha256": "35df09ba727642dc206fe6dedbcaca8d13e544a78ed177d9b833e7727e1489b3",
+  "bb_secs": 0.4,
+  "verified": true
+ },
+ "host": "zp101",
+ "job": "8909299"
+}

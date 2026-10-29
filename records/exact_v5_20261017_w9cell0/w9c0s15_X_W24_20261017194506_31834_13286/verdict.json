@@ -1,0 +1,10 @@
+{
+ "run_id": "w9c0s15_X_W24_20261017194506_31834_13286",
+ "type": "X",
+ "W": 24,
+ "slices": 2,
+ "matrix_sha256": "52677530c54ea1a748c7dae29afa7a16ba8eef52f7006c72bec424d6d91aa13f",
+ "problem_sha256": "6c4a14620822821f3d32da71ffacf00e1c2b76c9ae926fa4060db5edfbe61980",
+ "result": "FOUND",
+ "upper": 24
+}

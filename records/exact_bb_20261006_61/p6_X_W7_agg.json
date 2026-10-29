@@ -1,0 +1,77 @@
+{
+ "X_W7": {
+  "0/4": {
+   "W": 7,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=550 mH=165 rank(G)=165 delta=8 W=7 roots=550 depth=2 frontier=3873 (slice 0/4 of 15492) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 132744,
+   "slice": [
+    0,
+    4
+   ],
+   "n_roots": 550,
+   "bb_secs": 0.0
+  },
+  "1/4": {
+   "W": 7,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=550 mH=165 rank(G)=165 delta=8 W=7 roots=550 depth=2 frontier=3873 (slice 1/4 of 15492) threads=32",
+   "status": "FOUND",
+   "weight": 7,
+   "support": [
+    0,
+    220,
+    330,
+    359,
+    379,
+    450,
+    495
+   ],
+   "nodes": 4451,
+   "slice": [
+    1,
+    4
+   ],
+   "n_roots": 550,
+   "bb_secs": 0.0,
+   "verified": true
+  },
+  "2/4": {
+   "W": 7,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=550 mH=165 rank(G)=165 delta=8 W=7 roots=550 depth=2 frontier=3873 (slice 2/4 of 15492) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 129372,
+   "slice": [
+    2,
+    4
+   ],
+   "n_roots": 550,
+   "bb_secs": 0.0
+  },
+  "3/4": {
+   "W": 7,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=550 mH=165 rank(G)=165 delta=8 W=7 roots=550 depth=2 frontier=3873 (slice 3/4 of 15492) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 132040,
+   "slice": [
+    3,
+    4
+   ],
+   "n_roots": 550,
+   "bb_secs": 0.0
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "Z_W4": {
+  "0/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=552 mH=168 rank(G)=144 delta=9 W=4 roots=138 depth=3 frontier=0 (slice 0/4 of 0) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5971,
+   "slice": [
+    0,
+    4
+   ],
+   "n_roots": 138,
+   "bb_secs": 0.0
+  },
+  "1/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=552 mH=168 rank(G)=144 delta=9 W=4 roots=138 depth=3 frontier=0 (slice 1/4 of 0) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5971,
+   "slice": [
+    1,
+    4
+   ],
+   "n_roots": 138,
+   "bb_secs": 0.0
+  },
+  "2/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=552 mH=168 rank(G)=144 delta=9 W=4 roots=138 depth=3 frontier=0 (slice 2/4 of 0) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5971,
+   "slice": [
+    2,
+    4
+   ],
+   "n_roots": 138,
+   "bb_secs": 0.0
+  },
+  "3/4": {
+   "W": 4,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=552 mH=168 rank(G)=144 delta=9 W=4 roots=138 depth=3 frontier=0 (slice 3/4 of 0) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 5971,
+   "slice": [
+    3,
+    4
+   ],
+   "n_roots": 138,
+   "bb_secs": 0.0
+  }
+ }
+}

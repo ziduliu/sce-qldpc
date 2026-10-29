@@ -1,0 +1,1 @@
+Z W=19: all 16 slices NONE, manifest checks passed - certified d_Z > 19 (nodes 8727372465)

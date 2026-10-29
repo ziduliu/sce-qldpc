@@ -1,0 +1,94 @@
+{
+ "p": "0.0015",
+ "rounds": 6,
+ "max_shots": 2000000,
+ "max_errors": 1000,
+ "seconds": 1305.1,
+ "error": null,
+ "codes": [
+  {
+   "name": "c2",
+   "family": "r020_C29_24x24_doubleton13_gapproduct_temporalholdout_v5",
+   "idx": 6,
+   "n": 580,
+   "k": 116,
+   "w": 10,
+   "d2s": 12,
+   "score": 8.5767,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 26100,
+    "bases": {
+     "Z": {
+      "basis": "Z",
+      "score": 8.5767,
+      "score_ceiling": 8.5767,
+      "score_perobs": 8.576744774462966,
+      "shots": 2000000,
+      "stopped_on": "shots",
+      "max_errors": 1000,
+      "max_shots": 2000000,
+      "shot_failures": 0,
+      "logical_failures": 0,
+      "logicals_failed": 0,
+      "worst_logical": 0,
+      "worst_logical_failures": 0,
+      "top_logicals": [],
+      "pl_round_per_logical": 0.0,
+      "pl_round_per_logical_ci_hi": 2.6500566721886075e-09,
+      "pl_round_per_obs_mean": 0.0,
+      "pl_round_per_obs_ci_hi": 2.650057062680844e-09,
+      "resolved_by_stage": [
+       1999996,
+       0,
+       4
+      ],
+      "unsatisfied": 0,
+      "depth": 13,
+      "k": 116,
+      "n": 580,
+      "attrib": null,
+      "secs": 1192.0
+     },
+     "X": {
+      "basis": "X",
+      "score": 8.5767,
+      "score_ceiling": 8.5767,
+      "score_perobs": 8.576744774462966,
+      "shots": 2000000,
+      "stopped_on": "shots",
+      "max_errors": 1000,
+      "max_shots": 2000000,
+      "shot_failures": 0,
+      "logical_failures": 0,
+      "logicals_failed": 0,
+      "worst_logical": 0,
+      "worst_logical_failures": 0,
+      "top_logicals": [],
+      "pl_round_per_logical": 0.0,
+      "pl_round_per_logical_ci_hi": 2.6500566721886075e-09,
+      "pl_round_per_obs_mean": 0.0,
+      "pl_round_per_obs_ci_hi": 2.650057062680844e-09,
+      "resolved_by_stage": [
+       1999995,
+       0,
+       5
+      ],
+      "unsatisfied": 0,
+      "depth": 13,
+      "k": 116,
+      "n": 580,
+      "attrib": null,
+      "secs": 1300.2
+     }
+    },
+    "sched_source": "Z:own,X:own",
+    "score": 8.5767,
+    "worse_basis": "Z",
+    "score_ceiling": 8.5767
+   }
+  }
+ ]
+}

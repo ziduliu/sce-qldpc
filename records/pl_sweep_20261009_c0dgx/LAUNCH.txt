@@ -1,0 +1,1 @@
+2026-10-09_00:50:44 c0dgx plc cell 0 82b2bf20fa54f6db q=44 p=0.002 shots=300000000 maxerr=0 shards=4 (8 ranks) PLTIMEOUT=165000 tlim=48h sched=/u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_plc61_c0_82b2bf20_p0.002_p0.002 (default noise; replaces gpu job 8901633) job 8901634

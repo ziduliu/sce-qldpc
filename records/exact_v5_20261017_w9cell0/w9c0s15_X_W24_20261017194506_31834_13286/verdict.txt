@@ -1,0 +1,1 @@
+X W=24: FOUND verified operator of weight 24 - upper bound d_X <= 24 (exact only together with a certified level W=23)

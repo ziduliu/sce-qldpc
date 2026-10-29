@@ -1,0 +1,20 @@
+{
+ "Z_W6": {
+  "0/1": {
+   "W": 6,
+   "secs": 0.0,
+   "tlimit": 400000.0,
+   "stderr": "n=580 mH=200 rank(G)=200 delta=6 W=6 roots=580 depth=2 frontier=9949 (slice 0/1 of 9949) threads=32",
+   "status": "NONE",
+   "weight": null,
+   "support": null,
+   "nodes": 43789,
+   "slice": [
+    0,
+    1
+   ],
+   "n_roots": 580,
+   "bb_secs": 0.0
+  }
+ }
+}

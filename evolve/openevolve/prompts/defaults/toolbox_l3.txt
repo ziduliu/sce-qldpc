@@ -1,0 +1,30 @@
+# TOOLBOX FOR THIS ASSIGNMENT LEVEL
+
+AUTHORISATION. This round you may define a group that appears nowhere in this
+prompt, nowhere in the archive and in no registry. Any finite group you can
+write down as the interface below is admissible, and the legality contract is
+the only thing that decides whether a particular one can be built. Nothing in
+this section is a suggestion about which group to choose.
+
+THE GROUP INTERFACE. CUSTOM_GROUP is a code STRING the scaffold evaluates. It
+must define exactly two functions:
+
+    valid_q(q) -> bool       the orders your family exists at
+    custom_ops(q) -> dict    keys: elements, ident, mul, inv, idx, red
+
+elements lists all q elements, each a tuple of small integers; ident is the
+identity; mul(g, h) and inv(g) are the group law; idx(g) is a bijection onto
+0..q-1 that the lift uses to index the regular representation; red(g) returns
+an element's canonical form. Those elements are what SLOT 3 draws from through
+G (G.elements, G.e, G.mul, G.inv, G.pick), so changing the group changes what
+every cell can contain.
+
+THE LEGALITY CONTRACT. Before anything is built, the scaffold checks the
+identity, the inverses and associativity of your ops and rejects a group that
+fails any of them. n = (ca*cb + ra*rb) * q must land in the window stated in
+the SCORING section for at least one q with valid_q(q) true, or the program is
+rejected before it is built; the largest such q is the one used. An HX row
+covers ca + rb cells and an HZ row ra + cb cells, counted in group elements,
+and both totals are gated against the cap in the SCORING section. A new family
+usually has different reachable orders, so the shape may have to move with the
+group - that is allowed this round.

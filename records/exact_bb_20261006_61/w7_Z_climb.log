@@ -1,0 +1,4 @@
+2026-10-06_20:43:33 level W=6: 4 slices (npz /u/zdliu/lp/jobs/sel61/archive/codes/b7bb3363de23fb63.npz)
+2026-10-06_20:43:33   slices 8901090:8901091:8901092:8901093 aggregator 8901094
+2026-10-07_15:34:11 Z W=6: FOUND weight 6 (verified) - exact d_Z = 6
+2026-10-07_15:34:11 exact d_Z found at W=6, climb ends

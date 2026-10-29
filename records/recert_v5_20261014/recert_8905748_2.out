@@ -1,0 +1,13 @@
+650863746ef14aa18c5e55268664f172ca6f8a29cab4de0b3fe21383defd9cae  /u/zdliu/lp/cert_v5/src/dkp_bb
+e2ed83ce14ef0b516eae20ba5f379293c19c6879794abd0bc6462f4f18937ff1  /u/zdliu/lp/cert_v5/src/exact_bb.py
+02e731399b2858a90a65de23a0657ca28961b1a823ba22736f8e7d5075e69162  /u/zdliu/lp/jobs/sel61/archive/codes/b51b14afe214768f.npz
+== X-type: H (168, 588) G (252, 588), W from 11 to 12
+   W=11: NONE  nodes=174717232  1.9 s
+   W=12: FOUND weight 12  nodes=132994  0.0 s
+   X-type: d_X > 11, d_X <= 12, exact d_X = 12
+== Z-type: H (252, 588) G (168, 588), W from 11 to 12
+   W=11: NONE  nodes=3463096  0.1 s
+   W=12: FOUND weight 12  nodes=5619  0.0 s
+   Z-type: d_Z > 11, d_Z <= 12, exact d_Z = 12
+RESULT d > 11, d <= 12, exact d = 12
+exit 0

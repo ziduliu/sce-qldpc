@@ -1,0 +1,7 @@
+2026-10-13_16:50:24 level W=16: 8 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c2s29.npz)
+2026-10-13_16:50:24   slices 8903598:8903599:8903600:8903601:8903602:8903603:8903604:8903605 aggregator 8903606
+2026-10-13_16:50:29 Z W=16: all 8 slices NONE - certified d_Z > 16  (nodes 706871675, max 1 s)
+2026-10-13_16:50:29 level W=17: 8 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c2s29.npz)
+2026-10-13_16:50:29   slices 8903661:8903662:8903663:8903664:8903665:8903666:8903667:8903668 aggregator 8903669
+2026-10-13_16:50:38 Z W=17: FOUND weight 17 (verified) - exact d_Z = 17
+2026-10-13_16:50:38 exact d_Z found at W=17, climb ends

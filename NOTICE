@@ -1,0 +1,8 @@
+sce-qldpc
+Copyright 2026 Zidu Liu and Florian Marquardt
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+evolve/openevolve/ is a modified copy of OpenEvolve 0.2.11
+(https://github.com/codelion/openevolve), which is distributed under the
+Apache License, Version 2.0. The modifications are described in evolve/README.md.

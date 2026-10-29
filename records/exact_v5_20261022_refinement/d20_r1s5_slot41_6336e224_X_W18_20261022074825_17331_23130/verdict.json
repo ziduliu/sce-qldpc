@@ -1,0 +1,10 @@
+{
+ "run_id": "d20_r1s5_slot41_6336e224_X_W18_20261022074825_17331_23130",
+ "type": "X",
+ "W": 18,
+ "slices": 16,
+ "matrix_sha256": "bfb11303c07692f269d181fee1061d28d966803722b2799809e9b0cc4fd9ab01",
+ "problem_sha256": "61631acd1bb1684d9695f8308dbbf84cc427976c3483dfb34fb90615ed058cde",
+ "result": "CERTIFIED",
+ "lower": 18
+}

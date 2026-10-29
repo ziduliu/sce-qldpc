@@ -1,0 +1,1 @@
+X W=3: FOUND weight 3 (verified) - exact d_X = 3

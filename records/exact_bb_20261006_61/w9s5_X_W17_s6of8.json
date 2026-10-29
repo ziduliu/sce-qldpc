@@ -1,0 +1,35 @@
+{
+ "npz": "/ptmp/zdliu/archives_live/cc_v7_gpt61sol500_w9_10c_out/archive/codes/8bd2c5b8b300903d.npz",
+ "n": 585,
+ "types": {
+  "X": {
+   "d": null,
+   "certified_greater_than": 17,
+   "runs": [
+    {
+     "W": 17,
+     "secs": 1.1,
+     "tlimit": 400000.0,
+     "stderr": "n=585 mH=234 rank(G)=232 delta=6 W=17 roots=195 depth=3 frontier=2086 (slice 6/8 of 16691) threads=32",
+     "status": "NONE",
+     "weight": null,
+     "support": null,
+     "nodes": 72923258,
+     "slice": [
+      6,
+      8
+     ],
+     "n_roots": 195,
+     "bb_secs": 1.1
+    }
+   ]
+  }
+ },
+ "orbits": "/u/zdliu/lp/oe_run/orbits_20261011_w9/w9s5.json",
+ "slice": [
+  6,
+  8
+ ],
+ "d": null,
+ "d_lower_certified": 18
+}

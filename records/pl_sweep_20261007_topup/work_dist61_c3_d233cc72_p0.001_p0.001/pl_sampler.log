@@ -1,0 +1,19 @@
+rank 4 local 0 on zpg018 gpu 0 group auto
+rank 7 local 0 on zpg029 gpu 0 group auto
+rank 1 local 0 on zpg012 gpu 0 group auto
+rank 2 local 0 on zpg013 gpu 0 group auto
+rank 6 local 0 on zpg025 gpu 0 group auto
+rank 5 local 0 on zpg019 gpu 0 group auto
+rank 0 local 0 on zpg010 gpu 0 group auto
+rank 3 local 0 on zpg014 gpu 0 group auto
+rank 2/8 -> unit 0 (c3 Z) shard 1/4: 12500000 shots, 12214 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0002.json
+rank 6/8 -> unit 0 (c3 Z) shard 3/4: 12500000 shots, 12228 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0006.json
+rank 0/8 -> unit 0 (c3 Z) shard 0/4: 12500000 shots, 12236 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0000.json
+rank 4/8 -> unit 0 (c3 Z) shard 2/4: 12500000 shots, 12251 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0004.json
+rank 3/8 -> unit 1 (c3 X) shard 1/4: 12500000 shots, 12290 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0003.json
+rank 7/8 -> unit 1 (c3 X) shard 3/4: 12500000 shots, 12313 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0007.json
+rank 5/8 -> unit 1 (c3 X) shard 2/4: 12500000 shots, 12322 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0005.json
+rank 1/8 -> unit 1 (c3 X) shard 0/4: 12500000 shots, 12339 s -> /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json.part0001.json
+c3                         Z [[560,130]] shots 50000000: fail 28, logical 964, stages [49999942, 1, 57], unsat 0, worst 86, 12251 s wall over 4 shards
+c3                         X [[560,130]] shots 50000000: fail 5, logical 227, stages [49999974, 0, 26], unsat 0, worst 95, 12339 s wall over 4 shards
+wrote /u/zdliu/lp/oe_run/pl_sweep_20261007_topup/work_dist61_c3_d233cc72_p0.001_p0.001/pl.json

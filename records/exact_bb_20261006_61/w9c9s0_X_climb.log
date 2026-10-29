@@ -1,0 +1,7 @@
+2026-10-13_16:49:26 level W=1: 1 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c9s0.npz)
+2026-10-13_16:49:26   slices 8903145 aggregator 8903146
+2026-10-13_16:49:29 X W=1: all 1 slices NONE - certified d_X > 1  (nodes 44, max 0 s)
+2026-10-13_16:49:29 level W=2: 1 slices (npz /u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c9s0.npz)
+2026-10-13_16:49:29   slices 8903178 aggregator 8903180
+2026-10-13_16:49:32 X W=2: all 1 slices NONE - certified d_X > 2  (nodes 44, max 0 s)
+2026-10-13_16:49:32 reached WMAX=2: d_X > 2 certified, climb ends

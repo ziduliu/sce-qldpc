@@ -1,0 +1,140 @@
+# THIS ROUND - HIGHEST PRIORITY
+Assignment level: L3 (LEVEL_3_GROUP)
+THIS ROUND: jump to a different group - rewrite CUSTOM_GROUP (set GTYPE = "custom"; valid_q(q) and custom_ops(q) defining elements, ident, mul, inv) and update FAMILY_NAME. The new group must be a genuinely different group from the parent's (not a relabeling); any finite group you can write down qualifies, abelian or not. You MAY also edit A_SHAPE/B_SHAPE and must repair NEW_CTX/CELL so every cell is well defined; the pair (order q, shapes) must satisfy n = (ca*cb + ra*rb)*q inside [100, 600). The scaffold validates identity, inverses and associativity before building and rejects a group whose admissible orders yield no valid n. Recheck both row-weight sums against the cap of 12. The BEDS list in RUN STATE shows every (group, shapes) bed this run has tried.
+
+WHERE TO FILL: this run's goal is the whole FRONTIER (RUN STATE): the best program of EVERY rate cell, k/n from 0.10 to 0.55 in
+steps of 0.05. Empty cells and cells whose best is far below the neighbouring cells are where a round can gain the most; the SHAPES table lists, per cell, the shapes whose rank-count bound lands there with the largest lift order the size window admits. Cells are the 10 centres k/n = 0.100, 0.150, ..., 0.550; the two
+end cells are open-ended (everything below 0.125 counts in the
+first, everything above 0.525 in the last); a program belongs to the cell whose centre is nearest to the mean k/n of its five measured codes (cell 0.200 spans 0.175-0.225). Each round NAMES the cell it is trying to fill (see THIS ROUND above). Write the CENTRE of the cell you are actually aiming at as the SECOND line of your reply, right after the CHANGES line: "TARGET CELL: 0.200" - normally the cell this round names; if you aim elsewhere, say why in your reason line. The round counts in the cell the program's measured codes actually land in, whichever you aimed at.
+RESPONSE ORDER: first the line "CHANGES: <group|shapes|filling, comma-separated>" naming exactly the layers this card allows you to change, then one line of reason, then, before any diff:
+  CONCEPT: <one falsifiable constructive principle naming the group, its order, and the A_SHAPE/B_SHAPE>
+  GROUP: <why this group and this order: which measured beds (readings in the table or in RUN STATE) or which algebraic fact (the rank bound, earlier readings on this or a related group) point to it; on a round that keeps the group, why it is kept>
+  SHAPES: <why (ra,ca)x(rb,cb) for the cell this round names: the guaranteed rate it gives, the lift order it allows, what the two sides' component codes look like (equal shapes give equal-length component codes on the X and Z sides), and which protograph blocks (Acol/Brow in the table) carried the parent's lightest logicals; on a round that keeps the shapes, why they are kept>
+  FILLING: <how the cells are filled and why: the element model / support profile, and which table facts it is meant to change (witness weights, their block locations, k above the bound)>
+  DIFFERS FROM PARENT: <what the built matrices will contain that the parent's do not>
+The FIRST SEARCH/REPLACE hunk must rewrite CONCEPT, GROUP, SHAPES and FILLING (and FAMILY_NAME whenever the group, the shapes or the labeling rule changes) so that the program carries the reasons for its own group, shapes and filling; every later hunk implements them. A diff that reproduces the parent's matrices wastes the round: it is still built and scored, and returns a number already known (and its codes are archive duplicates that score nothing).
+
+# TOOLBOX FOR THIS ASSIGNMENT LEVEL
+
+AUTHORISATION. This round you may define a group that appears nowhere in this
+prompt, nowhere in the archive and in no registry. Any finite group you can
+write down as the interface below is admissible, and the legality contract is
+the only thing that decides whether a particular one can be built. Nothing in
+this section is a suggestion about which group to choose.
+
+THE GROUP INTERFACE. CUSTOM_GROUP is a code STRING the scaffold evaluates. It
+must define exactly two functions:
+
+    valid_q(q) -> bool       the orders your family exists at
+    custom_ops(q) -> dict    keys: elements, ident, mul, inv, idx, red
+
+elements lists all q elements, each a tuple of small integers; ident is the
+identity; mul(g, h) and inv(g) are the group law; idx(g) is a bijection onto
+0..q-1 that the lift uses to index the regular representation; red(g) returns
+an element's canonical form. Those elements are what SLOT 3 draws from through
+G (G.elements, G.e, G.mul, G.inv, G.pick), so changing the group changes what
+every cell can contain.
+
+THE LEGALITY CONTRACT. Before anything is built, the scaffold checks the
+identity, the inverses and associativity of your ops and rejects a group that
+fails any of them. n = (ca*cb + ra*rb) * q must land in the window stated in
+the SCORING section for at least one q with valid_q(q) true, or the program is
+rejected before it is built; the largest such q is the one used. An HX row
+covers ca + rb cells and an HZ row ra + cb cells, counted in group elements,
+and both totals are gated against the cap in the SCORING section. A new family
+usually has different reachable orders, so the shape may have to move with the
+group - that is allowed this round.
+
+# Current Program Information
+- Fitness: 20.7910
+- Current performance metrics:
+- combined_score: 20.7910
+- result: ok
+- n_distinct: 55.0000
+- n_measured: 5.0000
+- n_archive_dup: 0.0000
+- secs: 491.7000
+- rate: 0.3249
+- artifacts.slot_table:
+idx  n    k   k-kb  w  d2s  proxy   d30s   kd30s^2/n  status
+  0  551  179    8  11    8  20.791      8     20.791  measured
+     minimum-weight logicals found by the 30 s search: X-type: at least 300 operators at weight 8 (300 only in sector 1, 0 only in sector 2, 0 in both); Z-type: at least 300 operators at weight 8 (300 only in sector 1, 0 only in sector 2, 0 in both)
+     blocks touched by the X-type operators (block: how many of the 300 listed operators use it): Acol2/Bcol4:89, Acol2/Bcol0:81, Acol1/Bcol4:79, Acol2/Bcol2:77, Acol1/Bcol0:75, Acol1/Bcol2:73, Acol1/Bcol3:65, Acol2/Bcol3:65, Acol2/Bcol1:63, Acol1/Bcol1:60, Acol3/Bcol4:55, Acol3/Bcol0:47, Acol3/Bcol2:45, Acol3/Bcol3:43, Acol0/Bcol4:40, Acol3/Bcol1:40, Acol4/Bcol4:37, Acol4/Bcol0:35, Acol0/Bcol3:34, Acol0/Bcol0:33, Acol4/Bcol2:31, Acol4/Bcol3:31, Acol0/Bcol2:30, Acol0/Bcol1:28, Acol4/Bcol1:27
+     blocks touched by the Z-type operators (block: how many of the 300 listed operators use it): Acol4/Bcol2:101, Acol1/Bcol2:98, Acol3/Bcol2:98, Acol0/Bcol2:93, Acol2/Bcol2:88, Acol4/Bcol1:79, Acol3/Bcol1:78, Acol0/Bcol1:75, Acol1/Bcol1:71, Acol2/Bcol1:71, Acol4/Bcol3:51, Acol1/Bcol3:48, Acol3/Bcol3:48, Acol2/Bcol3:46, Acol0/Bcol3:43, Acol4/Bcol4:30, Acol3/Bcol4:27, Acol2/Bcol4:26, Acol1/Bcol4:25, Acol0/Bcol4:23, Acol0/Bcol0:20, Acol4/Bcol0:20, Acol2/Bcol0:17, Acol3/Bcol0:17, Acol1/Bcol0:15
+     weight spectrum found (weight:verified operators, both types, uncapped): 8:3070
+     cells A=[[[[0,0],[0,11],[0,17]],[[0,14]],[[0,18]],[[0,10]],[[0,6]]],[[],[[0,13],[0,14]],[[0,3],[0,6]],[[0,12],[0,18]],[[0,16],[0,18]]]] B=[[[[0,5]],[[0,7]],[[0,1],[0,2],[0,13]],[[0,13]],[[0,5]]],[[[0,7],[0,8]],[[0,11],[0,18]],[],[[0,3],[0,12]],[[0,3],[0,17]]]]
+  1  551  179    8  11    6  11.695      -          -  distinct
+  [... slots 2-59: the same columns; measured slots carry the operator lines, every slot its cells ...]
+COLUMNS: k-kb = k above the rank-count bound q(ca-ra)(cb-rb); d2s = 2 s code-capacity search on every distinct slot; d30s = 30 s search on the top-5 by proxy (the smaller of the two readings); both are upper bounds on the code distance. No circuit-level tier. For measured slots every minimum-weight logical operator the 30 s search found is located (there are usually many; the search finds some of them, never provably all): how many per type, how they split between the two LP sectors, and which protograph blocks they use (Acol j/Bcol b = sector-1 block of A-column j and B-column b; Arow i/Brow a = sector-2 block). The weight spectrum lists, for each weight the search reached, how many verified operators it found.
+- artifacts.run_state:
+- artifacts.run_state:
+RUN STATE rendered 2026-09-24 17:08 (live at prompt time; iteration 465 in the newest checkpoint, 352 programs in checkpoints, 138 evaluated since)
+
+BEDS - every (group, shapes) bed with a recorded evaluation in this run. best-since = how long the bed's best has stood at its current value.
+  best  programs  best@iter  best-since  bed
+  113.3        18        295     481 min  Z13:Z9(s=3) q=117 (1,2)x(1,2) n=585
+  111.4         9        254     510 min  Z13:Z9(s=3) q=117 (2,1)x(2,1) n=585
+  105.4         3        new      31 min  nonabelian#2b30f4(centre 19, 57 classes) q=114 (1,2)x(1,2) n=570
+  [... remaining beds ...]
+MOVES - what earlier generations' moves did, by ACTUAL level (1 same group+shapes as parent, 2 same group/new shapes, 3 new group), over the children whose parent is recorded. 'improved' = child beat its parent; 'bed record' = child beat the best of its destination bed at that time.
+  level 1: 124 children, 55 improved on parent, 38 set a bed record; gain median +0.0, best +34.0
+  level 2: 30 children, 9 improved on parent, 19 set a bed record; gain median -1.9, best +27.5
+  level 3: 190 children, 83 improved on parent, 137 set a bed record; gain median -0.8, best +94.7
+  bed jumps (iteration, level, from -> to, child score, destination bed best before it):
+    it 420 L2  Z37 q=37 (2,3)x(2,4) n=592  ->  Z37 q=37 (2,4)x(2,3) n=592 : 38.9  (dest best before: 38.7)
+    [... remaining bed jumps ...]
+FRONTIER - best program of each rate band (the MAP-Elites cells: k/n from 0.10 in steps of 0.050), its measured codes [[n,k,d]] w (d = the run's distance reading: the 30 s code-capacity search in cc mode, else d_circ), and the cells of its best slot (in THAT program's CUSTOM_GROUP element encoding; sides A then B, protograph row-major).
+  band  0 (k/n~0.100): 60.3  Z46 q=46 (3,2)x(3,2) n=598 | [[598,46,28]] w12, [[598,46,28]] w12, [[598,46,28]] w12, [[598,46,28]] w12, [[598,46,28]] w12
+      best slot cells: A=[[[[12,0],[21,0],[10,1],[15,1]],[[19,1]]],[[[15,0],[8,1]],[[10,0],[1,1],[11,1]]],[[[20,1]],[[15,0],[13,1],[21,1]]]] B=[[[[0,0],[7,1],[8,1],[20,1]],[[22,0]]],[[[21,0],[18,1]],[[8,0],[2,1],[13,1]]],[[[8,1]],[[1,0],[10,1],[13,1]]]]
+  band  1 (k/n~0.150): 42.7  Z37 q=37 (2,3)x(2,4) n=592 | [[592,83,18]] w12, [[592,83,18]] w12, [[592,83,18]] w12, [[592,79,17]] w12, [[592,79,17]] w12
+      best slot cells: A=[[[[2,0],[31,0]],[[13,0],[23,0]],[[7,0],[11,0]]],[[[22,0],[28,0]],[[11,0],[21,0]],[[3,0],[28,0]]]] B=[[[[22,0],[24,0],[29,0]],[[9,0]],[[3,0],[4,0],[32,0]],[[35,0]]],[[[14,0]],[[19,0],[30,0],[34,0]],[[4,0]],[[1,0],[14,0],[17,0]]]]
+  [... bands 2-9 ...]
+SHAPES - the size law admits 373 distinct (A,B) shape families with sides up to 8 and n < 600 (k-bound (ca-ra)(cb-rb) > 0; A/B swap and transposing both sides counted once). Per 0.05 band of the guaranteed k/n = (ca-ra)(cb-rb)/(ca*cb+ra*rb): the 6 shapes with the largest lift order q_max = floor(599/(ca*cb+ra*rb)), plus every shape this run has used ('best' = this run's best fitness on it, '-' = never used in this run).
+  k/n>=  n/q  q_max   best  shape
+  -- cell 0, k/n below 0.1250 (open-ended), centre 0.100 (133 shapes) --
+  0.125    8     74   25.2  (1,2)x(2,3)
+  0.091   11     54   16.5  (1,2)x(3,4)
+  0.077   13     46   60.3  (2,3)x(2,3)
+  [... remaining cells ...]
+
+# Program Evolution History
+## Previous Attempts
+### Attempt 1 (direct parent of the current program, found at iteration 166)
+  [metrics, slot table, run state and full EVOLVE block of the parent's parent ...]
+
+## Top Performing Programs
+### Program 1 (Score: ...)
+  [metrics, slot table, 'Author reasoning for this program: ...' and full EVOLVE block ...]
+### Program 2 ... ### Program 3 ...
+
+## Diverse Programs
+### Program 1 ... ### Program 2 ...
+
+# Task
+Improve the program's FITNESS SCORE within the assignment above.
+
+You MUST use the exact SEARCH/REPLACE diff format shown below to indicate changes:
+
+<<<<<<< SEARCH
+# Original code to find and replace (must match exactly)
+=======
+# New replacement code
+>>>>>>> REPLACE
+
+Example of valid diff format:
+<<<<<<< SEARCH
+for i in range(m):
+    for j in range(p):
+        for k in range(n):
+            C[i, j] += A[i, k] * B[k, j]
+=======
+# Reorder loops for better memory access pattern
+for i in range(m):
+    for k in range(n):
+        for j in range(p):
+            C[i, j] += A[i, k] * B[k, j]
+>>>>>>> REPLACE
+
+You can suggest multiple changes. Each SEARCH section must exactly match code in the current program.
+
+IMPORTANT: Do not rewrite the entire program - focus on targeted improvements.

@@ -1,0 +1,51 @@
+{
+ "npz": "/u/zdliu/lp/oe_run/pl10_gpt61sol_out/archive/codes/239bca5f913aa8b1.npz",
+ "n": 580,
+ "types": {
+  "X": {
+   "d": 14,
+   "certified_greater_than": 13,
+   "runs": [
+    {
+     "W": 14,
+     "secs": 0.0,
+     "tlimit": 200000.0,
+     "stderr": "n=580 mH=232 rank(G)=224 delta=8 W=14 roots=20 depth=4 frontier=4842 (slice 0/8 of 38735) threads=32",
+     "status": "FOUND",
+     "weight": 14,
+     "support": [
+      0,
+      2,
+      7,
+      8,
+      17,
+      24,
+      35,
+      41,
+      42,
+      49,
+      51,
+      63,
+      91,
+      96
+     ],
+     "nodes": 53391,
+     "slice": [
+      0,
+      8
+     ],
+     "n_roots": 20,
+     "bb_secs": 0.0,
+     "verified": true
+    }
+   ]
+  }
+ },
+ "orbits": "/u/zdliu/lp/oe_run/orbits_20261006_61/p3.json",
+ "slice": [
+  0,
+  8
+ ],
+ "d": 14,
+ "d_lower_certified": 14
+}

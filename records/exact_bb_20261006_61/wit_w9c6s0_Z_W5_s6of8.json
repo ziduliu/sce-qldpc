@@ -1,0 +1,42 @@
+{
+ "npz": "/u/zdliu/lp/oe_run/w9cert_20261013/npz/w9c6s0.npz",
+ "n": 550,
+ "types": {
+  "Z": {
+   "d": 5,
+   "certified_greater_than": 4,
+   "runs": [
+    {
+     "W": 5,
+     "secs": 0.0,
+     "tlimit": 200000.0,
+     "stderr": "n=550 mH=165 rank(G)=162 delta=6 W=5 roots=550 depth=2 frontier=1129 (slice 6/8 of 9038) threads=32",
+     "status": "FOUND",
+     "weight": 5,
+     "support": [
+      9,
+      300,
+      394,
+      482,
+      504
+     ],
+     "nodes": 2717,
+     "slice": [
+      6,
+      8
+     ],
+     "n_roots": 550,
+     "bb_secs": 0.0,
+     "verified": true
+    }
+   ]
+  }
+ },
+ "orbits": "/u/zdliu/lp/oe_run/w9cert_20261013/orbits/w9c6s0.json",
+ "slice": [
+  6,
+  8
+ ],
+ "d": 5,
+ "d_lower_certified": 5
+}
