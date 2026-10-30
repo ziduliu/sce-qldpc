@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Circuit-level sweep in two layouts (A: one axis; B: one panel per rate cell) from
-figures/data/pl_sweep_20261007_61_fig.json; also provides the helpers used by pl_sweep_61_ab_v.py.
+figures/data/pl_sweep_20261030_onecircuit_fig.json; also provides the helpers used by pl_sweep_61_ab_v.py.
 Env: PL_CELLS (default 0-5), PL_SKIP ("plc:0,plc:4"). Writes pl_sweep_61_cleanA/B.{pdf,png}."""
 import json
 import os
@@ -15,7 +15,7 @@ from scipy.stats import beta as beta_dist
 plt.rcParams.update({"font.family": "Helvetica Neue", "font.size": 9, "axes.linewidth": 0.8,
                      "xtick.major.width": 0.8, "ytick.major.width": 0.8})
 HERE = os.path.dirname(os.path.abspath(__file__))
-rows = json.load(open(os.path.join(HERE, "..", "data", "pl_sweep_20261007_61_fig.json")))
+rows = json.load(open(os.path.join(HERE, "..", "data", "pl_sweep_20261030_onecircuit_fig.json")))
 CELLS = [int(x) for x in os.environ.get("PL_CELLS", "0,1,2,3,4,5").split(",") if x]
 SKIP = {(a, int(c)) for a, c in (x.split(":") for x in os.environ.get("PL_SKIP", "").split(",") if x)}
 RATE = {0: "<0.125", 1: "0.15", 2: "0.20", 3: "0.25", 4: "0.30", 5: "0.35", 6: "0.40", 7: "0.45", 8: "0.50", 9: ">0.525"}

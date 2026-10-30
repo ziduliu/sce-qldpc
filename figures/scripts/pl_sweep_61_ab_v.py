@@ -1,7 +1,7 @@
 """Figure 2: logical error rate per round and per logical qubit of the FOM and CLER elite codes.
-Data: figures/data/pl_sweep_20261009_61_fig_bbibm.json (rows per code, basis and physical error rate; the worse basis
-is drawn, with 95% Clopper-Pearson intervals), read through pl_sweep_61_clean.py. (a) against the physical error
-rate p, the six rate cells below k/n = 0.4: CLER elite codes as solid lines with filled markers, FOM elite codes as
+Data: figures/data/pl_sweep_20261030_onecircuit_fig.json (rows per code and physical error rate, built by
+pl_sweep_onecircuit_build.py; the worse basis is drawn, with 95% Clopper-Pearson intervals), read through
+pl_sweep_61_clean.py. (a) against the physical error rate p, the six rate cells below k/n = 0.4: CLER elite codes as solid lines with filled markers, FOM elite codes as
 dashed lines with open markers, the [[144,12,12]] reference as grey diamonds; (b) the same codes at p = 0.002 against
 their encoding rate. Writes pl_sweep_61_ab_v.{pdf,png}. Fira Sans is used when the font is installed."""
 import os
@@ -18,7 +18,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 os.environ.setdefault("PL_CELLS", "0,1,2,3,4,5")
 os.environ.setdefault("PL_SKIP", "")
 src = open(os.path.join(HERE, "pl_sweep_61_clean.py")).read().split("# ---------------- layout A")[0]
-src = src.replace("pl_sweep_20261007_61_fig.json", "pl_sweep_20261009_61_fig_bbibm.json")
 C = {"__file__": os.path.join(HERE, "pl_sweep_61_clean.py")}
 exec(compile(src, "pl_sweep_61_clean.py", "exec"), C)
 rows, CELLS, MARK, RATE, pts = C["rows"], C["CELLS"], C["MARK"], C["RATE"], C["pts"]

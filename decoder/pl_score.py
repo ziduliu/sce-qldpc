@@ -40,7 +40,8 @@ TIMEOUT = float(os.environ.get("PL_SCORE_TIMEOUT", "4800"))
 KEEP = os.environ.get("PL_SCORE_KEEP", "0") == "1"
 LOG_TAIL = int(os.environ.get("PL_SCORE_LOG_TAIL", "40"))
 FLOOR = 1e-12          # guards log10 if a bound ever comes back as 0
-BASES = ("Z", "X")
+# bases to measure, default both; the one-circuit runs (records/pl_sweep_20261030_onecircuit) measure one per run
+BASES = tuple(b for b in os.environ.get("PL_SCORE_BASES", "Z,X").split(",") if b)
 ORTOOLS = os.environ.get("PL_SCORE_ORTOOLS", "/ptmp/zdliu/ortools_local")
 
 # Optional: share the first code's schedules with the other codes (sched_share);

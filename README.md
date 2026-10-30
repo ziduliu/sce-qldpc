@@ -58,8 +58,10 @@ Data:
   holds the verified weight-24 logical operators of the [[585,121,24]] code). The In-loop, 600 s, 2 h and
   dist-m4ri columns of the verification table are not backed by files in this repository
 - `records/pl_sweep_20261006_61/`, `records/pl_sweep_20261007_topup/`, `records/pl_sweep_20261009_c0dgx/`,
-  `records/pl_sweep_20261009_bbibm/` the circuit-level sweeps behind Fig. 2 (one JSON per code, basis and
-  physical error rate, with the schedule and the decoder log)
+  `records/pl_sweep_20261009_bbibm/` the circuit-level sweeps (one JSON per code and physical error rate, with
+  the schedule and the decoder log), and `records/pl_sweep_20261030_onecircuit/` the measurements of the Fig. 2
+  codes on one fixed schedule per code (`sched/<code>.json`, the same circuit in both bases): `legs.tsv` lists
+  each measurement (code, p, basis, shot cap, failure cap, shards) with its result in `out/`, `codes.json` the codes
 
 The CLER random-mutation repeat 4 of the paper is the folder `pl10_rnd500v5_rep6_out`. The refinement
 folders hold the start program (child 0) and the children of each run; their configuration is
@@ -70,14 +72,16 @@ Figures and tables:
 - Fig. 1: panel (a) is a drawing; panel (b) plots `kd^2/n` against `k/n` for the FOM codes of the ten rate
   cells (the gpt-6.1-sol rows of the Supplementary elite table) and the codes of the weight-9 table
   (`codes/index.json`)
-- Fig. 2: `pl_sweep_61_build.py` (sweep records to `figures/data/pl_sweep_20261007_61_fig.json`),
-  `pl_sweep_61_bbibm_merge.py` (adds the [[144,12,12]] reference rows, `pl_sweep_20261009_61_fig_bbibm.json`),
-  `pl_sweep_61_ab_v.py` (the plot; reads the rows, markers and intervals through `pl_sweep_61_clean.py`),
-  `pl_sweep_61_final_20261010.py` (driver)
+- Fig. 2: `pl_sweep_onecircuit_build.py` builds `figures/data/pl_sweep_20261030_onecircuit_fig.json` from the
+  records above. Every code is measured on its fixed schedule in both bases at every p: the counts of each basis
+  come from a measurement in `records/pl_sweep_20261030_onecircuit/` (row field `one_circuit`) or from the sweep
+  record of that point, whose run used the same schedule (row field `kept_basis`); the build checks this for every
+  row and adds the [[144,12,12]] reference rows (published depth-7 schedule). `pl_sweep_61_ab_v.py` draws the
+  figure (rows, markers and intervals through `pl_sweep_61_clean.py`)
 - Fig. 3: `line_score_arms.py` from `figures/data/line_score_arms_iter.json` (the run score of every
   run after each step)
 - Table 1: `n`, `k`, `d` and `w` from `codes/index.json`; CNOTs is the number of nonzero entries of `H_X` and
-  `H_Z`; Depth is the schedule depth of the `p = 0.002` rows of `figures/data/pl_sweep_20261009_61_fig_bbibm.json`
+  `H_Z`; Depth is the schedule depth of the `p = 0.002` rows of `figures/data/pl_sweep_20261030_onecircuit_fig.json`
 
 ## License
 

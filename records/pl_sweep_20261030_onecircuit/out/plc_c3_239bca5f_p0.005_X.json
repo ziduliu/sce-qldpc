@@ -1,0 +1,88 @@
+{
+ "p": "0.005",
+ "rounds": 6,
+ "max_shots": 1250,
+ "max_errors": 0,
+ "seconds": 5131.2,
+ "error": null,
+ "codes": [
+  {
+   "name": "c3",
+   "family": "c3",
+   "idx": -1,
+   "n": 580,
+   "k": 132,
+   "w": 12,
+   "d2s": null,
+   "score": 2.554,
+   "detail": {
+    "scheduled": true,
+    "sched_note": "cached",
+    "sched_secs": 0.0,
+    "cnots": 33408,
+    "bases": {
+     "X": {
+      "basis": "X",
+      "score": 2.554,
+      "score_ceiling": 5.4288,
+      "score_perobs": 1.0056979907780614,
+      "shots": 1250,
+      "stopped_on": "shots",
+      "max_errors": 0,
+      "max_shots": 1250,
+      "shot_failures": 1153,
+      "logical_failures": 76150,
+      "logicals_failed": 132,
+      "worst_logical": 20,
+      "worst_logical_failures": 629,
+      "top_logicals": [
+       [
+        20,
+        629
+       ],
+       [
+        94,
+        624
+       ],
+       [
+        113,
+        615
+       ],
+       [
+        87,
+        613
+       ],
+       [
+        27,
+        610
+       ],
+       [
+        65,
+        603
+       ]
+      ],
+      "pl_round_per_logical": 0.0026280614071101443,
+      "pl_round_per_logical_ci_hi": 0.0027922455552229866,
+      "pl_round_per_obs_mean": 0.09802275503565783,
+      "pl_round_per_obs_ci_hi": 0.09869655848210901,
+      "resolved_by_stage": [
+       26,
+       71,
+       1153
+      ],
+      "unsatisfied": 0,
+      "depth": 16,
+      "k": 132,
+      "n": 580,
+      "attrib": null,
+      "secs": 5126.6
+     }
+    },
+    "sched_source": "Z:own,X:own",
+    "score": 2.554,
+    "worse_basis": "X",
+    "score_ceiling": 5.4288
+   }
+  }
+ ]
+}

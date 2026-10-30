@@ -25,7 +25,7 @@ folder does not change them). To run it elsewhere, place each file at its server
 
 | file | what it does | server path |
 |---|---|---|
-| `pl_score.py` | `score_codes(codes, ...)`: schedule search if needed (`../circuit_schedule/asc_schedule.py`), starts `pl_sample.py` per code and basis (as a subprocess, or as `srun` ranks with `PL_SCORE_SRUN=1`), computes s; default sampler environment `PLC_MODE=gpu2`, `PLG_STAGE1=gpu`, `PLC_STAGE3=lsd`, `PLF_WORKERS=0`, `PL_CHUNK=250` | `/u/zdliu/lp/circmean/pl_score.py` (linked from `/u/zdliu/lp/plevolve_20260912/`) |
+| `pl_score.py` | `score_codes(codes, ...)`: schedule search if needed (`../circuit_schedule/asc_schedule.py`), starts `pl_sample.py` per code and basis (as a subprocess, or as `srun` ranks with `PL_SCORE_SRUN=1`), computes s; `PL_SCORE_BASES` (default `Z,X`) selects the bases; default sampler environment `PLC_MODE=gpu2`, `PLG_STAGE1=gpu`, `PLC_STAGE3=lsd`, `PLF_WORKERS=0`, `PL_CHUNK=250` | `/u/zdliu/lp/circmean/pl_score.py` (linked from `/u/zdliu/lp/plevolve_20260912/`) |
 | `pl_sample.py` | sampling in chunks, batched GPU first leg, cascade on the unconverged shots, stopping rule, failure counts per basis, sharding over ranks | `/u/zdliu/lp/plevolve_20260912/pl_sample.py` |
 | `pl_attrib.py` | block-level failure map from the scored shots (reported back to the model in the CLER runs) | `/u/zdliu/lp/plevolve_20260912/pl_attrib.py` |
 | `pl_at_p.py` | relay-BP stage parameters `STAGE1`, `STAGE2`, stage-3 settings, Clopper-Pearson interval | `/u/zdliu/lp/circmean/pl_at_p.py` |
@@ -60,6 +60,18 @@ DRY=1 /u/zdliu/lp/jobs/topup61_launch.sh             # top-up legs, then run wit
 # each leg is one job:
 sbatch -p gpu --nodes=2 --ntasks=2 --ntasks-per-node=1 --gres=gpu:1 ... \
   --export=ALL,ARCHIVE=<run archive>,OUT=<dir>,TAG=<tag>,LEGS=<p>:<shots>,MAXERR=1000,HASH=c<cell>:<q>:<sha> deepverify_pl.sbatch
+```
+
+- The one-circuit measurements of Fig. 2 (`../records/pl_sweep_20261030_onecircuit/`): one run per line of its
+  `legs.tsv` (code, p, basis, shot cap, failure cap, shards), each with the code's fixed schedule
+  (`sched/<code>.json`) copied into the work directory as `asc_schedules.json`, so that no schedule is solved
+  (`sched_note` "cached" in every result):
+
+```
+# inside a Slurm allocation of <shards> tasks with one GPU each; pl_score starts the shards with srun
+PL_SCORE_ROUNDS=6 PL_SCORE_SRUN=1 PL_SCORE_P=<p> PL_SCORE_BASES=<basis> PL_SCORE_SHOTS=<shot_cap> \
+PL_SCORE_MAX_ERRORS=<max_errors> PL_SCORE_SHARDS=<shards> PLF_WORKERS=5 \
+  python deepverify_pl.py --npz c<cell>:<q>:<code npz> --workdir <work dir> --out <result json>
 ```
 
 ## Dependencies
