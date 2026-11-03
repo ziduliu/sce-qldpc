@@ -30,11 +30,10 @@ for _p in (HERE, CIRCMEAN, ACC, PLSTAGE2):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-# orig  = hybrid_cascade.continue_chunk.
 # ref   = exact_cascade's re-implementation of it, decoders built per call.
 # hoist = ref with the stage-3 decoder taken from a process-wide cache.
 # gpu2  = hoist with relay stage 2 (and with PLG_STAGE1=gpu stage 1) on the GPU.
-MODE = os.environ.get("PLC_MODE", "orig")
+MODE = os.environ.get("PLC_MODE", "gpu2")   # the paper's setting (pl_score.py)
 # optional path prefix for a per-chunk record of the counts
 CHUNKLOG = os.environ.get("PLC_CHUNKLOG", "")
 

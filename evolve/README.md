@@ -17,8 +17,9 @@ server path or edit the paths.
    seed directory and then runs the engine (`openevolve/`) for ITERS iterations with the given config.
 2. Each iteration the engine draws a parent and a card level, builds the prompt (`openevolve/prompt/`), asks
    the model for a diff of the EVOLVE block and hands the child to `oe_evaluator_circmean_v3.py` (FOM) or
-   `oe_evaluator_circmean_pl.py` (CLER). The adapter runs the child's `get_candidates()` (60 slots), checks
-   the size window and the check-weight cap and writes one request to the spool directory.
+   `oe_evaluator_circmean_pl.py` (CLER). The adapter runs the child's `get_candidates()` (60 slots) and writes one request to the spool
+   directory; the size window and the check-weight cap are enforced by the program scaffold of every
+   seed and again by the worker evaluator (`eval_circmean_v3.py`).
 3. GPU worker jobs (`circmean_worker.sbatch` / `worker_pl.sbatch`) run `circmean_worker.py`, which takes
    requests from the spool and runs `eval_circmean_v3.py` (FOM) or `eval_circmean_pl.py` (CLER) on each:
    build H_X, H_Z of every slot (`random_search_all_levels._lift` / `_lifted_product`), check CSS, drop
@@ -31,7 +32,7 @@ server path or edit the paths.
 
 | file | what it does | server path |
 |---|---|---|
-| `openevolve/` | OpenEvolve 0.2.11 with our modifications (rate-cell MAP-Elites, assignment cards, per-cell parent pools, prompt sections, RUN STATE hook); see the table below | `/u/zdliu/lpenv/lib/python3.12/site-packages/openevolve/` |
+| `openevolve/` | OpenEvolve 0.2.11 with our modifications (rate-cell MAP-Elites, assignment cards, per-cell parent pools, prompt sections, RUN STATE hook); the modified files are listed at the end of this file | `/u/zdliu/lpenv/lib/python3.12/site-packages/openevolve/` |
 | `run_circmean.py` | controller entry point: evaluates every seed, adds them to the database, runs the engine; `--checkpoint` resumes | `/u/zdliu/lp/circmean/run_circmean.py` |
 | `oe_circmean.sbatch` | FOM controller job: exports the run settings, starts `runstate.py` and `run_circmean.py` | `/u/zdliu/lp/circmean/oe_circmean.sbatch` |
 | `oe_circmean_pl.sbatch` | CLER controller job (same as above with the CLER config, evaluator and `runstate_pl.py`) | `/u/zdliu/lp/plevolve_20260912/oe_circmean_pl.sbatch` |
@@ -82,7 +83,6 @@ server path or edit the paths.
 | `iteration.py` | one iteration in a worker process |
 | `evaluator.py`, `evaluation_result.py` | calls the evaluator file with the config's `evaluator.timeout`, collects metrics and artifacts |
 | `llm/base.py`, `llm/ensemble.py`, `llm/openai.py` | model interface and the OpenAI client (reasoning effort, reasoning summary log) |
-| `llm/random_mutator.py` | an in-engine random mutator behind `RANDOM_MUTATOR=1`; not used by the paper runs (they use `random_mutation/rnd_llm_server.py`) |
 | `prompt/assignment.py` | the assignment card (level 1, 2 or 3) drawn before the prompt is built |
 | `prompt/sampler.py`, `prompt/templates.py` | prompt assembly: parent, lineage, top and inspiration programs with their slot tables, RUN STATE (`EM_ARCH`), card and target cell (`LAYOUT_CELL_FOCUS_LEVELS`) |
 | `prompts/defaults/*.txt` | prompt templates, including the level-2 and level-3 toolboxes |
@@ -143,7 +143,7 @@ seeds, evaluator, cells, archive and budgets are those of the LLM runs.
 
 | file | what it does | server path |
 |---|---|---|
-| `rnd_mutator.py` | random proposal at levels 1/2/3 (`RND_V5=1`: protograph shapes drawn as in the LLM runs, level 2 keeps the group family, level 3 redraws the shapes with the measured gpt-6.1-sol proportions); `RND_LIBRARY=smallgrp` draws the level-3 group from the GAP small-groups library, `RND_ORDER_RULE=llm_n` matches the block length to the gpt-6.1-sol children | `/u/zdliu/lp/circmean/rnd_mutator.py` |
+| `rnd_mutator.py` | random proposal at levels 1/2/3 (`RND_V5=1`: protograph shapes drawn as in the LLM runs, level 2 keeps the group family, level 3 redraws the shapes with the measured gpt-6.1-sol proportions); `RND_LIBRARY=smallgrp` draws the level-3 group from the GAP small-groups library, `RND_ORDER_RULE=llm_n` matches the block length to the gpt-6.1-sol children; `RND_WCAPS` lists the values from which every child's check-weight cap (its `W_MAX` line) is drawn uniformly, `12` in the FOM runs and `9,10,11,12` in the CLER runs (`launch_rnd_v5.sh`) | `/u/zdliu/lp/circmean/rnd_mutator.py` |
 | `rnd_llm_server.py` | the local endpoint; logs every mutation to `rndmut.jsonl` | `/u/zdliu/lp/circmean/rnd_llm_server.py` |
 | `launch_rnd_v5.sh` | `launch_rnd_v5.sh fom|cler <REP> [NWORK] [ITERS]`: engine seeds 42..46, wait 400000 s, protocol manifest per run | `/u/zdliu/lp/circmean/launch_rnd_v5.sh` |
 | `deploy/oe_circmean_rnd_v5.sbatch`, `deploy/circmean_worker_v5.sbatch` | FOM controller and worker jobs (start the endpoint, fill `__PORT__`, run the protocol check) | `/u/zdliu/lp/circmean/` |
@@ -168,7 +168,8 @@ The second non-LLM source of mutations of the paper (hill-climbing in the paper,
 (`RND_V5=1`), with one change behind `RND_LOCAL=1`: a level-1 child carries the parent's best measured code
 (`LOCAL_BASE`) and each of its 60 slots is that code after one to three edits of a protograph entry
 (replace, add or remove one group element; edits that only rename qubits and checks are redrawn). Levels 2
-and 3 are the random-mutation proposals.
+and 3 are the random-mutation proposals, and the check-weight cap of every child is drawn as in the
+random-mutation control (`RND_WCAPS`: `12` for FOM, `9,10,11,12` for CLER).
 
 | file | what it does | server path |
 |---|---|---|
@@ -197,7 +198,7 @@ archive of each run starts empty. The three runs differ only in the model's samp
 `iteration.py`, `llm/ensemble.py`, `llm/openai.py`, `process_parallel.py`, `prompt/sampler.py`,
 `prompt/templates.py`, `prompts/defaults/diff_user.txt`, `prompts/defaults/full_rewrite_user.txt`,
 `prompts/defaults/inspiration_program.txt`, `prompts/defaults/previous_attempt.txt`,
-`prompts/defaults/top_program.txt`, `utils/format_utils.py`; these files added: `llm/random_mutator.py`,
+`prompts/defaults/top_program.txt`, `utils/format_utils.py`; these files added:
 `prompt/assignment.py`, `prompts/defaults/toolbox_l2.txt`, `prompts/defaults/toolbox_l3.txt`; and
 `prompts/defaults/fragments.json` of the package not included.
 

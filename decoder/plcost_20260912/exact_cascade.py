@@ -1,7 +1,6 @@
 """Decoder cascade for the shots the GPU screen leaves unconverged: relay-BP,
 a second relay-BP, then BP-OSD (or BP-LSD with PLC_STAGE3=lsd).
 
-  mode="orig"  -- calls hybrid_cascade.continue_chunk.
   mode="ref"   -- re-implementation of continue_chunk; every decoder is built
                   inside the call.
   mode="hoist" -- as "ref" except that the stage-3 decoder comes from a
@@ -69,12 +68,6 @@ def stage3_stats():
 
 def cascade(H, L, pri, det, obs, screen, mode="ref"):
     """Returns ((shot_fail, per_obs, unsat, stages, shots), diagnostics)."""
-    if mode == "orig":
-        from hybrid_cascade import continue_chunk
-        t0 = time.perf_counter()
-        out = continue_chunk(H, L, pri, det, obs, screen)
-        return out, dict(seconds=round(time.perf_counter() - t0, 3), shots=[],
-                         dec3_builds_in_call=0)
     from relay_bp import RelayDecoderF32
 
     t0 = time.perf_counter()

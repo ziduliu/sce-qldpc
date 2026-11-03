@@ -76,15 +76,6 @@ class OpenAILLM(LLMInterface):
         self, system_message: str, messages: List[Dict[str, str]], **kwargs
     ) -> str:
         """Generate text using a system message and conversational context"""
-        # PROJECT PATCH: RANDOM_MUTATOR=1 bypasses the LLM entirely and applies
-        # the leveled random mutation operator to the parent program instead.
-        # Same prompts, same cards, same selection machinery - only the move
-        # generator differs (control arm for the LLM-advantage comparison).
-        import os as _os
-        if _os.environ.get("RANDOM_MUTATOR") == "1":
-            from openevolve.llm import random_mutator as _rm
-            _text = "\n".join(m.get("content", "") for m in messages if m.get("role") == "user")
-            return _rm.respond(_text)
         # Prepare messages with system message
         formatted_messages = [{"role": "system", "content": system_message}]
         formatted_messages.extend(messages)

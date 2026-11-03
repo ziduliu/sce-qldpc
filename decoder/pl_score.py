@@ -44,10 +44,6 @@ FLOOR = 1e-12          # guards log10 if a bound ever comes back as 0
 BASES = tuple(b for b in os.environ.get("PL_SCORE_BASES", "Z,X").split(",") if b)
 ORTOOLS = os.environ.get("PL_SCORE_ORTOOLS", "/ptmp/zdliu/ortools_local")
 
-# Optional: share the first code's schedules with the other codes (sched_share);
-# a code that fails the circuit checks solves its own. This changes the circuit,
-# hence the pL, of the other codes.
-SHARE_SCHED = os.environ.get("PL_SCORE_SHARE_SCHED", "0") == "1"
 # Optional: run the (code, basis) units in parallel under srun, one rank each;
 # counts do not depend on the distribution. Needs at least one task per unit.
 SRUN = os.environ.get("PL_SCORE_SRUN", "0") == "1"
@@ -214,30 +210,15 @@ def score_codes(codes, sched_path, workdir=None, report=None):
                          "k": int(c["k"]), "HX": HX, "HZ": HZ,
                          "shapes": c.get("shapes")})
 
-    if SHARE_SCHED and manifest:
-        import sched_share
+    for c in manifest:
         t0 = time.time()
-        _all_ok, snotes = sched_share.ensure_schedules(
-            manifest, sched_path, solve_time=SCHED_TIME, rounds=ROUNDS)
-        for name, info in snotes.items():
-            rep["sched"][name] = info["note"]
-            rep["codes"][name].update(scheduled=bool(info["ok"]),
-                                      sched_note=info["note"],
-                                      sched_secs=info["secs"],
-                                      sched_source=info["sched_source"],
-                                      sched_detail=info["bases"])
-        rep["sched_shared"] = True
-        rep["sched_shared_secs"] = round(time.time() - t0, 1)
-    else:
-        for c in manifest:
-            t0 = time.time()
-            ok, note = ensure_schedule(c["name"], c["HX"], c["HZ"], c["q"],
-                                       sched_path)
-            rep["sched"][c["name"]] = note
-            rep["codes"][c["name"]].update(
-                scheduled=bool(ok), sched_note=note,
-                sched_secs=round(time.time() - t0, 1),
-                sched_source=("Z:own,X:own" if ok else "none"))
+        ok, note = ensure_schedule(c["name"], c["HX"], c["HZ"], c["q"],
+                                   sched_path)
+        rep["sched"][c["name"]] = note
+        rep["codes"][c["name"]].update(
+            scheduled=bool(ok), sched_note=note,
+            sched_secs=round(time.time() - t0, 1),
+            sched_source=("Z:own,X:own" if ok else "none"))
 
     kept = []
     for c in manifest:

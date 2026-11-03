@@ -29,8 +29,9 @@ commands of the runs):
 
 Data:
 
-- `programs/<run>/` the stored child programs of the 34 runs of the paper and of one further run (table
-  below): the text as written by the model, by the random mutator or by the hill-climbing move, plus the
+- `programs/<run>/` the stored child programs of the 34 runs of the paper and of one further run
+  (`cc_v7_gpt61sol_n1k_w12_10c_out`, below 1500 qubits): the text as written by the model, by the random
+  mutator or by the hill-climbing move, plus the
   fixed scaffold. Three namings, by the way the programs were exported: `it<iteration>_<id>.py` (programs
   taken from the engine checkpoints; the checkpoints keep a second copy of some programs under iteration 0,
   so these appear twice, as `it0000_<id>.py` and `it<iteration>_<id>.py`); `it<iteration>_<id>.py` with
