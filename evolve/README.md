@@ -17,7 +17,9 @@ server path or edit the paths.
    seed directory and then runs the engine (`openevolve/`) for ITERS iterations with the given config.
 2. Each iteration the engine draws a parent and a card level, builds the prompt (`openevolve/prompt/`), asks
    the model for a diff of the EVOLVE block and hands the child to `oe_evaluator_circmean_v3.py` (FOM) or
-   `oe_evaluator_circmean_pl.py` (CLER). The adapter runs the child's `get_candidates()` (60 slots) and writes one request to the spool
+   `oe_evaluator_circmean_pl.py` (CLER). The adapter runs the child's `get_candidates()` (60 slots: `CM_NSLOTS=60` in every run, from `NSLOTS=60` of the
+   submit lines; the system prompt of the configurations speaks of twenty designs and the seed docstrings of 20 slots,
+   the fallback of the scaffold when `CM_NSLOTS` is unset) and writes one request to the spool
    directory; the size window and the check-weight cap are enforced by the program scaffold of every
    seed and again by the worker evaluator (`eval_circmean_v3.py`).
 3. GPU worker jobs (`circmean_worker.sbatch` / `worker_pl.sbatch`) run `circmean_worker.py`, which takes
@@ -50,7 +52,7 @@ server path or edit the paths.
 | `runstate.py` | FOM sidecar: renders the RUN STATE text (beds, moves, frontier, shapes) every 300 s | `/u/zdliu/lp/circmean/runstate.py` |
 | `runstate_pl.py` | CLER sidecar (generated from `runstate.py`; reads the CLER score instead of d) | `/u/zdliu/lp/plevolve_20260912/runstate_pl.py` |
 | `launch_w_line.sh` | launcher of the ten-cell lines with a check-weight cap (`WMAX`), model tag, config, seed directory, effort and resume overrides | `/u/zdliu/lp/circmean/launch_w_line.sh` |
-| `launch_10cells.sh` | launcher of the ten-cell setting that `launch_w_line.sh` extends (same exports) | `/u/zdliu/lp/circmean/launch_10cells.sh` |
+| `launch_10cells.sh` | earlier launcher of the ten-cell setting that `launch_w_line.sh` extends; it fixes `WMAX=12`, `SHAPEK=3` (parent drawn among the top three shapes) and extra-high effort, where `launch_w_line.sh` takes the cap from its arguments and `SHAPEK` and `EFFORT` from the environment (`SHAPEK=0` in the paper runs) | `/u/zdliu/lp/circmean/launch_10cells.sh` |
 | `launch_pair.sh` | launcher of a FOM/CLER pair of lines with identical settings (`launch_pair.sh <ITERS> <TAG> cc|pl|both`); its `launch_pl` block is the submit line of the CLER language-model runs (controller `oe_circmean_pl.sbatch`, workers `worker_pl.sbatch` with `SHOTS=200000,MAXERR=100,PLP=0.002`) | `/u/zdliu/lp/plevolve_20260912/launch_pair.sh` |
 | `run_configs/*.yaml` | engine configurations of the paper runs (model, effort, prompt texts, population, islands, timeouts) | `/u/zdliu/lp/circmean/<name>.yaml` |
 | `seed_dirs/seeds_rates_w14_plus_v5_nocyc_v3/` | the eight seed programs of every ten-cell run | `/u/zdliu/lp/circmean/seeds_rates_w14_plus_v5_nocyc_v3/` |
@@ -84,7 +86,7 @@ server path or edit the paths.
 | `evaluator.py`, `evaluation_result.py` | calls the evaluator file with the config's `evaluator.timeout`, collects metrics and artifacts |
 | `llm/base.py`, `llm/ensemble.py`, `llm/openai.py` | model interface and the OpenAI client (reasoning effort, reasoning summary log) |
 | `prompt/assignment.py` | the assignment card (level 1, 2 or 3) drawn before the prompt is built |
-| `prompt/sampler.py`, `prompt/templates.py` | prompt assembly: parent, lineage, top and inspiration programs with their slot tables, RUN STATE (`EM_ARCH`), card and target cell (`LAYOUT_CELL_FOCUS_LEVELS`) |
+| `prompt/sampler.py`, `prompt/templates.py` | prompt assembly: parent, lineage, top and inspiration programs with their slot tables, RUN STATE (`EM_ARCH`), card and target cell (the target-cell block is rendered only for the card levels listed in `LAYOUT_CELL_FOCUS_LEVELS`: level 2 in the paper runs, the default of the job scripts, and level 1 in the refinement runs) |
 | `prompts/defaults/*.txt` | prompt templates, including the level-2 and level-3 toolboxes |
 | `utils/*.py` | diff application, formatting, metric helpers, async helpers |
 
@@ -149,7 +151,7 @@ seeds, evaluator, cells, archive and budgets are those of the LLM runs.
 | `deploy/oe_circmean_rnd_v5.sbatch`, `deploy/circmean_worker_v5.sbatch` | FOM controller and worker jobs (start the endpoint, fill `__PORT__`, run the protocol check) | `/u/zdliu/lp/circmean/` |
 | `deploy/oe_circmean_pl_rnd_v5.sbatch`, `deploy/worker_pl_v5.sbatch` | CLER controller and worker jobs | `/u/zdliu/lp/plevolve_20260912/` |
 | `deploy/protocol_check_v5.py` | checks the effective environment and configuration of every job against the run's manifest | `/u/zdliu/lp/circmean/protocol_check_v5.py` |
-| `deploy/test_protocol_check.py` | tests of the protocol check (reads the random config `../run_configs/oe_circmean_cc_v7_rnd_w12_10cells.yaml`; adjust its path) | test directory on the cluster |
+| `deploy/test_protocol_check.py` | tests of the protocol check (reads the random config `../../run_configs/oe_circmean_cc_v7_rnd_w12_10cells.yaml`; `python test_protocol_check.py` prints `ALL OK`) | test directory on the cluster |
 | `rnd_v5_test.py` | offline tests of the v5 rules | `/u/zdliu/deploy/rnd_v5_20261015/test/` |
 | `smallgrp_lib.jsonl` | GAP small groups of order 5..299 except 256 plus 300 groups of order 256, as permutation generators (8,660 lines) | `/u/zdliu/lp/circmean/smallgrp_lib.jsonl` |
 | `smallgrp_sd.tsv` | GAP StructureDescription of every library group (level 2 keeps the group family) | `/u/zdliu/lp/circmean/smallgrp_sd.tsv` |
@@ -190,7 +192,9 @@ one evaluation at a time (`parallel_evaluations: 1`), program-size limit 120000 
 file is the weight-9 configuration. The controller is `oe_circmean.sbatch` with the exports of the weight-9
 run (`WMAX=9`, `NSLOTS=60`, ten rate cells) plus `LAYOUT_LOCK_CELL=2` (the target cell is fixed to the
 rate-0.2 cell) and `LAYOUT_CELL_FOCUS_LEVELS=1` (every step receives the level-1 instruction); the code
-archive of each run starts empty. The three runs differ only in the model's sampling.
+archive of each run starts empty. The three runs differ only in the model's sampling. The start program is
+`programs/cc_v7_gpt61sol500_w9_10c_out/f17d8c4377556b17.py` (child 0 of every refinement folder); runs `r1` and `r3`
+end after 11 children, where the API quota of the account was exhausted on 2026-10-22, and run `r2` holds 19 children.
 
 ## Changes to the OpenEvolve package
 

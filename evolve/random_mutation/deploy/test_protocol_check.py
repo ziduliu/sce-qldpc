@@ -8,7 +8,7 @@ import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CHK = os.path.join(HERE, "protocol_check_v5.py")
-BASE_CFG = os.path.join(HERE, "..", "server_before", "circmean", "oe_circmean_cc_v7_rnd_w12_10cells.yaml")
+BASE_CFG = os.path.join(HERE, "..", "..", "run_configs", "oe_circmean_cc_v7_rnd_w12_10cells.yaml")
 T = tempfile.mkdtemp()
 
 
@@ -45,7 +45,7 @@ PENV = dict(COMMONE, EM_SCRIPT="p.py", WK_EVAL_TIMEOUT="62000", WK_LEASE="70000"
 PMAN = "".join("%s=%s\n" % kv for kv in PENV.items())
 WMAN = "".join("%s=%s\n" % kv for kv in WENV.items())
 cases = [
-    ("controller ok", "controller", CMAN, dict(CENV, OPENAI_API_KEY="sk-secret-1"), 0),
+    ("controller ok", "controller", CMAN, dict(CENV, OPENAI_API_KEY="test-key-1"), 0),
     ("worker ok", "worker", WMAN, WENV, 0),
     ("worker deep budget 1", "worker", WMAN, dict(WENV, CM_D2S_DEEP="1"), 1),
     ("wrong port", "controller", CMAN, dict(CENV, PROTO_RND_PORT="29999"), 1),
@@ -68,18 +68,18 @@ cases = [
     ("controller manifest without EM_ARCH", "controller", "".join(l + "\n" for l in CMAN.splitlines() if not l.startswith("EM_ARCH")), CENV, 1),
     ("null api_base", "controller", CMAN.replace(good_cfg, os.path.join(T, "null.yaml")),
      dict(CENV, PROTO_CONFIG=os.path.join(T, "null.yaml")), 1),
-    ("secret in config field", "controller", CMAN + "CONFIGFIELD:llm.api_key=sk-oldsecret\n",
+    ("secret in config field", "controller", CMAN + "CONFIGFIELD:llm.api_key=test-key-old\n",
      dict(CENV, PROTO_CONFIG=cfg(os.path.join(T, "key.yaml"), extra="")), 1),
 ]
 # a configuration whose model has an explicit null endpoint
 import re as _re
 open(os.path.join(T, "null.yaml"), "w").write(_re.sub(r"api_base: \S+", "api_base: null", open(good_cfg).read()))
 _txt = open(os.path.join(T, "key.yaml")).read()
-open(os.path.join(T, "key.yaml"), "w").write(_txt.replace("llm:\n", "llm:\n  api_key: sk-newsecret\n", 1))
+open(os.path.join(T, "key.yaml"), "w").write(_txt.replace("llm:\n", "llm:\n  api_key: test-key-new\n", 1))
 ok = True
 for name, role, man, env, want in cases:
     rc, out = run(role, man, env)
-    SECRETS = ("sk-secret-1", "zzz-secret", "sk-oldsecret", "sk-newsecret")
+    SECRETS = ("test-key-1", "zzz-secret", "test-key-old", "test-key-new")
     leak = any(x in out for x in SECRETS)
     for f in os.listdir(T):
         if f.startswith("protocol_") and any(x in open(os.path.join(T, f)).read() for x in SECRETS):

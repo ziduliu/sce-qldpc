@@ -11,7 +11,8 @@ these matrices.
 - `fom_w9/`: the codes of the Supplementary table of the gpt-6.1-sol FOM run with check weight at most 9
   (`cc_v7_gpt61sol500_w9_10c_out`): the best code of the best program of every rate cell, the best
   code of cell 2 (`cell2_best_n585_k119_<sha16>`), and the code marked R, from the level-1 refinement of the
-  program of child 258 (`cell2_refinement_n585_k117_<sha16>`).
+  program of child 258 (`cell2_refinement_n585_k117_<sha16>`; the program is
+  `programs/cc_v7_gpt61sol500_w9_10c_out/f17d8c4377556b17.py`).
 - Format: MatrixMarket coordinate, integer, 1-based; rows are checks, columns are qubits; every listed
   entry is 1 and the matrices are over GF(2). `scipy.io.mmread` reads them.
 - `<sha16>`: the archive name of the code, the first 16 hex digits of the SHA-1 of the unpacked 0/1 arrays
@@ -35,6 +36,12 @@ consecutive rows or columns carrying one group-element index.
 
 The files were written from the code archives of the runs; the hash, `H_X H_Z^T = 0`, `n`, `k`, `w` and the
 protograph shapes were checked against the tables, and every file was read back with scipy.
+
+`verify.py` checks a file pair: `python verify.py <HX.mtx> <HZ.mtx> [<witness.json>]` prints `n`, `k` from the
+GF(2) ranks, the largest check weights and whether `H_X H_Z^T = 0`; with a witness file
+(`records/exact_bb_20261006_61/c2_W24_operators.json`, `records/witness_cell0_20261103/*.json`) it checks that
+every listed X operator commutes with all Z checks and lies outside the row space of `H_X`, and every Z operator
+likewise, so that its weight is an upper bound on the distance (numpy and scipy).
 
 `reference/`: the check matrices of the bivariate-bicycle code [[144,12,12]] of Bravyi et al. (Nature 627, 778
 (2024)) in the form used by the circuit-level sweeps of Fig. 2 (`records/pl_sweep_20261009_bbibm/`), with the
