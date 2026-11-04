@@ -1,7 +1,7 @@
 # sce-qldpc
 
 Code, programs and records of "Large-Language-Model Discovery of Quantum LDPC Codes through
-Structured Concept Evolution" (Zidu Liu and Florian Marquardt; v2 of arXiv:2606.24808).
+Structured Concept Evolution" (Zidu Liu and Florian Marquardt, arXiv:2606.24808).
 
 ## Layout
 
