@@ -30,7 +30,7 @@ commands of the runs):
 Data:
 
 - `ledgers/<run>/eval_ledger.jsonl` the evaluation ledger of every run of `programs/` (35 ledgers): one JSON line per
-  evaluated program, appended by the evaluator adapter when the result returns (`evolve/oe_evaluator_circmean_v3.py`,
+  program, written by the evaluator adapter when the result returns (`evolve/oe_evaluator_circmean_v3.py`,
   `_ledger_write`), in the order of evaluation, the eight seed programs first (the refinement ledgers start with their
   start program). Fields: `ts` (completion time, Unix seconds), `code_sha1` (first 16 hex digits of the SHA-1 of
   the program text, the `<hash>.py` names of `programs/`), `family`, `gtype`, `q`, `gkey`, `glabel` (the group, its
@@ -55,7 +55,7 @@ Data:
   program text) for the weight-9 run, the hill-climbing FOM runs, the refinement runs and the run below
   1500 qubits. The stored texts cover every child of the hill-climbing FOM runs, the refinement runs and the run below
   1500 qubits, and between 48 % and 73 % of the children of the other runs, except `pl10_rnd500v5_rep1`, `rep2` and
-  `rep5` (23 % to 24 %); a few files of the language-model runs match no ledger row (`child` null). Every folder has `index.jsonl`, one line per stored program: `file`, `child` (position of
+  `rep5` (23 % to 24 %); some files of the language-model runs match no ledger row (`child` null). Every folder has `index.jsonl`, one line per stored program: `file`, `child` (position of
   its evaluation in the run, 0-based: the seed programs first, then the children in the order they were
   evaluated; null when the text matches no evaluation record), `score` (its program score), `rate_bin`
   (rate cell 0-9), `n`, `family`, and, where the export kept them, `id`, `parent_id`, `iteration_found`,

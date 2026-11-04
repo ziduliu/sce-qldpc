@@ -1,374 +1,374 @@
-{"file": "it0000_0d75e0e5.py", "child": 0, "score": 4.1899, "rate_bin": 4, "n": 588, "family": "r030_m1r21s1_24x26"}
-{"file": "it0000_2fce145c.py", "child": 1, "score": 4.0213, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35"}
-{"file": "it0000_de3c65d3.py", "child": 2, "score": 3.1896, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13"}
-{"file": "it0000_99d1a6b7.py", "child": 3, "score": 4.0553, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26"}
-{"file": "it0000_9fa703a0.py", "child": 4, "score": 3.4531, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62"}
-{"file": "it0000_8eec91d6.py", "child": 5, "score": 5.2285, "rate_bin": 3, "n": 576, "family": "r025_m12r2s7_52x42"}
-{"file": "it0000_5a6ed8fa.py", "child": 6, "score": 5.8778, "rate_bin": 2, "n": 560, "family": "r020_m14r2s13_24x24"}
-{"file": "it0000_79260ea0.py", "child": 7, "score": 5.513, "rate_bin": 2, "n": 590, "family": "r020f_m59r2s58_12x12"}
-{"file": "it0011_332bbceb.py", "child": 8, "score": 3.6457, "rate_bin": 4, "n": 560, "family": "r030_dih20_24x26"}
-{"file": "it0000_06a04b43.py", "child": 9, "score": 3.44, "rate_bin": 6, "n": 480, "family": "a4_q12_26x26"}
-{"file": "it0005_4017d6d1.py", "child": 10, "score": 2.157, "rate_bin": 3, "n": 408, "family": "r0235_m12r2s7_15x23"}
-{"file": "it0009_99fee19b.py", "child": 11, "score": 3.6396, "rate_bin": 6, "n": 560, "family": "r040_cyclic14_62x62"}
-{"file": "it0004_e9e8a1fa.py", "child": 12, "score": 4.3494, "rate_bin": 4, "n": 588, "family": "r030_C7rtC3_nonabelian_24x26"}
-{"file": "it0001_5f66fa1d.py", "child": 13, "score": 2.6253, "rate_bin": 9, "n": 588, "family": "r057_m7r4s6_14x15"}
-{"file": "it0019_1e3bcf93.py", "child": 14, "score": 3.3756, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_bal10u"}
-{"file": "it0014_e8650572.py", "child": 15, "score": 3.1875, "rate_bin": 3, "n": 504, "family": "r025_m7r2s6_25x36"}
-{"file": "it0012_d389255c.py", "child": 16, "score": 2.2125, "rate_bin": 4, "n": 483, "family": "r030_m1r21s1_A12_B310"}
-{"file": "it0021_b56ea6fc.py", "child": 17, "score": 3.41, "rate_bin": 5, "n": 544, "family": "r035_dih16_25x26"}
-{"file": "it0017_2000e48d.py", "child": 18, "score": 0.4882, "rate_bin": 7, "n": 598, "family": "d23_q46_13x14_singletons"}
-{"file": "it0041_046d5c27.py", "child": 18, "score": 0.4882, "rate_bin": 7, "n": 598, "family": "d23_q46_13x14_singletons"}
-{"file": "it0022_9d83a3b4.py", "child": 19, "score": 2.4826, "rate_bin": 8, "n": 588, "family": "r050_m7r2s6_18x25"}
-{"file": "it0002_07ff747b.py", "child": 20, "score": 6.4065, "rate_bin": 0, "n": 299, "family": "r008_m1r23s1_23x23"}
-{"file": "it0023_4221716a.py", "child": 21, "score": 2.2066, "rate_bin": 3, "n": 392, "family": "r0214_m14r2s13_14x23"}
-{"file": "it0028_99af37d3.py", "child": 22, "score": 2.9749, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13"}
-{"file": "it0015_b6dca1c6.py", "child": 23, "score": 2.8781, "rate_bin": 5, "n": 595, "family": "r035_m1r35s1_13x25"}
-{"file": "it0027_5d11d1d5.py", "child": 24, "score": 2.1881, "rate_bin": 4, "n": 552, "family": "r026_m12r2s7_14x35"}
-{"file": "it0013_0c0a3f40.py", "child": 25, "score": 6.3517, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_c4screen"}
-{"file": "it0006_9492b0f5.py", "child": 26, "score": 4.2688, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_c4min"}
-{"file": "it0031_2fd1618e.py", "child": 27, "score": 2.3564, "rate_bin": 8, "n": 448, "family": "r050_m7r2s6_15x26"}
-{"file": "it0010_c9196caf.py", "child": 28, "score": 0.0, "rate_bin": 2, "n": 560, "family": "r020_m14r2s13_24x24_reg2_girth"}
-{"file": "it0025_ed9b1db0.py", "child": 29, "score": 2.3197, "rate_bin": 6, "n": 527, "family": "r040_m17r1s1_14x37"}
-{"file": "it0020_3e031011.py", "child": 30, "score": 3.656, "rate_bin": 1, "n": 572, "family": "r015_d11_order22_24x35"}
-{"file": "it0003_ce418ff3.py", "child": 31, "score": 4.9279, "rate_bin": 2, "n": 480, "family": "r020_S4_24x24"}
-{"file": "it0026_f823ec76.py", "child": 32, "score": 2.3293, "rate_bin": 4, "n": 294, "family": "r030_m1r21s1_12x26"}
-{"file": "it0036_4104a0bd.py", "child": 33, "score": 2.5832, "rate_bin": 9, "n": 567, "family": "r057_heisenberg27_14x15"}
-{"file": "it0037_3f970afb.py", "child": 34, "score": 1.8909, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_vg1"}
-{"file": "it0038_99d460ba.py", "child": 35, "score": 3.3229, "rate_bin": 5, "n": 576, "family": "r033_m16r1s1_24x28"}
-{"file": "it0040_6603ad3d.py", "child": 37, "score": 2.8277, "rate_bin": 8, "n": 598, "family": "d23_q46_13x14_sparse_w2screen"}
-{"file": "it0007_5e0b562b.py", "child": 38, "score": 1.8784, "rate_bin": 1, "n": 483, "family": "r015_m1r23s1_12x58"}
-{"file": "it0039_0c3d65d1.py", "child": 39, "score": 2.6858, "rate_bin": 7, "n": 468, "family": "r045_dihedral18_14x26"}
-{"file": "it0043_0fb43a14.py", "child": 40, "score": 3.5117, "rate_bin": 5, "n": 476, "family": "r035_m7r2s6_25x26"}
-{"file": "it0044_4fabd6ce.py", "child": 41, "score": 2.3852, "rate_bin": 7, "n": 552, "family": "c2xa4_q24_13x27_rolled"}
-{"file": "it0042_9c653514.py", "child": 42, "score": 2.4785, "rate_bin": 8, "n": 588, "family": "r050_m7r2s6_18x25_w2screen"}
-{"file": "it0030_5cd8203a.py", "child": 43, "score": 4.69, "rate_bin": 3, "n": 576, "family": "r025_dih12_order24_52x42"}
-{"file": "it0046_f544ae4a.py", "child": 44, "score": 3.1262, "rate_bin": 6, "n": 544, "family": "r035_dih16_25x26_depavoid"}
-{"file": "it0000_76cf3533.py", "child": 45, "score": 6.8546, "rate_bin": 0, "n": 299, "family": "r008_m1r23s1_23x23_balanced_cycles"}
-{"file": "it0047_76cf3533.py", "child": 45, "score": 6.8546, "rate_bin": 0, "n": 299, "family": "r008_m1r23s1_23x23_balanced_cycles"}
-{"file": "it0074_d9558090.py", "child": 45, "score": 6.8546, "rate_bin": 0, "n": 299, "family": "r008_m1r23s1_23x23_balanced_cycles"}
-{"file": "it0018_1b4f2bc7.py", "child": 46, "score": 1.9224, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13_bal2g4"}
-{"file": "it0034_6dfc37fd.py", "child": 47, "score": 4.3055, "rate_bin": 4, "n": 588, "family": "r030_C7rtC3_balanced_cyclemin_24x26"}
-{"file": "it0032_09658e90.py", "child": 48, "score": 4.7095, "rate_bin": 2, "n": 210, "family": "r020_S3xC7_12x12"}
-{"file": "it0029_2d5a7bb4.py", "child": 49, "score": 2.8663, "rate_bin": 5, "n": 595, "family": "r035_m5r7s1_13x25"}
-{"file": "it0052_6a396ef5.py", "child": 50, "score": 3.7098, "rate_bin": 5, "n": 544, "family": "r035_Q16_25x26"}
-{"file": "it0053_cb4395fd.py", "child": 51, "score": 2.2142, "rate_bin": 6, "n": 374, "family": "r041_m17r1s1_14x25"}
-{"file": "it0050_2f61bec4.py", "child": 52, "score": 4.2487, "rate_bin": 4, "n": 560, "family": "r030_cyclic20_24x26"}
-{"file": "it0016_84fec43a.py", "child": 53, "score": 4.0626, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62"}
-{"file": "it0055_daa1b0af.py", "child": 54, "score": 2.4826, "rate_bin": 8, "n": 588, "family": "r050_m7r2s6_18x25_sparsec4"}
-{"file": "it0054_1da5bd2b.py", "child": 55, "score": 2.8732, "rate_bin": 7, "n": 598, "family": "d23_q46_13x14_multiterm_c4"}
-{"file": "it0049_045ce8f8.py", "child": 56, "score": 3.3925, "rate_bin": 3, "n": 576, "family": "r025_C4xC4_25x36"}
-{"file": "it0048_c2625920.py", "child": 57, "score": 2.0584, "rate_bin": 2, "n": 560, "family": "r020_m14r2s13_12x48"}
-{"file": "it0033_52edd907.py", "child": 58, "score": 3.6609, "rate_bin": 6, "n": 560, "family": "r040f_c7s8inv_13x13"}
-{"file": "it0062_740fde1e.py", "child": 59, "score": 2.8412, "rate_bin": 7, "n": 468, "family": "r045_dihedral18_14x26_w3screen"}
-{"file": "it0064_70fd7ffb.py", "child": 60, "score": 2.5255, "rate_bin": 9, "n": 504, "family": "r057_q8xc3_14x15"}
-{"file": "it0061_e7ae92dc.py", "child": 61, "score": 2.6744, "rate_bin": 7, "n": 468, "family": "r045_gdih_c3xc3_14x26"}
-{"file": "it0057_8a632e54.py", "child": 62, "score": 5.0003, "rate_bin": 1, "n": 437, "family": "r015_m1r23s1_23x25_c4screen"}
-{"file": "it0066_e8e130b4.py", "child": 63, "score": 3.6901, "rate_bin": 4, "n": 504, "family": "r030_C3xS3_q18_24x26"}
-{"file": "it0063_7540ab59.py", "child": 64, "score": 3.3691, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13_unique_w10_short3"}
-{"file": "it0067_84f984dc.py", "child": 65, "score": 3.4464, "rate_bin": 6, "n": 520, "family": "r040_c13_26x26_w10"}
-{"file": "it0068_8f7128b6.py", "child": 66, "score": 2.7665, "rate_bin": 7, "n": 598, "family": "d23_q46_13x14_extras_shortlogical_gate"}
-{"file": "it0070_25b129c5.py", "child": 67, "score": 3.2092, "rate_bin": 5, "n": 594, "family": "r033_m1r66s1_12x14"}
-{"file": "it0059_fb45c1e8.py", "child": 69, "score": 3.1523, "rate_bin": 2, "n": 200, "family": "r020_dih20_A12_B24"}
-{"file": "it0072_d467763a.py", "child": 70, "score": 3.4889, "rate_bin": 6, "n": 560, "family": "r040_cyclic14_62x62_sparse_c4"}
-{"file": "it0073_9bda7adf.py", "child": 71, "score": 2.5869, "rate_bin": 9, "n": 567, "family": "r057_heisenberg27_14x15"}
-{"file": "it0075_152cf6e1.py", "child": 72, "score": 2.8159, "rate_bin": 7, "n": 468, "family": "r045_dihedral18_13x28"}
-{"file": "it0069_b9ffbd91.py", "child": 73, "score": 4.5468, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_sparse_logical_c4"}
-{"file": "it0078_af24d858.py", "child": 74, "score": 2.2975, "rate_bin": 3, "n": 392, "family": "r0214_m14r2s13_14x23_sparsecycle64"}
-{"file": "it0079_7fc9de66.py", "child": 75, "score": 2.3259, "rate_bin": 8, "n": 420, "family": "r050_m7r2s6_14x27"}
-{"file": "it0051_ed1eb012.py", "child": 76, "score": 2.1072, "rate_bin": 4, "n": 441, "family": "r030_C7rtC3_nonabelian_13x36"}
-{"file": "it0076_1568a077.py", "child": 77, "score": 4.3075, "rate_bin": 4, "n": 560, "family": "r030_cyclic20_24x26_balanced_c4"}
-{"file": "it0082_84996bd5.py", "child": 78, "score": 3.5083, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_26x26_balanced"}
-{"file": "it0085_030e7626.py", "child": 79, "score": 3.0129, "rate_bin": 0, "n": 253, "family": "r009_m1r23s1_12x34_balanced_cycles"}
-{"file": "it0083_0720daa0.py", "child": 80, "score": 0.0, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_c4shortscreen"}
-{"file": "it0081_1eec3802.py", "child": 81, "score": 4.1393, "rate_bin": 5, "n": 544, "family": "r035_C4xC4_25x26_c4min"}
-{"file": "it0084_bbf1a6a7.py", "child": 82, "score": 2.169, "rate_bin": 3, "n": 552, "family": "r026_m12r2s7_14x35_sparse_w2c4"}
-{"file": "it0077_4e66cb1f.py", "child": 83, "score": 3.1891, "rate_bin": 1, "n": 299, "family": "r015_m1r23s1_12x35"}
-{"file": "it0087_5633c515.py", "child": 84, "score": 3.4239, "rate_bin": 7, "n": 552, "family": "c2xa4_q24_13x27_sparse_screen"}
-{"file": "it0091_0020d5ac.py", "child": 85, "score": 3.2884, "rate_bin": 5, "n": 289, "family": "r035_m17r1s1_13x25_c4screen"}
-{"file": "it0086_468e942c.py", "child": 86, "score": 4.2191, "rate_bin": 4, "n": 560, "family": "r030_dic5_24x26"}
-{"file": "it0000_62ab95a8.py", "child": 87, "score": 7.0279, "rate_bin": 0, "n": 598, "family": "r010_d23_q46_23x23_roll"}
-{"file": "it0065_62ab95a8.py", "child": 87, "score": 7.0279, "rate_bin": 0, "n": 598, "family": "r010_d23_q46_23x23_roll"}
-{"file": "it0088_351fdc9b.py", "child": 88, "score": 3.516, "rate_bin": 2, "n": 280, "family": "r020_m14r2s13_12x24_lowincidence"}
-{"file": "it0094_2e900cef.py", "child": 89, "score": 3.7732, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_sparse2"}
-{"file": "it0096_0f98b44a.py", "child": 90, "score": 0.0, "rate_bin": 2, "n": 280, "family": "r020_m14r2s13_A12_B24"}
-{"file": "it0080_535eb897.py", "child": 91, "score": 5.2187, "rate_bin": 3, "n": 552, "family": "r025_z23_52x42"}
-{"file": "it0000_00fd0989.py", "child": 92, "score": 6.8317, "rate_bin": 0, "n": 312, "family": "r008_S4_q24_23x23_balanced_cycles"}
-{"file": "it0095_00fd0989.py", "child": 92, "score": 6.8317, "rate_bin": 0, "n": 312, "family": "r008_S4_q24_23x23_balanced_cycles"}
-{"file": "it0092_c31582ef.py", "child": 93, "score": 3.0147, "rate_bin": 4, "n": 588, "family": "r030_cyclic42_13x24"}
-{"file": "it0090_d0fcf7a0.py", "child": 94, "score": 5.2901, "rate_bin": 1, "n": 572, "family": "r015_d11_order22_24x35_sparsec4"}
-{"file": "it0099_ebece2c7.py", "child": 95, "score": 3.0688, "rate_bin": 9, "n": 567, "family": "r057_heisenberg27_14x15_sparse_nonid_w2"}
-{"file": "it0100_926b49a8.py", "child": 96, "score": 2.5072, "rate_bin": 9, "n": 308, "family": "r055_cyclic14_13x17"}
-{"file": "it0098_3a661a49.py", "child": 97, "score": 2.9267, "rate_bin": 7, "n": 598, "family": "d23_q46_13x14_tiered_logicals"}
-{"file": "it0000_d80441f2.py", "child": 98, "score": 6.8618, "rate_bin": 0, "n": 299, "family": "r008_m1r23s1_23x23_c4c6balanced"}
-{"file": "it0101_d80441f2.py", "child": 98, "score": 6.8618, "rate_bin": 0, "n": 299, "family": "r008_m1r23s1_23x23_c4c6balanced"}
-{"file": "it0104_451b6400.py", "child": 99, "score": 3.6203, "rate_bin": 4, "n": 560, "family": "r030_agl15_q20_24x26"}
-{"file": "it0058_06ed61e1.py", "child": 100, "score": 5.6213, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_52x42"}
-{"file": "it0107_1a210e26.py", "child": 101, "score": 2.5598, "rate_bin": 8, "n": 312, "family": "c2xa4_q24_13x14_sparse_screen"}
-{"file": "it0106_041bbf09.py", "child": 102, "score": 2.6526, "rate_bin": 1, "n": 345, "family": "r015_m1r23s1_13x34_c4screen"}
-{"file": "it0097_855a1666.py", "child": 103, "score": 4.78, "rate_bin": 3, "n": 576, "family": "r025_m12r2s7_24x25"}
-{"file": "it0089_97c16ddc.py", "child": 104, "score": 4.0689, "rate_bin": 6, "n": 480, "family": "r040_dic3_62x62"}
-{"file": "it0105_e8aeabff.py", "child": 105, "score": 2.4976, "rate_bin": 8, "n": 588, "family": "r050_m7r2s6_18x25_sparse_w12c4"}
-{"file": "it0110_56bb0687.py", "child": 106, "score": 3.3345, "rate_bin": 7, "n": 529, "family": "c23_q23_13x27_sparse_screen"}
-{"file": "it0111_998f8be1.py", "child": 107, "score": 2.3766, "rate_bin": 8, "n": 462, "family": "r050_c11_18x25_sparsec4"}
-{"file": "it0103_9af80631.py", "child": 108, "score": 4.5227, "rate_bin": 3, "n": 576, "family": "r025_S4q24_A2x4_B2x5"}
-{"file": "it0102_bd36af12.py", "child": 109, "score": 3.4737, "rate_bin": 5, "n": 576, "family": "r033_m16r1s1_24x28_sparse123_c4"}
-{"file": "it0116_90490744.py", "child": 110, "score": 0.0, "rate_bin": 1, "n": 598, "family": "r015_d11_q22_24x35_c4screen"}
-{"file": "it0115_905a1751.py", "child": 111, "score": 2.4343, "rate_bin": 8, "n": 540, "family": "r050_d9_q18_14x27_roll"}
-{"file": "it0113_97dc849b.py", "child": 112, "score": 2.8035, "rate_bin": 7, "n": 468, "family": "r045_c18_q18_14x26"}
-{"file": "it0071_177e412c.py", "child": 113, "score": 6.1315, "rate_bin": 2, "n": 560, "family": "r020_m14r2s13_24x24"}
-{"file": "it0120_7d6126ac.py", "child": 114, "score": 3.4269, "rate_bin": 7, "n": 575, "family": "c5xc5_q25_13x27_sparse_screen"}
-{"file": "it0119_f122e6ea.py", "child": 115, "score": 3.2839, "rate_bin": 5, "n": 306, "family": "r035_s3xc3_13x25_c4screen"}
-{"file": "it0118_efd8d730.py", "child": 116, "score": 4.1108, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_balanced4c5"}
-{"file": "it0117_1e7b1743.py", "child": 117, "score": 6.6914, "rate_bin": 0, "n": 273, "family": "r008_m1r21s1_A23_B23_cycle"}
-{"file": "it0122_84e37454.py", "child": 118, "score": 3.7511, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_sparse_w12_c4"}
-{"file": "it0114_241593c3.py", "child": 119, "score": 4.4127, "rate_bin": 4, "n": 588, "family": "r030_cyclic21_24x26_balanced_c4"}
-{"file": "it0121_fcb737e6.py", "child": 120, "score": 4.4278, "rate_bin": 4, "n": 560, "family": "r030_cyclic20_24x26_sparse_shortcycle"}
-{"file": "it0060_471b2ae2.py", "child": 121, "score": 6.6937, "rate_bin": 0, "n": 572, "family": "r010_d22_order44_23x23"}
-{"file": "it0127_848810d9.py", "child": 122, "score": 3.8901, "rate_bin": 6, "n": 480, "family": "r040_c12_sparse2_screen_62x62"}
-{"file": "it0125_795d31eb.py", "child": 123, "score": 1.9509, "rate_bin": 0, "n": 506, "family": "r010_d23_q46_12x34_roll"}
-{"file": "it0128_1f08caf7.py", "child": 124, "score": 2.5879, "rate_bin": 9, "n": 598, "family": "r061_cyclic23_15x15_sparse_w2"}
-{"file": "it0129_6141b36a.py", "child": 125, "score": 2.481, "rate_bin": 8, "n": 384, "family": "c2xa4_q24_13x15_sparse_screen"}
-{"file": "it0131_7e42156f.py", "child": 126, "score": 2.5372, "rate_bin": 9, "n": 504, "family": "r055_dih12_order24_14x15_screened"}
-{"file": "it0126_d9064274.py", "child": 128, "score": 4.1528, "rate_bin": 2, "n": 590, "family": "r020f_m59r2s58_12x12_sparse_shortscreen"}
-{"file": "it0045_b50c0391.py", "child": 129, "score": 0.0, "rate_bin": 0, "n": 299, "family": "r008_m1r23s1_23x23"}
-{"file": "it0112_42dd9e21.py", "child": 131, "score": 3.2796, "rate_bin": 8, "n": 598, "family": "c23xc2_q46_13x14_sparse_w2screen"}
-{"file": "it0008_e60d9594.py", "child": 133, "score": 2.6034, "rate_bin": 8, "n": 576, "family": "r050_m9r4s8_13x15"}
-{"file": "it0035_4dddd24f.py", "child": 134, "score": 2.6085, "rate_bin": 9, "n": 588, "family": "dic7_q28_14x15"}
-{"file": "it0136_bb0e5536.py", "child": 135, "score": 2.6762, "rate_bin": 8, "n": 592, "family": "r050_c37_13x15_sparse_w2c4"}
-{"file": "it0093_2c4442b3.py", "child": 136, "score": 2.073, "rate_bin": 1, "n": 437, "family": "r015_m1r23s1_14x34_c4screen"}
-{"file": "it0137_c6c0c984.py", "child": 137, "score": 2.6207, "rate_bin": 7, "n": 594, "family": "c22_q22_15x25_sparse_screen"}
-{"file": "it0123_687d32b4.py", "child": 138, "score": 5.3569, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_c4screen"}
-{"file": "it0108_c39cf947.py", "child": 139, "score": 5.9342, "rate_bin": 2, "n": 480, "family": "r020_Q8xC3_24_24x24"}
-{"file": "it0140_3aefad46.py", "child": 141, "score": 0.0, "rate_bin": 1, "n": 299, "family": "r015_m1r23s1_12x35_c4screen"}
-{"file": "it0024_b9152c43.py", "child": 142, "score": 4.6993, "rate_bin": 2, "n": 590, "family": "r020_c59xc2_12x12"}
-{"file": "it0145_a2eb8aae.py", "child": 143, "score": 3.815, "rate_bin": 6, "n": 480, "family": "r040_dic3_sparse2_screen_62x62"}
-{"file": "it0144_e6a0ec4f.py", "child": 144, "score": 3.9208, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_nonid_sparse_logical_c4"}
-{"file": "it0152_02446419.py", "child": 145, "score": 2.7564, "rate_bin": 8, "n": 598, "family": "d23_q46_13x14_w3_c4screen"}
-{"file": "it0146_c07989a3.py", "child": 146, "score": 4.2527, "rate_bin": 4, "n": 532, "family": "r030_cyclic19_24x26_balanced_c4"}
-{"file": "it0141_65e45201.py", "child": 147, "score": 4.6572, "rate_bin": 0, "n": 598, "family": "r010_cyclic46_23x23_sparse_nonid_w2"}
-{"file": "it0147_7d8b80fc.py", "child": 148, "score": 4.7823, "rate_bin": 4, "n": 560, "family": "r030_f20_q20_24x26_balanced_c4"}
-{"file": "it0153_31e7456e.py", "child": 150, "score": 5.0283, "rate_bin": 1, "n": 546, "family": "r015_c7semidirectc3_q21_24x35_c4screen"}
-{"file": "it0133_1b6d5a36.py", "child": 151, "score": 5.9916, "rate_bin": 1, "n": 572, "family": "r015_d11_order22_24x35_w4screen"}
-{"file": "it0135_cfc98d4e.py", "child": 152, "score": 4.1319, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_exactscreen"}
-{"file": "it0151_032b70fc.py", "child": 154, "score": 7.1322, "rate_bin": 0, "n": 520, "family": "r010_d20_q40_23x23_balanced_cycles"}
-{"file": "it0160_d7520afa.py", "child": 155, "score": 3.9095, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_sparse_gate_w3"}
-{"file": "it0162_b7dafb32.py", "child": 156, "score": 3.0812, "rate_bin": 7, "n": 598, "family": "c23xc2_q46_13x14_lowrow_c4screen"}
-{"file": "it0124_9f832102.py", "child": 157, "score": 5.5752, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_52x42_sparse_screen"}
-{"file": "it0142_57ae5861.py", "child": 158, "score": 4.8925, "rate_bin": 3, "n": 528, "family": "r025_d11_q22_52x42"}
-{"file": "it0148_bc077b47.py", "child": 159, "score": 5.5126, "rate_bin": 0, "n": 588, "family": "r010_m14r2s13_23x35_roll"}
-{"file": "it0164_3204dd9c.py", "child": 160, "score": 4.4545, "rate_bin": 3, "n": 480, "family": "r025_dih20_24x25"}
-{"file": "it0161_c4ad97c6.py", "child": 161, "score": 6.4549, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_c4w12"}
-{"file": "it0165_9241f61c.py", "child": 162, "score": 6.3517, "rate_bin": 1, "n": 520, "family": "r015_cyclic20_24x35_sparse_shortcycle"}
-{"file": "it0170_96408a99.py", "child": 164, "score": 3.3028, "rate_bin": 7, "n": 598, "family": "c23xc2_q46_14x13_tiered_screen"}
-{"file": "it0150_a8381ab9.py", "child": 166, "score": 5.9757, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_52x42_sparse_screen"}
-{"file": "it0167_3595e624.py", "child": 167, "score": 6.5359, "rate_bin": 0, "n": 338, "family": "r010_d13_q26_23x23_c4c6balanced"}
-{"file": "it0134_43a5437f.py", "child": 168, "score": 6.1106, "rate_bin": 1, "n": 572, "family": "r015_c22_24x35_shortc4"}
-{"file": "it0174_677c622d.py", "child": 170, "score": 3.2392, "rate_bin": 9, "n": 459, "family": "r057_heisenberg27_14x14_sparse_nonid_w2"}
-{"file": "it0172_b7fd71b5.py", "child": 171, "score": 4.5532, "rate_bin": 4, "n": 560, "family": "r030_cyclic20_24x26_sparse_shortcycle"}
-{"file": "it0175_6f851178.py", "child": 172, "score": 1.5401, "rate_bin": 1, "n": 299, "family": "r015_m1r23s1_12x35_rankc4"}
-{"file": "it0163_b15d6202.py", "child": 173, "score": 3.3675, "rate_bin": 2, "n": 240, "family": "r020_Q8xC3_12x24"}
-{"file": "it0179_d887e678.py", "child": 174, "score": 3.5453, "rate_bin": 7, "n": 552, "family": "binary_tetrahedral_q24_13x27_sparse_screen"}
-{"file": "it0169_23fc07fa.py", "child": 175, "score": 7.2349, "rate_bin": 0, "n": 520, "family": "r010_c40_23x23_double_screen"}
-{"file": "it0176_8d49bf49.py", "child": 176, "score": 4.2331, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_sparse_nonid_w3_c4"}
-{"file": "it0183_dc586fe5.py", "child": 178, "score": 3.0853, "rate_bin": 9, "n": 567, "family": "r057_abelian_c3cubed_14x15_sparse_nonid_w2"}
-{"file": "it0177_a151b507.py", "child": 179, "score": 4.2819, "rate_bin": 5, "n": 544, "family": "r035_C4xC4_25x26_sparse29_gate_c4"}
-{"file": "it0157_006f29b6.py", "child": 181, "score": 6.2263, "rate_bin": 2, "n": 560, "family": "r020_m14r2s13_24x24_sparse_short2screen"}
-{"file": "it0181_2bbb490e.py", "child": 182, "score": 4.2476, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_sparse_short12"}
-{"file": "it0149_2fddfb32.py", "child": 184, "score": 2.5821, "rate_bin": 9, "n": 588, "family": "r057_m14r2s13_14x15_roll"}
-{"file": "it0182_f9621d4b.py", "child": 185, "score": 2.8191, "rate_bin": 7, "n": 540, "family": "c5xc4_q20_15x25_sparse_screen"}
-{"file": "it0189_87a6d688.py", "child": 186, "score": 3.4124, "rate_bin": 7, "n": 552, "family": "c2xa4_q24_13x27_tiered_w3screen"}
-{"file": "it0192_2d72b646.py", "child": 187, "score": 4.2306, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_l3gatebalanced"}
-{"file": "it0180_f32a0ca6.py", "child": 188, "score": 6.5829, "rate_bin": 2, "n": 580, "family": "r020_C29_24x24"}
-{"file": "it0173_b6182e2d.py", "child": 190, "score": 6.1576, "rate_bin": 2, "n": 560, "family": "r020_m14r2s13_24x24_balanced_shortlog_screen"}
-{"file": "it0190_aa023f67.py", "child": 191, "score": 2.6187, "rate_bin": 0, "n": 560, "family": "r007_d20_q40_12x45_balanced_cycles"}
-{"file": "it0187_8500b4db.py", "child": 192, "score": 7.2366, "rate_bin": 0, "n": 520, "family": "r010_c5s8_q40_23x23_twoterm_c4"}
-{"file": "it0191_f46cb916.py", "child": 194, "score": 3.1327, "rate_bin": 8, "n": 576, "family": "c18xc2_q36_13x15_sparse_cyclescreen"}
-{"file": "it0194_e41e6380.py", "child": 195, "score": 3.2598, "rate_bin": 7, "n": 575, "family": "c5xc5_q25_13x27_weight3_gate_screen"}
-{"file": "it0204_51207a75.py", "child": 199, "score": 2.5121, "rate_bin": 9, "n": 594, "family": "r057_heisenberg27_13x17_sparse_nonid_w2"}
-{"file": "it0205_3e05e494.py", "child": 200, "score": 2.4736, "rate_bin": 8, "n": 592, "family": "r050_m8r2s7_17x25_rolled"}
-{"file": "it0206_1b10c5e3.py", "child": 201, "score": 3.3952, "rate_bin": 7, "n": 598, "family": "cyclic_c26_q26_13x27_sparse_screen"}
-{"file": "it0186_c11794ee.py", "child": 202, "score": 4.7049, "rate_bin": 3, "n": 576, "family": "r025_s4_q24_52x42"}
-{"file": "it0198_d34ebf57.py", "child": 203, "score": 7.188, "rate_bin": 0, "n": 520, "family": "r010_c40_23x23_tiered_exactscreen"}
-{"file": "it0209_384f3403.py", "child": 205, "score": 3.6139, "rate_bin": 5, "n": 544, "family": "r035_C4xC4_25x26_sparse23_27"}
-{"file": "it0201_bdfdbfc1.py", "child": 206, "score": 4.8456, "rate_bin": 4, "n": 580, "family": "r031_f20_q20_25x25_balanced_c4"}
-{"file": "it0000_338e59b2.py", "child": 207, "score": 7.2463, "rate_bin": 0, "n": 520, "family": "r010_c5xq8_q40_23x23_double_screen"}
-{"file": "it0199_338e59b2.py", "child": 207, "score": 7.2463, "rate_bin": 0, "n": 520, "family": "r010_c5xq8_q40_23x23_double_screen"}
-{"file": "it0155_11146110.py", "child": 210, "score": 3.2153, "rate_bin": 7, "n": 552, "family": "d12_q24_13x27_sparse_screen"}
-{"file": "it0213_74c18c7a.py", "child": 211, "score": 3.1144, "rate_bin": 8, "n": 576, "family": "r050_S3xC6_13x15_sparse_screen"}
-{"file": "it0185_d0aeb559.py", "child": 212, "score": 3.6188, "rate_bin": 5, "n": 544, "family": "r035_C16_25x26_nonid_sparse_logical_c4"}
-{"file": "it0210_6d532b8b.py", "child": 213, "score": 1.902, "rate_bin": 2, "n": 360, "family": "r020_Q8xC3_24_12x36"}
-{"file": "it0195_3899bb16.py", "child": 214, "score": 4.729, "rate_bin": 2, "n": 480, "family": "r020_D12_q24_24x24"}
-{"file": "it0217_6ccde455.py", "child": 215, "score": 4.9579, "rate_bin": 4, "n": 580, "family": "r030_cyclic20_25x25_sparse_shortcycle"}
-{"file": "it0219_4e1cd369.py", "child": 216, "score": 3.4079, "rate_bin": 7, "n": 552, "family": "binary_tetrahedral_q24_13x27_stratified_w3_screen"}
-{"file": "it0200_66fb8208.py", "child": 217, "score": 6.3951, "rate_bin": 2, "n": 560, "family": "r020_c28_24x24"}
-{"file": "it0215_2f6f7c90.py", "child": 218, "score": 6.5969, "rate_bin": 0, "n": 520, "family": "r010_c5s8_q40_23x23_18to23term_screen"}
-{"file": "it0225_55520f92.py", "child": 222, "score": 4.153, "rate_bin": 2, "n": 513, "family": "r015_heisenberg27_23x25_sparse_nonid_w2"}
-{"file": "it0221_4d774d26.py", "child": 226, "score": 7.1975, "rate_bin": 0, "n": 520, "family": "r010_c5semidirectc8_q40_23x23_translated_pairs"}
-{"file": "it0196_500c4ec3.py", "child": 228, "score": 6.5183, "rate_bin": 2, "n": 560, "family": "r020_C7xC2xC2_28_24x24"}
-{"file": "it0220_f4defa0c.py", "child": 229, "score": 6.8039, "rate_bin": 2, "n": 560, "family": "r020_C7xC4inversion_24x24_short2screen"}
-{"file": "it0231_546e957c.py", "child": 231, "score": 5.6495, "rate_bin": 1, "n": 442, "family": "r015_m17r1s1_A24_B35_nonid_w3_c4"}
-{"file": "it0237_29d4354b.py", "child": 232, "score": 3.7879, "rate_bin": 5, "n": 544, "family": "r035_D8xC2_q16_25x26_c4min"}
-{"file": "it0232_ffa5ecbc.py", "child": 233, "score": 7.243, "rate_bin": 0, "n": 520, "family": "r010_c40_23x23_double_k56screen"}
-{"file": "it0230_c821c377.py", "child": 236, "score": 5.3222, "rate_bin": 3, "n": 480, "family": "r025_dih20_24x25_screened12_c4"}
-{"file": "it0240_a7b449da.py", "child": 237, "score": 7.0906, "rate_bin": 0, "n": 520, "family": "r010_c2xd10_q40_23x23_shortcycle"}
-{"file": "it0233_c88c76fa.py", "child": 238, "score": 2.5747, "rate_bin": 9, "n": 567, "family": "r057_abelian_c3cubed_14x15_sparse_id_w2"}
-{"file": "it0224_0905b7aa.py", "child": 239, "score": 6.2885, "rate_bin": 2, "n": 560, "family": "r020_C7xC4inv_28_24x24"}
-{"file": "it0244_bc8ef41e.py", "child": 240, "score": 3.1791, "rate_bin": 9, "n": 459, "family": "r057_heisenberg27_14x14_noncentral_gatecycle"}
-{"file": "it0236_357ee20b.py", "child": 241, "score": 5.8153, "rate_bin": 1, "n": 520, "family": "r015_f20_c5xc4_24x35_c4w12"}
-{"file": "it0245_726fce38.py", "child": 242, "score": 3.6888, "rate_bin": 5, "n": 544, "family": "r035_Q16_25x26_nonid_sparse_logical_c4"}
-{"file": "it0247_af4f09d3.py", "child": 243, "score": 3.4296, "rate_bin": 7, "n": 598, "family": "c23xc2_q46_13x14_w3_gate_screen"}
-{"file": "it0235_9ed0c6aa.py", "child": 244, "score": 5.9521, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_52x42_balanced_support_screen"}
-{"file": "it0248_20042eb1.py", "child": 245, "score": 3.179, "rate_bin": 7, "n": 368, "family": "generalized_quaternion_q16_13x27_stratified_w3_screen"}
-{"file": "it0241_aa0e72df.py", "child": 248, "score": 6.1951, "rate_bin": 2, "n": 580, "family": "r020_C29_24x24_sparse12screen"}
-{"file": "it0249_00cf14c5.py", "child": 249, "score": 3.7173, "rate_bin": 5, "n": 320, "family": "r031_cyclic20_12x27_sparse_shortcycle"}
-{"file": "it0255_03fdfe2e.py", "child": 251, "score": 2.7825, "rate_bin": 7, "n": 520, "family": "c5_semidirect_q8_q40_13x14_sparse_screen"}
-{"file": "it0238_83753262.py", "child": 252, "score": 2.6742, "rate_bin": 8, "n": 576, "family": "r050_D18_13x15_sparse_screen"}
-{"file": "it0243_51498cf3.py", "child": 253, "score": 5.9614, "rate_bin": 1, "n": 520, "family": "r015_cyclic20_24x35_unitvolt_sparse"}
-{"file": "it0239_40c8169b.py", "child": 254, "score": 4.8526, "rate_bin": 3, "n": 576, "family": "r025_sl23_order24_52x42"}
-{"file": "it0260_b964d4ea.py", "child": 255, "score": 3.4741, "rate_bin": 3, "n": 588, "family": "r025_cyclic49_12x25_sparse_screen"}
-{"file": "it0256_c9f3b05f.py", "child": 257, "score": 4.2235, "rate_bin": 4, "n": 580, "family": "r031_f20_q20_25x25_sparse_screen"}
-{"file": "it0251_f2103a30.py", "child": 258, "score": 7.2024, "rate_bin": 0, "n": 520, "family": "r010_c5xd8_q40_23x23_double_screen"}
-{"file": "it0262_db626677.py", "child": 260, "score": 3.4593, "rate_bin": 7, "n": 552, "family": "c2xa4_q24_13x27_noncentral_w3screen"}
-{"file": "it0250_804942cb.py", "child": 263, "score": 4.0562, "rate_bin": 6, "n": 480, "family": "r040_c13_62x62_exactscreen"}
-{"file": "it0485_49dfd973.py", "child": 263, "score": 4.0562, "rate_bin": 6, "n": 480, "family": "r040_c13_62x62_exactscreen"}
-{"file": "it0267_42cd3d7c.py", "child": 264, "score": 3.0194, "rate_bin": 8, "n": 512, "family": "r050_C4xC4_13x210_sparse_Aextras_screen"}
-{"file": "it0257_be529d3e.py", "child": 265, "score": 5.8519, "rate_bin": 1, "n": 520, "family": "r015_d20_24x35_c4w12"}
-{"file": "it0265_51166175.py", "child": 266, "score": 5.9738, "rate_bin": 1, "n": 416, "family": "r010_d16xc2_q32_23x23_translated_pairs_screen"}
-{"file": "it0271_770d66d4.py", "child": 267, "score": 4.4064, "rate_bin": 4, "n": 560, "family": "r030_dic5_q20_24x26_balanced_c4"}
-{"file": "it0266_cb290816.py", "child": 268, "score": 5.404, "rate_bin": 1, "n": 570, "family": "r015_s3xc5_23x25_c4screen"}
-{"file": "it0252_738096cb.py", "child": 269, "score": 5.2527, "rate_bin": 3, "n": 576, "family": "r025_s3xc4_q24_52x42_sparse_screen"}
-{"file": "it0270_1b704059.py", "child": 270, "score": 2.9245, "rate_bin": 7, "n": 546, "family": "d21_q42_14x13_tiered_screen"}
-{"file": "it0264_93307d99.py", "child": 271, "score": 3.3238, "rate_bin": 7, "n": 483, "family": "z7_semidirect_c3_q21_13x27_tiered_w3screen"}
-{"file": "it0277_8fa328e5.py", "child": 272, "score": 3.5314, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_sparse10_logical_screen"}
-{"file": "it0275_36b2390d.py", "child": 274, "score": 4.2961, "rate_bin": 5, "n": 544, "family": "r035_Q16_quaternion_25x26_sparse_logical_c4"}
-{"file": "it0269_b4096e85.py", "child": 275, "score": 5.3997, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_52x42_balanced_lowexposure_v2"}
-{"file": "it0208_eb0719e7.py", "child": 277, "score": 6.0431, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_52x42_tiered_sparse_screen"}
-{"file": "it0274_2f97e1af.py", "child": 279, "score": 7.0869, "rate_bin": 0, "n": 520, "family": "r010_c5sd_d8_q40_23x23_twoterm_screen"}
-{"file": "it0284_ada2d9ed.py", "child": 280, "score": 3.5652, "rate_bin": 7, "n": 598, "family": "cyclic_c26_q26_13x27_w3_gate_screen"}
-{"file": "it0263_a82fe9f1.py", "child": 281, "score": 6.8604, "rate_bin": 2, "n": 580, "family": "r020_C29_cyclic_24x24_rolled"}
-{"file": "it0283_2d95e3ec.py", "child": 282, "score": 3.1978, "rate_bin": 9, "n": 459, "family": "r271_cyclic27_14x14_sparse_nonid_w2"}
-{"file": "it0290_de5b88d5.py", "child": 283, "score": 3.2794, "rate_bin": 8, "n": 546, "family": "s3xc7_q42_13x14_sparse_w2screen"}
-{"file": "it0288_8789809f.py", "child": 284, "score": 3.6745, "rate_bin": 7, "n": 552, "family": "binary_tetrahedral_q24_13x27_tiered_w3_screen"}
-{"file": "it0280_2ba89cdd.py", "child": 287, "score": 5.7046, "rate_bin": 1, "n": 570, "family": "r015_s3xc5_q30_25x23_c4screen"}
-{"file": "it0289_c176f1ab.py", "child": 289, "score": 4.1919, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_sparse_w3_depth_c4"}
-{"file": "it0295_89ae9261.py", "child": 290, "score": 3.0857, "rate_bin": 2, "n": 308, "family": "r020_C7xC4inversion_13x23_sparse_short2screen"}
-{"file": "it0298_f70413b0.py", "child": 291, "score": 2.6271, "rate_bin": 9, "n": 476, "family": "r053_m14r2s13_14x14_roll"}
-{"file": "it0297_9d6792e4.py", "child": 292, "score": 3.4448, "rate_bin": 7, "n": 552, "family": "c24_q24_13x27_sparse_screen"}
-{"file": "it0281_ad9bedd3.py", "child": 293, "score": 6.7664, "rate_bin": 2, "n": 540, "family": "r020_c27_24x24_short2screen"}
-{"file": "it0273_ba5d618e.py", "child": 294, "score": 6.1289, "rate_bin": 1, "n": 456, "family": "r016_cyclic24_23x25_sparse_screen"}
-{"file": "it0300_fc4718fe.py", "child": 296, "score": 3.132, "rate_bin": 9, "n": 567, "family": "r057_c9semidirectc3_q27_14x15_sparse_nonid_w2"}
-{"file": "it0303_015b720c.py", "child": 297, "score": 3.814, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_sparse_logical_c4"}
-{"file": "it0296_e67e0dc2.py", "child": 301, "score": 7.2199, "rate_bin": 0, "n": 507, "family": "r010_c13semidirectc3_q39_23x23_double_screen"}
-{"file": "it0286_6418bab0.py", "child": 302, "score": 6.1338, "rate_bin": 1, "n": 598, "family": "r015_c23_24x35_position_voltage_screen"}
-{"file": "it0305_b184b74e.py", "child": 305, "score": 0.0, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_balanced_lowincidence"}
-{"file": "it0302_d2b33de7.py", "child": 306, "score": 7.2347, "rate_bin": 0, "n": 520, "family": "r010_c5xd8_q40_23x23_double_screen"}
-{"file": "it0294_18069f72.py", "child": 307, "score": 4.057, "rate_bin": 6, "n": 480, "family": "r040_dic3_62x62_bal4-5screen"}
-{"file": "it0310_16842501.py", "child": 308, "score": 2.8759, "rate_bin": 0, "n": 440, "family": "r010_c40_12x34_double_screen"}
-{"file": "it0285_79182cde.py", "child": 309, "score": 5.7996, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_A2x4_B2x5_sparse_screen"}
-{"file": "it0313_7c4ce9d4.py", "child": 310, "score": 3.7803, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_sparse2_exactscreen"}
-{"file": "it0315_a52dcd48.py", "child": 313, "score": 3.127, "rate_bin": 8, "n": 576, "family": "s3xc6_q36_13x15_sparse_w123_gate_screen"}
-{"file": "it0293_b88403b7.py", "child": 314, "score": 6.9576, "rate_bin": 2, "n": 560, "family": "r020_C7xC4inv_28_24x24_sparse_w12screen"}
-{"file": "it0321_0fdced5b.py", "child": 315, "score": 3.2336, "rate_bin": 9, "n": 527, "family": "r055_cyclic31_14x14_nonid_gatecycle"}
-{"file": "it0323_4dff857e.py", "child": 316, "score": 3.4067, "rate_bin": 7, "n": 575, "family": "cyclic_c25_q25_13x27_sparse_screen"}
-{"file": "it0325_b81aeeeb.py", "child": 318, "score": 3.113, "rate_bin": 9, "n": 567, "family": "r271_cyclic27_14x15_sparse_nonid_w2"}
-{"file": "it0326_705c7eca.py", "child": 319, "score": 3.2622, "rate_bin": 8, "n": 507, "family": "c13_semidirect_c3_q39_13x14_sparse_w2screen"}
-{"file": "it0316_51ba81f1.py", "child": 321, "score": 2.8231, "rate_bin": 9, "n": 578, "family": "r550_dihedral34_14x14_sparse_nonid_w2"}
-{"file": "it0330_7eb1026e.py", "child": 322, "score": 1.2527, "rate_bin": 9, "n": 459, "family": "r057_heisenberg27_14x14_sparse_nonid_gatecost"}
-{"file": "it0312_20106489.py", "child": 323, "score": 5.9237, "rate_bin": 1, "n": 437, "family": "r015_m1r23s1_23x25_shortlogical_screen"}
-{"file": "it0309_c8e15e17.py", "child": 325, "score": 6.0483, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_52x42_tiered_wt3_screen"}
-{"file": "it0328_ce05552e.py", "child": 326, "score": 3.9734, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_densitytier_screen"}
-{"file": "it0334_b041d56d.py", "child": 327, "score": 3.1834, "rate_bin": 8, "n": 546, "family": "r047_S3xC7_13x14_k_sparse"}
-{"file": "it0299_84e5fbb9.py", "child": 329, "score": 5.7721, "rate_bin": 3, "n": 576, "family": "r025_c2cubec3_24_52x42_sparse_screen"}
-{"file": "it0335_04986dbf.py", "child": 331, "score": 2.8374, "rate_bin": 7, "n": 598, "family": "c23xc2_q46_13x14_bbiased_lowgate_w3screen"}
-{"file": "it0320_86dfdffe.py", "child": 333, "score": 4.1465, "rate_bin": 1, "n": 520, "family": "r015_cyclic20_24x35_balanced_costscreen"}
-{"file": "it0318_3149d851.py", "child": 334, "score": 6.7216, "rate_bin": 2, "n": 580, "family": "r020_C29_cyclic_24x24_sparse_w12screen"}
-{"file": "it0340_9f8269a5.py", "child": 336, "score": 3.2935, "rate_bin": 8, "n": 598, "family": "c23xc2_q46_13x14_sparse_deg2_w123_gate"}
-{"file": "it0333_d8fe30ca.py", "child": 337, "score": 3.7074, "rate_bin": 6, "n": 480, "family": "r040_dih12_62x62"}
-{"file": "it0331_a8247854.py", "child": 339, "score": 7.0685, "rate_bin": 2, "n": 540, "family": "r020_c9xc3_24x24_short2screen"}
-{"file": "it0341_a6833f60.py", "child": 340, "score": 4.3298, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_sparse_w3_row11"}
-{"file": "it0306_a213c866.py", "child": 341, "score": 6.822, "rate_bin": 2, "n": 580, "family": "r020_C29_cyclic_sparse_shortlogical_cycle_screen"}
-{"file": "it0345_0f81ca96.py", "child": 344, "score": 2.5316, "rate_bin": 9, "n": 567, "family": "r057_c9semidirectc3_q27_14x15_quotientcosets_gate"}
-{"file": "it0353_594d5ae4.py", "child": 348, "score": 2.7001, "rate_bin": 9, "n": 589, "family": "r055_cyclic31_13x16_nonid_gatecycle"}
-{"file": "it0350_5f9d09e6.py", "child": 349, "score": 2.5914, "rate_bin": 9, "n": 576, "family": "d18_q36_13x15_sparse_w2screen"}
-{"file": "it0348_daabaab8.py", "child": 350, "score": 4.6771, "rate_bin": 4, "n": 580, "family": "r030_cyclic20_25x25_w10_w3screen"}
-{"file": "it0354_524ea781.py", "child": 351, "score": 3.4703, "rate_bin": 7, "n": 598, "family": "dihedral_d13_order26_13x27_tiered_w3_screen"}
-{"file": "it0355_7d599ae4.py", "child": 353, "score": 4.9039, "rate_bin": 1, "n": 437, "family": "r015_m1r23s1_23x25_diffbalanced_w3"}
-{"file": "it0352_d9d588aa.py", "child": 356, "score": 6.6053, "rate_bin": 2, "n": 560, "family": "r020_C7xC4inversion_24x24_sparse22_short2screen"}
-{"file": "it0360_955ce642.py", "child": 357, "score": 3.3323, "rate_bin": 4, "n": 580, "family": "r031_dih10_q20_25x25_balanced_c4"}
-{"file": "it0000_d1cdc70c.py", "child": 358, "score": 7.2543, "rate_bin": 0, "n": 520, "family": "r010_c5semidirectc8_q40_23x23_independent_pairs_k55"}
-{"file": "it0359_d1cdc70c.py", "child": 358, "score": 7.2543, "rate_bin": 0, "n": 520, "family": "r010_c5semidirectc8_q40_23x23_independent_pairs_k55"}
-{"file": "it0367_97ae2c6a.py", "child": 359, "score": 3.2523, "rate_bin": 9, "n": 527, "family": "r055_cyclic31_41x41_nonid_gatecycle"}
-{"file": "it0366_053c7560.py", "child": 360, "score": 4.6489, "rate_bin": 4, "n": 580, "family": "r031_cyclic20_25x25_lowlogical_c4_gate"}
-{"file": "it0370_8bde83aa.py", "child": 363, "score": 3.0931, "rate_bin": 9, "n": 504, "family": "r057_cyclic24_A1x4_B1x5_sparse_c4screen"}
-{"file": "it0361_e45cc698.py", "child": 364, "score": 3.42, "rate_bin": 7, "n": 506, "family": "cyclic_c22_q22_13x27_sparse_screen"}
-{"file": "it0373_9063d25b.py", "child": 367, "score": 3.0867, "rate_bin": 9, "n": 567, "family": "r057_c9semidirectc3_q27_14x15_noncentral_gate"}
-{"file": "it0364_0ad39545.py", "child": 368, "score": 6.8896, "rate_bin": 2, "n": 580, "family": "r020_C29_cyclic_24x24_w10_sparse_short2"}
-{"file": "it0376_cb962989.py", "child": 369, "score": 3.5855, "rate_bin": 7, "n": 552, "family": "binary_tetrahedral_q24_31x72_transposed_w3_screen"}
-{"file": "it0375_dbd926bb.py", "child": 370, "score": 0.0, "rate_bin": 2, "n": 580, "family": "r025_C29_12x25_short2_cycle_lowgate"}
-{"file": "it0378_43fc7051.py", "child": 371, "score": 3.3807, "rate_bin": 8, "n": 546, "family": "s3xc7_q42_13x14_w123_lowgate"}
-{"file": "it0381_2ca2cd60.py", "child": 373, "score": 3.0664, "rate_bin": 9, "n": 567, "family": "r057_c9semidirectc3_q27_14x15_nonid_gatec4"}
-{"file": "it0358_7246b5e7.py", "child": 374, "score": 6.019, "rate_bin": 3, "n": 576, "family": "r025_c12xc2_24_52x42_tiered_wt3_screen"}
-{"file": "it0379_36e1e978.py", "child": 375, "score": 4.6255, "rate_bin": 4, "n": 580, "family": "r030_cyclic20_25x25_lowdegree_w3screen"}
-{"file": "it0385_52eee910.py", "child": 376, "score": 2.687, "rate_bin": 9, "n": 544, "family": "r055_dihedral32_14x14_screened"}
-{"file": "it0386_c2598ecb.py", "child": 379, "score": 4.1785, "rate_bin": 5, "n": 510, "family": "r035_C15_25x26_sparse_w3_row11"}
-{"file": "it0380_be7047eb.py", "child": 381, "score": 0.0, "rate_bin": 2, "n": 580, "family": "r020_C29_cyclic_w10_short123_cycle_screen"}
-{"file": "it0384_081f8cfa.py", "child": 384, "score": 3.4036, "rate_bin": 8, "n": 520, "family": "c5semidirectc8_q40_13x14_sparse_w2screen"}
-{"file": "it0368_7c06216c.py", "child": 387, "score": 5.7344, "rate_bin": 3, "n": 576, "family": "r025_c3semidirectc8_q24_A2x4_B2x5_sparse_screen"}
-{"file": "it0362_099f0999.py", "child": 388, "score": 5.6939, "rate_bin": 3, "n": 576, "family": "r025_s3xc4_52x42_sparse_screen"}
-{"file": "it0390_7a65d104.py", "child": 389, "score": 3.4956, "rate_bin": 3, "n": 391, "family": "r025_c23_12x37_position_voltage_screen"}
-{"file": "it0383_a4c8021c.py", "child": 391, "score": 4.503, "rate_bin": 4, "n": 580, "family": "r030_cyclic20_25x25_balanced_c4"}
-{"file": "it0395_8e1c524a.py", "child": 392, "score": 3.5112, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_nonid_sparse_logical_c4"}
-{"file": "it0399_6c1dd193.py", "child": 394, "score": 3.2919, "rate_bin": 8, "n": 546, "family": "c7_semidirect_c6_q42_13x14_sparse_w2screen"}
-{"file": "it0398_f8ff6de8.py", "child": 395, "score": 3.5486, "rate_bin": 7, "n": 552, "family": "dihedral_d12_q24_13x27_tiered_w3_screen"}
-{"file": "it0400_c3fa3eee.py", "child": 396, "score": 4.1022, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_balanced_nonid_w3_row10"}
-{"file": "it0393_82c63840.py", "child": 398, "score": 7.2413, "rate_bin": 0, "n": 520, "family": "r010_c40_23x23_distinctdifferences_k55"}
-{"file": "it0405_1366240e.py", "child": 399, "score": 4.002, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_four_doubles_exactscreen"}
-{"file": "it0377_a710896f.py", "child": 400, "score": 5.1569, "rate_bin": 4, "n": 580, "family": "r030_c5xv4_q20_25x25_balanced_sparse_screen"}
-{"file": "it0365_56a2c4db.py", "child": 401, "score": 5.5761, "rate_bin": 3, "n": 480, "family": "r025_cyclic20_24x25_screened12_c4"}
-{"file": "it0391_05b982e9.py", "child": 406, "score": 4.6005, "rate_bin": 4, "n": 560, "family": "r030_f20_q20_24x26_sparse_w123_lowgate"}
-{"file": "it0416_f2b8ce49.py", "child": 409, "score": 3.3254, "rate_bin": 8, "n": 546, "family": "r047_S3xC7_13x14_rategate_w123"}
-{"file": "it0418_05a07a18.py", "child": 410, "score": 3.2293, "rate_bin": 9, "n": 527, "family": "r055_cyclic31_14x14_global_distinct_cyclebalanced"}
-{"file": "it0410_5c90b58a.py", "child": 411, "score": 4.0756, "rate_bin": 6, "n": 560, "family": "r040_d14_z7semidirectz2_62x62_sparsec4"}
-{"file": "it0415_41d10edb.py", "child": 412, "score": 3.9649, "rate_bin": 4, "n": 580, "family": "r031_f20_q20_25x25_lowgate_w3"}
-{"file": "it0420_1e7cae7c.py", "child": 420, "score": 5.5128, "rate_bin": 1, "n": 592, "family": "r015_m1r37s1_23x24_c4screen"}
-{"file": "it0419_b1509d45.py", "child": 422, "score": 7.2397, "rate_bin": 0, "n": 520, "family": "r010_c40_23x23_double_k60screen"}
-{"file": "it0425_995db763.py", "child": 423, "score": 3.6861, "rate_bin": 6, "n": 480, "family": "r040_A4_q12_26x26_short3_rowexposure_c4"}
-{"file": "it0000_beb4fb12.py", "child": 424, "score": 7.2527, "rate_bin": 0, "n": 520, "family": "r010_c20xc2_q40_23x23_independent_pairs_k55"}
-{"file": "it0421_beb4fb12.py", "child": 424, "score": 7.2527, "rate_bin": 0, "n": 520, "family": "r010_c20xc2_q40_23x23_independent_pairs_k55"}
-{"file": "it0430_a3f599c1.py", "child": 425, "score": 3.5356, "rate_bin": 5, "n": 544, "family": "r035_C4xC4_25x26_order4_sparse_low12"}
-{"file": "it0434_7f95b57c.py", "child": 427, "score": 3.4329, "rate_bin": 7, "n": 552, "family": "cyclic_c24_q24_13x27_tiered_w3_screen"}
-{"file": "it0439_7562dc8d.py", "child": 430, "score": 3.3395, "rate_bin": 8, "n": 520, "family": "c40_cyclic_q40_13x14_sparse_w2screen"}
-{"file": "it0435_515ebc62.py", "child": 431, "score": 3.0814, "rate_bin": 9, "n": 567, "family": "r057_abelian_c3cubed_14x15_projective_balanced"}
-{"file": "it0440_04190cd1.py", "child": 437, "score": 7.0829, "rate_bin": 0, "n": 520, "family": "r010_c5semidirectc8_s2_23x23_w13screen"}
-{"file": "it0407_43a11fcb.py", "child": 439, "score": 5.8481, "rate_bin": 3, "n": 576, "family": "r025_s4_q24_52x42_tiered_wt3_screen"}
-{"file": "it0451_2512fb2a.py", "child": 445, "score": 4.2438, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_strat3-5_log3"}
-{"file": "it0450_26790941.py", "child": 446, "score": 4.631, "rate_bin": 4, "n": 580, "family": "r031_f20_q20_25x25_w10_w3_gate"}
-{"file": "it0426_9ecd7ce2.py", "child": 452, "score": 5.188, "rate_bin": 4, "n": 580, "family": "r030_f20_q20_25x25_identityB_screen"}
-{"file": "it0460_637bbc57.py", "child": 454, "score": 2.9146, "rate_bin": 7, "n": 552, "family": "dihedral_d12_q24_13x27_lowdegree_w3_screen"}
-{"file": "it0457_ec4f4ed4.py", "child": 455, "score": 4.217, "rate_bin": 5, "n": 544, "family": "r035_M16_semidirect5_25x26_sparse_logical_c4"}
-{"file": "it0465_7abab84d.py", "child": 456, "score": 2.609, "rate_bin": 9, "n": 575, "family": "r060_cyclic23_14x16_nonid_gatecycle"}
-{"file": "it0442_9fc6aecb.py", "child": 457, "score": 6.5957, "rate_bin": 1, "n": 598, "family": "r015_cyclic23_A24_B35_balanced_support_screen"}
-{"file": "it0445_9f54bca9.py", "child": 459, "score": 5.814, "rate_bin": 3, "n": 576, "family": "r025_cyclic24_A2x4_B2x5_balanced_gate_screen"}
-{"file": "it0464_38a479f8.py", "child": 461, "score": 3.3177, "rate_bin": 8, "n": 507, "family": "cyclic_c39_q39_13x14_sparse_w2screen"}
-{"file": "it0455_8728622e.py", "child": 462, "score": 3.2559, "rate_bin": 7, "n": 546, "family": "s3xc7_q42_13x14_triplecell_12to13_lowgate"}
-{"file": "it0470_ded08ecb.py", "child": 466, "score": 3.861, "rate_bin": 5, "n": 544, "family": "r035_D8xC2_q16_25x26_sparse_logical_c4"}
-{"file": "it0472_9ae46b60.py", "child": 467, "score": 3.8868, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_tiered_sparse_log123"}
-{"file": "it0480_1c4bc695.py", "child": 470, "score": 3.2618, "rate_bin": 8, "n": 585, "family": "c45_cyclic_q45_13x14_sparse_w2screen"}
-{"file": "it0467_2b6d5980.py", "child": 472, "score": 7.021, "rate_bin": 2, "n": 580, "family": "r020_C29_cyclic_24x24_short2screen"}
-{"file": "it0473_9ebd9a04.py", "child": 473, "score": 5.3759, "rate_bin": 4, "n": 580, "family": "r030_c5xv4_q20_25x25_balanced_sparse_screen"}
-{"file": "it0454_db4049dc.py", "child": 477, "score": 6.9029, "rate_bin": 2, "n": 560, "family": "r020_C7xC4inversion_24x24_balanced20to24_short2screen"}
-{"file": "it0478_8f1ecc88.py", "child": 479, "score": 3.0846, "rate_bin": 9, "n": 567, "family": "r550_c9xc3_14x15_sparse_nonid_w2"}
-{"file": "it0481_4789f5a0.py", "child": 482, "score": 4.0923, "rate_bin": 5, "n": 544, "family": "r035_SD16_25x26_c4min"}
-{"file": "it0475_e2f851ea.py", "child": 483, "score": 6.0079, "rate_bin": 1, "n": 520, "family": "r015_cyclic20_24x35_sparse_shortcycle"}
-{"file": "it0486_bbca0c34.py", "child": 485, "score": 3.5594, "rate_bin": 7, "n": 552, "family": "binary_tetrahedral_q24_13x27_sparse10_w3_screen"}
-{"file": "it0497_8948aaf6.py", "child": 488, "score": 3.1848, "rate_bin": 9, "n": 595, "family": "cyclic35_q35_14x14_w123_lowgate"}
-{"file": "it0000_9bd89d1e.py", "child": 491, "score": 7.2673, "rate_bin": 0, "n": 585, "family": "r010_c15xc3_q45_23x23_double_k56screen"}
-{"file": "it0488_9bd89d1e.py", "child": 491, "score": 7.2673, "rate_bin": 0, "n": 585, "family": "r010_c15xc3_q45_23x23_double_k56screen"}
-{"file": "it0498_240525c0.py", "child": 493, "score": 3.3864, "rate_bin": 8, "n": 546, "family": "c7semi_c6_order3_q42_13x14_w123_screen"}
-{"file": "it0489_a8464c2b.py", "child": 495, "score": 6.4233, "rate_bin": 1, "n": 598, "family": "r015_cyclic23_A24_B35_sparse_w3_screen"}
-{"file": "it0495_5aa640bc.py", "child": 497, "score": 5.1204, "rate_bin": 4, "n": 522, "family": "r030_s3xc3_q18_25x25_balanced_sparse_screen"}
-{"file": "it0494_408968f0.py", "child": 498, "score": 6.6595, "rate_bin": 2, "n": 580, "family": "r020_C29_balanced_20-22_exposure_screen"}
-{"file": "it0490_74896772.py", "child": 499, "score": 5.7256, "rate_bin": 1, "n": 456, "family": "r016_d12_order24_23x25_sparse_screen"}
-{"file": "it0500_aa77ff9b.py", "child": 507, "score": 3.1858, "rate_bin": 7, "n": 598, "family": "r043_C26_cyclic_13x27_balanced_sparse_screen"}
-{"file": "it0495_8146bb0d.py", "child": 509, "score": 5.0739, "rate_bin": 4, "n": 522, "family": "r030_c3xc3xc2_q18_25x25_balanced_sparse_screen"}
-{"file": "it0130_3461c919.py", "child": null, "score": null, "rate_bin": null, "n": null, "family": null}
+{"file":"it0000_0d75e0e5.py","child":0,"score":4.1899,"rate_bin":4,"n":588,"family":"r030_m1r21s1_24x26"}
+{"file":"it0000_2fce145c.py","child":1,"score":4.0213,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35"}
+{"file":"it0000_de3c65d3.py","child":2,"score":3.1896,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13"}
+{"file":"it0000_99d1a6b7.py","child":3,"score":4.0553,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26"}
+{"file":"it0000_9fa703a0.py","child":4,"score":3.4531,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62"}
+{"file":"it0000_8eec91d6.py","child":5,"score":5.2285,"rate_bin":3,"n":576,"family":"r025_m12r2s7_52x42"}
+{"file":"it0000_5a6ed8fa.py","child":6,"score":5.8778,"rate_bin":2,"n":560,"family":"r020_m14r2s13_24x24"}
+{"file":"it0000_79260ea0.py","child":7,"score":5.513,"rate_bin":2,"n":590,"family":"r020f_m59r2s58_12x12"}
+{"file":"it0011_332bbceb.py","child":8,"score":3.6457,"rate_bin":4,"n":560,"family":"r030_dih20_24x26"}
+{"file":"it0000_06a04b43.py","child":9,"score":3.44,"rate_bin":6,"n":480,"family":"a4_q12_26x26"}
+{"file":"it0005_4017d6d1.py","child":10,"score":2.157,"rate_bin":3,"n":408,"family":"r0235_m12r2s7_15x23"}
+{"file":"it0009_99fee19b.py","child":11,"score":3.6396,"rate_bin":6,"n":560,"family":"r040_cyclic14_62x62"}
+{"file":"it0004_e9e8a1fa.py","child":12,"score":4.3494,"rate_bin":4,"n":588,"family":"r030_C7rtC3_nonabelian_24x26"}
+{"file":"it0001_5f66fa1d.py","child":13,"score":2.6253,"rate_bin":9,"n":588,"family":"r057_m7r4s6_14x15"}
+{"file":"it0019_1e3bcf93.py","child":14,"score":3.3756,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_bal10u"}
+{"file":"it0014_e8650572.py","child":15,"score":3.1875,"rate_bin":3,"n":504,"family":"r025_m7r2s6_25x36"}
+{"file":"it0012_d389255c.py","child":16,"score":2.2125,"rate_bin":4,"n":483,"family":"r030_m1r21s1_A12_B310"}
+{"file":"it0021_b56ea6fc.py","child":17,"score":3.41,"rate_bin":5,"n":544,"family":"r035_dih16_25x26"}
+{"file":"it0017_2000e48d.py","child":18,"score":0.4882,"rate_bin":7,"n":598,"family":"d23_q46_13x14_singletons"}
+{"file":"it0041_046d5c27.py","child":18,"score":0.4882,"rate_bin":7,"n":598,"family":"d23_q46_13x14_singletons"}
+{"file":"it0022_9d83a3b4.py","child":19,"score":2.4826,"rate_bin":8,"n":588,"family":"r050_m7r2s6_18x25"}
+{"file":"it0002_07ff747b.py","child":20,"score":6.4065,"rate_bin":0,"n":299,"family":"r008_m1r23s1_23x23"}
+{"file":"it0023_4221716a.py","child":21,"score":2.2066,"rate_bin":3,"n":392,"family":"r0214_m14r2s13_14x23"}
+{"file":"it0028_99af37d3.py","child":22,"score":2.9749,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13"}
+{"file":"it0015_b6dca1c6.py","child":23,"score":2.8781,"rate_bin":5,"n":595,"family":"r035_m1r35s1_13x25"}
+{"file":"it0027_5d11d1d5.py","child":24,"score":2.1881,"rate_bin":4,"n":552,"family":"r026_m12r2s7_14x35"}
+{"file":"it0013_0c0a3f40.py","child":25,"score":6.3517,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_c4screen"}
+{"file":"it0006_9492b0f5.py","child":26,"score":4.2688,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_c4min"}
+{"file":"it0031_2fd1618e.py","child":27,"score":2.3564,"rate_bin":8,"n":448,"family":"r050_m7r2s6_15x26"}
+{"file":"it0010_c9196caf.py","child":28,"score":0.0,"rate_bin":2,"n":560,"family":"r020_m14r2s13_24x24_reg2_girth"}
+{"file":"it0025_ed9b1db0.py","child":29,"score":2.3197,"rate_bin":6,"n":527,"family":"r040_m17r1s1_14x37"}
+{"file":"it0020_3e031011.py","child":30,"score":3.656,"rate_bin":1,"n":572,"family":"r015_d11_order22_24x35"}
+{"file":"it0003_ce418ff3.py","child":31,"score":4.9279,"rate_bin":2,"n":480,"family":"r020_S4_24x24"}
+{"file":"it0026_f823ec76.py","child":32,"score":2.3293,"rate_bin":4,"n":294,"family":"r030_m1r21s1_12x26"}
+{"file":"it0036_4104a0bd.py","child":33,"score":2.5832,"rate_bin":9,"n":567,"family":"r057_heisenberg27_14x15"}
+{"file":"it0037_3f970afb.py","child":34,"score":1.8909,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_vg1"}
+{"file":"it0038_99d460ba.py","child":35,"score":3.3229,"rate_bin":5,"n":576,"family":"r033_m16r1s1_24x28"}
+{"file":"it0040_6603ad3d.py","child":37,"score":2.8277,"rate_bin":8,"n":598,"family":"d23_q46_13x14_sparse_w2screen"}
+{"file":"it0007_5e0b562b.py","child":38,"score":1.8784,"rate_bin":1,"n":483,"family":"r015_m1r23s1_12x58"}
+{"file":"it0039_0c3d65d1.py","child":39,"score":2.6858,"rate_bin":7,"n":468,"family":"r045_dihedral18_14x26"}
+{"file":"it0043_0fb43a14.py","child":40,"score":3.5117,"rate_bin":5,"n":476,"family":"r035_m7r2s6_25x26"}
+{"file":"it0044_4fabd6ce.py","child":41,"score":2.3852,"rate_bin":7,"n":552,"family":"c2xa4_q24_13x27_rolled"}
+{"file":"it0042_9c653514.py","child":42,"score":2.4785,"rate_bin":8,"n":588,"family":"r050_m7r2s6_18x25_w2screen"}
+{"file":"it0030_5cd8203a.py","child":43,"score":4.69,"rate_bin":3,"n":576,"family":"r025_dih12_order24_52x42"}
+{"file":"it0046_f544ae4a.py","child":44,"score":3.1262,"rate_bin":6,"n":544,"family":"r035_dih16_25x26_depavoid"}
+{"file":"it0000_76cf3533.py","child":45,"score":6.8546,"rate_bin":0,"n":299,"family":"r008_m1r23s1_23x23_balanced_cycles"}
+{"file":"it0047_76cf3533.py","child":45,"score":6.8546,"rate_bin":0,"n":299,"family":"r008_m1r23s1_23x23_balanced_cycles"}
+{"file":"it0074_d9558090.py","child":45,"score":6.8546,"rate_bin":0,"n":299,"family":"r008_m1r23s1_23x23_balanced_cycles"}
+{"file":"it0018_1b4f2bc7.py","child":46,"score":1.9224,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13_bal2g4"}
+{"file":"it0034_6dfc37fd.py","child":47,"score":4.3055,"rate_bin":4,"n":588,"family":"r030_C7rtC3_balanced_cyclemin_24x26"}
+{"file":"it0032_09658e90.py","child":48,"score":4.7095,"rate_bin":2,"n":210,"family":"r020_S3xC7_12x12"}
+{"file":"it0029_2d5a7bb4.py","child":49,"score":2.8663,"rate_bin":5,"n":595,"family":"r035_m5r7s1_13x25"}
+{"file":"it0052_6a396ef5.py","child":50,"score":3.7098,"rate_bin":5,"n":544,"family":"r035_Q16_25x26"}
+{"file":"it0053_cb4395fd.py","child":51,"score":2.2142,"rate_bin":6,"n":374,"family":"r041_m17r1s1_14x25"}
+{"file":"it0050_2f61bec4.py","child":52,"score":4.2487,"rate_bin":4,"n":560,"family":"r030_cyclic20_24x26"}
+{"file":"it0016_84fec43a.py","child":53,"score":4.0626,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62"}
+{"file":"it0055_daa1b0af.py","child":54,"score":2.4826,"rate_bin":8,"n":588,"family":"r050_m7r2s6_18x25_sparsec4"}
+{"file":"it0054_1da5bd2b.py","child":55,"score":2.8732,"rate_bin":7,"n":598,"family":"d23_q46_13x14_multiterm_c4"}
+{"file":"it0049_045ce8f8.py","child":56,"score":3.3925,"rate_bin":3,"n":576,"family":"r025_C4xC4_25x36"}
+{"file":"it0048_c2625920.py","child":57,"score":2.0584,"rate_bin":2,"n":560,"family":"r020_m14r2s13_12x48"}
+{"file":"it0033_52edd907.py","child":58,"score":3.6609,"rate_bin":6,"n":560,"family":"r040f_c7s8inv_13x13"}
+{"file":"it0062_740fde1e.py","child":59,"score":2.8412,"rate_bin":7,"n":468,"family":"r045_dihedral18_14x26_w3screen"}
+{"file":"it0064_70fd7ffb.py","child":60,"score":2.5255,"rate_bin":9,"n":504,"family":"r057_q8xc3_14x15"}
+{"file":"it0061_e7ae92dc.py","child":61,"score":2.6744,"rate_bin":7,"n":468,"family":"r045_gdih_c3xc3_14x26"}
+{"file":"it0057_8a632e54.py","child":62,"score":5.0003,"rate_bin":1,"n":437,"family":"r015_m1r23s1_23x25_c4screen"}
+{"file":"it0066_e8e130b4.py","child":63,"score":3.6901,"rate_bin":4,"n":504,"family":"r030_C3xS3_q18_24x26"}
+{"file":"it0063_7540ab59.py","child":64,"score":3.3691,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13_unique_w10_short3"}
+{"file":"it0067_84f984dc.py","child":65,"score":3.4464,"rate_bin":6,"n":520,"family":"r040_c13_26x26_w10"}
+{"file":"it0068_8f7128b6.py","child":66,"score":2.7665,"rate_bin":7,"n":598,"family":"d23_q46_13x14_extras_shortlogical_gate"}
+{"file":"it0070_25b129c5.py","child":67,"score":3.2092,"rate_bin":5,"n":594,"family":"r033_m1r66s1_12x14"}
+{"file":"it0059_fb45c1e8.py","child":69,"score":3.1523,"rate_bin":2,"n":200,"family":"r020_dih20_A12_B24"}
+{"file":"it0072_d467763a.py","child":70,"score":3.4889,"rate_bin":6,"n":560,"family":"r040_cyclic14_62x62_sparse_c4"}
+{"file":"it0073_9bda7adf.py","child":71,"score":2.5869,"rate_bin":9,"n":567,"family":"r057_heisenberg27_14x15"}
+{"file":"it0075_152cf6e1.py","child":72,"score":2.8159,"rate_bin":7,"n":468,"family":"r045_dihedral18_13x28"}
+{"file":"it0069_b9ffbd91.py","child":73,"score":4.5468,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_sparse_logical_c4"}
+{"file":"it0078_af24d858.py","child":74,"score":2.2975,"rate_bin":3,"n":392,"family":"r0214_m14r2s13_14x23_sparsecycle64"}
+{"file":"it0079_7fc9de66.py","child":75,"score":2.3259,"rate_bin":8,"n":420,"family":"r050_m7r2s6_14x27"}
+{"file":"it0051_ed1eb012.py","child":76,"score":2.1072,"rate_bin":4,"n":441,"family":"r030_C7rtC3_nonabelian_13x36"}
+{"file":"it0076_1568a077.py","child":77,"score":4.3075,"rate_bin":4,"n":560,"family":"r030_cyclic20_24x26_balanced_c4"}
+{"file":"it0082_84996bd5.py","child":78,"score":3.5083,"rate_bin":6,"n":560,"family":"r040_m7r2s6_26x26_balanced"}
+{"file":"it0085_030e7626.py","child":79,"score":3.0129,"rate_bin":0,"n":253,"family":"r009_m1r23s1_12x34_balanced_cycles"}
+{"file":"it0083_0720daa0.py","child":80,"score":0.0,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_c4shortscreen"}
+{"file":"it0081_1eec3802.py","child":81,"score":4.1393,"rate_bin":5,"n":544,"family":"r035_C4xC4_25x26_c4min"}
+{"file":"it0084_bbf1a6a7.py","child":82,"score":2.169,"rate_bin":3,"n":552,"family":"r026_m12r2s7_14x35_sparse_w2c4"}
+{"file":"it0077_4e66cb1f.py","child":83,"score":3.1891,"rate_bin":1,"n":299,"family":"r015_m1r23s1_12x35"}
+{"file":"it0087_5633c515.py","child":84,"score":3.4239,"rate_bin":7,"n":552,"family":"c2xa4_q24_13x27_sparse_screen"}
+{"file":"it0091_0020d5ac.py","child":85,"score":3.2884,"rate_bin":5,"n":289,"family":"r035_m17r1s1_13x25_c4screen"}
+{"file":"it0086_468e942c.py","child":86,"score":4.2191,"rate_bin":4,"n":560,"family":"r030_dic5_24x26"}
+{"file":"it0000_62ab95a8.py","child":87,"score":7.0279,"rate_bin":0,"n":598,"family":"r010_d23_q46_23x23_roll"}
+{"file":"it0065_62ab95a8.py","child":87,"score":7.0279,"rate_bin":0,"n":598,"family":"r010_d23_q46_23x23_roll"}
+{"file":"it0088_351fdc9b.py","child":88,"score":3.516,"rate_bin":2,"n":280,"family":"r020_m14r2s13_12x24_lowincidence"}
+{"file":"it0094_2e900cef.py","child":89,"score":3.7732,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_sparse2"}
+{"file":"it0096_0f98b44a.py","child":90,"score":0.0,"rate_bin":2,"n":280,"family":"r020_m14r2s13_A12_B24"}
+{"file":"it0080_535eb897.py","child":91,"score":5.2187,"rate_bin":3,"n":552,"family":"r025_z23_52x42"}
+{"file":"it0000_00fd0989.py","child":92,"score":6.8317,"rate_bin":0,"n":312,"family":"r008_S4_q24_23x23_balanced_cycles"}
+{"file":"it0095_00fd0989.py","child":92,"score":6.8317,"rate_bin":0,"n":312,"family":"r008_S4_q24_23x23_balanced_cycles"}
+{"file":"it0092_c31582ef.py","child":93,"score":3.0147,"rate_bin":4,"n":588,"family":"r030_cyclic42_13x24"}
+{"file":"it0090_d0fcf7a0.py","child":94,"score":5.2901,"rate_bin":1,"n":572,"family":"r015_d11_order22_24x35_sparsec4"}
+{"file":"it0099_ebece2c7.py","child":95,"score":3.0688,"rate_bin":9,"n":567,"family":"r057_heisenberg27_14x15_sparse_nonid_w2"}
+{"file":"it0100_926b49a8.py","child":96,"score":2.5072,"rate_bin":9,"n":308,"family":"r055_cyclic14_13x17"}
+{"file":"it0098_3a661a49.py","child":97,"score":2.9267,"rate_bin":7,"n":598,"family":"d23_q46_13x14_tiered_logicals"}
+{"file":"it0000_d80441f2.py","child":98,"score":6.8618,"rate_bin":0,"n":299,"family":"r008_m1r23s1_23x23_c4c6balanced"}
+{"file":"it0101_d80441f2.py","child":98,"score":6.8618,"rate_bin":0,"n":299,"family":"r008_m1r23s1_23x23_c4c6balanced"}
+{"file":"it0104_451b6400.py","child":99,"score":3.6203,"rate_bin":4,"n":560,"family":"r030_agl15_q20_24x26"}
+{"file":"it0058_06ed61e1.py","child":100,"score":5.6213,"rate_bin":3,"n":576,"family":"r025_cyclic24_52x42"}
+{"file":"it0107_1a210e26.py","child":101,"score":2.5598,"rate_bin":8,"n":312,"family":"c2xa4_q24_13x14_sparse_screen"}
+{"file":"it0106_041bbf09.py","child":102,"score":2.6526,"rate_bin":1,"n":345,"family":"r015_m1r23s1_13x34_c4screen"}
+{"file":"it0097_855a1666.py","child":103,"score":4.78,"rate_bin":3,"n":576,"family":"r025_m12r2s7_24x25"}
+{"file":"it0089_97c16ddc.py","child":104,"score":4.0689,"rate_bin":6,"n":480,"family":"r040_dic3_62x62"}
+{"file":"it0105_e8aeabff.py","child":105,"score":2.4976,"rate_bin":8,"n":588,"family":"r050_m7r2s6_18x25_sparse_w12c4"}
+{"file":"it0110_56bb0687.py","child":106,"score":3.3345,"rate_bin":7,"n":529,"family":"c23_q23_13x27_sparse_screen"}
+{"file":"it0111_998f8be1.py","child":107,"score":2.3766,"rate_bin":8,"n":462,"family":"r050_c11_18x25_sparsec4"}
+{"file":"it0103_9af80631.py","child":108,"score":4.5227,"rate_bin":3,"n":576,"family":"r025_S4q24_A2x4_B2x5"}
+{"file":"it0102_bd36af12.py","child":109,"score":3.4737,"rate_bin":5,"n":576,"family":"r033_m16r1s1_24x28_sparse123_c4"}
+{"file":"it0116_90490744.py","child":110,"score":0.0,"rate_bin":1,"n":598,"family":"r015_d11_q22_24x35_c4screen"}
+{"file":"it0115_905a1751.py","child":111,"score":2.4343,"rate_bin":8,"n":540,"family":"r050_d9_q18_14x27_roll"}
+{"file":"it0113_97dc849b.py","child":112,"score":2.8035,"rate_bin":7,"n":468,"family":"r045_c18_q18_14x26"}
+{"file":"it0071_177e412c.py","child":113,"score":6.1315,"rate_bin":2,"n":560,"family":"r020_m14r2s13_24x24"}
+{"file":"it0120_7d6126ac.py","child":114,"score":3.4269,"rate_bin":7,"n":575,"family":"c5xc5_q25_13x27_sparse_screen"}
+{"file":"it0119_f122e6ea.py","child":115,"score":3.2839,"rate_bin":5,"n":306,"family":"r035_s3xc3_13x25_c4screen"}
+{"file":"it0118_efd8d730.py","child":116,"score":4.1108,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_balanced4c5"}
+{"file":"it0117_1e7b1743.py","child":117,"score":6.6914,"rate_bin":0,"n":273,"family":"r008_m1r21s1_A23_B23_cycle"}
+{"file":"it0122_84e37454.py","child":118,"score":3.7511,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_sparse_w12_c4"}
+{"file":"it0114_241593c3.py","child":119,"score":4.4127,"rate_bin":4,"n":588,"family":"r030_cyclic21_24x26_balanced_c4"}
+{"file":"it0121_fcb737e6.py","child":120,"score":4.4278,"rate_bin":4,"n":560,"family":"r030_cyclic20_24x26_sparse_shortcycle"}
+{"file":"it0060_471b2ae2.py","child":121,"score":6.6937,"rate_bin":0,"n":572,"family":"r010_d22_order44_23x23"}
+{"file":"it0127_848810d9.py","child":122,"score":3.8901,"rate_bin":6,"n":480,"family":"r040_c12_sparse2_screen_62x62"}
+{"file":"it0125_795d31eb.py","child":123,"score":1.9509,"rate_bin":0,"n":506,"family":"r010_d23_q46_12x34_roll"}
+{"file":"it0128_1f08caf7.py","child":124,"score":2.5879,"rate_bin":9,"n":598,"family":"r061_cyclic23_15x15_sparse_w2"}
+{"file":"it0129_6141b36a.py","child":125,"score":2.481,"rate_bin":8,"n":384,"family":"c2xa4_q24_13x15_sparse_screen"}
+{"file":"it0131_7e42156f.py","child":126,"score":2.5372,"rate_bin":9,"n":504,"family":"r055_dih12_order24_14x15_screened"}
+{"file":"it0126_d9064274.py","child":128,"score":4.1528,"rate_bin":2,"n":590,"family":"r020f_m59r2s58_12x12_sparse_shortscreen"}
+{"file":"it0045_b50c0391.py","child":129,"score":0.0,"rate_bin":0,"n":299,"family":"r008_m1r23s1_23x23"}
+{"file":"it0112_42dd9e21.py","child":131,"score":3.2796,"rate_bin":8,"n":598,"family":"c23xc2_q46_13x14_sparse_w2screen"}
+{"file":"it0008_e60d9594.py","child":133,"score":2.6034,"rate_bin":8,"n":576,"family":"r050_m9r4s8_13x15"}
+{"file":"it0035_4dddd24f.py","child":134,"score":2.6085,"rate_bin":9,"n":588,"family":"dic7_q28_14x15"}
+{"file":"it0136_bb0e5536.py","child":135,"score":2.6762,"rate_bin":8,"n":592,"family":"r050_c37_13x15_sparse_w2c4"}
+{"file":"it0093_2c4442b3.py","child":136,"score":2.073,"rate_bin":1,"n":437,"family":"r015_m1r23s1_14x34_c4screen"}
+{"file":"it0137_c6c0c984.py","child":137,"score":2.6207,"rate_bin":7,"n":594,"family":"c22_q22_15x25_sparse_screen"}
+{"file":"it0123_687d32b4.py","child":138,"score":5.3569,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_c4screen"}
+{"file":"it0108_c39cf947.py","child":139,"score":5.9342,"rate_bin":2,"n":480,"family":"r020_Q8xC3_24_24x24"}
+{"file":"it0140_3aefad46.py","child":141,"score":0.0,"rate_bin":1,"n":299,"family":"r015_m1r23s1_12x35_c4screen"}
+{"file":"it0024_b9152c43.py","child":142,"score":4.6993,"rate_bin":2,"n":590,"family":"r020_c59xc2_12x12"}
+{"file":"it0145_a2eb8aae.py","child":143,"score":3.815,"rate_bin":6,"n":480,"family":"r040_dic3_sparse2_screen_62x62"}
+{"file":"it0144_e6a0ec4f.py","child":144,"score":3.9208,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_nonid_sparse_logical_c4"}
+{"file":"it0152_02446419.py","child":145,"score":2.7564,"rate_bin":8,"n":598,"family":"d23_q46_13x14_w3_c4screen"}
+{"file":"it0146_c07989a3.py","child":146,"score":4.2527,"rate_bin":4,"n":532,"family":"r030_cyclic19_24x26_balanced_c4"}
+{"file":"it0141_65e45201.py","child":147,"score":4.6572,"rate_bin":0,"n":598,"family":"r010_cyclic46_23x23_sparse_nonid_w2"}
+{"file":"it0147_7d8b80fc.py","child":148,"score":4.7823,"rate_bin":4,"n":560,"family":"r030_f20_q20_24x26_balanced_c4"}
+{"file":"it0153_31e7456e.py","child":150,"score":5.0283,"rate_bin":1,"n":546,"family":"r015_c7semidirectc3_q21_24x35_c4screen"}
+{"file":"it0133_1b6d5a36.py","child":151,"score":5.9916,"rate_bin":1,"n":572,"family":"r015_d11_order22_24x35_w4screen"}
+{"file":"it0135_cfc98d4e.py","child":152,"score":4.1319,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_exactscreen"}
+{"file":"it0151_032b70fc.py","child":154,"score":7.1322,"rate_bin":0,"n":520,"family":"r010_d20_q40_23x23_balanced_cycles"}
+{"file":"it0160_d7520afa.py","child":155,"score":3.9095,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_sparse_gate_w3"}
+{"file":"it0162_b7dafb32.py","child":156,"score":3.0812,"rate_bin":7,"n":598,"family":"c23xc2_q46_13x14_lowrow_c4screen"}
+{"file":"it0124_9f832102.py","child":157,"score":5.5752,"rate_bin":3,"n":576,"family":"r025_cyclic24_52x42_sparse_screen"}
+{"file":"it0142_57ae5861.py","child":158,"score":4.8925,"rate_bin":3,"n":528,"family":"r025_d11_q22_52x42"}
+{"file":"it0148_bc077b47.py","child":159,"score":5.5126,"rate_bin":0,"n":588,"family":"r010_m14r2s13_23x35_roll"}
+{"file":"it0164_3204dd9c.py","child":160,"score":4.4545,"rate_bin":3,"n":480,"family":"r025_dih20_24x25"}
+{"file":"it0161_c4ad97c6.py","child":161,"score":6.4549,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_c4w12"}
+{"file":"it0165_9241f61c.py","child":162,"score":6.3517,"rate_bin":1,"n":520,"family":"r015_cyclic20_24x35_sparse_shortcycle"}
+{"file":"it0170_96408a99.py","child":164,"score":3.3028,"rate_bin":7,"n":598,"family":"c23xc2_q46_14x13_tiered_screen"}
+{"file":"it0150_a8381ab9.py","child":166,"score":5.9757,"rate_bin":3,"n":576,"family":"r025_cyclic24_52x42_sparse_screen"}
+{"file":"it0167_3595e624.py","child":167,"score":6.5359,"rate_bin":0,"n":338,"family":"r010_d13_q26_23x23_c4c6balanced"}
+{"file":"it0134_43a5437f.py","child":168,"score":6.1106,"rate_bin":1,"n":572,"family":"r015_c22_24x35_shortc4"}
+{"file":"it0174_677c622d.py","child":170,"score":3.2392,"rate_bin":9,"n":459,"family":"r057_heisenberg27_14x14_sparse_nonid_w2"}
+{"file":"it0172_b7fd71b5.py","child":171,"score":4.5532,"rate_bin":4,"n":560,"family":"r030_cyclic20_24x26_sparse_shortcycle"}
+{"file":"it0175_6f851178.py","child":172,"score":1.5401,"rate_bin":1,"n":299,"family":"r015_m1r23s1_12x35_rankc4"}
+{"file":"it0163_b15d6202.py","child":173,"score":3.3675,"rate_bin":2,"n":240,"family":"r020_Q8xC3_12x24"}
+{"file":"it0179_d887e678.py","child":174,"score":3.5453,"rate_bin":7,"n":552,"family":"binary_tetrahedral_q24_13x27_sparse_screen"}
+{"file":"it0169_23fc07fa.py","child":175,"score":7.2349,"rate_bin":0,"n":520,"family":"r010_c40_23x23_double_screen"}
+{"file":"it0176_8d49bf49.py","child":176,"score":4.2331,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_sparse_nonid_w3_c4"}
+{"file":"it0183_dc586fe5.py","child":178,"score":3.0853,"rate_bin":9,"n":567,"family":"r057_abelian_c3cubed_14x15_sparse_nonid_w2"}
+{"file":"it0177_a151b507.py","child":179,"score":4.2819,"rate_bin":5,"n":544,"family":"r035_C4xC4_25x26_sparse29_gate_c4"}
+{"file":"it0157_006f29b6.py","child":181,"score":6.2263,"rate_bin":2,"n":560,"family":"r020_m14r2s13_24x24_sparse_short2screen"}
+{"file":"it0181_2bbb490e.py","child":182,"score":4.2476,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_sparse_short12"}
+{"file":"it0149_2fddfb32.py","child":184,"score":2.5821,"rate_bin":9,"n":588,"family":"r057_m14r2s13_14x15_roll"}
+{"file":"it0182_f9621d4b.py","child":185,"score":2.8191,"rate_bin":7,"n":540,"family":"c5xc4_q20_15x25_sparse_screen"}
+{"file":"it0189_87a6d688.py","child":186,"score":3.4124,"rate_bin":7,"n":552,"family":"c2xa4_q24_13x27_tiered_w3screen"}
+{"file":"it0192_2d72b646.py","child":187,"score":4.2306,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_l3gatebalanced"}
+{"file":"it0180_f32a0ca6.py","child":188,"score":6.5829,"rate_bin":2,"n":580,"family":"r020_C29_24x24"}
+{"file":"it0173_b6182e2d.py","child":190,"score":6.1576,"rate_bin":2,"n":560,"family":"r020_m14r2s13_24x24_balanced_shortlog_screen"}
+{"file":"it0190_aa023f67.py","child":191,"score":2.6187,"rate_bin":0,"n":560,"family":"r007_d20_q40_12x45_balanced_cycles"}
+{"file":"it0187_8500b4db.py","child":192,"score":7.2366,"rate_bin":0,"n":520,"family":"r010_c5s8_q40_23x23_twoterm_c4"}
+{"file":"it0191_f46cb916.py","child":194,"score":3.1327,"rate_bin":8,"n":576,"family":"c18xc2_q36_13x15_sparse_cyclescreen"}
+{"file":"it0194_e41e6380.py","child":195,"score":3.2598,"rate_bin":7,"n":575,"family":"c5xc5_q25_13x27_weight3_gate_screen"}
+{"file":"it0204_51207a75.py","child":199,"score":2.5121,"rate_bin":9,"n":594,"family":"r057_heisenberg27_13x17_sparse_nonid_w2"}
+{"file":"it0205_3e05e494.py","child":200,"score":2.4736,"rate_bin":8,"n":592,"family":"r050_m8r2s7_17x25_rolled"}
+{"file":"it0206_1b10c5e3.py","child":201,"score":3.3952,"rate_bin":7,"n":598,"family":"cyclic_c26_q26_13x27_sparse_screen"}
+{"file":"it0186_c11794ee.py","child":202,"score":4.7049,"rate_bin":3,"n":576,"family":"r025_s4_q24_52x42"}
+{"file":"it0198_d34ebf57.py","child":203,"score":7.188,"rate_bin":0,"n":520,"family":"r010_c40_23x23_tiered_exactscreen"}
+{"file":"it0209_384f3403.py","child":205,"score":3.6139,"rate_bin":5,"n":544,"family":"r035_C4xC4_25x26_sparse23_27"}
+{"file":"it0201_bdfdbfc1.py","child":206,"score":4.8456,"rate_bin":4,"n":580,"family":"r031_f20_q20_25x25_balanced_c4"}
+{"file":"it0000_338e59b2.py","child":207,"score":7.2463,"rate_bin":0,"n":520,"family":"r010_c5xq8_q40_23x23_double_screen"}
+{"file":"it0199_338e59b2.py","child":207,"score":7.2463,"rate_bin":0,"n":520,"family":"r010_c5xq8_q40_23x23_double_screen"}
+{"file":"it0155_11146110.py","child":210,"score":3.2153,"rate_bin":7,"n":552,"family":"d12_q24_13x27_sparse_screen"}
+{"file":"it0213_74c18c7a.py","child":211,"score":3.1144,"rate_bin":8,"n":576,"family":"r050_S3xC6_13x15_sparse_screen"}
+{"file":"it0185_d0aeb559.py","child":212,"score":3.6188,"rate_bin":5,"n":544,"family":"r035_C16_25x26_nonid_sparse_logical_c4"}
+{"file":"it0210_6d532b8b.py","child":213,"score":1.902,"rate_bin":2,"n":360,"family":"r020_Q8xC3_24_12x36"}
+{"file":"it0195_3899bb16.py","child":214,"score":4.729,"rate_bin":2,"n":480,"family":"r020_D12_q24_24x24"}
+{"file":"it0217_6ccde455.py","child":215,"score":4.9579,"rate_bin":4,"n":580,"family":"r030_cyclic20_25x25_sparse_shortcycle"}
+{"file":"it0219_4e1cd369.py","child":216,"score":3.4079,"rate_bin":7,"n":552,"family":"binary_tetrahedral_q24_13x27_stratified_w3_screen"}
+{"file":"it0200_66fb8208.py","child":217,"score":6.3951,"rate_bin":2,"n":560,"family":"r020_c28_24x24"}
+{"file":"it0215_2f6f7c90.py","child":218,"score":6.5969,"rate_bin":0,"n":520,"family":"r010_c5s8_q40_23x23_18to23term_screen"}
+{"file":"it0225_55520f92.py","child":222,"score":4.153,"rate_bin":2,"n":513,"family":"r015_heisenberg27_23x25_sparse_nonid_w2"}
+{"file":"it0221_4d774d26.py","child":226,"score":7.1975,"rate_bin":0,"n":520,"family":"r010_c5semidirectc8_q40_23x23_translated_pairs"}
+{"file":"it0196_500c4ec3.py","child":228,"score":6.5183,"rate_bin":2,"n":560,"family":"r020_C7xC2xC2_28_24x24"}
+{"file":"it0220_f4defa0c.py","child":229,"score":6.8039,"rate_bin":2,"n":560,"family":"r020_C7xC4inversion_24x24_short2screen"}
+{"file":"it0231_546e957c.py","child":231,"score":5.6495,"rate_bin":1,"n":442,"family":"r015_m17r1s1_A24_B35_nonid_w3_c4"}
+{"file":"it0237_29d4354b.py","child":232,"score":3.7879,"rate_bin":5,"n":544,"family":"r035_D8xC2_q16_25x26_c4min"}
+{"file":"it0232_ffa5ecbc.py","child":233,"score":7.243,"rate_bin":0,"n":520,"family":"r010_c40_23x23_double_k56screen"}
+{"file":"it0230_c821c377.py","child":236,"score":5.3222,"rate_bin":3,"n":480,"family":"r025_dih20_24x25_screened12_c4"}
+{"file":"it0240_a7b449da.py","child":237,"score":7.0906,"rate_bin":0,"n":520,"family":"r010_c2xd10_q40_23x23_shortcycle"}
+{"file":"it0233_c88c76fa.py","child":238,"score":2.5747,"rate_bin":9,"n":567,"family":"r057_abelian_c3cubed_14x15_sparse_id_w2"}
+{"file":"it0224_0905b7aa.py","child":239,"score":6.2885,"rate_bin":2,"n":560,"family":"r020_C7xC4inv_28_24x24"}
+{"file":"it0244_bc8ef41e.py","child":240,"score":3.1791,"rate_bin":9,"n":459,"family":"r057_heisenberg27_14x14_noncentral_gatecycle"}
+{"file":"it0236_357ee20b.py","child":241,"score":5.8153,"rate_bin":1,"n":520,"family":"r015_f20_c5xc4_24x35_c4w12"}
+{"file":"it0245_726fce38.py","child":242,"score":3.6888,"rate_bin":5,"n":544,"family":"r035_Q16_25x26_nonid_sparse_logical_c4"}
+{"file":"it0247_af4f09d3.py","child":243,"score":3.4296,"rate_bin":7,"n":598,"family":"c23xc2_q46_13x14_w3_gate_screen"}
+{"file":"it0235_9ed0c6aa.py","child":244,"score":5.9521,"rate_bin":3,"n":576,"family":"r025_cyclic24_52x42_balanced_support_screen"}
+{"file":"it0248_20042eb1.py","child":245,"score":3.179,"rate_bin":7,"n":368,"family":"generalized_quaternion_q16_13x27_stratified_w3_screen"}
+{"file":"it0241_aa0e72df.py","child":248,"score":6.1951,"rate_bin":2,"n":580,"family":"r020_C29_24x24_sparse12screen"}
+{"file":"it0249_00cf14c5.py","child":249,"score":3.7173,"rate_bin":5,"n":320,"family":"r031_cyclic20_12x27_sparse_shortcycle"}
+{"file":"it0255_03fdfe2e.py","child":251,"score":2.7825,"rate_bin":7,"n":520,"family":"c5_semidirect_q8_q40_13x14_sparse_screen"}
+{"file":"it0238_83753262.py","child":252,"score":2.6742,"rate_bin":8,"n":576,"family":"r050_D18_13x15_sparse_screen"}
+{"file":"it0243_51498cf3.py","child":253,"score":5.9614,"rate_bin":1,"n":520,"family":"r015_cyclic20_24x35_unitvolt_sparse"}
+{"file":"it0239_40c8169b.py","child":254,"score":4.8526,"rate_bin":3,"n":576,"family":"r025_sl23_order24_52x42"}
+{"file":"it0260_b964d4ea.py","child":255,"score":3.4741,"rate_bin":3,"n":588,"family":"r025_cyclic49_12x25_sparse_screen"}
+{"file":"it0256_c9f3b05f.py","child":257,"score":4.2235,"rate_bin":4,"n":580,"family":"r031_f20_q20_25x25_sparse_screen"}
+{"file":"it0251_f2103a30.py","child":258,"score":7.2024,"rate_bin":0,"n":520,"family":"r010_c5xd8_q40_23x23_double_screen"}
+{"file":"it0262_db626677.py","child":260,"score":3.4593,"rate_bin":7,"n":552,"family":"c2xa4_q24_13x27_noncentral_w3screen"}
+{"file":"it0250_804942cb.py","child":263,"score":4.0562,"rate_bin":6,"n":480,"family":"r040_c13_62x62_exactscreen"}
+{"file":"it0485_49dfd973.py","child":263,"score":4.0562,"rate_bin":6,"n":480,"family":"r040_c13_62x62_exactscreen"}
+{"file":"it0267_42cd3d7c.py","child":264,"score":3.0194,"rate_bin":8,"n":512,"family":"r050_C4xC4_13x210_sparse_Aextras_screen"}
+{"file":"it0257_be529d3e.py","child":265,"score":5.8519,"rate_bin":1,"n":520,"family":"r015_d20_24x35_c4w12"}
+{"file":"it0265_51166175.py","child":266,"score":5.9738,"rate_bin":1,"n":416,"family":"r010_d16xc2_q32_23x23_translated_pairs_screen"}
+{"file":"it0271_770d66d4.py","child":267,"score":4.4064,"rate_bin":4,"n":560,"family":"r030_dic5_q20_24x26_balanced_c4"}
+{"file":"it0266_cb290816.py","child":268,"score":5.404,"rate_bin":1,"n":570,"family":"r015_s3xc5_23x25_c4screen"}
+{"file":"it0252_738096cb.py","child":269,"score":5.2527,"rate_bin":3,"n":576,"family":"r025_s3xc4_q24_52x42_sparse_screen"}
+{"file":"it0270_1b704059.py","child":270,"score":2.9245,"rate_bin":7,"n":546,"family":"d21_q42_14x13_tiered_screen"}
+{"file":"it0264_93307d99.py","child":271,"score":3.3238,"rate_bin":7,"n":483,"family":"z7_semidirect_c3_q21_13x27_tiered_w3screen"}
+{"file":"it0277_8fa328e5.py","child":272,"score":3.5314,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_sparse10_logical_screen"}
+{"file":"it0275_36b2390d.py","child":274,"score":4.2961,"rate_bin":5,"n":544,"family":"r035_Q16_quaternion_25x26_sparse_logical_c4"}
+{"file":"it0269_b4096e85.py","child":275,"score":5.3997,"rate_bin":3,"n":576,"family":"r025_cyclic24_52x42_balanced_lowexposure_v2"}
+{"file":"it0208_eb0719e7.py","child":277,"score":6.0431,"rate_bin":3,"n":576,"family":"r025_cyclic24_52x42_tiered_sparse_screen"}
+{"file":"it0274_2f97e1af.py","child":279,"score":7.0869,"rate_bin":0,"n":520,"family":"r010_c5sd_d8_q40_23x23_twoterm_screen"}
+{"file":"it0284_ada2d9ed.py","child":280,"score":3.5652,"rate_bin":7,"n":598,"family":"cyclic_c26_q26_13x27_w3_gate_screen"}
+{"file":"it0263_a82fe9f1.py","child":281,"score":6.8604,"rate_bin":2,"n":580,"family":"r020_C29_cyclic_24x24_rolled"}
+{"file":"it0283_2d95e3ec.py","child":282,"score":3.1978,"rate_bin":9,"n":459,"family":"r271_cyclic27_14x14_sparse_nonid_w2"}
+{"file":"it0290_de5b88d5.py","child":283,"score":3.2794,"rate_bin":8,"n":546,"family":"s3xc7_q42_13x14_sparse_w2screen"}
+{"file":"it0288_8789809f.py","child":284,"score":3.6745,"rate_bin":7,"n":552,"family":"binary_tetrahedral_q24_13x27_tiered_w3_screen"}
+{"file":"it0280_2ba89cdd.py","child":287,"score":5.7046,"rate_bin":1,"n":570,"family":"r015_s3xc5_q30_25x23_c4screen"}
+{"file":"it0289_c176f1ab.py","child":289,"score":4.1919,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_sparse_w3_depth_c4"}
+{"file":"it0295_89ae9261.py","child":290,"score":3.0857,"rate_bin":2,"n":308,"family":"r020_C7xC4inversion_13x23_sparse_short2screen"}
+{"file":"it0298_f70413b0.py","child":291,"score":2.6271,"rate_bin":9,"n":476,"family":"r053_m14r2s13_14x14_roll"}
+{"file":"it0297_9d6792e4.py","child":292,"score":3.4448,"rate_bin":7,"n":552,"family":"c24_q24_13x27_sparse_screen"}
+{"file":"it0281_ad9bedd3.py","child":293,"score":6.7664,"rate_bin":2,"n":540,"family":"r020_c27_24x24_short2screen"}
+{"file":"it0273_ba5d618e.py","child":294,"score":6.1289,"rate_bin":1,"n":456,"family":"r016_cyclic24_23x25_sparse_screen"}
+{"file":"it0300_fc4718fe.py","child":296,"score":3.132,"rate_bin":9,"n":567,"family":"r057_c9semidirectc3_q27_14x15_sparse_nonid_w2"}
+{"file":"it0303_015b720c.py","child":297,"score":3.814,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_sparse_logical_c4"}
+{"file":"it0296_e67e0dc2.py","child":301,"score":7.2199,"rate_bin":0,"n":507,"family":"r010_c13semidirectc3_q39_23x23_double_screen"}
+{"file":"it0286_6418bab0.py","child":302,"score":6.1338,"rate_bin":1,"n":598,"family":"r015_c23_24x35_position_voltage_screen"}
+{"file":"it0305_b184b74e.py","child":305,"score":0.0,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_balanced_lowincidence"}
+{"file":"it0302_d2b33de7.py","child":306,"score":7.2347,"rate_bin":0,"n":520,"family":"r010_c5xd8_q40_23x23_double_screen"}
+{"file":"it0294_18069f72.py","child":307,"score":4.057,"rate_bin":6,"n":480,"family":"r040_dic3_62x62_bal4-5screen"}
+{"file":"it0310_16842501.py","child":308,"score":2.8759,"rate_bin":0,"n":440,"family":"r010_c40_12x34_double_screen"}
+{"file":"it0285_79182cde.py","child":309,"score":5.7996,"rate_bin":3,"n":576,"family":"r025_cyclic24_A2x4_B2x5_sparse_screen"}
+{"file":"it0313_7c4ce9d4.py","child":310,"score":3.7803,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_sparse2_exactscreen"}
+{"file":"it0315_a52dcd48.py","child":313,"score":3.127,"rate_bin":8,"n":576,"family":"s3xc6_q36_13x15_sparse_w123_gate_screen"}
+{"file":"it0293_b88403b7.py","child":314,"score":6.9576,"rate_bin":2,"n":560,"family":"r020_C7xC4inv_28_24x24_sparse_w12screen"}
+{"file":"it0321_0fdced5b.py","child":315,"score":3.2336,"rate_bin":9,"n":527,"family":"r055_cyclic31_14x14_nonid_gatecycle"}
+{"file":"it0323_4dff857e.py","child":316,"score":3.4067,"rate_bin":7,"n":575,"family":"cyclic_c25_q25_13x27_sparse_screen"}
+{"file":"it0325_b81aeeeb.py","child":318,"score":3.113,"rate_bin":9,"n":567,"family":"r271_cyclic27_14x15_sparse_nonid_w2"}
+{"file":"it0326_705c7eca.py","child":319,"score":3.2622,"rate_bin":8,"n":507,"family":"c13_semidirect_c3_q39_13x14_sparse_w2screen"}
+{"file":"it0316_51ba81f1.py","child":321,"score":2.8231,"rate_bin":9,"n":578,"family":"r550_dihedral34_14x14_sparse_nonid_w2"}
+{"file":"it0330_7eb1026e.py","child":322,"score":1.2527,"rate_bin":9,"n":459,"family":"r057_heisenberg27_14x14_sparse_nonid_gatecost"}
+{"file":"it0312_20106489.py","child":323,"score":5.9237,"rate_bin":1,"n":437,"family":"r015_m1r23s1_23x25_shortlogical_screen"}
+{"file":"it0309_c8e15e17.py","child":325,"score":6.0483,"rate_bin":3,"n":576,"family":"r025_cyclic24_52x42_tiered_wt3_screen"}
+{"file":"it0328_ce05552e.py","child":326,"score":3.9734,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_densitytier_screen"}
+{"file":"it0334_b041d56d.py","child":327,"score":3.1834,"rate_bin":8,"n":546,"family":"r047_S3xC7_13x14_k_sparse"}
+{"file":"it0299_84e5fbb9.py","child":329,"score":5.7721,"rate_bin":3,"n":576,"family":"r025_c2cubec3_24_52x42_sparse_screen"}
+{"file":"it0335_04986dbf.py","child":331,"score":2.8374,"rate_bin":7,"n":598,"family":"c23xc2_q46_13x14_bbiased_lowgate_w3screen"}
+{"file":"it0320_86dfdffe.py","child":333,"score":4.1465,"rate_bin":1,"n":520,"family":"r015_cyclic20_24x35_balanced_costscreen"}
+{"file":"it0318_3149d851.py","child":334,"score":6.7216,"rate_bin":2,"n":580,"family":"r020_C29_cyclic_24x24_sparse_w12screen"}
+{"file":"it0340_9f8269a5.py","child":336,"score":3.2935,"rate_bin":8,"n":598,"family":"c23xc2_q46_13x14_sparse_deg2_w123_gate"}
+{"file":"it0333_d8fe30ca.py","child":337,"score":3.7074,"rate_bin":6,"n":480,"family":"r040_dih12_62x62"}
+{"file":"it0331_a8247854.py","child":339,"score":7.0685,"rate_bin":2,"n":540,"family":"r020_c9xc3_24x24_short2screen"}
+{"file":"it0341_a6833f60.py","child":340,"score":4.3298,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_sparse_w3_row11"}
+{"file":"it0306_a213c866.py","child":341,"score":6.822,"rate_bin":2,"n":580,"family":"r020_C29_cyclic_sparse_shortlogical_cycle_screen"}
+{"file":"it0345_0f81ca96.py","child":344,"score":2.5316,"rate_bin":9,"n":567,"family":"r057_c9semidirectc3_q27_14x15_quotientcosets_gate"}
+{"file":"it0353_594d5ae4.py","child":348,"score":2.7001,"rate_bin":9,"n":589,"family":"r055_cyclic31_13x16_nonid_gatecycle"}
+{"file":"it0350_5f9d09e6.py","child":349,"score":2.5914,"rate_bin":9,"n":576,"family":"d18_q36_13x15_sparse_w2screen"}
+{"file":"it0348_daabaab8.py","child":350,"score":4.6771,"rate_bin":4,"n":580,"family":"r030_cyclic20_25x25_w10_w3screen"}
+{"file":"it0354_524ea781.py","child":351,"score":3.4703,"rate_bin":7,"n":598,"family":"dihedral_d13_order26_13x27_tiered_w3_screen"}
+{"file":"it0355_7d599ae4.py","child":353,"score":4.9039,"rate_bin":1,"n":437,"family":"r015_m1r23s1_23x25_diffbalanced_w3"}
+{"file":"it0352_d9d588aa.py","child":356,"score":6.6053,"rate_bin":2,"n":560,"family":"r020_C7xC4inversion_24x24_sparse22_short2screen"}
+{"file":"it0360_955ce642.py","child":357,"score":3.3323,"rate_bin":4,"n":580,"family":"r031_dih10_q20_25x25_balanced_c4"}
+{"file":"it0000_d1cdc70c.py","child":358,"score":7.2543,"rate_bin":0,"n":520,"family":"r010_c5semidirectc8_q40_23x23_independent_pairs_k55"}
+{"file":"it0359_d1cdc70c.py","child":358,"score":7.2543,"rate_bin":0,"n":520,"family":"r010_c5semidirectc8_q40_23x23_independent_pairs_k55"}
+{"file":"it0367_97ae2c6a.py","child":359,"score":3.2523,"rate_bin":9,"n":527,"family":"r055_cyclic31_41x41_nonid_gatecycle"}
+{"file":"it0366_053c7560.py","child":360,"score":4.6489,"rate_bin":4,"n":580,"family":"r031_cyclic20_25x25_lowlogical_c4_gate"}
+{"file":"it0370_8bde83aa.py","child":363,"score":3.0931,"rate_bin":9,"n":504,"family":"r057_cyclic24_A1x4_B1x5_sparse_c4screen"}
+{"file":"it0361_e45cc698.py","child":364,"score":3.42,"rate_bin":7,"n":506,"family":"cyclic_c22_q22_13x27_sparse_screen"}
+{"file":"it0373_9063d25b.py","child":367,"score":3.0867,"rate_bin":9,"n":567,"family":"r057_c9semidirectc3_q27_14x15_noncentral_gate"}
+{"file":"it0364_0ad39545.py","child":368,"score":6.8896,"rate_bin":2,"n":580,"family":"r020_C29_cyclic_24x24_w10_sparse_short2"}
+{"file":"it0376_cb962989.py","child":369,"score":3.5855,"rate_bin":7,"n":552,"family":"binary_tetrahedral_q24_31x72_transposed_w3_screen"}
+{"file":"it0375_dbd926bb.py","child":370,"score":0.0,"rate_bin":2,"n":580,"family":"r025_C29_12x25_short2_cycle_lowgate"}
+{"file":"it0378_43fc7051.py","child":371,"score":3.3807,"rate_bin":8,"n":546,"family":"s3xc7_q42_13x14_w123_lowgate"}
+{"file":"it0381_2ca2cd60.py","child":373,"score":3.0664,"rate_bin":9,"n":567,"family":"r057_c9semidirectc3_q27_14x15_nonid_gatec4"}
+{"file":"it0358_7246b5e7.py","child":374,"score":6.019,"rate_bin":3,"n":576,"family":"r025_c12xc2_24_52x42_tiered_wt3_screen"}
+{"file":"it0379_36e1e978.py","child":375,"score":4.6255,"rate_bin":4,"n":580,"family":"r030_cyclic20_25x25_lowdegree_w3screen"}
+{"file":"it0385_52eee910.py","child":376,"score":2.687,"rate_bin":9,"n":544,"family":"r055_dihedral32_14x14_screened"}
+{"file":"it0386_c2598ecb.py","child":379,"score":4.1785,"rate_bin":5,"n":510,"family":"r035_C15_25x26_sparse_w3_row11"}
+{"file":"it0380_be7047eb.py","child":381,"score":0.0,"rate_bin":2,"n":580,"family":"r020_C29_cyclic_w10_short123_cycle_screen"}
+{"file":"it0384_081f8cfa.py","child":384,"score":3.4036,"rate_bin":8,"n":520,"family":"c5semidirectc8_q40_13x14_sparse_w2screen"}
+{"file":"it0368_7c06216c.py","child":387,"score":5.7344,"rate_bin":3,"n":576,"family":"r025_c3semidirectc8_q24_A2x4_B2x5_sparse_screen"}
+{"file":"it0362_099f0999.py","child":388,"score":5.6939,"rate_bin":3,"n":576,"family":"r025_s3xc4_52x42_sparse_screen"}
+{"file":"it0390_7a65d104.py","child":389,"score":3.4956,"rate_bin":3,"n":391,"family":"r025_c23_12x37_position_voltage_screen"}
+{"file":"it0383_a4c8021c.py","child":391,"score":4.503,"rate_bin":4,"n":580,"family":"r030_cyclic20_25x25_balanced_c4"}
+{"file":"it0395_8e1c524a.py","child":392,"score":3.5112,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_nonid_sparse_logical_c4"}
+{"file":"it0399_6c1dd193.py","child":394,"score":3.2919,"rate_bin":8,"n":546,"family":"c7_semidirect_c6_q42_13x14_sparse_w2screen"}
+{"file":"it0398_f8ff6de8.py","child":395,"score":3.5486,"rate_bin":7,"n":552,"family":"dihedral_d12_q24_13x27_tiered_w3_screen"}
+{"file":"it0400_c3fa3eee.py","child":396,"score":4.1022,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_balanced_nonid_w3_row10"}
+{"file":"it0393_82c63840.py","child":398,"score":7.2413,"rate_bin":0,"n":520,"family":"r010_c40_23x23_distinctdifferences_k55"}
+{"file":"it0405_1366240e.py","child":399,"score":4.002,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_four_doubles_exactscreen"}
+{"file":"it0377_a710896f.py","child":400,"score":5.1569,"rate_bin":4,"n":580,"family":"r030_c5xv4_q20_25x25_balanced_sparse_screen"}
+{"file":"it0365_56a2c4db.py","child":401,"score":5.5761,"rate_bin":3,"n":480,"family":"r025_cyclic20_24x25_screened12_c4"}
+{"file":"it0391_05b982e9.py","child":406,"score":4.6005,"rate_bin":4,"n":560,"family":"r030_f20_q20_24x26_sparse_w123_lowgate"}
+{"file":"it0416_f2b8ce49.py","child":409,"score":3.3254,"rate_bin":8,"n":546,"family":"r047_S3xC7_13x14_rategate_w123"}
+{"file":"it0418_05a07a18.py","child":410,"score":3.2293,"rate_bin":9,"n":527,"family":"r055_cyclic31_14x14_global_distinct_cyclebalanced"}
+{"file":"it0410_5c90b58a.py","child":411,"score":4.0756,"rate_bin":6,"n":560,"family":"r040_d14_z7semidirectz2_62x62_sparsec4"}
+{"file":"it0415_41d10edb.py","child":412,"score":3.9649,"rate_bin":4,"n":580,"family":"r031_f20_q20_25x25_lowgate_w3"}
+{"file":"it0420_1e7cae7c.py","child":420,"score":5.5128,"rate_bin":1,"n":592,"family":"r015_m1r37s1_23x24_c4screen"}
+{"file":"it0419_b1509d45.py","child":422,"score":7.2397,"rate_bin":0,"n":520,"family":"r010_c40_23x23_double_k60screen"}
+{"file":"it0425_995db763.py","child":423,"score":3.6861,"rate_bin":6,"n":480,"family":"r040_A4_q12_26x26_short3_rowexposure_c4"}
+{"file":"it0000_beb4fb12.py","child":424,"score":7.2527,"rate_bin":0,"n":520,"family":"r010_c20xc2_q40_23x23_independent_pairs_k55"}
+{"file":"it0421_beb4fb12.py","child":424,"score":7.2527,"rate_bin":0,"n":520,"family":"r010_c20xc2_q40_23x23_independent_pairs_k55"}
+{"file":"it0430_a3f599c1.py","child":425,"score":3.5356,"rate_bin":5,"n":544,"family":"r035_C4xC4_25x26_order4_sparse_low12"}
+{"file":"it0434_7f95b57c.py","child":427,"score":3.4329,"rate_bin":7,"n":552,"family":"cyclic_c24_q24_13x27_tiered_w3_screen"}
+{"file":"it0439_7562dc8d.py","child":430,"score":3.3395,"rate_bin":8,"n":520,"family":"c40_cyclic_q40_13x14_sparse_w2screen"}
+{"file":"it0435_515ebc62.py","child":431,"score":3.0814,"rate_bin":9,"n":567,"family":"r057_abelian_c3cubed_14x15_projective_balanced"}
+{"file":"it0440_04190cd1.py","child":437,"score":7.0829,"rate_bin":0,"n":520,"family":"r010_c5semidirectc8_s2_23x23_w13screen"}
+{"file":"it0407_43a11fcb.py","child":439,"score":5.8481,"rate_bin":3,"n":576,"family":"r025_s4_q24_52x42_tiered_wt3_screen"}
+{"file":"it0451_2512fb2a.py","child":445,"score":4.2438,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_strat3-5_log3"}
+{"file":"it0450_26790941.py","child":446,"score":4.631,"rate_bin":4,"n":580,"family":"r031_f20_q20_25x25_w10_w3_gate"}
+{"file":"it0426_9ecd7ce2.py","child":452,"score":5.188,"rate_bin":4,"n":580,"family":"r030_f20_q20_25x25_identityB_screen"}
+{"file":"it0460_637bbc57.py","child":454,"score":2.9146,"rate_bin":7,"n":552,"family":"dihedral_d12_q24_13x27_lowdegree_w3_screen"}
+{"file":"it0457_ec4f4ed4.py","child":455,"score":4.217,"rate_bin":5,"n":544,"family":"r035_M16_semidirect5_25x26_sparse_logical_c4"}
+{"file":"it0465_7abab84d.py","child":456,"score":2.609,"rate_bin":9,"n":575,"family":"r060_cyclic23_14x16_nonid_gatecycle"}
+{"file":"it0442_9fc6aecb.py","child":457,"score":6.5957,"rate_bin":1,"n":598,"family":"r015_cyclic23_A24_B35_balanced_support_screen"}
+{"file":"it0445_9f54bca9.py","child":459,"score":5.814,"rate_bin":3,"n":576,"family":"r025_cyclic24_A2x4_B2x5_balanced_gate_screen"}
+{"file":"it0464_38a479f8.py","child":461,"score":3.3177,"rate_bin":8,"n":507,"family":"cyclic_c39_q39_13x14_sparse_w2screen"}
+{"file":"it0455_8728622e.py","child":462,"score":3.2559,"rate_bin":7,"n":546,"family":"s3xc7_q42_13x14_triplecell_12to13_lowgate"}
+{"file":"it0470_ded08ecb.py","child":466,"score":3.861,"rate_bin":5,"n":544,"family":"r035_D8xC2_q16_25x26_sparse_logical_c4"}
+{"file":"it0472_9ae46b60.py","child":467,"score":3.8868,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_tiered_sparse_log123"}
+{"file":"it0480_1c4bc695.py","child":470,"score":3.2618,"rate_bin":8,"n":585,"family":"c45_cyclic_q45_13x14_sparse_w2screen"}
+{"file":"it0467_2b6d5980.py","child":472,"score":7.021,"rate_bin":2,"n":580,"family":"r020_C29_cyclic_24x24_short2screen"}
+{"file":"it0473_9ebd9a04.py","child":473,"score":5.3759,"rate_bin":4,"n":580,"family":"r030_c5xv4_q20_25x25_balanced_sparse_screen"}
+{"file":"it0454_db4049dc.py","child":477,"score":6.9029,"rate_bin":2,"n":560,"family":"r020_C7xC4inversion_24x24_balanced20to24_short2screen"}
+{"file":"it0478_8f1ecc88.py","child":479,"score":3.0846,"rate_bin":9,"n":567,"family":"r550_c9xc3_14x15_sparse_nonid_w2"}
+{"file":"it0481_4789f5a0.py","child":482,"score":4.0923,"rate_bin":5,"n":544,"family":"r035_SD16_25x26_c4min"}
+{"file":"it0475_e2f851ea.py","child":483,"score":6.0079,"rate_bin":1,"n":520,"family":"r015_cyclic20_24x35_sparse_shortcycle"}
+{"file":"it0486_bbca0c34.py","child":485,"score":3.5594,"rate_bin":7,"n":552,"family":"binary_tetrahedral_q24_13x27_sparse10_w3_screen"}
+{"file":"it0497_8948aaf6.py","child":null,"score":3.1848,"rate_bin":9,"n":595,"family":"cyclic35_q35_14x14_w123_lowgate"}
+{"file":"it0000_9bd89d1e.py","child":489,"score":7.2673,"rate_bin":0,"n":585,"family":"r010_c15xc3_q45_23x23_double_k56screen"}
+{"file":"it0488_9bd89d1e.py","child":489,"score":7.2673,"rate_bin":0,"n":585,"family":"r010_c15xc3_q45_23x23_double_k56screen"}
+{"file":"it0498_240525c0.py","child":null,"score":3.3864,"rate_bin":8,"n":546,"family":"c7semi_c6_order3_q42_13x14_w123_screen"}
+{"file":"it0489_a8464c2b.py","child":491,"score":6.4233,"rate_bin":1,"n":598,"family":"r015_cyclic23_A24_B35_sparse_w3_screen"}
+{"file":"it0495_5aa640bc.py","child":null,"score":5.1204,"rate_bin":4,"n":522,"family":"r030_s3xc3_q18_25x25_balanced_sparse_screen"}
+{"file":"it0494_408968f0.py","child":493,"score":6.6595,"rate_bin":2,"n":580,"family":"r020_C29_balanced_20-22_exposure_screen"}
+{"file":"it0490_74896772.py","child":494,"score":5.7256,"rate_bin":1,"n":456,"family":"r016_d12_order24_23x25_sparse_screen"}
+{"file":"it0500_aa77ff9b.py","child":502,"score":3.1858,"rate_bin":7,"n":598,"family":"r043_C26_cyclic_13x27_balanced_sparse_screen"}
+{"file":"it0495_8146bb0d.py","child":504,"score":5.0739,"rate_bin":4,"n":522,"family":"r030_c3xc3xc2_q18_25x25_balanced_sparse_screen"}
+{"file":"it0130_3461c919.py","child":null,"score":null,"rate_bin":null,"n":null,"family":null}

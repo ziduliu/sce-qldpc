@@ -1,4 +1,4 @@
-"""Figure 3: run score against steps for every run of Fig. 3 (one model call or one random proposal per step).
+"""Figure 3: run score against steps for every run of Fig. 3 (one iteration of the evolutionary loop per step).
 Data: figures/data/line_score_arms_iter.json (per line, the run score after steps 0..500; the seeds are step 0).
 Panel (a): FOM objective; panel (b): CLER objective. Language-model runs are drawn as lines with markers every
 STEP steps; the five random-mutation repeats and the five hill-climbing repeats as bands (minimum to maximum

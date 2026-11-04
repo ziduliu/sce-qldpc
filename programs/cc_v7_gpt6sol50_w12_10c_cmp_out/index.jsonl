@@ -1,386 +1,386 @@
-{"file": "it0000_f54f16e8.py", "child": 0, "score": 6.5484, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62"}
-{"file": "it0000_d919c19b.py", "child": 1, "score": 14.7, "rate_bin": 3, "n": 576, "family": "r025_m12r2s7_52x42"}
-{"file": "it0000_25595fe2.py", "child": 2, "score": 6.4, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13"}
-{"file": "it0000_7c754d95.py", "child": 3, "score": 15.9142, "rate_bin": 2, "n": 560, "family": "r020_m14r2s13_24x24"}
-{"file": "it0000_b2476e6b.py", "child": 4, "score": 6.6892, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35"}
-{"file": "it0000_9598ebea.py", "child": 5, "score": 20.4104, "rate_bin": 2, "n": 590, "family": "r020f_m59r2s58_12x12"}
-{"file": "it0000_ac6111ad.py", "child": 6, "score": 10.482, "rate_bin": 4, "n": 588, "family": "r030_m1r21s1_24x26"}
-{"file": "it0000_4ad14fbe.py", "child": 7, "score": 8.824, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26"}
-{"file": "it0009_5dc178ee.py", "child": 8, "score": 14.4, "rate_bin": 6, "n": 590, "family": "r040_c59_13x13_triples_girth"}
-{"file": "it0000_c7a676df.py", "child": 9, "score": 39.4554, "rate_bin": 0, "n": 598, "family": "r010_m23r2s22_23x23_distributed"}
-{"file": "it0002_c7a676df.py", "child": 9, "score": 39.4554, "rate_bin": 0, "n": 598, "family": "r010_m23r2s22_23x23_distributed"}
-{"file": "it0000_4e2b46d9.py", "child": 10, "score": 97.2134, "rate_bin": 2, "n": 585, "family": "r020_c13sdC9_12x12_noncomm_dense"}
-{"file": "it0008_9b607335.py", "child": 11, "score": 2.5, "rate_bin": 8, "n": 544, "family": "r050_m17r2s16_13x15_balanced"}
-{"file": "it0015_af3342a7.py", "child": 12, "score": 9.8824, "rate_bin": 5, "n": 476, "family": "r035_m14r2s13_13x25_c4balanced"}
-{"file": "it0011_5214cada.py", "child": 13, "score": 53.92, "rate_bin": 2, "n": 580, "family": "r020_c29byc4_action12_12x12_balanced_screened"}
-{"file": "it0013_56ef164d.py", "child": 14, "score": 21.4236, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_balanced_kernel_screen"}
-{"file": "it0003_819d68f0.py", "child": 15, "score": 80.0, "rate_bin": 2, "n": 580, "family": "r020_c29rt4_adjacent_cycle_12x12"}
-{"file": "it0007_f25d48e4.py", "child": 16, "score": 5.931, "rate_bin": 1, "n": 437, "family": "r015_m1r23s1_23x25_screened"}
-{"file": "it0014_67ec6259.py", "child": 17, "score": 10.4, "rate_bin": 3, "n": 576, "family": "r025_m12r2s11_52x42_screen4"}
-{"file": "it0012_a08bb330.py", "child": 18, "score": 18.0, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_balanced_shortscreen"}
-{"file": "it0004_1eb37cb1.py", "child": 19, "score": 13.943, "rate_bin": 4, "n": 588, "family": "r030_D42_12x13_mixed_screen4"}
-{"file": "it0006_c88b72ff.py", "child": 20, "score": 12.706, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_balanced_double_screen"}
-{"file": "it0010_7ac4c7a5.py", "child": 21, "score": 54.3872, "rate_bin": 2, "n": 590, "family": "r020f_m59r2s58_12x12_saturated_screened"}
-{"file": "it0001_8de411c1.py", "child": 22, "score": 4.858, "rate_bin": 9, "n": 578, "family": "r055_m17r2s16_14x14_screened"}
-{"file": "it0005_c16f633c.py", "child": 23, "score": 17.1164, "rate_bin": 3, "n": 576, "family": "r025_m12r2s7_24x25_balanced_screen4"}
-{"file": "it0017_b7b8b0c0.py", "child": 24, "score": 16.4644, "rate_bin": 0, "n": 572, "family": "r010_dic13_12x34_profiles"}
-{"file": "it0023_9b642f86.py", "child": 25, "score": 33.6792, "rate_bin": 2, "n": 580, "family": "r020_d29_12x24_cycle_screen"}
-{"file": "it0021_8268cdd8.py", "child": 26, "score": 9.1504, "rate_bin": 5, "n": 578, "family": "r035_d17_13x25_reflection_classes_v1"}
-{"file": "it0022_74eec67c.py", "child": 27, "score": 4.575, "rate_bin": 8, "n": 576, "family": "r050_m18r2s17_13x15_indexed_gaps"}
-{"file": "it0020_30c25636.py", "child": 28, "score": 7.4704, "rate_bin": 7, "n": 598, "family": "r045_d23_13x14_cycle_screen"}
-{"file": "it0018_e58d60f5.py", "child": 29, "score": 25.6, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13_triplet_screen"}
-{"file": "it0016_bb7ffb63.py", "child": 30, "score": 14.4, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_balanced_four_screen"}
-{"file": "it0029_6d64f51a.py", "child": 31, "score": 2.5654, "rate_bin": 5, "n": 595, "family": "r035_m35r1s1_13x25_difference_sidon"}
-{"file": "it0019_4d2c0b6a.py", "child": 32, "score": 6.4, "rate_bin": 6, "n": 560, "family": "r040_m7r2s6_62x62_balanced_screened"}
-{"file": "it0031_d50e8462.py", "child": 33, "score": 6.5776, "rate_bin": 8, "n": 576, "family": "r050_m18r2s1_13x15_bipartite_pairs"}
-{"file": "it0027_042b3c25.py", "child": 34, "score": 22.9118, "rate_bin": 3, "n": 552, "family": "r025_m23r2s22_12x25_component_screen"}
-{"file": "it0032_0deeec3b.py", "child": 35, "score": 9.596, "rate_bin": 0, "n": 594, "family": "r010_c9sdC6_12x34_adjacent_screen"}
-{"file": "it0025_aa84f0d9.py", "child": 36, "score": 14.4, "rate_bin": 6, "n": 580, "family": "r040_m29r1s1_13x26_balanced_screen4"}
-{"file": "it0026_09339a45.py", "child": 37, "score": 7.812, "rate_bin": 4, "n": 544, "family": "r030_m1r17s1_24x27_spread"}
-{"file": "it0000_d74cd070.py", "child": 38, "score": 25.6, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13_mixed3_screen6"}
-{"file": "it0028_d74cd070.py", "child": 38, "score": 25.6, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13_mixed3_screen6"}
-{"file": "it0030_1fdc018f.py", "child": 39, "score": 4.26, "rate_bin": 7, "n": 507, "family": "r045_z13r3s3_13x14_layer_girth"}
-{"file": "it0000_b3ae163a.py", "child": 40, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_c13sdC9_12x12_component_screen"}
-{"file": "it0034_b3ae163a.py", "child": 40, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_c13sdC9_12x12_component_screen"}
-{"file": "it0035_f6d8a039.py", "child": 41, "score": 7.4492, "rate_bin": 7, "n": 598, "family": "r045_d23_13x14_samecoset_syndrome"}
-{"file": "it0038_f3064bc8.py", "child": 42, "score": 11.1532, "rate_bin": 5, "n": 544, "family": "r035_m8r2s7_25x26_balanced_low4"}
-{"file": "it0039_894e3768.py", "child": 43, "score": 7.441, "rate_bin": 7, "n": 572, "family": "r045_dic11_13x14_noncomm_shortscreen"}
-{"file": "it0000_706ce23c.py", "child": 44, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_c13sdC9_12x12_central_quotient_screen"}
-{"file": "it0033_706ce23c.py", "child": 44, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_c13sdC9_12x12_central_quotient_screen"}
-{"file": "it0036_5b66892b.py", "child": 45, "score": 7.776, "rate_bin": 8, "n": 572, "family": "r045_dic11_13x14_order22_screened"}
-{"file": "it0037_3a9ca56c.py", "child": 46, "score": 8.824, "rate_bin": 5, "n": 476, "family": "r035_m14r2s13_13x25_order14_kernel"}
-{"file": "it0040_1f787e08.py", "child": 47, "score": 20.8408, "rate_bin": 3, "n": 576, "family": "r025_m12r2s7_52x42_balanced_component_screen"}
-{"file": "it0043_6d2c0f55.py", "child": 48, "score": 12.706, "rate_bin": 5, "n": 391, "family": "r035_m1r23s1_13x25_component_kernel"}
-{"file": "it0048_2fd982bf.py", "child": 49, "score": 53.2824, "rate_bin": 2, "n": 590, "family": "r020_d59_12x12_commutator_profiles"}
-{"file": "it0044_4b2a1ef3.py", "child": 50, "score": 6.568, "rate_bin": 6, "n": 570, "family": "r040_m19r3s7_13x13_mixedcoset"}
-{"file": "it0049_7e646af0.py", "child": 51, "score": 82.0258, "rate_bin": 2, "n": 585, "family": "r020_c13byc3_x_c3_12x12_quotient_cycle"}
-{"file": "it0047_10d4f395.py", "child": 52, "score": 14.3056, "rate_bin": 1, "n": 437, "family": "r015_m1r23s1_23x25_denseB_kernel"}
-{"file": "it0045_99550783.py", "child": 53, "score": 8.471, "rate_bin": 9, "n": 578, "family": "r055_m17r2s16_14x14_trianglefree_v2"}
-{"file": "it0048_02a854b6.py", "child": 57, "score": 0.0, "rate_bin": 0, "n": 576, "family": "r015_c3sq_by_c8_12x23_component_screen"}
-{"file": "it0055_813762e0.py", "child": 58, "score": 3.7056, "rate_bin": 8, "n": 544, "family": "r050_m17r2s16_13x15_mixedtriple_gap_screen"}
-{"file": "it0050_a8c9ad31.py", "child": 59, "score": 5.2222, "rate_bin": 9, "n": 546, "family": "r055_m13r2s12_14x15_mixed_triples_gap_screen"}
-{"file": "it0060_004c4b87.py", "child": 60, "score": 5.1634, "rate_bin": 9, "n": 588, "family": "r055_m7r4s6_14x15_order4_motifs"}
-{"file": "it0062_23e5f3f1.py", "child": 61, "score": 0.0, "rate_bin": 7, "n": 598, "family": "r045_c26_13x27_component_screen"}
-{"file": "it0056_9dcf6850.py", "child": 62, "score": 93.4902, "rate_bin": 2, "n": 585, "family": "r020_c13sdC9_12x12_component_screen"}
-{"file": "it0049_c056ad9d.py", "child": 63, "score": 16.9058, "rate_bin": 1, "n": 598, "family": "r015_d23_12x35_balanced_component_screen5"}
-{"file": "it0053_ba274f80.py", "child": 64, "score": 25.6, "rate_bin": 6, "n": 520, "family": "r040_c13rt4_13x13_component_word_screen"}
-{"file": "it0059_9d2f9fdb.py", "child": 65, "score": 32.1532, "rate_bin": 2, "n": 580, "family": "r020_m29r2s28_12x24_gap_component_screen"}
-{"file": "it0054_d1ab2d87.py", "child": 66, "score": 7.996, "rate_bin": 7, "n": 598, "family": "r045_d13_13x27_component_screen"}
-{"file": "it0046_5bd9a8c2.py", "child": 67, "score": 1.846, "rate_bin": 7, "n": 182, "family": "r045_m7r2s6_13x14_reflection_kernel4"}
-{"file": "it0057_2ad3e30e.py", "child": 68, "score": 18.5564, "rate_bin": 1, "n": 589, "family": "r015_m1r31s1_23x25_profile_component_screen"}
-{"file": "it0047_b150532f.py", "child": 69, "score": 10.6654, "rate_bin": 0, "n": 594, "family": "r010_m27r2s26_12x34_primitive_components"}
-{"file": "it0045_a94028be.py", "child": 70, "score": 67.642, "rate_bin": 2, "n": 570, "family": "r020_C19sdC6_12x12_action6_quartets"}
-{"file": "it0052_966d1f6f.py", "child": 71, "score": 8.333, "rate_bin": 5, "n": 576, "family": "r035_m12r1s1_37x26_disjoint_component_screen"}
-{"file": "it0051_5e9f86bf.py", "child": 72, "score": 19.862, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_component7screen"}
-{"file": "it0058_274fed75.py", "child": 73, "score": 19.862, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_component_gaps_v2"}
-{"file": "it0061_ab3f8f27.py", "child": 74, "score": 24.1768, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_verified_expansion_profiles"}
-{"file": "it0070_c90ae82d.py", "child": 75, "score": 0.0, "rate_bin": 5, "n": 576, "family": "r035_m12r1s1_26x37_voltage_screen"}
-{"file": "it0063_7d00d06c.py", "child": 76, "score": 22.154, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_redistributed_component_v2"}
-{"file": "it0068_705507fb.py", "child": 77, "score": 2.111, "rate_bin": 9, "n": 576, "family": "r050_dic9_13x15_order_profiles"}
-{"file": "it0067_98c62440.py", "child": 78, "score": 20.6338, "rate_bin": 3, "n": 578, "family": "r025_m17r2s16_12x37_component_screen"}
-{"file": "it0065_04bbe94e.py", "child": 79, "score": 67.642, "rate_bin": 2, "n": 570, "family": "r020_c19sdC6_12x12_component_screen"}
-{"file": "it0066_3c83ae38.py", "child": 80, "score": 16.9146, "rate_bin": 3, "n": 588, "family": "r025_Z7xZ7_12x25_component_shortscreen"}
-{"file": "it0069_19ad1480.py", "child": 81, "score": 73.3742, "rate_bin": 2, "n": 570, "family": "r020_frob19x6_12x12_difference_screen_v1"}
-{"file": "it0000_7d36da87.py", "child": 82, "score": 52.0, "rate_bin": 0, "n": 598, "family": "r010_m23r2s22_23x23_indexed_component_screen"}
-{"file": "it0074_7d36da87.py", "child": 82, "score": 52.0, "rate_bin": 0, "n": 598, "family": "r010_m23r2s22_23x23_indexed_component_screen"}
-{"file": "it0075_d18e6fcc.py", "child": 83, "score": 16.327, "rate_bin": 3, "n": 588, "family": "r025_c7xc7_12x25_component_screen"}
-{"file": "it0072_f09f99db.py", "child": 84, "score": 14.4, "rate_bin": 6, "n": 560, "family": "r040f_m14r2s13_13x26_balanced_components"}
-{"file": "it0076_bf4fcde1.py", "child": 85, "score": 10.286, "rate_bin": 4, "n": 581, "family": "r030_m1r83s1_12x13_anchored_pair_screen"}
-{"file": "it0077_e46189e7.py", "child": 86, "score": 22.5232, "rate_bin": 1, "n": 546, "family": "r015_c7sdC6_12x35_component_screen"}
-{"file": "it0064_7e1d0b46.py", "child": 88, "score": 13.902, "rate_bin": 1, "n": 437, "family": "r015_m1r23s1_23x25_balancedB_kernel_screen"}
-{"file": "it0078_a6696858.py", "child": 89, "score": 25.6, "rate_bin": 6, "n": 550, "family": "r040_c11sdC5_13x13_coset_pair_screen"}
-{"file": "it0073_33855a19.py", "child": 90, "score": 8.471, "rate_bin": 9, "n": 578, "family": "r055_m17r2s16_14x14_split_triples"}
-{"file": "it0079_d5deac30.py", "child": 91, "score": 7.58, "rate_bin": 7, "n": 572, "family": "r050_dic11_13x14_crosscoset_fullscreen"}
-{"file": "it0080_b9211558.py", "child": 92, "score": 13.5462, "rate_bin": 4, "n": 588, "family": "r030_z7_by_z12_a3_12x13_cosetgap_screen"}
-{"file": "it0086_ac1a850b.py", "child": 93, "score": 17.069, "rate_bin": 4, "n": 580, "family": "r030_C5byC4_25x25_dense_coset_screen"}
-{"file": "it0082_17939373.py", "child": 94, "score": 14.4, "rate_bin": 6, "n": 520, "family": "r040_c13rt4_13x13_asymmetric_gap_screen6"}
-{"file": "it0081_d19687a5.py", "child": 95, "score": 22.3834, "rate_bin": 3, "n": 576, "family": "r025_gl2f3_12x25_order8_exactscreen"}
-{"file": "it0085_5d6b6084.py", "child": 96, "score": 46.1502, "rate_bin": 0, "n": 598, "family": "r010_m23r2s22_23x23_component_kernel_v2"}
-{"file": "it0084_22896b56.py", "child": 97, "score": 18.2334, "rate_bin": 3, "n": 576, "family": "r025_gl23_12x25_order8_component_screen"}
-{"file": "it0083_7d409bae.py", "child": 98, "score": 15.4184, "rate_bin": 1, "n": 598, "family": "r015_m23r2s22_12x35_denseB_component_screen"}
-{"file": "it0087_cecd9287.py", "child": 99, "score": 30.4752, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_order_motifs"}
-{"file": "it0000_df977286.py", "child": 100, "score": 107.969, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_quotient_screen"}
-{"file": "it0088_df977286.py", "child": 100, "score": 107.969, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_quotient_screen"}
-{"file": "it0089_60fc85cd.py", "child": 101, "score": 22.5876, "rate_bin": 3, "n": 576, "family": "r025_gl23_12x25_balanced_component_screen"}
-{"file": "it0091_6ed6ddb4.py", "child": 102, "score": 18.6352, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_gap_orbits_low6"}
-{"file": "it0090_8d58b8b2.py", "child": 103, "score": 10.87, "rate_bin": 7, "n": 598, "family": "r045_d13_13x27_axis_overlap_screen"}
-{"file": "it0092_c1aab4d7.py", "child": 105, "score": 19.862, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_complementary_eightprobe"}
-{"file": "it0095_b5d08493.py", "child": 106, "score": 10.4666, "rate_bin": 1, "n": 598, "family": "r015_c23x2_12x35_distributed_cycle_screen"}
-{"file": "it0100_bafd8040.py", "child": 114, "score": 3.3, "rate_bin": 9, "n": 592, "family": "r055_m8r2s3_15x27_two_check_axes"}
-{"file": "it0105_7133c3a5.py", "child": 116, "score": 4.594, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_order11_coset_motifs"}
-{"file": "it0110_da602dea.py", "child": 117, "score": 7.492, "rate_bin": 7, "n": 598, "family": "r045_m1r23s1_14x26_balanced_component_v1"}
-{"file": "it0103_93a8b3b9.py", "child": 118, "score": 18.62, "rate_bin": 3, "n": 576, "family": "r025_dic6_24x25_balanced_order_screen"}
-{"file": "it0000_4ff8c438.py", "child": 119, "score": 56.077, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_cross_coset_kernel"}
-{"file": "it0095_4ff8c438.py", "child": 119, "score": 56.077, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_cross_coset_kernel"}
-{"file": "it0097_3167a1db.py", "child": 120, "score": 17.801, "rate_bin": 3, "n": 576, "family": "r025_dic6_24x25_twocheck_component_screen"}
-{"file": "it0104_597d1d1f.py", "child": 121, "score": 26.0626, "rate_bin": 3, "n": 576, "family": "r025_c4sq_sd_c3_12x25_component_screen"}
-{"file": "it0107_aa025c39.py", "child": 122, "score": 10.87, "rate_bin": 7, "n": 598, "family": "r045_D13_13x27_component_motifs"}
-{"file": "it0106_124fbe33.py", "child": 123, "score": 23.7146, "rate_bin": 1, "n": 572, "family": "r015_dic11_12x35_coset_component_v1"}
-{"file": "it0101_275de2f4.py", "child": 124, "score": 5.341, "rate_bin": 9, "n": 546, "family": "r055_m13r2s12_14x15_indexed_gap_orbits_v2"}
-{"file": "it0000_067fcb85.py", "child": 125, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_quotient_seven_screen"}
-{"file": "it0108_067fcb85.py", "child": 125, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_quotient_seven_screen"}
-{"file": "it0099_ed705fda.py", "child": 126, "score": 12.7456, "rate_bin": 5, "n": 544, "family": "r035_q16_dic4_25x26_mixedorder_v1"}
-{"file": "it0109_2f61e3a5.py", "child": 127, "score": 22.588, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_26x25_full_two_row_gap_screen"}
-{"file": "it0111_80c72ff5.py", "child": 128, "score": 7.832, "rate_bin": 8, "n": 572, "family": "r045_dic11_13x14_paired_order_rank"}
-{"file": "it0112_0554fb0f.py", "child": 129, "score": 8.0, "rate_bin": 8, "n": 540, "family": "r050_s3xc3_q18_14x27_order6_component_screen"}
-{"file": "it0117_016c1c3b.py", "child": 131, "score": 3.7, "rate_bin": 0, "n": 506, "family": "r010_m23r2s22_12x34_dense_B_component_screen"}
-{"file": "it0114_01295c26.py", "child": 132, "score": 20.0016, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_asymmetric_minor_screen"}
-{"file": "it0120_cf008113.py", "child": 133, "score": 4.28, "rate_bin": 8, "n": 572, "family": "r045_d11_14x26_denseB_gap_screen"}
-{"file": "it0116_4ee4578f.py", "child": 134, "score": 22.4058, "rate_bin": 1, "n": 572, "family": "r015_c11sdC4_12x35_balanced_component_v1"}
-{"file": "it0118_529c1e7d.py", "child": 135, "score": 14.4, "rate_bin": 6, "n": 560, "family": "r040_m7r4s6_13x26_balanced_component_screen"}
-{"file": "it0128_3e4b041d.py", "child": 136, "score": 6.9488, "rate_bin": 9, "n": 595, "family": "r055_z35_14x14_distinct_binomial_gaps"}
-{"file": "it0123_da89fa33.py", "child": 137, "score": 22.4426, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_denseB_triple_motifs"}
-{"file": "it0000_f8d5b7fd.py", "child": 138, "score": 56.3208, "rate_bin": 0, "n": 598, "family": "r010_c46_23x23_dual_kernel_motifs"}
-{"file": "it0125_f8d5b7fd.py", "child": 138, "score": 56.3208, "rate_bin": 0, "n": 598, "family": "r010_c46_23x23_dual_kernel_motifs"}
-{"file": "it0115_00083857.py", "child": 139, "score": 28.9886, "rate_bin": 3, "n": 576, "family": "r025_sl23xc2_12x25_balanced_component_v1"}
-{"file": "it0121_8ab2282f.py", "child": 140, "score": 11.5542, "rate_bin": 4, "n": 588, "family": "r030_m1r21s1_24x26_complementary_gap_screen"}
-{"file": "it0113_7d60bbcc.py", "child": 142, "score": 37.35, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_rooted5_rotation_doublets"}
-{"file": "it0119_b715f6cd.py", "child": 143, "score": 84.5516, "rate_bin": 2, "n": 580, "family": "r020_dic29_12x12_quotient_gap_screen"}
-{"file": "it0000_3d3d7bc5.py", "child": 144, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_central_strata_screen"}
-{"file": "it0126_3d3d7bc5.py", "child": 144, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_central_strata_screen"}
-{"file": "it0133_7212a387.py", "child": 146, "score": 12.706, "rate_bin": 5, "n": 578, "family": "r035_m17r2s16_13x25_two_row_component_screen"}
-{"file": "it0130_d7dfc563.py", "child": 147, "score": 12.8648, "rate_bin": 5, "n": 544, "family": "r035_Q16_25x26_mixed_coset_component_screen"}
-{"file": "it0137_7b10f604.py", "child": 148, "score": 2.3236, "rate_bin": 7, "n": 594, "family": "r045_D11_15x25_binomial_signature_screen"}
-{"file": "it0132_76dbd1d7.py", "child": 149, "score": 105.7766, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_quotient_seven_eight_screen"}
-{"file": "it0131_bba25027.py", "child": 151, "score": 25.6, "rate_bin": 6, "n": 560, "family": "r040_m7r8s6_13x13_coset_triplets"}
-{"file": "it0000_cd4d6f04.py", "child": 152, "score": 50.4616, "rate_bin": 0, "n": 572, "family": "r010_c11xc4_23x23_crosscoset_dualprobe"}
-{"file": "it0136_cd4d6f04.py", "child": 152, "score": 50.4616, "rate_bin": 0, "n": 572, "family": "r010_c11xc4_23x23_crosscoset_dualprobe"}
-{"file": "it0135_c01ea970.py", "child": 153, "score": 10.0, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13_asymmetric_shortword"}
-{"file": "it0138_4e6bd26f.py", "child": 154, "score": 26.4112, "rate_bin": 0, "n": 576, "family": "r010_c16xc2_23x34_component_kernel"}
-{"file": "it0139_4edc2bec.py", "child": 155, "score": 26.801, "rate_bin": 3, "n": 576, "family": "r025_gl23_12x25_dual_kernel_order_motifs"}
-{"file": "it0140_45e7f5f2.py", "child": 156, "score": 28.826, "rate_bin": 1, "n": 598, "family": "r015_m1r23s1_24x35_monomialB_denseA_kernel"}
-{"file": "it0141_81e1f5b6.py", "child": 157, "score": 7.944, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_mixed_orders_rank"}
-{"file": "it0145_3514924f.py", "child": 158, "score": 8.706, "rate_bin": 9, "n": 544, "family": "r055_c8sd3c4_q32_14x14_short_screen"}
-{"file": "it0142_76f2bd0b.py", "child": 159, "score": 2.0784, "rate_bin": 8, "n": 540, "family": "r050_s3xc3_q18_14x27_evenA_Bcoverage_v2"}
-{"file": "it0143_b0adaade.py", "child": 160, "score": 102.7386, "rate_bin": 2, "n": 570, "family": "r020_s3xc19_q114_12x12_gap_action_screen"}
-{"file": "it0144_658ce512.py", "child": 161, "score": 15.652, "rate_bin": 7, "n": 598, "family": "r045_c13xc2_q26_13x27_gap_orbit_screen"}
-{"file": "it0146_42f6bca8.py", "child": 162, "score": 18.286, "rate_bin": 4, "n": 588, "family": "r030_m1r21s1_24x26_gap_orbit_component6"}
-{"file": "it0147_f6e282a4.py", "child": 163, "score": 11.843, "rate_bin": 7, "n": 598, "family": "r045_z26_13x27_order26_component_v1"}
-{"file": "it0148_5adaed05.py", "child": 164, "score": 5.8342, "rate_bin": 0, "n": 588, "family": "r010_c21xc2_12x45_sparseB_component_probe"}
-{"file": "it0150_8cde9704.py", "child": 165, "score": 37.05, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_long_B_differences_screen"}
-{"file": "it0160_ea9e0722.py", "child": 166, "score": 0.0, "rate_bin": 1, "n": 572, "family": "r015_d11_24x35_rotation_gap_component_screen"}
-{"file": "it0155_b3f0dee6.py", "child": 167, "score": 37.35, "rate_bin": 3, "n": 576, "family": "r025_c3xq16_12x25_order_support_screen"}
-{"file": "it0152_687f6002.py", "child": 168, "score": 6.8084, "rate_bin": 8, "n": 576, "family": "r050_s3xc6_q36_13x15_binomial_motifs"}
-{"file": "it0149_29fc5d9f.py", "child": 169, "score": 6.3968, "rate_bin": 9, "n": 578, "family": "r055_m17r2s16_14x14_mixed_quartets_v1"}
-{"file": "it0000_1a17b2be.py", "child": 170, "score": 56.077, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_distinct_gap_orbit_screen"}
-{"file": "it0151_1a17b2be.py", "child": 170, "score": 56.077, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_distinct_gap_orbit_screen"}
-{"file": "it0153_9ee225f7.py", "child": 171, "score": 94.7726, "rate_bin": 2, "n": 585, "family": "r020_c13sdC3xc3_12x12_split_kernel_screen"}
-{"file": "it0154_e817bb2d.py", "child": 172, "score": 25.6, "rate_bin": 6, "n": 520, "family": "r040_c13rt4_31x31_sector2_word_screen"}
-{"file": "it0156_1cd6a0c7.py", "child": 173, "score": 15.883, "rate_bin": 4, "n": 580, "family": "r030_C20_25x25_parity_rank_minor_screen"}
-{"file": "it0159_70375961.py", "child": 174, "score": 23.916, "rate_bin": 1, "n": 572, "family": "r015_dic11_12x35_orderprofiles_v1"}
-{"file": "it0170_318bcb0e.py", "child": 175, "score": 0.0, "rate_bin": 8, "n": 576, "family": "r050_dic9_13x15_binomial_order_spectra"}
-{"file": "it0161_67c66c47.py", "child": 176, "score": 5.6328, "rate_bin": 9, "n": 588, "family": "r055_Z28_14x15_odd_gap_orbits"}
-{"file": "it0000_733da613.py", "child": 177, "score": 109.417, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_seven_spread_screen"}
-{"file": "it0157_733da613.py", "child": 177, "score": 109.417, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_seven_spread_screen"}
-{"file": "it0158_65187874.py", "child": 178, "score": 8.471, "rate_bin": 9, "n": 578, "family": "r055_m17r2s16_14x14_logical_screen_profiles_v2"}
-{"file": "it0164_dd9c3a6d.py", "child": 179, "score": 36.0, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_nine_row_component_probe"}
-{"file": "it0167_451239f7.py", "child": 180, "score": 16.031, "rate_bin": 1, "n": 546, "family": "r015_c7sdC6_12x35_denseB_rooted5"}
-{"file": "it0162_34ab5194.py", "child": 181, "score": 15.652, "rate_bin": 7, "n": 598, "family": "r045_c26_13x27_disjoint_doubleton_shortscreen"}
-{"file": "it0165_77475be8.py", "child": 182, "score": 25.225, "rate_bin": 0, "n": 592, "family": "r015_m37r2s36_12x23_mixed_dense_components"}
-{"file": "it0173_bc57cc4c.py", "child": 183, "score": 8.8822, "rate_bin": 9, "n": 544, "family": "r055_c8sd3c4_q32_14x14_factored_gap_rank_v2"}
-{"file": "it0000_92ba3e2c.py", "child": 185, "score": 107.7208, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_central_strata_seven_screen"}
-{"file": "it0163_92ba3e2c.py", "child": 185, "score": 107.7208, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_central_strata_seven_screen"}
-{"file": "it0174_c3d3cb24.py", "child": 186, "score": 8.841, "rate_bin": 9, "n": 544, "family": "r055_m4r8s3_14x14_odd_difference_screen"}
-{"file": "it0166_1068330a.py", "child": 187, "score": 20.443, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_parity_rank_minor_v3"}
-{"file": "it0177_05d49f86.py", "child": 188, "score": 54.3088, "rate_bin": 0, "n": 598, "family": "r010_c46_32x32_dual_check_dependency"}
-{"file": "it0176_b1a1404a.py", "child": 189, "score": 8.5222, "rate_bin": 7, "n": 598, "family": "r045_d13_q26_13x27_rotation_gap_short6"}
-{"file": "it0175_c83490dd.py", "child": 190, "score": 15.652, "rate_bin": 7, "n": 552, "family": "r045_dic6_q24_13x27_rotation_profile_screen"}
-{"file": "it0168_d3e712d0.py", "child": 191, "score": 27.0738, "rate_bin": 3, "n": 552, "family": "r025_m23r2s22_12x25_balanced_rooted5_v1"}
-{"file": "it0171_df1a042a.py", "child": 192, "score": 25.6, "rate_bin": 6, "n": 550, "family": "r040_c11sdC5_13x13_rooted8_motifs"}
-{"file": "it0183_ab597929.py", "child": 194, "score": 5.6328, "rate_bin": 9, "n": 588, "family": "r055_m7r4s1_14x15_odd_gap_orbits"}
-{"file": "it0178_23cbb897.py", "child": 195, "score": 32.582, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_distinct_gaps_rooted6"}
-{"file": "it0180_cb6ce348.py", "child": 197, "score": 31.26, "rate_bin": 2, "n": 480, "family": "r020_c4sq_sd_c3_12x24_balanced_B_kernel_v1"}
-{"file": "it0182_96b11975.py", "child": 198, "score": 10.953, "rate_bin": 7, "n": 598, "family": "r045_c13xc2_q26_13x27_reallocated_six_screen"}
-{"file": "it0169_69c4b75b.py", "child": 200, "score": 25.6, "rate_bin": 6, "n": 580, "family": "r040f_m29r2s28_13x13_six_relation_asymmetry"}
-{"file": "it0190_18b19605.py", "child": 202, "score": 5.6158, "rate_bin": 1, "n": 559, "family": "r015_c43_12x35_indexed_dense_component"}
-{"file": "it0179_2a47350d.py", "child": 205, "score": 15.652, "rate_bin": 7, "n": 598, "family": "r045_c13xc2_q26_13x27_heterogeneousB_rooted5"}
-{"file": "it0185_c984eb8a.py", "child": 206, "score": 21.5292, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_26x25_mixed_component_degrees"}
-{"file": "it0000_29ce7a2b.py", "child": 207, "score": 59.4618, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_mixed_profile_translate_screen"}
-{"file": "it0189_29ce7a2b.py", "child": 207, "score": 59.4618, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_mixed_profile_translate_screen"}
-{"file": "it0192_72ec3222.py", "child": 208, "score": 38.1752, "rate_bin": 1, "n": 592, "family": "r015_m1r37s1_23x24_dual_component_profiles"}
-{"file": "it0193_d2e2a444.py", "child": 209, "score": 17.7512, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_parity_minor_v1"}
-{"file": "it0194_6574368a.py", "child": 210, "score": 4.594, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_c11_coset_even"}
-{"file": "it0195_fdfae113.py", "child": 211, "score": 21.2944, "rate_bin": 3, "n": 544, "family": "r025_dic8_12x37_separated_doubletons_rooted5"}
-{"file": "it0199_3b542295.py", "child": 216, "score": 20.9, "rate_bin": 1, "n": 576, "family": "r015_f3sq_rot4_q36_23x24_four_component_screen"}
-{"file": "it0207_9715de67.py", "child": 217, "score": 49.9302, "rate_bin": 0, "n": 572, "family": "r010_c11sdC4_23x23_balanced_kernel_v1"}
-{"file": "it0200_0a6b0004.py", "child": 218, "score": 30.7386, "rate_bin": 2, "n": 520, "family": "r020_m13r4s5_12x24_profile_component_screen"}
-{"file": "it0195_37454d22.py", "child": 221, "score": 32.8104, "rate_bin": 3, "n": 576, "family": "r025_c3xsd16_12x25_crosscoset_screen"}
-{"file": "it0201_067e72d4.py", "child": 224, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_independent_rankone_gaps_v4"}
-{"file": "it0209_18a16474.py", "child": 225, "score": 12.706, "rate_bin": 5, "n": 544, "family": "r035_d8_q16_25x26_dual_component_gap6"}
-{"file": "it0198_3ed0ff44.py", "child": 226, "score": 27.083, "rate_bin": 3, "n": 576, "family": "r025_c3xsd16_12x25_order_mix_five_screen"}
-{"file": "it0205_e9a97243.py", "child": 227, "score": 7.9216, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_shared_fractured_pairs"}
-{"file": "it0210_50c21e3a.py", "child": 228, "score": 97.2134, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_sector2_kernel_probe"}
-{"file": "it0206_a05f308a.py", "child": 229, "score": 37.2, "rate_bin": 3, "n": 576, "family": "r025_c3semidirectc16_q48_12x25_profile_kernel_screen"}
-{"file": "it0204_dbd121b7.py", "child": 230, "score": 8.706, "rate_bin": 9, "n": 544, "family": "r055_q32_quaternion_14x14_component_rank_v1"}
-{"file": "it0208_46f74e2c.py", "child": 231, "score": 35.2084, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_gap_spectrum_rooted6_k150"}
-{"file": "it0212_39b8d98c.py", "child": 232, "score": 39.1566, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_translated_minor_screen"}
-{"file": "it0215_f7b64e2b.py", "child": 233, "score": 37.05, "rate_bin": 3, "n": 576, "family": "r025_modular16xc3_12x25_class_screen"}
-{"file": "it0211_9673ff72.py", "child": 234, "score": 25.6, "rate_bin": 6, "n": 520, "family": "r040_c13rt4_31x31_independent_root8_components"}
-{"file": "it0214_9b8fda14.py", "child": 235, "score": 7.346, "rate_bin": 9, "n": 544, "family": "r055_c8sd3c4_q32_14x14_subgroup_binomial_rank_v3"}
-{"file": "it0220_e639c941.py", "child": 237, "score": 42.4698, "rate_bin": 2, "n": 590, "family": "r020_m59r2s58_12x12_coset_component_screen"}
-{"file": "it0219_f26f7dc1.py", "child": 238, "score": 100.5358, "rate_bin": 2, "n": 570, "family": "r020_c19xs3_12x12_quotient_difference_screen"}
-{"file": "it0000_f085123a.py", "child": 239, "score": 60.308, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_mixed_check_translate_screen"}
-{"file": "it0218_f085123a.py", "child": 239, "score": 60.308, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_mixed_check_translate_screen"}
-{"file": "it0224_371afd6c.py", "child": 240, "score": 8.222, "rate_bin": 8, "n": 576, "family": "r050_dic9_13x15_indexed_binomial_orders"}
-{"file": "it0216_258edd99.py", "child": 243, "score": 22.588, "rate_bin": 5, "n": 578, "family": "r035_z17_26x25_distinct_gap_dual_component_v1"}
-{"file": "it0000_708b21c5.py", "child": 244, "score": 60.308, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_transposed_dependency_screen"}
-{"file": "it0222_708b21c5.py", "child": 244, "score": 60.308, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_transposed_dependency_screen"}
-{"file": "it0225_09ae2af5.py", "child": 245, "score": 91.215, "rate_bin": 2, "n": 585, "family": "r020_c13sdC3_xC3_12x12_quotient_seven"}
-{"file": "it0227_81f94fd6.py", "child": 246, "score": 53.2776, "rate_bin": 0, "n": 585, "family": "r010_c9xc5_q45_23x23_balanced_component_screen"}
-{"file": "it0213_58ada2f5.py", "child": 247, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_paired_gap_rankone_v4"}
-{"file": "it0228_1d1e4a47.py", "child": 248, "score": 37.394, "rate_bin": 1, "n": 592, "family": "r015_z37_23x24_dual_kernel_gap_profiles_v1"}
-{"file": "it0223_6b0b93b4.py", "child": 249, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_rankone_gap_pools_v4"}
-{"file": "it0229_19fb8838.py", "child": 250, "score": 17.5764, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_26x25_balanced_mixed_degree_v2"}
-{"file": "it0231_cd261103.py", "child": 251, "score": 37.4224, "rate_bin": 1, "n": 576, "family": "r015_dic9_23x24_relative_orders_v1"}
-{"file": "it0230_9a63e49b.py", "child": 252, "score": 41.0074, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_balanced_component_screen"}
-{"file": "it0233_3877232c.py", "child": 253, "score": 8.5666, "rate_bin": 9, "n": 588, "family": "r055_m7r4s6_14x15_order4_overlap_screen"}
-{"file": "it0238_54ad5191.py", "child": 255, "score": 6.8054, "rate_bin": 8, "n": 576, "family": "r050_dic9_13x15_mixed_orders_rank"}
-{"file": "it0235_9f0439aa.py", "child": 256, "score": 37.5, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_crossed_components_multicell_mutation"}
-{"file": "it0245_06a87450.py", "child": 257, "score": 0.0, "rate_bin": 0, "n": 576, "family": "r015_dic9_23x24_cross_profile_screen"}
-{"file": "it0000_e5896824.py", "child": 258, "score": 60.308, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_independent_component_recombine"}
-{"file": "it0232_e5896824.py", "child": 258, "score": 60.308, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_independent_component_recombine"}
-{"file": "it0237_6a66f7ae.py", "child": 259, "score": 39.5834, "rate_bin": 1, "n": 592, "family": "r015_z37_23x24_complementary_gap_screen_v1"}
-{"file": "it0236_bc2b7390.py", "child": 260, "score": 35.892, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_evenA_oddB_gap_screen"}
-{"file": "it0240_c129aad0.py", "child": 261, "score": 25.6, "rate_bin": 6, "n": 560, "family": "r040_m7r8s6_13x13_spread_rooted8"}
-{"file": "it0241_9709234b.py", "child": 262, "score": 40.401, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_multiprofile_minor_v2"}
-{"file": "it0244_302d8dcf.py", "child": 264, "score": 34.989, "rate_bin": 1, "n": 576, "family": "r015_c36_23x24_complementary_gap_screen_v1"}
-{"file": "it0242_f950dd20.py", "child": 266, "score": 38.7652, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_balancedA_gap_minor_v2"}
-{"file": "it0253_fcdaf330.py", "child": 269, "score": 6.9238, "rate_bin": 9, "n": 588, "family": "r055_c7xv4_q28_14x15_order14_gap_rank"}
-{"file": "it0252_a0d20a60.py", "child": 270, "score": 20.3634, "rate_bin": 4, "n": 532, "family": "r025_dic7_12x38_three_row_component_screen"}
-{"file": "it0250_033e7b44.py", "child": 272, "score": 25.6, "rate_bin": 6, "n": 520, "family": "r040_c13rt4_13x13_offcentre_binomial_root7"}
-{"file": "it0000_88316163.py", "child": 273, "score": 59.4618, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_short_dependency_density"}
-{"file": "it0251_88316163.py", "child": 273, "score": 59.4618, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_short_dependency_density"}
-{"file": "it0000_0964af65.py", "child": 274, "score": 111.3612, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_stratified_sidon_seven"}
-{"file": "it0254_0964af65.py", "child": 274, "score": 111.3612, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_stratified_sidon_seven"}
-{"file": "it0257_ded24d76.py", "child": 276, "score": 35.0428, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_occupancy_kernel_v2"}
-{"file": "it0259_a843e33f.py", "child": 277, "score": 20.343, "rate_bin": 4, "n": 567, "family": "r030_c9_semidirect4_c9_12x13_noncommuting_screen"}
-{"file": "it0260_9cef123b.py", "child": 278, "score": 30.328, "rate_bin": 3, "n": 576, "family": "r025_a4xc4_12x25_component_balance_screen"}
-{"file": "it0255_80a7ff78.py", "child": 280, "score": 5.1634, "rate_bin": 9, "n": 588, "family": "r055_c7_semidirect_c4_q28_14x15_order4_distinct_v1"}
-{"file": "it0258_6c1aba0b.py", "child": 281, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_mixed_support_eightprobe_v5"}
-{"file": "it0265_94de8d9f.py", "child": 283, "score": 31.1166, "rate_bin": 0, "n": 594, "family": "r010_c11xc3_32x43_balanced_check_dependencies"}
-{"file": "it0266_7dbeeea7.py", "child": 284, "score": 38.6494, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_parity_minor_screen_v2"}
-{"file": "it0261_9e1895ba.py", "child": 285, "score": 7.7452, "rate_bin": 9, "n": 588, "family": "r055_c7sd6c4_q28_14x15_indexed_gap_rank_v1"}
-{"file": "it0263_efa7d4a0.py", "child": 286, "score": 42.682, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_translated_minor_selection_v1"}
-{"file": "it0272_404d90e3.py", "child": 287, "score": 4.658, "rate_bin": 8, "n": 570, "family": "r050_c19_14x27_rankone_parity_screen"}
-{"file": "it0268_cffc20c4.py", "child": 288, "score": 12.955, "rate_bin": 5, "n": 578, "family": "r035_z17_26x25_even_B_rank_screen_v2"}
-{"file": "it0267_755952b6.py", "child": 289, "score": 8.686, "rate_bin": 9, "n": 595, "family": "r055_z35_14x14_screened_quad_spectra"}
-{"file": "it0275_d616cd66.py", "child": 290, "score": 35.104, "rate_bin": 3, "n": 576, "family": "r025_sl23xc2_12x25_component_profiles_v1"}
-{"file": "it0271_75a07274.py", "child": 293, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_promoted_parity_components_v5"}
-{"file": "it0270_0fac6f2f.py", "child": 294, "score": 7.385, "rate_bin": 7, "n": 598, "family": "r045_c23_13x28_sparseB_component_screen"}
-{"file": "it0279_cdc1487a.py", "child": 296, "score": 8.0058, "rate_bin": 9, "n": 544, "family": "r055_c8sd3c4_q32_14x14_even_gap_fullrank_v3"}
-{"file": "it0273_0af7378e.py", "child": 297, "score": 38.1146, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_divided_minor_kernel_v1"}
-{"file": "it0282_7c597142.py", "child": 299, "score": 7.664, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_central_frustrated_pairs"}
-{"file": "it0000_9414bcee.py", "child": 300, "score": 111.3612, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_independent_eight_anchor"}
-{"file": "it0269_9414bcee.py", "child": 300, "score": 111.3612, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_independent_eight_anchor"}
-{"file": "it0288_261df6bd.py", "child": 302, "score": 10.87, "rate_bin": 7, "n": 552, "family": "r045_dic3_q12_26x27_two_row_depth6_v1"}
-{"file": "it0285_74ad52c0.py", "child": 305, "score": 37.95, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_rank_kernel_rooted5_v2"}
-{"file": "it0291_ec72733d.py", "child": 306, "score": 38.71, "rate_bin": 1, "n": 592, "family": "r015_c37_24x23_dual_translated_minor_v1"}
-{"file": "it0280_75f008ae.py", "child": 307, "score": 35.6102, "rate_bin": 1, "n": 576, "family": "r015_m9r4s8_23x24_even_component_screen"}
-{"file": "it0290_08f4be05.py", "child": 308, "score": 19.3124, "rate_bin": 3, "n": 576, "family": "r025_c24sd5c2_q48_12x25_screened_profiles"}
-{"file": "it0278_b1af9717.py", "child": 309, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_oddcolumn_paired_sixscreen_v2"}
-{"file": "it0283_0c02bfa5.py", "child": 310, "score": 8.5666, "rate_bin": 9, "n": 588, "family": "r055_m7r4s6_14x15_verified_gap_motifs_v1"}
-{"file": "it0292_9d562e56.py", "child": 312, "score": 21.628, "rate_bin": 5, "n": 580, "family": "r035_z20_25x25_even_gap_trinomial_rank_screen"}
-{"file": "it0297_4181a2a2.py", "child": 313, "score": 15.652, "rate_bin": 7, "n": 552, "family": "r045_dic6_q24_13x27_mixed_gap_component6_v2"}
-{"file": "it0000_16464f58.py", "child": 314, "score": 113.3054, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_fresh_sector1_gap_screen"}
-{"file": "it0295_16464f58.py", "child": 314, "score": 113.3054, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_fresh_sector1_gap_screen"}
-{"file": "it0310_8ed27b91.py", "child": 320, "score": 0.0, "rate_bin": 0, "n": 506, "family": "r010_c23xc2_12x34_asymmetric_dual_kernel"}
-{"file": "it0300_324b3498.py", "child": 321, "score": 4.1112, "rate_bin": 8, "n": 288, "family": "r050_s3xc3_q18_13x15_reflection_triple_screen"}
-{"file": "it0304_0e91b933.py", "child": 327, "score": 22.588, "rate_bin": 5, "n": 544, "family": "r035_z8sd3z4_13x25_three_regular_component_screen"}
-{"file": "it0295_7a113282.py", "child": 331, "score": 94.7726, "rate_bin": 2, "n": 585, "family": "r020_c13sd3c3_x_c3_12x12_wide_quotient_screen"}
-{"file": "it0302_32114a6d.py", "child": 333, "score": 58.6156, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_rank_gain_translated_kernel"}
-{"file": "it0301_93f1d097.py", "child": 335, "score": 20.6052, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_mixed_degree_three_probe_v6"}
-{"file": "it0305_c7ea1949.py", "child": 337, "score": 40.6718, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_distinct_gap_independent_minors_v2"}
-{"file": "it0316_b863c20c.py", "child": 338, "score": 15.652, "rate_bin": 7, "n": 552, "family": "r045_q8sd_c3_q24_13x27_action_component_v1"}
-{"file": "it0315_c2e7e2f9.py", "child": 339, "score": 85.614, "rate_bin": 2, "n": 570, "family": "r020_c19sdinv_c6_q114_12x12_dihedral38_screen"}
-{"file": "it0317_39602dad.py", "child": 341, "score": 14.6824, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_25x26_mixed_degree_full_short_screen"}
-{"file": "it0324_19b2f19b.py", "child": 343, "score": 20.745, "rate_bin": 4, "n": 580, "family": "r035_m20r1s1_25x25_fourterm_component_screen"}
-{"file": "it0314_2e63e57a.py", "child": 344, "score": 37.95, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_dual_rooted5_support_motifs"}
-{"file": "it0325_bf1cc2c5.py", "child": 346, "score": 36.1778, "rate_bin": 1, "n": 576, "family": "r015_dic9_23x24_complementary_components_v1"}
-{"file": "it0318_043a6604.py", "child": 347, "score": 106.0248, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_sector2_eight_anchor"}
-{"file": "it0320_63074698.py", "child": 350, "score": 35.3196, "rate_bin": 1, "n": 592, "family": "r015_z37_23x24_balanced_translated_minors_v1"}
-{"file": "it0313_37cd8bce.py", "child": 351, "score": 25.6, "rate_bin": 6, "n": 520, "family": "r040_c13rt4_13x13_independent_root8_census"}
-{"file": "it0330_96660bca.py", "child": 354, "score": 95.3518, "rate_bin": 2, "n": 585, "family": "r020_c13rt9_12x12_fourcoset_component_screen"}
-{"file": "it0329_eeba9097.py", "child": 355, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_balanced_even_gap_pairs_v3"}
-{"file": "it0335_699c2bbb.py", "child": 360, "score": 10.87, "rate_bin": 7, "n": 552, "family": "r045_dic6_q24_13x27_order12_binomial_component6"}
-{"file": "it0340_ae771087.py", "child": 361, "score": 7.944, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_coset_quads_distinct_odd_gaps"}
-{"file": "it0332_6393382f.py", "child": 363, "score": 37.75, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_rank_stratified_rooted5_v3"}
-{"file": "it0341_34dd0d83.py", "child": 364, "score": 22.588, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_26x25_paired_trinomial_screen"}
-{"file": "it0327_a1e30eaf.py", "child": 366, "score": 9.388, "rate_bin": 9, "n": 588, "family": "r055_dic7_q28_14x15_trianglefree_binomial_v1"}
-{"file": "it0342_8b526a1c.py", "child": 369, "score": 53.6924, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_character_kernel_controls_v1"}
-{"file": "it0345_a9cbd378.py", "child": 370, "score": 35.104, "rate_bin": 3, "n": 576, "family": "r025_sd16xc3_q48_12x25_rank_component_v1"}
-{"file": "it0352_93d42d47.py", "child": 376, "score": 107.5554, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_full_kernel_height_motifs"}
-{"file": "it0355_a78a3c46.py", "child": 377, "score": 29.2176, "rate_bin": 1, "n": 576, "family": "r015_d12xc3_23x24_component_kernel_screen_v1"}
-{"file": "it0350_d72a60f7.py", "child": 380, "score": 7.944, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_h11_cosets_odd_gap_screen"}
-{"file": "it0349_c4507a33.py", "child": 381, "score": 111.3612, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_asymmetric_quotient8_v1"}
-{"file": "it0360_3e6167ff.py", "child": 383, "score": 18.3998, "rate_bin": 4, "n": 576, "family": "r025_s4xc2_12x25_order_motifs_component_screen"}
-{"file": "it0351_38697cd2.py", "child": 385, "score": 8.2664, "rate_bin": 8, "n": 576, "family": "r050_dic9_13x15_distinct_binomial_spectra_v2"}
-{"file": "it0356_4c71cd38.py", "child": 386, "score": 39.5936, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_independent_component_probe"}
-{"file": "it0365_a5a78567.py", "child": 388, "score": 10.87, "rate_bin": 7, "n": 552, "family": "r045_c6xc2_q12_26x27_two_row_component6"}
-{"file": "it0370_17e01bf2.py", "child": 389, "score": 2.531, "rate_bin": 9, "n": 572, "family": "r055_m11r2s10_15x15_mixed_gap_component_screen"}
-{"file": "it0369_a6c60500.py", "child": 390, "score": 20.7688, "rate_bin": 4, "n": 532, "family": "r030_dic7_12x38_balanced_zero_doublet_sixprobe_v2"}
-{"file": "it0375_f86ec7b6.py", "child": 392, "score": 29.918, "rate_bin": 1, "n": 576, "family": "r015_c3sq_semidirect_c4_23x24_component_screen"}
-{"file": "it0368_ce5da8d5.py", "child": 394, "score": 39.0, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_crossed_multicell_rank156_v1"}
-{"file": "it0373_fc16ec7a.py", "child": 395, "score": 19.4114, "rate_bin": 5, "n": 544, "family": "r035_z8sd3z4_13x25_subgroup_zero_trinomial_v1"}
-{"file": "it0367_6a08061c.py", "child": 396, "score": 8.706, "rate_bin": 9, "n": 544, "family": "r055_m4r8s3_14x14_mixed_order_rank_screen_v2"}
-{"file": "it0358_3919cea9.py", "child": 397, "score": 42.0438, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_global_gaps_deep_kernel_v2"}
-{"file": "it0353_1cc97c45.py", "child": 399, "score": 9.388, "rate_bin": 9, "n": 588, "family": "r055_dic7_14x15_indexed_order_gap_screen_v1"}
-{"file": "it0378_584f7c2a.py", "child": 401, "score": 8.0, "rate_bin": 8, "n": 540, "family": "r050_s3xc3_q18_14x27_isolated_b_columns_v2"}
-{"file": "it0379_4bbd9bd0.py", "child": 402, "score": 20.791, "rate_bin": 4, "n": 551, "family": "r030_m1r19s1_25x25_sidon_quartic_eightprobe_v5"}
-{"file": "it0380_ddd90c64.py", "child": 403, "score": 14.4, "rate_bin": 6, "n": 560, "family": "r040_m7r4s6_13x26_complementary_rooted8_v1"}
-{"file": "it0374_9721b567.py", "child": 405, "score": 111.3612, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_anchored_eight_overlap_v1"}
-{"file": "it0390_ab8cbdbc.py", "child": 406, "score": 0.0, "rate_bin": 4, "n": 567, "family": "r030_c27c3_s10_12x13_component_rank_screen"}
-{"file": "it0387_4ad4f534.py", "child": 408, "score": 8.0, "rate_bin": 8, "n": 480, "family": "r050_dic4_14x27_two_row_component_screen"}
-{"file": "it0382_8d8eaa12.py", "child": 409, "score": 12.955, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_26x25_B_parity_rank_one_v1"}
-{"file": "it0385_e9d7d4cc.py", "child": 413, "score": 4.594, "rate_bin": 8, "n": 572, "family": "r050_dic11_13x14_even_gap_split_cosets_v1"}
-{"file": "it0395_5cf114bd.py", "child": 414, "score": 5.899, "rate_bin": 5, "n": 594, "family": "r035_m33r1s1_12x28_order3_rank_screen"}
-{"file": "it0386_4ec3fa69.py", "child": 415, "score": 21.628, "rate_bin": 5, "n": 580, "family": "r035_m20r1s1_25x25_redistributed_trinomial_v1"}
-{"file": "it0398_95168aed.py", "child": 416, "score": 11.792, "rate_bin": 7, "n": 583, "family": "r045_c11xc1_q11_27x27_paired_gap_components"}
-{"file": "it0394_3eb7c4a2.py", "child": 417, "score": 23.031, "rate_bin": 5, "n": 578, "family": "r035_m17r1s1_26x25_rankone_B_trinomial_v1"}
-{"file": "it0389_192583e3.py", "child": 419, "score": 15.652, "rate_bin": 7, "n": 598, "family": "r045_c26_13x27_heterogeneous_B_shortscreen_v2"}
-{"file": "it0393_9447b510.py", "child": 421, "score": 55.7138, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_rank_gain_dependency_tradeoff"}
-{"file": "it0401_65afd1d3.py", "child": 424, "score": 8.178, "rate_bin": 8, "n": 540, "family": "r050_c9_27x28_distinct_offsets_component_screen_v1"}
-{"file": "it0397_18e747f9.py", "child": 425, "score": 109.4996, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_quotient_sidon_anchor8_v1"}
-{"file": "it0403_a242c703.py", "child": 426, "score": 58.6464, "rate_bin": 0, "n": 598, "family": "r010_c46_32x32_sector2_coset_minor_v1"}
-{"file": "it0400_2f7e620d.py", "child": 427, "score": 15.652, "rate_bin": 7, "n": 598, "family": "r045_c13xc2_q26_13x27_evenrank_controls_v2"}
-{"file": "it0404_71ff456d.py", "child": 431, "score": 109.417, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_fresh_quotient8_screen"}
-{"file": "it0408_4c307aa7.py", "child": 432, "score": 22.588, "rate_bin": 5, "n": 544, "family": "r035_c4wr2_13x25_gap_order_component_screen"}
-{"file": "it0405_d2c9902d.py", "child": 433, "score": 90.1658, "rate_bin": 2, "n": 570, "family": "r020_c19rt3_x_c2_q114_12x12_quotient_screen_v1"}
-{"file": "it0407_976427ca.py", "child": 436, "score": 38.4, "rate_bin": 3, "n": 576, "family": "r025_c24rt13c2_12x25_fullorder_b_doublets_v1"}
-{"file": "it0414_0e66f3f8.py", "child": 437, "score": 11.8264, "rate_bin": 7, "n": 552, "family": "r045_s4_q24_13x27_relative_order_component_screen"}
-{"file": "it0416_a77c676b.py", "child": 438, "score": 12.9566, "rate_bin": 7, "n": 598, "family": "r045_d13_13x27_mixed_support_rooted5_v2"}
-{"file": "it0415_ed591508.py", "child": 439, "score": 11.1532, "rate_bin": 5, "n": 544, "family": "r035_d8_q16_25x26_ordered_gaps_component_screen_v1"}
-{"file": "it0420_f1c6047b.py", "child": 442, "score": 38.8542, "rate_bin": 1, "n": 592, "family": "r015_c37_24x23_independent_minor_kernel_v1"}
-{"file": "it0422_abdd49c8.py", "child": 444, "score": 37.8, "rate_bin": 3, "n": 576, "family": "r025_dic12_q48_12x25_mixedcoset_component_screen_v1"}
-{"file": "it0417_d96f3862.py", "child": 446, "score": 60.308, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_23x23_independent_translated_banks_v2"}
-{"file": "it0425_111b0a19.py", "child": 447, "score": 40.5144, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_verified_divided_triples_v3"}
-{"file": "it0429_587376b1.py", "child": 449, "score": 16.304, "rate_bin": 7, "n": 552, "family": "r045_q8xc3_q24_13x27_quaternion_ratio_sixscreen"}
-{"file": "it0421_333310cf.py", "child": 450, "score": 31.36, "rate_bin": 6, "n": 550, "family": "r040_c11sdC5_13x13_independent_eight_count_v1"}
-{"file": "it0410_4ef46f59.py", "child": 451, "score": 36.8174, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_complementary_minor_screen"}
-{"file": "it0430_a824343f.py", "child": 452, "score": 56.1078, "rate_bin": 0, "n": 598, "family": "r010_c23xc2_32x32_recombined_short_dependency_v1"}
-{"file": "it0435_475702fd.py", "child": 455, "score": 5.712, "rate_bin": 9, "n": 520, "family": "r055_dic5_q20_15x15_component_full_screen_v1"}
-{"file": "it0432_3323b280.py", "child": 457, "score": 111.3612, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_crossrow_quotient8_v1"}
-{"file": "it0437_547f7e4b.py", "child": 458, "score": 23.529, "rate_bin": 5, "n": 544, "family": "r035_c8sd5c4_13x25_normal_gap_screen_v1"}
-{"file": "it0434_0e0d192a.py", "child": 461, "score": 15.652, "rate_bin": 7, "n": 598, "family": "r045_c26_13x27_evenA_zero_compensatedB_v2"}
-{"file": "it0413_c8638654.py", "child": 467, "score": 8.5666, "rate_bin": 9, "n": 588, "family": "r055_m7r4s6_14x15_indexed_mixed_gap_v2"}
-{"file": "it0450_c60e5875.py", "child": 470, "score": 111.4438, "rate_bin": 2, "n": 585, "family": "r020_z13rtz9s3_12x12_mixed_projection_screen_v1"}
-{"file": "it0452_e68f9e95.py", "child": 473, "score": 40.1874, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_independent_verified_quotients_v3"}
-{"file": "it0448_3ffd7f4f.py", "child": 474, "score": 23.529, "rate_bin": 5, "n": 544, "family": "r035_c8sd5c4_13x25_normal_gap_rank_screen_v1"}
-{"file": "it0445_0122ea6b.py", "child": 475, "score": 9.388, "rate_bin": 9, "n": 588, "family": "r055_dic7_14x15_correlated_gaps_screen_v2"}
-{"file": "it0453_f8965bf2.py", "child": 476, "score": 109.417, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_21x21_stratified_anchor8_v1"}
-{"file": "it0455_ec15b646.py", "child": 478, "score": 10.96, "rate_bin": 7, "n": 552, "family": "r045_q8xc3_q24_13x27_shared_doubleton_a332_v1"}
-{"file": "it0460_287624d0.py", "child": 481, "score": 15.2636, "rate_bin": 1, "n": 304, "family": "r015_m1r19s1_23x24_parity_gap_components_v1"}
-{"file": "it0465_56962596.py", "child": 482, "score": 8.941, "rate_bin": 9, "n": 544, "family": "r055_dic8_14x14_subgroup_quad_rank_screen_v1"}
-{"file": "it0440_7a96616e.py", "child": 488, "score": 39.6488, "rate_bin": 1, "n": 592, "family": "r015_c37_23x24_independent_verified_minors_v1"}
-{"file": "it0470_fb6847b4.py", "child": 490, "score": 13.235, "rate_bin": 5, "n": 544, "family": "r035_c4sd3c4_25x26_rankone_A_gap_screen_v1"}
-{"file": "it0474_9de9f353.py", "child": 497, "score": 15.652, "rate_bin": 7, "n": 552, "family": "r045_d4xc3_q24_13x27_independent_component_screen_v1"}
-{"file": "it0475_621c0b5f.py", "child": 498, "score": 16.304, "rate_bin": 7, "n": 552, "family": "r045_c3sdC8_q24_13x27_mixed_action_rank_v1"}
-{"file": "it0476_edf27e4d.py", "child": 499, "score": 109.417, "rate_bin": 2, "n": 585, "family": "r020_m13r9s3_12x12_independent_full_kernel_probe"}
-{"file": "it0480_6da4d10f.py", "child": 500, "score": 4.525, "rate_bin": 8, "n": 576, "family": "r050_s3xs3_q36_13x15_order6_crossfactor_v1"}
-{"file": "it0483_af242b39.py", "child": 503, "score": 115.2496, "rate_bin": 2, "n": 585, "family": "r020_c13sd3c9_q117_12x12_quotient_class_motifs_v1"}
-{"file": "it0485_51e38918.py", "child": 505, "score": 9.7422, "rate_bin": 6, "n": 180, "family": "r040_s3xc3_q18_13x13_rooted_component_v1"}
-{"file": "it0486_a90b7859.py", "child": 506, "score": 8.0, "rate_bin": 8, "n": 312, "family": "r045_q8xc3_q24_13x14_noncommuting_components_v1"}
-{"file": "it0487_5320f83e.py", "child": 508, "score": 37.4542, "rate_bin": 3, "n": 576, "family": "r025_dic12_12x25_local_rank159_screen_v2"}
-{"file": "it0456_e95b9e78.py", "child": 509, "score": 9.388, "rate_bin": 9, "n": 588, "family": "r055_dic7_14x15_asymmetric_parity_rank_screen_v2"}
-{"file": "it0490_069f3d2e.py", "child": 511, "score": 17.333, "rate_bin": 3, "n": 576, "family": "r025_s4xc2_12x25_component_profiles_v1"}
-{"file": "it0495_3903ad14.py", "child": 517, "score": 102.7392, "rate_bin": 2, "n": 570, "family": "r020_c19xs3_12x12_coset_component_probe_v1"}
-{"file": "it0024_afd6f1e6.py", "child": null, "score": null, "rate_bin": null, "n": null, "family": null}
+{"file":"it0000_f54f16e8.py","child":0,"score":6.5484,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62"}
+{"file":"it0000_d919c19b.py","child":1,"score":14.7,"rate_bin":3,"n":576,"family":"r025_m12r2s7_52x42"}
+{"file":"it0000_25595fe2.py","child":2,"score":6.4,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13"}
+{"file":"it0000_7c754d95.py","child":3,"score":15.9142,"rate_bin":2,"n":560,"family":"r020_m14r2s13_24x24"}
+{"file":"it0000_b2476e6b.py","child":4,"score":6.6892,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35"}
+{"file":"it0000_9598ebea.py","child":5,"score":20.4104,"rate_bin":2,"n":590,"family":"r020f_m59r2s58_12x12"}
+{"file":"it0000_ac6111ad.py","child":6,"score":10.482,"rate_bin":4,"n":588,"family":"r030_m1r21s1_24x26"}
+{"file":"it0000_4ad14fbe.py","child":7,"score":8.824,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26"}
+{"file":"it0009_5dc178ee.py","child":8,"score":14.4,"rate_bin":6,"n":590,"family":"r040_c59_13x13_triples_girth"}
+{"file":"it0000_c7a676df.py","child":9,"score":39.4554,"rate_bin":0,"n":598,"family":"r010_m23r2s22_23x23_distributed"}
+{"file":"it0002_c7a676df.py","child":9,"score":39.4554,"rate_bin":0,"n":598,"family":"r010_m23r2s22_23x23_distributed"}
+{"file":"it0000_4e2b46d9.py","child":10,"score":97.2134,"rate_bin":2,"n":585,"family":"r020_c13sdC9_12x12_noncomm_dense"}
+{"file":"it0008_9b607335.py","child":11,"score":2.5,"rate_bin":8,"n":544,"family":"r050_m17r2s16_13x15_balanced"}
+{"file":"it0015_af3342a7.py","child":12,"score":9.8824,"rate_bin":5,"n":476,"family":"r035_m14r2s13_13x25_c4balanced"}
+{"file":"it0011_5214cada.py","child":13,"score":53.92,"rate_bin":2,"n":580,"family":"r020_c29byc4_action12_12x12_balanced_screened"}
+{"file":"it0013_56ef164d.py","child":14,"score":21.4236,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_balanced_kernel_screen"}
+{"file":"it0003_819d68f0.py","child":15,"score":80.0,"rate_bin":2,"n":580,"family":"r020_c29rt4_adjacent_cycle_12x12"}
+{"file":"it0007_f25d48e4.py","child":16,"score":5.931,"rate_bin":1,"n":437,"family":"r015_m1r23s1_23x25_screened"}
+{"file":"it0014_67ec6259.py","child":17,"score":10.4,"rate_bin":3,"n":576,"family":"r025_m12r2s11_52x42_screen4"}
+{"file":"it0012_a08bb330.py","child":18,"score":18.0,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_balanced_shortscreen"}
+{"file":"it0004_1eb37cb1.py","child":19,"score":13.943,"rate_bin":4,"n":588,"family":"r030_D42_12x13_mixed_screen4"}
+{"file":"it0006_c88b72ff.py","child":20,"score":12.706,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_balanced_double_screen"}
+{"file":"it0010_7ac4c7a5.py","child":21,"score":54.3872,"rate_bin":2,"n":590,"family":"r020f_m59r2s58_12x12_saturated_screened"}
+{"file":"it0001_8de411c1.py","child":22,"score":4.858,"rate_bin":9,"n":578,"family":"r055_m17r2s16_14x14_screened"}
+{"file":"it0005_c16f633c.py","child":23,"score":17.1164,"rate_bin":3,"n":576,"family":"r025_m12r2s7_24x25_balanced_screen4"}
+{"file":"it0017_b7b8b0c0.py","child":24,"score":16.4644,"rate_bin":0,"n":572,"family":"r010_dic13_12x34_profiles"}
+{"file":"it0023_9b642f86.py","child":25,"score":33.6792,"rate_bin":2,"n":580,"family":"r020_d29_12x24_cycle_screen"}
+{"file":"it0021_8268cdd8.py","child":26,"score":9.1504,"rate_bin":5,"n":578,"family":"r035_d17_13x25_reflection_classes_v1"}
+{"file":"it0022_74eec67c.py","child":27,"score":4.575,"rate_bin":8,"n":576,"family":"r050_m18r2s17_13x15_indexed_gaps"}
+{"file":"it0020_30c25636.py","child":28,"score":7.4704,"rate_bin":7,"n":598,"family":"r045_d23_13x14_cycle_screen"}
+{"file":"it0018_e58d60f5.py","child":29,"score":25.6,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13_triplet_screen"}
+{"file":"it0016_bb7ffb63.py","child":30,"score":14.4,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_balanced_four_screen"}
+{"file":"it0029_6d64f51a.py","child":31,"score":2.5654,"rate_bin":5,"n":595,"family":"r035_m35r1s1_13x25_difference_sidon"}
+{"file":"it0019_4d2c0b6a.py","child":32,"score":6.4,"rate_bin":6,"n":560,"family":"r040_m7r2s6_62x62_balanced_screened"}
+{"file":"it0031_d50e8462.py","child":33,"score":6.5776,"rate_bin":8,"n":576,"family":"r050_m18r2s1_13x15_bipartite_pairs"}
+{"file":"it0027_042b3c25.py","child":34,"score":22.9118,"rate_bin":3,"n":552,"family":"r025_m23r2s22_12x25_component_screen"}
+{"file":"it0032_0deeec3b.py","child":35,"score":9.596,"rate_bin":0,"n":594,"family":"r010_c9sdC6_12x34_adjacent_screen"}
+{"file":"it0025_aa84f0d9.py","child":36,"score":14.4,"rate_bin":6,"n":580,"family":"r040_m29r1s1_13x26_balanced_screen4"}
+{"file":"it0026_09339a45.py","child":37,"score":7.812,"rate_bin":4,"n":544,"family":"r030_m1r17s1_24x27_spread"}
+{"file":"it0000_d74cd070.py","child":38,"score":25.6,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13_mixed3_screen6"}
+{"file":"it0028_d74cd070.py","child":38,"score":25.6,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13_mixed3_screen6"}
+{"file":"it0030_1fdc018f.py","child":39,"score":4.26,"rate_bin":7,"n":507,"family":"r045_z13r3s3_13x14_layer_girth"}
+{"file":"it0000_b3ae163a.py","child":40,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_c13sdC9_12x12_component_screen"}
+{"file":"it0034_b3ae163a.py","child":40,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_c13sdC9_12x12_component_screen"}
+{"file":"it0035_f6d8a039.py","child":41,"score":7.4492,"rate_bin":7,"n":598,"family":"r045_d23_13x14_samecoset_syndrome"}
+{"file":"it0038_f3064bc8.py","child":42,"score":11.1532,"rate_bin":5,"n":544,"family":"r035_m8r2s7_25x26_balanced_low4"}
+{"file":"it0039_894e3768.py","child":43,"score":7.441,"rate_bin":7,"n":572,"family":"r045_dic11_13x14_noncomm_shortscreen"}
+{"file":"it0000_706ce23c.py","child":44,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_c13sdC9_12x12_central_quotient_screen"}
+{"file":"it0033_706ce23c.py","child":44,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_c13sdC9_12x12_central_quotient_screen"}
+{"file":"it0036_5b66892b.py","child":45,"score":7.776,"rate_bin":8,"n":572,"family":"r045_dic11_13x14_order22_screened"}
+{"file":"it0037_3a9ca56c.py","child":46,"score":8.824,"rate_bin":5,"n":476,"family":"r035_m14r2s13_13x25_order14_kernel"}
+{"file":"it0040_1f787e08.py","child":47,"score":20.8408,"rate_bin":3,"n":576,"family":"r025_m12r2s7_52x42_balanced_component_screen"}
+{"file":"it0043_6d2c0f55.py","child":48,"score":12.706,"rate_bin":5,"n":391,"family":"r035_m1r23s1_13x25_component_kernel"}
+{"file":"it0048_2fd982bf.py","child":null,"score":53.2824,"rate_bin":2,"n":590,"family":"r020_d59_12x12_commutator_profiles"}
+{"file":"it0044_4b2a1ef3.py","child":49,"score":6.568,"rate_bin":6,"n":570,"family":"r040_m19r3s7_13x13_mixedcoset"}
+{"file":"it0049_7e646af0.py","child":null,"score":82.0258,"rate_bin":2,"n":585,"family":"r020_c13byc3_x_c3_12x12_quotient_cycle"}
+{"file":"it0047_10d4f395.py","child":null,"score":14.3056,"rate_bin":1,"n":437,"family":"r015_m1r23s1_23x25_denseB_kernel"}
+{"file":"it0045_99550783.py","child":null,"score":8.471,"rate_bin":9,"n":578,"family":"r055_m17r2s16_14x14_trianglefree_v2"}
+{"file":"it0048_02a854b6.py","child":52,"score":0.0,"rate_bin":0,"n":576,"family":"r015_c3sq_by_c8_12x23_component_screen"}
+{"file":"it0055_813762e0.py","child":53,"score":3.7056,"rate_bin":8,"n":544,"family":"r050_m17r2s16_13x15_mixedtriple_gap_screen"}
+{"file":"it0050_a8c9ad31.py","child":54,"score":5.2222,"rate_bin":9,"n":546,"family":"r055_m13r2s12_14x15_mixed_triples_gap_screen"}
+{"file":"it0060_004c4b87.py","child":55,"score":5.1634,"rate_bin":9,"n":588,"family":"r055_m7r4s6_14x15_order4_motifs"}
+{"file":"it0062_23e5f3f1.py","child":56,"score":0.0,"rate_bin":7,"n":598,"family":"r045_c26_13x27_component_screen"}
+{"file":"it0056_9dcf6850.py","child":57,"score":93.4902,"rate_bin":2,"n":585,"family":"r020_c13sdC9_12x12_component_screen"}
+{"file":"it0049_c056ad9d.py","child":58,"score":16.9058,"rate_bin":1,"n":598,"family":"r015_d23_12x35_balanced_component_screen5"}
+{"file":"it0053_ba274f80.py","child":59,"score":25.6,"rate_bin":6,"n":520,"family":"r040_c13rt4_13x13_component_word_screen"}
+{"file":"it0059_9d2f9fdb.py","child":60,"score":32.1532,"rate_bin":2,"n":580,"family":"r020_m29r2s28_12x24_gap_component_screen"}
+{"file":"it0054_d1ab2d87.py","child":61,"score":7.996,"rate_bin":7,"n":598,"family":"r045_d13_13x27_component_screen"}
+{"file":"it0046_5bd9a8c2.py","child":62,"score":1.846,"rate_bin":7,"n":182,"family":"r045_m7r2s6_13x14_reflection_kernel4"}
+{"file":"it0057_2ad3e30e.py","child":63,"score":18.5564,"rate_bin":1,"n":589,"family":"r015_m1r31s1_23x25_profile_component_screen"}
+{"file":"it0047_b150532f.py","child":64,"score":10.6654,"rate_bin":0,"n":594,"family":"r010_m27r2s26_12x34_primitive_components"}
+{"file":"it0045_a94028be.py","child":65,"score":67.642,"rate_bin":2,"n":570,"family":"r020_C19sdC6_12x12_action6_quartets"}
+{"file":"it0052_966d1f6f.py","child":66,"score":8.333,"rate_bin":5,"n":576,"family":"r035_m12r1s1_37x26_disjoint_component_screen"}
+{"file":"it0051_5e9f86bf.py","child":67,"score":19.862,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_component7screen"}
+{"file":"it0058_274fed75.py","child":68,"score":19.862,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_component_gaps_v2"}
+{"file":"it0061_ab3f8f27.py","child":69,"score":24.1768,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_verified_expansion_profiles"}
+{"file":"it0070_c90ae82d.py","child":70,"score":0.0,"rate_bin":5,"n":576,"family":"r035_m12r1s1_26x37_voltage_screen"}
+{"file":"it0063_7d00d06c.py","child":71,"score":22.154,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_redistributed_component_v2"}
+{"file":"it0068_705507fb.py","child":72,"score":2.111,"rate_bin":9,"n":576,"family":"r050_dic9_13x15_order_profiles"}
+{"file":"it0067_98c62440.py","child":73,"score":20.6338,"rate_bin":3,"n":578,"family":"r025_m17r2s16_12x37_component_screen"}
+{"file":"it0065_04bbe94e.py","child":74,"score":67.642,"rate_bin":2,"n":570,"family":"r020_c19sdC6_12x12_component_screen"}
+{"file":"it0066_3c83ae38.py","child":75,"score":16.9146,"rate_bin":3,"n":588,"family":"r025_Z7xZ7_12x25_component_shortscreen"}
+{"file":"it0069_19ad1480.py","child":76,"score":73.3742,"rate_bin":2,"n":570,"family":"r020_frob19x6_12x12_difference_screen_v1"}
+{"file":"it0000_7d36da87.py","child":77,"score":52.0,"rate_bin":0,"n":598,"family":"r010_m23r2s22_23x23_indexed_component_screen"}
+{"file":"it0074_7d36da87.py","child":77,"score":52.0,"rate_bin":0,"n":598,"family":"r010_m23r2s22_23x23_indexed_component_screen"}
+{"file":"it0075_d18e6fcc.py","child":78,"score":16.327,"rate_bin":3,"n":588,"family":"r025_c7xc7_12x25_component_screen"}
+{"file":"it0072_f09f99db.py","child":79,"score":14.4,"rate_bin":6,"n":560,"family":"r040f_m14r2s13_13x26_balanced_components"}
+{"file":"it0076_bf4fcde1.py","child":80,"score":10.286,"rate_bin":4,"n":581,"family":"r030_m1r83s1_12x13_anchored_pair_screen"}
+{"file":"it0077_e46189e7.py","child":81,"score":22.5232,"rate_bin":1,"n":546,"family":"r015_c7sdC6_12x35_component_screen"}
+{"file":"it0064_7e1d0b46.py","child":83,"score":13.902,"rate_bin":1,"n":437,"family":"r015_m1r23s1_23x25_balancedB_kernel_screen"}
+{"file":"it0078_a6696858.py","child":84,"score":25.6,"rate_bin":6,"n":550,"family":"r040_c11sdC5_13x13_coset_pair_screen"}
+{"file":"it0073_33855a19.py","child":85,"score":8.471,"rate_bin":9,"n":578,"family":"r055_m17r2s16_14x14_split_triples"}
+{"file":"it0079_d5deac30.py","child":86,"score":7.58,"rate_bin":7,"n":572,"family":"r050_dic11_13x14_crosscoset_fullscreen"}
+{"file":"it0080_b9211558.py","child":87,"score":13.5462,"rate_bin":4,"n":588,"family":"r030_z7_by_z12_a3_12x13_cosetgap_screen"}
+{"file":"it0086_ac1a850b.py","child":88,"score":17.069,"rate_bin":4,"n":580,"family":"r030_C5byC4_25x25_dense_coset_screen"}
+{"file":"it0082_17939373.py","child":89,"score":14.4,"rate_bin":6,"n":520,"family":"r040_c13rt4_13x13_asymmetric_gap_screen6"}
+{"file":"it0081_d19687a5.py","child":90,"score":22.3834,"rate_bin":3,"n":576,"family":"r025_gl2f3_12x25_order8_exactscreen"}
+{"file":"it0085_5d6b6084.py","child":91,"score":46.1502,"rate_bin":0,"n":598,"family":"r010_m23r2s22_23x23_component_kernel_v2"}
+{"file":"it0084_22896b56.py","child":92,"score":18.2334,"rate_bin":3,"n":576,"family":"r025_gl23_12x25_order8_component_screen"}
+{"file":"it0083_7d409bae.py","child":93,"score":15.4184,"rate_bin":1,"n":598,"family":"r015_m23r2s22_12x35_denseB_component_screen"}
+{"file":"it0087_cecd9287.py","child":94,"score":30.4752,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_order_motifs"}
+{"file":"it0000_df977286.py","child":95,"score":107.969,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_quotient_screen"}
+{"file":"it0088_df977286.py","child":95,"score":107.969,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_quotient_screen"}
+{"file":"it0089_60fc85cd.py","child":96,"score":22.5876,"rate_bin":3,"n":576,"family":"r025_gl23_12x25_balanced_component_screen"}
+{"file":"it0091_6ed6ddb4.py","child":97,"score":18.6352,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_gap_orbits_low6"}
+{"file":"it0090_8d58b8b2.py","child":98,"score":10.87,"rate_bin":7,"n":598,"family":"r045_d13_13x27_axis_overlap_screen"}
+{"file":"it0092_c1aab4d7.py","child":100,"score":19.862,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_complementary_eightprobe"}
+{"file":"it0095_b5d08493.py","child":null,"score":10.4666,"rate_bin":1,"n":598,"family":"r015_c23x2_12x35_distributed_cycle_screen"}
+{"file":"it0100_bafd8040.py","child":104,"score":3.3,"rate_bin":9,"n":592,"family":"r055_m8r2s3_15x27_two_check_axes"}
+{"file":"it0105_7133c3a5.py","child":106,"score":4.594,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_order11_coset_motifs"}
+{"file":"it0110_da602dea.py","child":107,"score":7.492,"rate_bin":7,"n":598,"family":"r045_m1r23s1_14x26_balanced_component_v1"}
+{"file":"it0103_93a8b3b9.py","child":108,"score":18.62,"rate_bin":3,"n":576,"family":"r025_dic6_24x25_balanced_order_screen"}
+{"file":"it0000_4ff8c438.py","child":109,"score":56.077,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_cross_coset_kernel"}
+{"file":"it0095_4ff8c438.py","child":109,"score":56.077,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_cross_coset_kernel"}
+{"file":"it0097_3167a1db.py","child":110,"score":17.801,"rate_bin":3,"n":576,"family":"r025_dic6_24x25_twocheck_component_screen"}
+{"file":"it0104_597d1d1f.py","child":111,"score":26.0626,"rate_bin":3,"n":576,"family":"r025_c4sq_sd_c3_12x25_component_screen"}
+{"file":"it0107_aa025c39.py","child":112,"score":10.87,"rate_bin":7,"n":598,"family":"r045_D13_13x27_component_motifs"}
+{"file":"it0106_124fbe33.py","child":113,"score":23.7146,"rate_bin":1,"n":572,"family":"r015_dic11_12x35_coset_component_v1"}
+{"file":"it0101_275de2f4.py","child":114,"score":5.341,"rate_bin":9,"n":546,"family":"r055_m13r2s12_14x15_indexed_gap_orbits_v2"}
+{"file":"it0000_067fcb85.py","child":115,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_quotient_seven_screen"}
+{"file":"it0108_067fcb85.py","child":115,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_quotient_seven_screen"}
+{"file":"it0099_ed705fda.py","child":116,"score":12.7456,"rate_bin":5,"n":544,"family":"r035_q16_dic4_25x26_mixedorder_v1"}
+{"file":"it0109_2f61e3a5.py","child":117,"score":22.588,"rate_bin":5,"n":578,"family":"r035_m17r1s1_26x25_full_two_row_gap_screen"}
+{"file":"it0111_80c72ff5.py","child":118,"score":7.832,"rate_bin":8,"n":572,"family":"r045_dic11_13x14_paired_order_rank"}
+{"file":"it0112_0554fb0f.py","child":119,"score":8.0,"rate_bin":8,"n":540,"family":"r050_s3xc3_q18_14x27_order6_component_screen"}
+{"file":"it0117_016c1c3b.py","child":121,"score":3.7,"rate_bin":0,"n":506,"family":"r010_m23r2s22_12x34_dense_B_component_screen"}
+{"file":"it0114_01295c26.py","child":122,"score":20.0016,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_asymmetric_minor_screen"}
+{"file":"it0120_cf008113.py","child":123,"score":4.28,"rate_bin":8,"n":572,"family":"r045_d11_14x26_denseB_gap_screen"}
+{"file":"it0116_4ee4578f.py","child":124,"score":22.4058,"rate_bin":1,"n":572,"family":"r015_c11sdC4_12x35_balanced_component_v1"}
+{"file":"it0118_529c1e7d.py","child":125,"score":14.4,"rate_bin":6,"n":560,"family":"r040_m7r4s6_13x26_balanced_component_screen"}
+{"file":"it0128_3e4b041d.py","child":126,"score":6.9488,"rate_bin":9,"n":595,"family":"r055_z35_14x14_distinct_binomial_gaps"}
+{"file":"it0123_da89fa33.py","child":127,"score":22.4426,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_denseB_triple_motifs"}
+{"file":"it0000_f8d5b7fd.py","child":128,"score":56.3208,"rate_bin":0,"n":598,"family":"r010_c46_23x23_dual_kernel_motifs"}
+{"file":"it0125_f8d5b7fd.py","child":128,"score":56.3208,"rate_bin":0,"n":598,"family":"r010_c46_23x23_dual_kernel_motifs"}
+{"file":"it0115_00083857.py","child":129,"score":28.9886,"rate_bin":3,"n":576,"family":"r025_sl23xc2_12x25_balanced_component_v1"}
+{"file":"it0121_8ab2282f.py","child":130,"score":11.5542,"rate_bin":4,"n":588,"family":"r030_m1r21s1_24x26_complementary_gap_screen"}
+{"file":"it0113_7d60bbcc.py","child":132,"score":37.35,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_rooted5_rotation_doublets"}
+{"file":"it0119_b715f6cd.py","child":133,"score":84.5516,"rate_bin":2,"n":580,"family":"r020_dic29_12x12_quotient_gap_screen"}
+{"file":"it0000_3d3d7bc5.py","child":134,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_central_strata_screen"}
+{"file":"it0126_3d3d7bc5.py","child":134,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_central_strata_screen"}
+{"file":"it0133_7212a387.py","child":136,"score":12.706,"rate_bin":5,"n":578,"family":"r035_m17r2s16_13x25_two_row_component_screen"}
+{"file":"it0130_d7dfc563.py","child":137,"score":12.8648,"rate_bin":5,"n":544,"family":"r035_Q16_25x26_mixed_coset_component_screen"}
+{"file":"it0137_7b10f604.py","child":138,"score":2.3236,"rate_bin":7,"n":594,"family":"r045_D11_15x25_binomial_signature_screen"}
+{"file":"it0132_76dbd1d7.py","child":139,"score":105.7766,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_quotient_seven_eight_screen"}
+{"file":"it0131_bba25027.py","child":141,"score":25.6,"rate_bin":6,"n":560,"family":"r040_m7r8s6_13x13_coset_triplets"}
+{"file":"it0000_cd4d6f04.py","child":142,"score":50.4616,"rate_bin":0,"n":572,"family":"r010_c11xc4_23x23_crosscoset_dualprobe"}
+{"file":"it0136_cd4d6f04.py","child":142,"score":50.4616,"rate_bin":0,"n":572,"family":"r010_c11xc4_23x23_crosscoset_dualprobe"}
+{"file":"it0135_c01ea970.py","child":143,"score":10.0,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13_asymmetric_shortword"}
+{"file":"it0138_4e6bd26f.py","child":144,"score":26.4112,"rate_bin":0,"n":576,"family":"r010_c16xc2_23x34_component_kernel"}
+{"file":"it0139_4edc2bec.py","child":145,"score":26.801,"rate_bin":3,"n":576,"family":"r025_gl23_12x25_dual_kernel_order_motifs"}
+{"file":"it0140_45e7f5f2.py","child":146,"score":28.826,"rate_bin":1,"n":598,"family":"r015_m1r23s1_24x35_monomialB_denseA_kernel"}
+{"file":"it0141_81e1f5b6.py","child":147,"score":7.944,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_mixed_orders_rank"}
+{"file":"it0145_3514924f.py","child":148,"score":8.706,"rate_bin":9,"n":544,"family":"r055_c8sd3c4_q32_14x14_short_screen"}
+{"file":"it0142_76f2bd0b.py","child":149,"score":2.0784,"rate_bin":8,"n":540,"family":"r050_s3xc3_q18_14x27_evenA_Bcoverage_v2"}
+{"file":"it0143_b0adaade.py","child":150,"score":102.7386,"rate_bin":2,"n":570,"family":"r020_s3xc19_q114_12x12_gap_action_screen"}
+{"file":"it0144_658ce512.py","child":151,"score":15.652,"rate_bin":7,"n":598,"family":"r045_c13xc2_q26_13x27_gap_orbit_screen"}
+{"file":"it0146_42f6bca8.py","child":152,"score":18.286,"rate_bin":4,"n":588,"family":"r030_m1r21s1_24x26_gap_orbit_component6"}
+{"file":"it0147_f6e282a4.py","child":153,"score":11.843,"rate_bin":7,"n":598,"family":"r045_z26_13x27_order26_component_v1"}
+{"file":"it0148_5adaed05.py","child":154,"score":5.8342,"rate_bin":0,"n":588,"family":"r010_c21xc2_12x45_sparseB_component_probe"}
+{"file":"it0150_8cde9704.py","child":155,"score":37.05,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_long_B_differences_screen"}
+{"file":"it0160_ea9e0722.py","child":156,"score":0.0,"rate_bin":1,"n":572,"family":"r015_d11_24x35_rotation_gap_component_screen"}
+{"file":"it0155_b3f0dee6.py","child":157,"score":37.35,"rate_bin":3,"n":576,"family":"r025_c3xq16_12x25_order_support_screen"}
+{"file":"it0152_687f6002.py","child":158,"score":6.8084,"rate_bin":8,"n":576,"family":"r050_s3xc6_q36_13x15_binomial_motifs"}
+{"file":"it0149_29fc5d9f.py","child":159,"score":6.3968,"rate_bin":9,"n":578,"family":"r055_m17r2s16_14x14_mixed_quartets_v1"}
+{"file":"it0000_1a17b2be.py","child":160,"score":56.077,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_distinct_gap_orbit_screen"}
+{"file":"it0151_1a17b2be.py","child":160,"score":56.077,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_distinct_gap_orbit_screen"}
+{"file":"it0153_9ee225f7.py","child":161,"score":94.7726,"rate_bin":2,"n":585,"family":"r020_c13sdC3xc3_12x12_split_kernel_screen"}
+{"file":"it0154_e817bb2d.py","child":162,"score":25.6,"rate_bin":6,"n":520,"family":"r040_c13rt4_31x31_sector2_word_screen"}
+{"file":"it0156_1cd6a0c7.py","child":163,"score":15.883,"rate_bin":4,"n":580,"family":"r030_C20_25x25_parity_rank_minor_screen"}
+{"file":"it0159_70375961.py","child":164,"score":23.916,"rate_bin":1,"n":572,"family":"r015_dic11_12x35_orderprofiles_v1"}
+{"file":"it0170_318bcb0e.py","child":165,"score":0.0,"rate_bin":8,"n":576,"family":"r050_dic9_13x15_binomial_order_spectra"}
+{"file":"it0161_67c66c47.py","child":166,"score":5.6328,"rate_bin":9,"n":588,"family":"r055_Z28_14x15_odd_gap_orbits"}
+{"file":"it0000_733da613.py","child":167,"score":109.417,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_seven_spread_screen"}
+{"file":"it0157_733da613.py","child":167,"score":109.417,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_seven_spread_screen"}
+{"file":"it0158_65187874.py","child":168,"score":8.471,"rate_bin":9,"n":578,"family":"r055_m17r2s16_14x14_logical_screen_profiles_v2"}
+{"file":"it0164_dd9c3a6d.py","child":169,"score":36.0,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_nine_row_component_probe"}
+{"file":"it0167_451239f7.py","child":170,"score":16.031,"rate_bin":1,"n":546,"family":"r015_c7sdC6_12x35_denseB_rooted5"}
+{"file":"it0162_34ab5194.py","child":171,"score":15.652,"rate_bin":7,"n":598,"family":"r045_c26_13x27_disjoint_doubleton_shortscreen"}
+{"file":"it0165_77475be8.py","child":172,"score":25.225,"rate_bin":0,"n":592,"family":"r015_m37r2s36_12x23_mixed_dense_components"}
+{"file":"it0173_bc57cc4c.py","child":173,"score":8.8822,"rate_bin":9,"n":544,"family":"r055_c8sd3c4_q32_14x14_factored_gap_rank_v2"}
+{"file":"it0000_92ba3e2c.py","child":175,"score":107.7208,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_central_strata_seven_screen"}
+{"file":"it0163_92ba3e2c.py","child":175,"score":107.7208,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_central_strata_seven_screen"}
+{"file":"it0174_c3d3cb24.py","child":176,"score":8.841,"rate_bin":9,"n":544,"family":"r055_m4r8s3_14x14_odd_difference_screen"}
+{"file":"it0166_1068330a.py","child":177,"score":20.443,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_parity_rank_minor_v3"}
+{"file":"it0177_05d49f86.py","child":178,"score":54.3088,"rate_bin":0,"n":598,"family":"r010_c46_32x32_dual_check_dependency"}
+{"file":"it0176_b1a1404a.py","child":179,"score":8.5222,"rate_bin":7,"n":598,"family":"r045_d13_q26_13x27_rotation_gap_short6"}
+{"file":"it0175_c83490dd.py","child":180,"score":15.652,"rate_bin":7,"n":552,"family":"r045_dic6_q24_13x27_rotation_profile_screen"}
+{"file":"it0168_d3e712d0.py","child":181,"score":27.0738,"rate_bin":3,"n":552,"family":"r025_m23r2s22_12x25_balanced_rooted5_v1"}
+{"file":"it0171_df1a042a.py","child":182,"score":25.6,"rate_bin":6,"n":550,"family":"r040_c11sdC5_13x13_rooted8_motifs"}
+{"file":"it0183_ab597929.py","child":184,"score":5.6328,"rate_bin":9,"n":588,"family":"r055_m7r4s1_14x15_odd_gap_orbits"}
+{"file":"it0178_23cbb897.py","child":185,"score":32.582,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_distinct_gaps_rooted6"}
+{"file":"it0180_cb6ce348.py","child":187,"score":31.26,"rate_bin":2,"n":480,"family":"r020_c4sq_sd_c3_12x24_balanced_B_kernel_v1"}
+{"file":"it0182_96b11975.py","child":188,"score":10.953,"rate_bin":7,"n":598,"family":"r045_c13xc2_q26_13x27_reallocated_six_screen"}
+{"file":"it0169_69c4b75b.py","child":190,"score":25.6,"rate_bin":6,"n":580,"family":"r040f_m29r2s28_13x13_six_relation_asymmetry"}
+{"file":"it0190_18b19605.py","child":192,"score":5.6158,"rate_bin":1,"n":559,"family":"r015_c43_12x35_indexed_dense_component"}
+{"file":"it0179_2a47350d.py","child":195,"score":15.652,"rate_bin":7,"n":598,"family":"r045_c13xc2_q26_13x27_heterogeneousB_rooted5"}
+{"file":"it0185_c984eb8a.py","child":196,"score":21.5292,"rate_bin":5,"n":578,"family":"r035_m17r1s1_26x25_mixed_component_degrees"}
+{"file":"it0000_29ce7a2b.py","child":197,"score":59.4618,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_mixed_profile_translate_screen"}
+{"file":"it0189_29ce7a2b.py","child":197,"score":59.4618,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_mixed_profile_translate_screen"}
+{"file":"it0192_72ec3222.py","child":198,"score":38.1752,"rate_bin":1,"n":592,"family":"r015_m1r37s1_23x24_dual_component_profiles"}
+{"file":"it0193_d2e2a444.py","child":199,"score":17.7512,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_parity_minor_v1"}
+{"file":"it0194_6574368a.py","child":200,"score":4.594,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_c11_coset_even"}
+{"file":"it0195_fdfae113.py","child":null,"score":21.2944,"rate_bin":3,"n":544,"family":"r025_dic8_12x37_separated_doubletons_rooted5"}
+{"file":"it0199_3b542295.py","child":201,"score":20.9,"rate_bin":1,"n":576,"family":"r015_f3sq_rot4_q36_23x24_four_component_screen"}
+{"file":"it0207_9715de67.py","child":202,"score":49.9302,"rate_bin":0,"n":572,"family":"r010_c11sdC4_23x23_balanced_kernel_v1"}
+{"file":"it0200_0a6b0004.py","child":203,"score":30.7386,"rate_bin":2,"n":520,"family":"r020_m13r4s5_12x24_profile_component_screen"}
+{"file":"it0195_37454d22.py","child":206,"score":32.8104,"rate_bin":3,"n":576,"family":"r025_c3xsd16_12x25_crosscoset_screen"}
+{"file":"it0201_067e72d4.py","child":209,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_independent_rankone_gaps_v4"}
+{"file":"it0209_18a16474.py","child":210,"score":12.706,"rate_bin":5,"n":544,"family":"r035_d8_q16_25x26_dual_component_gap6"}
+{"file":"it0198_3ed0ff44.py","child":211,"score":27.083,"rate_bin":3,"n":576,"family":"r025_c3xsd16_12x25_order_mix_five_screen"}
+{"file":"it0205_e9a97243.py","child":212,"score":7.9216,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_shared_fractured_pairs"}
+{"file":"it0210_50c21e3a.py","child":213,"score":97.2134,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_sector2_kernel_probe"}
+{"file":"it0206_a05f308a.py","child":214,"score":37.2,"rate_bin":3,"n":576,"family":"r025_c3semidirectc16_q48_12x25_profile_kernel_screen"}
+{"file":"it0204_dbd121b7.py","child":215,"score":8.706,"rate_bin":9,"n":544,"family":"r055_q32_quaternion_14x14_component_rank_v1"}
+{"file":"it0208_46f74e2c.py","child":216,"score":35.2084,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_gap_spectrum_rooted6_k150"}
+{"file":"it0212_39b8d98c.py","child":217,"score":39.1566,"rate_bin":1,"n":592,"family":"r015_c37_23x24_translated_minor_screen"}
+{"file":"it0215_f7b64e2b.py","child":218,"score":37.05,"rate_bin":3,"n":576,"family":"r025_modular16xc3_12x25_class_screen"}
+{"file":"it0211_9673ff72.py","child":219,"score":25.6,"rate_bin":6,"n":520,"family":"r040_c13rt4_31x31_independent_root8_components"}
+{"file":"it0214_9b8fda14.py","child":220,"score":7.346,"rate_bin":9,"n":544,"family":"r055_c8sd3c4_q32_14x14_subgroup_binomial_rank_v3"}
+{"file":"it0220_e639c941.py","child":222,"score":42.4698,"rate_bin":2,"n":590,"family":"r020_m59r2s58_12x12_coset_component_screen"}
+{"file":"it0219_f26f7dc1.py","child":223,"score":100.5358,"rate_bin":2,"n":570,"family":"r020_c19xs3_12x12_quotient_difference_screen"}
+{"file":"it0000_f085123a.py","child":224,"score":60.308,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_mixed_check_translate_screen"}
+{"file":"it0218_f085123a.py","child":224,"score":60.308,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_mixed_check_translate_screen"}
+{"file":"it0224_371afd6c.py","child":225,"score":8.222,"rate_bin":8,"n":576,"family":"r050_dic9_13x15_indexed_binomial_orders"}
+{"file":"it0216_258edd99.py","child":228,"score":22.588,"rate_bin":5,"n":578,"family":"r035_z17_26x25_distinct_gap_dual_component_v1"}
+{"file":"it0000_708b21c5.py","child":229,"score":60.308,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_transposed_dependency_screen"}
+{"file":"it0222_708b21c5.py","child":229,"score":60.308,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_transposed_dependency_screen"}
+{"file":"it0225_09ae2af5.py","child":230,"score":91.215,"rate_bin":2,"n":585,"family":"r020_c13sdC3_xC3_12x12_quotient_seven"}
+{"file":"it0227_81f94fd6.py","child":231,"score":53.2776,"rate_bin":0,"n":585,"family":"r010_c9xc5_q45_23x23_balanced_component_screen"}
+{"file":"it0213_58ada2f5.py","child":232,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_paired_gap_rankone_v4"}
+{"file":"it0228_1d1e4a47.py","child":233,"score":37.394,"rate_bin":1,"n":592,"family":"r015_z37_23x24_dual_kernel_gap_profiles_v1"}
+{"file":"it0223_6b0b93b4.py","child":234,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_rankone_gap_pools_v4"}
+{"file":"it0229_19fb8838.py","child":235,"score":17.5764,"rate_bin":5,"n":578,"family":"r035_m17r1s1_26x25_balanced_mixed_degree_v2"}
+{"file":"it0231_cd261103.py","child":236,"score":37.4224,"rate_bin":1,"n":576,"family":"r015_dic9_23x24_relative_orders_v1"}
+{"file":"it0230_9a63e49b.py","child":237,"score":41.0074,"rate_bin":1,"n":592,"family":"r015_c37_23x24_balanced_component_screen"}
+{"file":"it0233_3877232c.py","child":238,"score":8.5666,"rate_bin":9,"n":588,"family":"r055_m7r4s6_14x15_order4_overlap_screen"}
+{"file":"it0238_54ad5191.py","child":240,"score":6.8054,"rate_bin":8,"n":576,"family":"r050_dic9_13x15_mixed_orders_rank"}
+{"file":"it0235_9f0439aa.py","child":241,"score":37.5,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_crossed_components_multicell_mutation"}
+{"file":"it0245_06a87450.py","child":242,"score":0.0,"rate_bin":0,"n":576,"family":"r015_dic9_23x24_cross_profile_screen"}
+{"file":"it0000_e5896824.py","child":243,"score":60.308,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_independent_component_recombine"}
+{"file":"it0232_e5896824.py","child":243,"score":60.308,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_independent_component_recombine"}
+{"file":"it0237_6a66f7ae.py","child":244,"score":39.5834,"rate_bin":1,"n":592,"family":"r015_z37_23x24_complementary_gap_screen_v1"}
+{"file":"it0236_bc2b7390.py","child":245,"score":35.892,"rate_bin":1,"n":592,"family":"r015_c37_23x24_evenA_oddB_gap_screen"}
+{"file":"it0240_c129aad0.py","child":246,"score":25.6,"rate_bin":6,"n":560,"family":"r040_m7r8s6_13x13_spread_rooted8"}
+{"file":"it0241_9709234b.py","child":247,"score":40.401,"rate_bin":1,"n":592,"family":"r015_c37_23x24_multiprofile_minor_v2"}
+{"file":"it0244_302d8dcf.py","child":249,"score":34.989,"rate_bin":1,"n":576,"family":"r015_c36_23x24_complementary_gap_screen_v1"}
+{"file":"it0242_f950dd20.py","child":251,"score":38.7652,"rate_bin":1,"n":592,"family":"r015_c37_23x24_balancedA_gap_minor_v2"}
+{"file":"it0253_fcdaf330.py","child":254,"score":6.9238,"rate_bin":9,"n":588,"family":"r055_c7xv4_q28_14x15_order14_gap_rank"}
+{"file":"it0252_a0d20a60.py","child":255,"score":20.3634,"rate_bin":4,"n":532,"family":"r025_dic7_12x38_three_row_component_screen"}
+{"file":"it0250_033e7b44.py","child":257,"score":25.6,"rate_bin":6,"n":520,"family":"r040_c13rt4_13x13_offcentre_binomial_root7"}
+{"file":"it0000_88316163.py","child":258,"score":59.4618,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_short_dependency_density"}
+{"file":"it0251_88316163.py","child":258,"score":59.4618,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_short_dependency_density"}
+{"file":"it0000_0964af65.py","child":259,"score":111.3612,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_stratified_sidon_seven"}
+{"file":"it0254_0964af65.py","child":259,"score":111.3612,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_stratified_sidon_seven"}
+{"file":"it0257_ded24d76.py","child":261,"score":35.0428,"rate_bin":1,"n":592,"family":"r015_c37_23x24_occupancy_kernel_v2"}
+{"file":"it0259_a843e33f.py","child":262,"score":20.343,"rate_bin":4,"n":567,"family":"r030_c9_semidirect4_c9_12x13_noncommuting_screen"}
+{"file":"it0260_9cef123b.py","child":263,"score":30.328,"rate_bin":3,"n":576,"family":"r025_a4xc4_12x25_component_balance_screen"}
+{"file":"it0255_80a7ff78.py","child":265,"score":5.1634,"rate_bin":9,"n":588,"family":"r055_c7_semidirect_c4_q28_14x15_order4_distinct_v1"}
+{"file":"it0258_6c1aba0b.py","child":266,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_mixed_support_eightprobe_v5"}
+{"file":"it0265_94de8d9f.py","child":268,"score":31.1166,"rate_bin":0,"n":594,"family":"r010_c11xc3_32x43_balanced_check_dependencies"}
+{"file":"it0266_7dbeeea7.py","child":269,"score":38.6494,"rate_bin":1,"n":592,"family":"r015_c37_23x24_parity_minor_screen_v2"}
+{"file":"it0261_9e1895ba.py","child":270,"score":7.7452,"rate_bin":9,"n":588,"family":"r055_c7sd6c4_q28_14x15_indexed_gap_rank_v1"}
+{"file":"it0263_efa7d4a0.py","child":271,"score":42.682,"rate_bin":1,"n":592,"family":"r015_c37_23x24_translated_minor_selection_v1"}
+{"file":"it0272_404d90e3.py","child":272,"score":4.658,"rate_bin":8,"n":570,"family":"r050_c19_14x27_rankone_parity_screen"}
+{"file":"it0268_cffc20c4.py","child":273,"score":12.955,"rate_bin":5,"n":578,"family":"r035_z17_26x25_even_B_rank_screen_v2"}
+{"file":"it0267_755952b6.py","child":274,"score":8.686,"rate_bin":9,"n":595,"family":"r055_z35_14x14_screened_quad_spectra"}
+{"file":"it0275_d616cd66.py","child":275,"score":35.104,"rate_bin":3,"n":576,"family":"r025_sl23xc2_12x25_component_profiles_v1"}
+{"file":"it0271_75a07274.py","child":278,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_promoted_parity_components_v5"}
+{"file":"it0270_0fac6f2f.py","child":279,"score":7.385,"rate_bin":7,"n":598,"family":"r045_c23_13x28_sparseB_component_screen"}
+{"file":"it0279_cdc1487a.py","child":281,"score":8.0058,"rate_bin":9,"n":544,"family":"r055_c8sd3c4_q32_14x14_even_gap_fullrank_v3"}
+{"file":"it0273_0af7378e.py","child":282,"score":38.1146,"rate_bin":1,"n":592,"family":"r015_c37_23x24_divided_minor_kernel_v1"}
+{"file":"it0282_7c597142.py","child":284,"score":7.664,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_central_frustrated_pairs"}
+{"file":"it0000_9414bcee.py","child":285,"score":111.3612,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_independent_eight_anchor"}
+{"file":"it0269_9414bcee.py","child":285,"score":111.3612,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_independent_eight_anchor"}
+{"file":"it0288_261df6bd.py","child":287,"score":10.87,"rate_bin":7,"n":552,"family":"r045_dic3_q12_26x27_two_row_depth6_v1"}
+{"file":"it0285_74ad52c0.py","child":290,"score":37.95,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_rank_kernel_rooted5_v2"}
+{"file":"it0291_ec72733d.py","child":291,"score":38.71,"rate_bin":1,"n":592,"family":"r015_c37_24x23_dual_translated_minor_v1"}
+{"file":"it0280_75f008ae.py","child":292,"score":35.6102,"rate_bin":1,"n":576,"family":"r015_m9r4s8_23x24_even_component_screen"}
+{"file":"it0290_08f4be05.py","child":293,"score":19.3124,"rate_bin":3,"n":576,"family":"r025_c24sd5c2_q48_12x25_screened_profiles"}
+{"file":"it0278_b1af9717.py","child":294,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_oddcolumn_paired_sixscreen_v2"}
+{"file":"it0283_0c02bfa5.py","child":295,"score":8.5666,"rate_bin":9,"n":588,"family":"r055_m7r4s6_14x15_verified_gap_motifs_v1"}
+{"file":"it0292_9d562e56.py","child":297,"score":21.628,"rate_bin":5,"n":580,"family":"r035_z20_25x25_even_gap_trinomial_rank_screen"}
+{"file":"it0297_4181a2a2.py","child":null,"score":15.652,"rate_bin":7,"n":552,"family":"r045_dic6_q24_13x27_mixed_gap_component6_v2"}
+{"file":"it0000_16464f58.py","child":null,"score":113.3054,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_fresh_sector1_gap_screen"}
+{"file":"it0295_16464f58.py","child":null,"score":113.3054,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_fresh_sector1_gap_screen"}
+{"file":"it0310_8ed27b91.py","child":300,"score":0.0,"rate_bin":0,"n":506,"family":"r010_c23xc2_12x34_asymmetric_dual_kernel"}
+{"file":"it0300_324b3498.py","child":301,"score":4.1112,"rate_bin":8,"n":288,"family":"r050_s3xc3_q18_13x15_reflection_triple_screen"}
+{"file":"it0304_0e91b933.py","child":307,"score":22.588,"rate_bin":5,"n":544,"family":"r035_z8sd3z4_13x25_three_regular_component_screen"}
+{"file":"it0295_7a113282.py","child":311,"score":94.7726,"rate_bin":2,"n":585,"family":"r020_c13sd3c3_x_c3_12x12_wide_quotient_screen"}
+{"file":"it0302_32114a6d.py","child":313,"score":58.6156,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_rank_gain_translated_kernel"}
+{"file":"it0301_93f1d097.py","child":315,"score":20.6052,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_mixed_degree_three_probe_v6"}
+{"file":"it0305_c7ea1949.py","child":317,"score":40.6718,"rate_bin":1,"n":592,"family":"r015_c37_23x24_distinct_gap_independent_minors_v2"}
+{"file":"it0316_b863c20c.py","child":318,"score":15.652,"rate_bin":7,"n":552,"family":"r045_q8sd_c3_q24_13x27_action_component_v1"}
+{"file":"it0315_c2e7e2f9.py","child":319,"score":85.614,"rate_bin":2,"n":570,"family":"r020_c19sdinv_c6_q114_12x12_dihedral38_screen"}
+{"file":"it0317_39602dad.py","child":321,"score":14.6824,"rate_bin":5,"n":578,"family":"r035_m17r1s1_25x26_mixed_degree_full_short_screen"}
+{"file":"it0324_19b2f19b.py","child":323,"score":20.745,"rate_bin":4,"n":580,"family":"r035_m20r1s1_25x25_fourterm_component_screen"}
+{"file":"it0314_2e63e57a.py","child":324,"score":37.95,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_dual_rooted5_support_motifs"}
+{"file":"it0325_bf1cc2c5.py","child":326,"score":36.1778,"rate_bin":1,"n":576,"family":"r015_dic9_23x24_complementary_components_v1"}
+{"file":"it0318_043a6604.py","child":327,"score":106.0248,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_sector2_eight_anchor"}
+{"file":"it0320_63074698.py","child":330,"score":35.3196,"rate_bin":1,"n":592,"family":"r015_z37_23x24_balanced_translated_minors_v1"}
+{"file":"it0313_37cd8bce.py","child":331,"score":25.6,"rate_bin":6,"n":520,"family":"r040_c13rt4_13x13_independent_root8_census"}
+{"file":"it0330_96660bca.py","child":334,"score":95.3518,"rate_bin":2,"n":585,"family":"r020_c13rt9_12x12_fourcoset_component_screen"}
+{"file":"it0329_eeba9097.py","child":335,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_balanced_even_gap_pairs_v3"}
+{"file":"it0335_699c2bbb.py","child":340,"score":10.87,"rate_bin":7,"n":552,"family":"r045_dic6_q24_13x27_order12_binomial_component6"}
+{"file":"it0340_ae771087.py","child":341,"score":7.944,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_coset_quads_distinct_odd_gaps"}
+{"file":"it0332_6393382f.py","child":343,"score":37.75,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_rank_stratified_rooted5_v3"}
+{"file":"it0341_34dd0d83.py","child":344,"score":22.588,"rate_bin":5,"n":578,"family":"r035_m17r1s1_26x25_paired_trinomial_screen"}
+{"file":"it0327_a1e30eaf.py","child":346,"score":9.388,"rate_bin":9,"n":588,"family":"r055_dic7_q28_14x15_trianglefree_binomial_v1"}
+{"file":"it0342_8b526a1c.py","child":349,"score":53.6924,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_character_kernel_controls_v1"}
+{"file":"it0345_a9cbd378.py","child":350,"score":35.104,"rate_bin":3,"n":576,"family":"r025_sd16xc3_q48_12x25_rank_component_v1"}
+{"file":"it0352_93d42d47.py","child":356,"score":107.5554,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_full_kernel_height_motifs"}
+{"file":"it0355_a78a3c46.py","child":357,"score":29.2176,"rate_bin":1,"n":576,"family":"r015_d12xc3_23x24_component_kernel_screen_v1"}
+{"file":"it0350_d72a60f7.py","child":360,"score":7.944,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_h11_cosets_odd_gap_screen"}
+{"file":"it0349_c4507a33.py","child":361,"score":111.3612,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_asymmetric_quotient8_v1"}
+{"file":"it0360_3e6167ff.py","child":363,"score":18.3998,"rate_bin":4,"n":576,"family":"r025_s4xc2_12x25_order_motifs_component_screen"}
+{"file":"it0351_38697cd2.py","child":365,"score":8.2664,"rate_bin":8,"n":576,"family":"r050_dic9_13x15_distinct_binomial_spectra_v2"}
+{"file":"it0356_4c71cd38.py","child":366,"score":39.5936,"rate_bin":1,"n":592,"family":"r015_c37_23x24_independent_component_probe"}
+{"file":"it0365_a5a78567.py","child":368,"score":10.87,"rate_bin":7,"n":552,"family":"r045_c6xc2_q12_26x27_two_row_component6"}
+{"file":"it0370_17e01bf2.py","child":369,"score":2.531,"rate_bin":9,"n":572,"family":"r055_m11r2s10_15x15_mixed_gap_component_screen"}
+{"file":"it0369_a6c60500.py","child":370,"score":20.7688,"rate_bin":4,"n":532,"family":"r030_dic7_12x38_balanced_zero_doublet_sixprobe_v2"}
+{"file":"it0375_f86ec7b6.py","child":372,"score":29.918,"rate_bin":1,"n":576,"family":"r015_c3sq_semidirect_c4_23x24_component_screen"}
+{"file":"it0368_ce5da8d5.py","child":374,"score":39.0,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_crossed_multicell_rank156_v1"}
+{"file":"it0373_fc16ec7a.py","child":375,"score":19.4114,"rate_bin":5,"n":544,"family":"r035_z8sd3z4_13x25_subgroup_zero_trinomial_v1"}
+{"file":"it0367_6a08061c.py","child":376,"score":8.706,"rate_bin":9,"n":544,"family":"r055_m4r8s3_14x14_mixed_order_rank_screen_v2"}
+{"file":"it0358_3919cea9.py","child":377,"score":42.0438,"rate_bin":1,"n":592,"family":"r015_c37_23x24_global_gaps_deep_kernel_v2"}
+{"file":"it0353_1cc97c45.py","child":379,"score":9.388,"rate_bin":9,"n":588,"family":"r055_dic7_14x15_indexed_order_gap_screen_v1"}
+{"file":"it0378_584f7c2a.py","child":381,"score":8.0,"rate_bin":8,"n":540,"family":"r050_s3xc3_q18_14x27_isolated_b_columns_v2"}
+{"file":"it0379_4bbd9bd0.py","child":382,"score":20.791,"rate_bin":4,"n":551,"family":"r030_m1r19s1_25x25_sidon_quartic_eightprobe_v5"}
+{"file":"it0380_ddd90c64.py","child":383,"score":14.4,"rate_bin":6,"n":560,"family":"r040_m7r4s6_13x26_complementary_rooted8_v1"}
+{"file":"it0374_9721b567.py","child":385,"score":111.3612,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_anchored_eight_overlap_v1"}
+{"file":"it0390_ab8cbdbc.py","child":386,"score":0.0,"rate_bin":4,"n":567,"family":"r030_c27c3_s10_12x13_component_rank_screen"}
+{"file":"it0387_4ad4f534.py","child":388,"score":8.0,"rate_bin":8,"n":480,"family":"r050_dic4_14x27_two_row_component_screen"}
+{"file":"it0382_8d8eaa12.py","child":389,"score":12.955,"rate_bin":5,"n":578,"family":"r035_m17r1s1_26x25_B_parity_rank_one_v1"}
+{"file":"it0385_e9d7d4cc.py","child":393,"score":4.594,"rate_bin":8,"n":572,"family":"r050_dic11_13x14_even_gap_split_cosets_v1"}
+{"file":"it0395_5cf114bd.py","child":394,"score":5.899,"rate_bin":5,"n":594,"family":"r035_m33r1s1_12x28_order3_rank_screen"}
+{"file":"it0386_4ec3fa69.py","child":395,"score":21.628,"rate_bin":5,"n":580,"family":"r035_m20r1s1_25x25_redistributed_trinomial_v1"}
+{"file":"it0398_95168aed.py","child":396,"score":11.792,"rate_bin":7,"n":583,"family":"r045_c11xc1_q11_27x27_paired_gap_components"}
+{"file":"it0394_3eb7c4a2.py","child":397,"score":23.031,"rate_bin":5,"n":578,"family":"r035_m17r1s1_26x25_rankone_B_trinomial_v1"}
+{"file":"it0389_192583e3.py","child":399,"score":15.652,"rate_bin":7,"n":598,"family":"r045_c26_13x27_heterogeneous_B_shortscreen_v2"}
+{"file":"it0393_9447b510.py","child":401,"score":55.7138,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_rank_gain_dependency_tradeoff"}
+{"file":"it0401_65afd1d3.py","child":404,"score":8.178,"rate_bin":8,"n":540,"family":"r050_c9_27x28_distinct_offsets_component_screen_v1"}
+{"file":"it0397_18e747f9.py","child":405,"score":109.4996,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_quotient_sidon_anchor8_v1"}
+{"file":"it0403_a242c703.py","child":406,"score":58.6464,"rate_bin":0,"n":598,"family":"r010_c46_32x32_sector2_coset_minor_v1"}
+{"file":"it0400_2f7e620d.py","child":407,"score":15.652,"rate_bin":7,"n":598,"family":"r045_c13xc2_q26_13x27_evenrank_controls_v2"}
+{"file":"it0404_71ff456d.py","child":411,"score":109.417,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_fresh_quotient8_screen"}
+{"file":"it0408_4c307aa7.py","child":412,"score":22.588,"rate_bin":5,"n":544,"family":"r035_c4wr2_13x25_gap_order_component_screen"}
+{"file":"it0405_d2c9902d.py","child":413,"score":90.1658,"rate_bin":2,"n":570,"family":"r020_c19rt3_x_c2_q114_12x12_quotient_screen_v1"}
+{"file":"it0407_976427ca.py","child":416,"score":38.4,"rate_bin":3,"n":576,"family":"r025_c24rt13c2_12x25_fullorder_b_doublets_v1"}
+{"file":"it0414_0e66f3f8.py","child":417,"score":11.8264,"rate_bin":7,"n":552,"family":"r045_s4_q24_13x27_relative_order_component_screen"}
+{"file":"it0416_a77c676b.py","child":418,"score":12.9566,"rate_bin":7,"n":598,"family":"r045_d13_13x27_mixed_support_rooted5_v2"}
+{"file":"it0415_ed591508.py","child":419,"score":11.1532,"rate_bin":5,"n":544,"family":"r035_d8_q16_25x26_ordered_gaps_component_screen_v1"}
+{"file":"it0420_f1c6047b.py","child":422,"score":38.8542,"rate_bin":1,"n":592,"family":"r015_c37_24x23_independent_minor_kernel_v1"}
+{"file":"it0422_abdd49c8.py","child":424,"score":37.8,"rate_bin":3,"n":576,"family":"r025_dic12_q48_12x25_mixedcoset_component_screen_v1"}
+{"file":"it0417_d96f3862.py","child":426,"score":60.308,"rate_bin":0,"n":598,"family":"r010_c23xc2_23x23_independent_translated_banks_v2"}
+{"file":"it0425_111b0a19.py","child":427,"score":40.5144,"rate_bin":1,"n":592,"family":"r015_c37_23x24_verified_divided_triples_v3"}
+{"file":"it0429_587376b1.py","child":429,"score":16.304,"rate_bin":7,"n":552,"family":"r045_q8xc3_q24_13x27_quaternion_ratio_sixscreen"}
+{"file":"it0421_333310cf.py","child":430,"score":31.36,"rate_bin":6,"n":550,"family":"r040_c11sdC5_13x13_independent_eight_count_v1"}
+{"file":"it0410_4ef46f59.py","child":431,"score":36.8174,"rate_bin":1,"n":592,"family":"r015_c37_23x24_complementary_minor_screen"}
+{"file":"it0430_a824343f.py","child":432,"score":56.1078,"rate_bin":0,"n":598,"family":"r010_c23xc2_32x32_recombined_short_dependency_v1"}
+{"file":"it0435_475702fd.py","child":435,"score":5.712,"rate_bin":9,"n":520,"family":"r055_dic5_q20_15x15_component_full_screen_v1"}
+{"file":"it0432_3323b280.py","child":437,"score":111.3612,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_crossrow_quotient8_v1"}
+{"file":"it0437_547f7e4b.py","child":438,"score":23.529,"rate_bin":5,"n":544,"family":"r035_c8sd5c4_13x25_normal_gap_screen_v1"}
+{"file":"it0434_0e0d192a.py","child":441,"score":15.652,"rate_bin":7,"n":598,"family":"r045_c26_13x27_evenA_zero_compensatedB_v2"}
+{"file":"it0413_c8638654.py","child":447,"score":8.5666,"rate_bin":9,"n":588,"family":"r055_m7r4s6_14x15_indexed_mixed_gap_v2"}
+{"file":"it0450_c60e5875.py","child":450,"score":111.4438,"rate_bin":2,"n":585,"family":"r020_z13rtz9s3_12x12_mixed_projection_screen_v1"}
+{"file":"it0452_e68f9e95.py","child":453,"score":40.1874,"rate_bin":1,"n":592,"family":"r015_c37_23x24_independent_verified_quotients_v3"}
+{"file":"it0448_3ffd7f4f.py","child":454,"score":23.529,"rate_bin":5,"n":544,"family":"r035_c8sd5c4_13x25_normal_gap_rank_screen_v1"}
+{"file":"it0445_0122ea6b.py","child":455,"score":9.388,"rate_bin":9,"n":588,"family":"r055_dic7_14x15_correlated_gaps_screen_v2"}
+{"file":"it0453_f8965bf2.py","child":456,"score":109.417,"rate_bin":2,"n":585,"family":"r020_m13r9s3_21x21_stratified_anchor8_v1"}
+{"file":"it0455_ec15b646.py","child":458,"score":10.96,"rate_bin":7,"n":552,"family":"r045_q8xc3_q24_13x27_shared_doubleton_a332_v1"}
+{"file":"it0460_287624d0.py","child":461,"score":15.2636,"rate_bin":1,"n":304,"family":"r015_m1r19s1_23x24_parity_gap_components_v1"}
+{"file":"it0465_56962596.py","child":462,"score":8.941,"rate_bin":9,"n":544,"family":"r055_dic8_14x14_subgroup_quad_rank_screen_v1"}
+{"file":"it0440_7a96616e.py","child":468,"score":39.6488,"rate_bin":1,"n":592,"family":"r015_c37_23x24_independent_verified_minors_v1"}
+{"file":"it0470_fb6847b4.py","child":470,"score":13.235,"rate_bin":5,"n":544,"family":"r035_c4sd3c4_25x26_rankone_A_gap_screen_v1"}
+{"file":"it0474_9de9f353.py","child":477,"score":15.652,"rate_bin":7,"n":552,"family":"r045_d4xc3_q24_13x27_independent_component_screen_v1"}
+{"file":"it0475_621c0b5f.py","child":478,"score":16.304,"rate_bin":7,"n":552,"family":"r045_c3sdC8_q24_13x27_mixed_action_rank_v1"}
+{"file":"it0476_edf27e4d.py","child":479,"score":109.417,"rate_bin":2,"n":585,"family":"r020_m13r9s3_12x12_independent_full_kernel_probe"}
+{"file":"it0480_6da4d10f.py","child":480,"score":4.525,"rate_bin":8,"n":576,"family":"r050_s3xs3_q36_13x15_order6_crossfactor_v1"}
+{"file":"it0483_af242b39.py","child":483,"score":115.2496,"rate_bin":2,"n":585,"family":"r020_c13sd3c9_q117_12x12_quotient_class_motifs_v1"}
+{"file":"it0485_51e38918.py","child":485,"score":9.7422,"rate_bin":6,"n":180,"family":"r040_s3xc3_q18_13x13_rooted_component_v1"}
+{"file":"it0486_a90b7859.py","child":486,"score":8.0,"rate_bin":8,"n":312,"family":"r045_q8xc3_q24_13x14_noncommuting_components_v1"}
+{"file":"it0487_5320f83e.py","child":488,"score":37.4542,"rate_bin":3,"n":576,"family":"r025_dic12_12x25_local_rank159_screen_v2"}
+{"file":"it0456_e95b9e78.py","child":489,"score":9.388,"rate_bin":9,"n":588,"family":"r055_dic7_14x15_asymmetric_parity_rank_screen_v2"}
+{"file":"it0490_069f3d2e.py","child":491,"score":17.333,"rate_bin":3,"n":576,"family":"r025_s4xc2_12x25_component_profiles_v1"}
+{"file":"it0495_3903ad14.py","child":497,"score":102.7392,"rate_bin":2,"n":570,"family":"r020_c19xs3_12x12_coset_component_probe_v1"}
+{"file":"it0024_afd6f1e6.py","child":null,"score":null,"rate_bin":null,"n":null,"family":null}

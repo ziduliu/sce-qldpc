@@ -2,10 +2,10 @@
 """Builds figures/data/line_score_arms_iter.json, the data of Fig. 3, from the evaluation ledgers in ledgers/.
 
 The run score after a step is the sum over the ten rate cells of the best program score in the cell; step 0 is
-the eight seed programs, then steps 1..500. Language-model runs: one model call per step, and a step whose
+the eight seed programs, then steps 1..500. Language-model runs: one engine iteration per step, and a step whose
 response is rejected by the engine produces no child, so every child of the ledger is matched to the engine
 iteration of its model call by the completion time in the controller log (figures/data/iteration_completions.txt:
-run, log file, time stamp, iteration, program id, score of every "Program ... completed" line, extracted from the
+run, log file, time stamp, iteration, program id, score of the "Program ... completed" lines, extracted from the
 cluster logs on 2026-10-19); a child without a completion line within two minutes takes the iteration of its
 nearest matched neighbour in ledger order. Random-mutation and hill-climbing runs: one proposal per step, so the
 step of a child is its position in the ledger.
@@ -19,10 +19,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data")
 LEDGERS = os.path.join(HERE, "..", "..", "ledgers")
 N = 500
-# two children of the gpt-6.1-sol CLER run whose program text is in no checkpoint of the run (they were
-# evaluated after its last checkpoint); by the convention of Fig. 3 and of the tables they are left out of this run,
-# which lowers its score
-LOST = {"bed8db4fa554c55e", "e4a316a7c7bcb268"}
 
 LLM = {
     "distance": {"luna_low": "cc_v7_gpt6lunalow500_w12_10c_prod_out", "luna_high": "cc_v7_gpt6lunahigh500_w12_10c_prod_out",
@@ -115,7 +111,7 @@ if __name__ == "__main__":
     for block in ("distance", "circuit"):
         out[block] = {}
         for key, run in LLM[block].items():
-            seeds, ch = ledger(run, LOST if (block == "circuit" and key == "gpt61_sol_high") else ())
+            seeds, ch = ledger(run)
             its, exact = assign_iterations(ch, completions(run))
             tot, beyond = curve_by_iteration(seeds, ch, its)
             out[block][key] = dict(run=run, total=tot, children=len(ch), exact=exact, beyond_N=beyond,
