@@ -4,9 +4,9 @@ Code, programs and records of "Large-Language-Model Discovery of Quantum LDPC Co
 Structured Concept Evolution" (Zidu Liu and Florian Marquardt, arXiv:2606.24808).
 
 The codes of this paper and the codes found with the method since, together with re-measured entries of the
-Unitary Foundation qLDPC leaderboard, are listed with their certificates or search witnesses in
-https://github.com/ziduliu/qldpc-verified-board (site: https://ziduliu.github.io/qldpc-verified-board/; codes with
-encoding rate above 0.1 for now).
+Unitary Foundation qLDPC leaderboard, are listed with their certificates or search witnesses in the repository
+[qldpc-verified-board](https://github.com/ziduliu/qldpc-verified-board) and on its site
+<https://ziduliu.github.io/qldpc-verified-board/> (codes with encoding rate above 0.1 for now).
 
 ## Layout
 
