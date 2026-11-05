@@ -54,17 +54,11 @@ Data:
   copy) for the gpt-6-luna and gpt-6-sol runs; `<hash>.py` (the first 16 hex digits of the SHA-1 of the
   program text) for the weight-9 run, the hill-climbing FOM runs, the refinement runs and the run below
   1500 qubits. The stored texts cover every child of the hill-climbing FOM runs, the refinement runs and the run below
-  1500 qubits, and between 48 % and 73 % of the children of the other runs, except `pl10_rnd500v5_rep1`, `rep2` and
-  `rep5` (23 % to 24 %); some files of the language-model runs match no ledger row (`child` null). Every folder has `index.jsonl`, one line per stored program: `file`, `child` (position of
+  1500 qubits. Every folder has `index.jsonl`, one line per stored program: `file`, `child` (position of
   its evaluation in the run, 0-based: the seed programs first, then the children in the order they were
   evaluated; null when the text matches no evaluation record), `score` (its program score), `rate_bin`
   (rate cell 0-9), `n`, `family`, and, where the export kept them, `id`, `parent_id`, `iteration_found`,
-  `generation`, `island` and `changes` (the engine's summary of the edit). The run-cell tables of the
-  Supplementary Information give, per rate cell, the best score among the eight seed programs and the
-  children of the first 500 steps of a run: `iteration_found` at most 500 for the language-model runs
-  (a step whose response is rejected produces no child), and `child` at most 507 for the random-mutation
-  and hill-climbing runs, where every step produces one child; the step of every child is given by
-  `figures/data/iteration_completions.txt` (see Fig. 3 below)
+  `generation`, `island` and `changes` (the engine's summary of the edit). 
 - `codes/` the parity-check matrices (MatrixMarket text) of every code of Table 1, every gpt-6.1-sol code
   of the Supplementary elite tables, the eleven codes of the weight-9 table and the best code of the best
   program of its cell 2, with `index.json`
