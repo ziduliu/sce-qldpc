@@ -5,7 +5,7 @@ Structured Concept Evolution" (Zidu Liu and Florian Marquardt, arXiv:2606.24808)
 
 The codes of this paper and the codes found with the method since are listed with their certificates or search witnesses in the repository
 [qldpc-verified-board](https://github.com/ziduliu/qldpc-verified-board) and on its site
-<https://ziduliu.github.io/qldpc-verified-board/docs/> (codes with encoding rate above 0.1 for now).
+<https://ziduliu.github.io/qldpc-verified-board/docs/> .
 
 ## Layout
 
